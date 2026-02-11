@@ -1,0 +1,127 @@
+# Experiment 13: Regime Mining and Failure Subtyping
+
+## Context
+
+I have existing data from Experiments 9–12 of a trajectory geometry study. The setup:
+- **Model:** Qwen2.5-0.5B (24 layers)
+- **Task:** 300 multi-step arithmetic problems, each run under Direct-answer and Chain-of-Thought (CoT) prompting
+- **Hidden states already extracted** for layers 0, 10, 13, 16, 24 across the first 32 generated tokens per response
+- **Groups:** G1 (Direct Failure, n=247), G2 (Direct Success, n=53), G3 (CoT Failure, n=77), G4 (CoT Success, n=223)
+
+The existing experiments computed per-trajectory scalar metrics: speed, directional consistency (DC), early curvature, stabilization rate, turning angle, directional autocorrelation, tortuosity, effective dimension, fractal dimension proxy, intrinsic dimension, cosine-to-final slope, distance-to-final slope, early/late distance ratio.
+
+**This experiment runs NO new model inference.** It reuses the already-extracted hidden states and already-computed metrics. All analysis is purely post-hoc statistical/clustering work on existing numpy arrays.
+
+## Data locations
+
+Look in the existing experiment directories for:
+- The dataset: `Experiment 9/data/exp9_dataset.jsonl` (300 problems with correctness labels)
+- Hidden state arrays: look for `.npy` or `.npz` files in experiment folders — these should be organized by layer and group. Check `Experiment 9/`, `Experiment 11/`, and `Experiment 12/` directories for saved hidden states or computed metric arrays.
+- Previously computed metric CSVs or dictionaries from Experiments 11–12.
+
+**IMPORTANT:** Before writing any analysis code, first explore the directory structure to find exactly where the hidden states and metric arrays are stored, and print their shapes/keys. Adapt all file paths accordingly. If hidden states are not saved as arrays, check whether the extraction code from earlier experiments can be rerun without model inference (i.e., if the states were cached).
+
+## Analyses to Run
+
+### Analysis 1: Failure Subtyping within G3 (CoT Failures)
+
+**Goal:** Determine whether CoT failures are a single population or contain geometrically distinct subtypes.
+
+**Method:**
+1. Collect all per-trajectory metrics for G3 (n=77) at Layer 13 (our primary analysis layer): speed, DC, stabilization, turning angle, dir_autocorr, tortuosity, effective dimension, and any convergence metrics available.
+2. Standardize each metric (z-score).
+3. Run k-means with k=2,3,4 and report silhouette scores for each k.
+4. For the best k (or k=2 and k=3 both), report the cluster centroids in the original (unstandardized) metric space, along with cluster sizes.
+5. For each identified cluster, report the mean values of ALL metrics and compare to G4 (CoT Success) means. Which failure subtype looks most like success? Which looks most different?
+6. **Key question to answer:** Do some CoT failures look like "stable-but-wrong" (high tortuosity, high DC, strong convergence — i.e., a clean trajectory into the wrong attractor)? Do others look like "failed exploration" (high effective dimension that never collapses, weak convergence)?
+
+**Outputs:**
+- Table of cluster centroids with metric means
+- Silhouette scores per k
+- A short narrative interpreting each failure subtype
+
+### Analysis 2: Direct Success Characterization (G2)
+
+**Goal:** Determine whether direct successes (G2, n=53) exhibit a "retrieve-and-commit" geometric signature distinct from CoT successes (G4).
+
+**Method:**
+1. Compare G2 vs G4 on all available metrics at Layer 13. Report means, Cohen's d, and permutation p-values (k=1000).
+2. Specifically test these predictions:
+   - G2 should have HIGHER tortuosity than G4 (more path-efficient)
+   - G2 should have HIGHER DC than G4 (more directionally consistent / ballistic)
+   - G2 should have LOWER effective dimension than G4 (fewer active degrees of freedom)
+   - G2 should have more negative distance-to-final slope (faster convergence)
+3. Report which predictions hold and which don't.
+
+**Outputs:**
+- Table: G2 mean vs G4 mean, Cohen's d, p-value for each metric
+- Summary of which "retrieve-and-commit" predictions were confirmed
+
+### Analysis 3: Sliding-Window Effective Dimension (Phase Detection)
+
+**Goal:** Look for explore→commit phase transitions within individual trajectories.
+
+**Method:**
+1. For each trajectory in G4 (CoT Success) at Layer 13, compute effective dimension in sliding windows of width 8 tokens with stride 2 (i.e., tokens 0–7, 2–9, 4–11, ..., up to the end of the 32-token window). Effective dimension = PCA participation ratio of the step vectors within each window.
+   - Step vectors within a window: if the window covers hidden states h_a through h_b, the step vectors are Δh_a, Δh_{a+1}, ..., Δh_{b-1}. Center them, compute SVD or covariance eigenvalues, and compute participation ratio = (Σ λ_i)² / Σ λ_i².
+2. Do the same for G1 (Direct Failure) and G3 (CoT Failure).
+3. For each trajectory, compute a "dimension drop" score = mean(eff_dim in first half of windows) − mean(eff_dim in second half of windows). Positive values indicate explore→commit.
+4. Report the distribution of dimension-drop scores for G4, G3, G1. Are G4 trajectories more likely to show a dimension drop than G3?
+5. Within G4, split trajectories into "high dimension drop" (top quartile) and "low dimension drop" (bottom quartile). Do they differ on any other metrics (speed, DC, stabilization)?
+
+**Outputs:**
+- Plot: Mean sliding-window effective dimension over token position, one line per group (G1, G3, G4), with shaded confidence intervals
+- Histogram of dimension-drop scores per group
+- Table comparing high-drop vs low-drop G4 trajectories on other metrics
+
+### Analysis 4: Regime Classification Attempt
+
+**Goal:** See if individual trajectories can be assigned to regime types based on their metric profiles.
+
+**Method:**
+1. Pool ALL 600 trajectories (all groups). Collect all available metrics at Layer 13 into a feature matrix.
+2. Standardize. Run k-means with k=3,4,5,6. Report silhouette scores.
+3. For the best k, report:
+   - Cluster centroids (unstandardized)
+   - Composition of each cluster (what % is G1, G2, G3, G4)
+   - A short interpretive label for each cluster based on its metric profile (e.g., "ballistic drift," "high-dimensional exploration," "structured convergence," etc.)
+4. Run a 2D UMAP or t-SNE of the metric-space feature matrix, colored by (a) cluster assignment and (b) group membership. Save both plots.
+
+**Outputs:**
+- Silhouette scores per k
+- Table of cluster centroids with group composition
+- Two scatter plots (colored by cluster, colored by group)
+- Interpretive labels for each regime
+
+### Analysis 5: Predictive Value of Trajectory Geometry
+
+**Goal:** How well can the metric suite predict correctness?
+
+**Method:**
+1. Within CoT responses only (n=300): use all Layer 13 metrics as features to predict correct/incorrect via logistic regression with 5-fold cross-validation. Report mean accuracy and AUC.
+2. Within Direct responses only (n=300): same.
+3. Across all 600: predict correctness using metrics + a binary prompt-type indicator. Report accuracy and AUC. Then report accuracy using ONLY the prompt-type indicator (to quantify how much trajectory metrics add beyond knowing the prompt type).
+4. Feature importance: which metrics are most predictive? Report logistic regression coefficients or a simple feature-importance ranking.
+
+**Outputs:**
+- Table: accuracy and AUC for each model variant
+- Feature importance ranking
+- Brief interpretation of what predicts success vs failure
+
+## Output Format
+
+Create a single comprehensive report as `Experiment_13_report.md` containing:
+1. All tables, figures, and interpretive text organized by analysis number
+2. A final "Summary of Findings" section synthesizing across all five analyses
+3. Save all figures as PNGs in an `Experiment 13/figures/` directory
+4. Save any intermediate data (cluster assignments, dimension-drop scores) as CSVs in `Experiment 13/data/`
+
+## Technical Notes
+
+- Use Python with numpy, scipy, scikit-learn, matplotlib, seaborn
+- For permutation tests, use k=1000 shuffles
+- For Cohen's d, use pooled standard deviation
+- For UMAP, use default parameters (n_neighbors=15, min_dist=0.1) — install with pip if needed
+- Handle any NaN/inf values by dropping those trajectories and noting how many were excluded
+- If any group has fewer than 10 valid samples for a given analysis, note this and interpret cautiously
+- Set random seeds (42) for reproducibility

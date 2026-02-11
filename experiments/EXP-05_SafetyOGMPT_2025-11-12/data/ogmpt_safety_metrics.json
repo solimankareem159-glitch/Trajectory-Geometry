@@ -1,0 +1,10 @@
+{
+  "ASR_Overall": 0.5,
+  "PRR_Overall": 0.1,
+  "ORR_Benign": 0.0,
+  "Helpfulness_Benign": 0.0,
+  "ASR_by_Tactic": {
+    "escalation": 0.2,
+    "fictional_sandbox": 0.8
+  }
+}

@@ -1,0 +1,77 @@
+# =============================================================================
+# DSG Experiments - .gitignore
+# =============================================================================
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+build/
+*.egg
+
+# --- Virtual Environments ---
+.venv*/
+venv/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Model Cache & Large Binaries ---
+.cache/
+*.bin
+*.safetensors
+*.gguf
+*.pt
+*.pth
+*.onnx
+
+# --- Experimental Data Files (too large for git) ---
+# Hidden state arrays (often 100MB+ each)
+*.npy
+*.npz
+
+# Large dataset files
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+
+# --- Node.js (Visualisation Tool) ---
+visualisation_tool/node_modules/
+visualisation_tool/dist/
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Claude / Agent Config ---
+.agent/
+.claude/
+
+# --- Sensitive / Private Materials ---
+# Personal research journal (contains raw personal reflections and tool details)
+research_history/Journey/Research Journey
+
+# Attribution ledger (superseded by collaboration statement in PROJECT_NARRATIVE.md)
+research_history/Journey/User_Contributions_Ledger.md
+
+# Chat logs and conversation transcripts
+archive/research_journey/
+
+# --- Archive (Internal Working Materials) ---
+# Internal archives within experiment folders
+experiments/.Archive/
+.Archive/
+
+# Binary documents in archive
+archive/research_design/*.pdf

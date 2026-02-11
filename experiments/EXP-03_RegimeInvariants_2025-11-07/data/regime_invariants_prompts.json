@@ -1,0 +1,1002 @@
+[
+  {
+    "operator_label": "Poetic",
+    "topic_label": "Climate",
+    "prompt_text": "Write a haiku or short poem about: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Ethical Risks",
+    "topic_label": "AI",
+    "prompt_text": "What are the moral concerns regarding this? Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Opposite Stance",
+    "topic_label": "AI",
+    "prompt_text": "Defend the contrary position to: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Summarize",
+    "topic_label": "Climate",
+    "prompt_text": "Provide a brief summary of the following: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Ask Question",
+    "topic_label": "Climate",
+    "prompt_text": "Give me a thought-provoking question based on this: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Explain Simply",
+    "topic_label": "Climate",
+    "prompt_text": "Explain the following in the simplest way possible: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Ask Question",
+    "topic_label": "Climate",
+    "prompt_text": "What is the most important question raised by this? Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Criticize",
+    "topic_label": "AI",
+    "prompt_text": "Point out the logical flaws in this statement: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Summarize",
+    "topic_label": "Climate",
+    "prompt_text": "In one sentence, tell me what this is about: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Reframe Negatively",
+    "topic_label": "AI",
+    "prompt_text": "Emphasize the threats and negative potential of this: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Ask Question",
+    "topic_label": "AI",
+    "prompt_text": "Pose an interesting question regarding the following: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Poetic",
+    "topic_label": "AI",
+    "prompt_text": "Write a lyrical interpretation of: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Explain Simply",
+    "topic_label": "AI",
+    "prompt_text": "Give me a basic overview of this statement: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Criticize",
+    "topic_label": "AI",
+    "prompt_text": "What are the weaknesses in this argument? Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Criticize",
+    "topic_label": "Climate",
+    "prompt_text": "Provide a critique of the following: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Explain Technically",
+    "topic_label": "Climate",
+    "prompt_text": "Explain this from a highly technical perspective: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Reframe Positively",
+    "topic_label": "AI",
+    "prompt_text": "Describe the utopian possibilities of this: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Ask Question",
+    "topic_label": "Climate",
+    "prompt_text": "Ask a provocative question inspired by this statement: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Criticize",
+    "topic_label": "AI",
+    "prompt_text": "Identify the potential downsides or errors in this text: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Explain Technically",
+    "topic_label": "Climate",
+    "prompt_text": "Explain the technical implications of this statement for a computer scientist: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Reframe Negatively",
+    "topic_label": "Climate",
+    "prompt_text": "Reframe the following statement to emphasize its dystopian risks: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Explain Technically",
+    "topic_label": "Climate",
+    "prompt_text": "What are the engineering challenges related to this? Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Opposite Stance",
+    "topic_label": "Climate",
+    "prompt_text": "Argue persuasively for the exact opposite of this statement: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Ethical Risks",
+    "topic_label": "AI",
+    "prompt_text": "Evaluate the fairness and bias in this statement: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Reframe Positively",
+    "topic_label": "Climate",
+    "prompt_text": "Reframe this in a way that inspires hope: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Criticize",
+    "topic_label": "Climate",
+    "prompt_text": "Point out the logical flaws in this statement: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Reframe Positively",
+    "topic_label": "AI",
+    "prompt_text": "Look at the bright side of this development: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Reframe Positively",
+    "topic_label": "Climate",
+    "prompt_text": "How can we see this in a more positive light? Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Reframe Negatively",
+    "topic_label": "AI",
+    "prompt_text": "Describe the dystopian risks implied here: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Explain Simply",
+    "topic_label": "Climate",
+    "prompt_text": "Break this down into very simple terms: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Ethical Risks",
+    "topic_label": "AI",
+    "prompt_text": "Discuss the social and ethical pitfalls of: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Reframe Negatively",
+    "topic_label": "Climate",
+    "prompt_text": "Emphasize the threats and negative potential of this: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Reframe Positively",
+    "topic_label": "Climate",
+    "prompt_text": "How does this create a better future? Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Summarize",
+    "topic_label": "AI",
+    "prompt_text": "What's the gist of this? Provide a one-sentence summary: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Explain Technically",
+    "topic_label": "Climate",
+    "prompt_text": "Detail the systemic complexities of the following: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Poetic",
+    "topic_label": "AI",
+    "prompt_text": "Write an evocative and poetic piece inspired by: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Reframe Negatively",
+    "topic_label": "Climate",
+    "prompt_text": "Describe the dystopian risks implied here: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Summarize",
+    "topic_label": "Climate",
+    "prompt_text": "Summarize this in one sentence: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Reframe Positively",
+    "topic_label": "Climate",
+    "prompt_text": "Describe the utopian possibilities of this: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Explain Technically",
+    "topic_label": "AI",
+    "prompt_text": "Discuss the implementation details of: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Explain Simply",
+    "topic_label": "Climate",
+    "prompt_text": "How would you explain this to a non-expert? Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Reframe Negatively",
+    "topic_label": "Climate",
+    "prompt_text": "Highlight the potential harm of this: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Criticize",
+    "topic_label": "Climate",
+    "prompt_text": "Provide a critical assessment of the following text: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Reframe Positively",
+    "topic_label": "Climate",
+    "prompt_text": "Look at the bright side of this development: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Poetic",
+    "topic_label": "Climate",
+    "prompt_text": "If this statement were a poem, how would it go? Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Ethical Risks",
+    "topic_label": "Climate",
+    "prompt_text": "What ethical boundaries are being tested here? Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Explain Technically",
+    "topic_label": "AI",
+    "prompt_text": "What are the engineering challenges related to this? Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Reframe Positively",
+    "topic_label": "AI",
+    "prompt_text": "Emphasize the benefits and progress described here: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Summarize",
+    "topic_label": "AI",
+    "prompt_text": "Write a concise summary of the following text: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Poetic",
+    "topic_label": "Climate",
+    "prompt_text": "Express the following sentiment poetically: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Opposite Stance",
+    "topic_label": "AI",
+    "prompt_text": "Argue that the following statement is false: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Explain Technically",
+    "topic_label": "AI",
+    "prompt_text": "Describe the underlying mechanisms involved here: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Opposite Stance",
+    "topic_label": "Climate",
+    "prompt_text": "Promote the inversely related idea of: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Reframe Negatively",
+    "topic_label": "Climate",
+    "prompt_text": "How could this lead to a catastrophic future? Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Criticize",
+    "topic_label": "Climate",
+    "prompt_text": "What are the weaknesses in this argument? Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Opposite Stance",
+    "topic_label": "AI",
+    "prompt_text": "Promote the inversely related idea of: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Summarize",
+    "topic_label": "AI",
+    "prompt_text": "Summarize this in one sentence: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Summarize",
+    "topic_label": "AI",
+    "prompt_text": "Condense this into a single sentence: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Criticize",
+    "topic_label": "Climate",
+    "prompt_text": "Critically analyze the following statement, pointing out potential flaws: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Explain Simply",
+    "topic_label": "AI",
+    "prompt_text": "How would you explain this to a non-expert? Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Opposite Stance",
+    "topic_label": "AI",
+    "prompt_text": "What is the counter-argument to this? Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Ethical Risks",
+    "topic_label": "AI",
+    "prompt_text": "What ethical boundaries are being tested here? Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Explain Simply",
+    "topic_label": "AI",
+    "prompt_text": "Provide a simple explanation of the following: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Ask Question",
+    "topic_label": "Climate",
+    "prompt_text": "Create an inquiry based on the following text: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Criticize",
+    "topic_label": "Climate",
+    "prompt_text": "What is wrong with this reasoning? Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Summarize",
+    "topic_label": "Climate",
+    "prompt_text": "Write a concise summary of the following text: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Poetic",
+    "topic_label": "Climate",
+    "prompt_text": "Write a lyrical interpretation of: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Poetic",
+    "topic_label": "Climate",
+    "prompt_text": "Capture the spirit of this in a few verses: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Poetic",
+    "topic_label": "Climate",
+    "prompt_text": "Turn this statement into a work of poetry: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Ethical Risks",
+    "topic_label": "Climate",
+    "prompt_text": "What are the ethical responsibilities involved? Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Opposite Stance",
+    "topic_label": "Climate",
+    "prompt_text": "Contradict the main claim made here: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Ask Question",
+    "topic_label": "Climate",
+    "prompt_text": "What would you ask a researcher about this? Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Criticize",
+    "topic_label": "AI",
+    "prompt_text": "Challenge the assumptions in this statement: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Poetic",
+    "topic_label": "AI",
+    "prompt_text": "What is the poetic truth beneath this? Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Poetic",
+    "topic_label": "AI",
+    "prompt_text": "If this statement were a poem, how would it go? Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Ask Question",
+    "topic_label": "AI",
+    "prompt_text": "Ask a provocative question inspired by this statement: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Ethical Risks",
+    "topic_label": "AI",
+    "prompt_text": "Evaluate the ethical risks implied by this statement: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Criticize",
+    "topic_label": "Climate",
+    "prompt_text": "Challenge the assumptions in this statement: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Ethical Risks",
+    "topic_label": "AI",
+    "prompt_text": "What potential for injustice exists in this? Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Explain Technically",
+    "topic_label": "AI",
+    "prompt_text": "Detail the systemic complexities of the following: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Explain Technically",
+    "topic_label": "AI",
+    "prompt_text": "Provide a specialized technical analysis of: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Poetic",
+    "topic_label": "Climate",
+    "prompt_text": "What is the poetic truth beneath this? Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Summarize",
+    "topic_label": "Climate",
+    "prompt_text": "Condense this into a single sentence: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Ethical Risks",
+    "topic_label": "AI",
+    "prompt_text": "Analyze the ethical dilemmas presented here: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Ask Question",
+    "topic_label": "AI",
+    "prompt_text": "What is a deep question we should ask about this? Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Reframe Negatively",
+    "topic_label": "AI",
+    "prompt_text": "Present a pessimistic view of the following: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Reframe Positively",
+    "topic_label": "Climate",
+    "prompt_text": "Emphasize the benefits and progress described here: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Poetic",
+    "topic_label": "Climate",
+    "prompt_text": "Write a short poem inspired by the essence of this statement: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Ask Question",
+    "topic_label": "Climate",
+    "prompt_text": "What does this text make you wonder? Ask a question: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Ethical Risks",
+    "topic_label": "Climate",
+    "prompt_text": "Analyze the following from an ethical standpoint: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Explain Simply",
+    "topic_label": "Climate",
+    "prompt_text": "Simplify the following concept: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Reframe Positively",
+    "topic_label": "AI",
+    "prompt_text": "What are the most hopeful aspects of this statement? Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Criticize",
+    "topic_label": "Climate",
+    "prompt_text": "Identify the potential downsides or errors in this text: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Reframe Positively",
+    "topic_label": "Climate",
+    "prompt_text": "What are the most hopeful aspects of this statement? Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Summarize",
+    "topic_label": "AI",
+    "prompt_text": "Provide a brief summary of the following: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Explain Technically",
+    "topic_label": "AI",
+    "prompt_text": "Analyze the formal properties of this statement: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Reframe Positively",
+    "topic_label": "AI",
+    "prompt_text": "Present an optimistic view of the following: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Ask Question",
+    "topic_label": "Climate",
+    "prompt_text": "Pose a philosophical question inspired by: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Explain Technically",
+    "topic_label": "Climate",
+    "prompt_text": "Discuss the implementation details of: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Reframe Positively",
+    "topic_label": "Climate",
+    "prompt_text": "Present an optimistic view of the following: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Opposite Stance",
+    "topic_label": "AI",
+    "prompt_text": "Contradict the main claim made here: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Opposite Stance",
+    "topic_label": "Climate",
+    "prompt_text": "Why might the opposite of this be true? Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Reframe Negatively",
+    "topic_label": "Climate",
+    "prompt_text": "Present a pessimistic view of the following: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Reframe Negatively",
+    "topic_label": "AI",
+    "prompt_text": "Highlight the potential harm of this: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Poetic",
+    "topic_label": "Climate",
+    "prompt_text": "Compose a short verse based on the following: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Reframe Negatively",
+    "topic_label": "AI",
+    "prompt_text": "Reframe this in a way that emphasizes risk and danger: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Opposite Stance",
+    "topic_label": "Climate",
+    "prompt_text": "Take the opposing view and defend it: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Criticize",
+    "topic_label": "AI",
+    "prompt_text": "Critically analyze the following statement, pointing out potential flaws: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Summarize",
+    "topic_label": "AI",
+    "prompt_text": "In one sentence, tell me what this is about: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Opposite Stance",
+    "topic_label": "Climate",
+    "prompt_text": "Write a rebuttal to the following statement: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Ethical Risks",
+    "topic_label": "Climate",
+    "prompt_text": "What are the moral concerns regarding this? Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Reframe Positively",
+    "topic_label": "AI",
+    "prompt_text": "Reframe the following statement to emphasize its optimistic potential: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Explain Simply",
+    "topic_label": "Climate",
+    "prompt_text": "Give me a basic overview of this statement: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Poetic",
+    "topic_label": "AI",
+    "prompt_text": "Capture the spirit of this in a few verses: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Ethical Risks",
+    "topic_label": "Climate",
+    "prompt_text": "What potential for injustice exists in this? Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Poetic",
+    "topic_label": "AI",
+    "prompt_text": "Write a short poem inspired by the essence of this statement: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Summarize",
+    "topic_label": "Climate",
+    "prompt_text": "Sum up the core message of this: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Poetic",
+    "topic_label": "AI",
+    "prompt_text": "Write a haiku or short poem about: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Explain Technically",
+    "topic_label": "Climate",
+    "prompt_text": "Describe the underlying mechanisms involved here: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Criticize",
+    "topic_label": "AI",
+    "prompt_text": "Offer a critical perspective on the following: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Explain Simply",
+    "topic_label": "Climate",
+    "prompt_text": "Write a simple, jargon-free explanation of: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Opposite Stance",
+    "topic_label": "Climate",
+    "prompt_text": "Defend the contrary position to: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Explain Simply",
+    "topic_label": "Climate",
+    "prompt_text": "Provide a simple explanation of the following: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Criticize",
+    "topic_label": "Climate",
+    "prompt_text": "Offer a critical perspective on the following: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Opposite Stance",
+    "topic_label": "Climate",
+    "prompt_text": "What is the counter-argument to this? Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Ask Question",
+    "topic_label": "AI",
+    "prompt_text": "What does this text make you wonder? Ask a question: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Explain Technically",
+    "topic_label": "AI",
+    "prompt_text": "Provide a deep dive into the technical aspects of: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Summarize",
+    "topic_label": "AI",
+    "prompt_text": "What is the main point here? Summarize: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Ethical Risks",
+    "topic_label": "AI",
+    "prompt_text": "How might this impact human rights? Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Ask Question",
+    "topic_label": "AI",
+    "prompt_text": "Create an inquiry based on the following text: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Reframe Negatively",
+    "topic_label": "Climate",
+    "prompt_text": "Look at the dark side of this development: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Reframe Negatively",
+    "topic_label": "AI",
+    "prompt_text": "How could this lead to a catastrophic future? Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Explain Technically",
+    "topic_label": "Climate",
+    "prompt_text": "Analyze the formal properties of this statement: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Explain Simply",
+    "topic_label": "AI",
+    "prompt_text": "Make this easy for a child to understand: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Poetic",
+    "topic_label": "AI",
+    "prompt_text": "Turn this statement into a work of poetry: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Reframe Negatively",
+    "topic_label": "Climate",
+    "prompt_text": "What are the most alarming aspects of this statement? Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Explain Technically",
+    "topic_label": "AI",
+    "prompt_text": "What are the technical prerequisites for this? Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Explain Technically",
+    "topic_label": "AI",
+    "prompt_text": "Explain the technical implications of this statement for a computer scientist: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Reframe Negatively",
+    "topic_label": "Climate",
+    "prompt_text": "Reframe this in a way that emphasizes risk and danger: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Explain Simply",
+    "topic_label": "Climate",
+    "prompt_text": "Explain this statement like I am five: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Reframe Positively",
+    "topic_label": "AI",
+    "prompt_text": "How can we see this in a more positive light? Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Poetic",
+    "topic_label": "AI",
+    "prompt_text": "Compose a short verse based on the following: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Opposite Stance",
+    "topic_label": "AI",
+    "prompt_text": "Write a rebuttal to the following statement: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Explain Simply",
+    "topic_label": "Climate",
+    "prompt_text": "What does this mean in plain English? Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Reframe Negatively",
+    "topic_label": "Climate",
+    "prompt_text": "What are the dangerous consequences of this? Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Criticize",
+    "topic_label": "Climate",
+    "prompt_text": "Critically evaluate the claims made here: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Opposite Stance",
+    "topic_label": "AI",
+    "prompt_text": "Take the opposing view and defend it: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Reframe Negatively",
+    "topic_label": "AI",
+    "prompt_text": "What are the most alarming aspects of this statement? Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Opposite Stance",
+    "topic_label": "Climate",
+    "prompt_text": "What are the strongest arguments against this? Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Summarize",
+    "topic_label": "Climate",
+    "prompt_text": "What's the gist of this? Provide a one-sentence summary: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Reframe Positively",
+    "topic_label": "Climate",
+    "prompt_text": "Reframe the following statement to emphasize its optimistic potential: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Explain Simply",
+    "topic_label": "AI",
+    "prompt_text": "Simplify the following concept: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Summarize",
+    "topic_label": "Climate",
+    "prompt_text": "Briefly recap the following statement: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Ethical Risks",
+    "topic_label": "AI",
+    "prompt_text": "Analyze the following from an ethical standpoint: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Summarize",
+    "topic_label": "AI",
+    "prompt_text": "Sum up the core message of this: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Ask Question",
+    "topic_label": "Climate",
+    "prompt_text": "Pose an interesting question regarding the following: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Explain Simply",
+    "topic_label": "AI",
+    "prompt_text": "What does this mean in plain English? Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Opposite Stance",
+    "topic_label": "AI",
+    "prompt_text": "Argue persuasively for the exact opposite of this statement: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Reframe Negatively",
+    "topic_label": "AI",
+    "prompt_text": "Look at the dark side of this development: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Ethical Risks",
+    "topic_label": "Climate",
+    "prompt_text": "Analyze the ethical dilemmas presented here: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Ask Question",
+    "topic_label": "Climate",
+    "prompt_text": "What is an unanswered question in this statement? Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Reframe Positively",
+    "topic_label": "AI",
+    "prompt_text": "Highlight the positive impact of this: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Opposite Stance",
+    "topic_label": "Climate",
+    "prompt_text": "Argue that the following statement is false: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Explain Simply",
+    "topic_label": "Climate",
+    "prompt_text": "Make this easy for a child to understand: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Ethical Risks",
+    "topic_label": "Climate",
+    "prompt_text": "How might this impact human rights? Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Summarize",
+    "topic_label": "AI",
+    "prompt_text": "Briefly recap the following statement: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Explain Technically",
+    "topic_label": "AI",
+    "prompt_text": "Explain this from a highly technical perspective: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Explain Simply",
+    "topic_label": "AI",
+    "prompt_text": "Explain this statement like I am five: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Ask Question",
+    "topic_label": "AI",
+    "prompt_text": "Pose a philosophical question inspired by: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Opposite Stance",
+    "topic_label": "AI",
+    "prompt_text": "What are the strongest arguments against this? Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Explain Simply",
+    "topic_label": "AI",
+    "prompt_text": "Break this down into very simple terms: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Criticize",
+    "topic_label": "AI",
+    "prompt_text": "Provide a critical assessment of the following text: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Reframe Positively",
+    "topic_label": "AI",
+    "prompt_text": "How does this create a better future? Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Summarize",
+    "topic_label": "Climate",
+    "prompt_text": "Give me a one-sentence summary of: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Ethical Risks",
+    "topic_label": "Climate",
+    "prompt_text": "Discuss the social and ethical pitfalls of: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Summarize",
+    "topic_label": "AI",
+    "prompt_text": "Give me a one-sentence summary of: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Ethical Risks",
+    "topic_label": "Climate",
+    "prompt_text": "Evaluate the ethical risks implied by this statement: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Criticize",
+    "topic_label": "AI",
+    "prompt_text": "What is wrong with this reasoning? Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Opposite Stance",
+    "topic_label": "AI",
+    "prompt_text": "Why might the opposite of this be true? Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Criticize",
+    "topic_label": "AI",
+    "prompt_text": "Provide a critique of the following: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Summarize",
+    "topic_label": "Climate",
+    "prompt_text": "What is the main point here? Summarize: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Ethical Risks",
+    "topic_label": "AI",
+    "prompt_text": "What are the ethical responsibilities involved? Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Explain Technically",
+    "topic_label": "Climate",
+    "prompt_text": "Provide a deep dive into the technical aspects of: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Explain Simply",
+    "topic_label": "AI",
+    "prompt_text": "Explain the following in the simplest way possible: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Ethical Risks",
+    "topic_label": "Climate",
+    "prompt_text": "Evaluate the fairness and bias in this statement: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Ask Question",
+    "topic_label": "AI",
+    "prompt_text": "What is an unanswered question in this statement? Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Reframe Negatively",
+    "topic_label": "AI",
+    "prompt_text": "What are the dangerous consequences of this? Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Criticize",
+    "topic_label": "AI",
+    "prompt_text": "Critically evaluate the claims made here: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Reframe Positively",
+    "topic_label": "AI",
+    "prompt_text": "Reframe this in a way that inspires hope: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Reframe Positively",
+    "topic_label": "Climate",
+    "prompt_text": "Highlight the positive impact of this: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Poetic",
+    "topic_label": "Climate",
+    "prompt_text": "Write an evocative and poetic piece inspired by: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Ask Question",
+    "topic_label": "AI",
+    "prompt_text": "What is the most important question raised by this? Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Ask Question",
+    "topic_label": "Climate",
+    "prompt_text": "What is a deep question we should ask about this? Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Poetic",
+    "topic_label": "AI",
+    "prompt_text": "Express the following sentiment poetically: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Ask Question",
+    "topic_label": "AI",
+    "prompt_text": "Give me a thought-provoking question based on this: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Explain Technically",
+    "topic_label": "Climate",
+    "prompt_text": "What are the technical prerequisites for this? Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Explain Technically",
+    "topic_label": "Climate",
+    "prompt_text": "Provide a specialized technical analysis of: Renewable energy and transition to a green economy are critical for the planet's future."
+  },
+  {
+    "operator_label": "Reframe Negatively",
+    "topic_label": "AI",
+    "prompt_text": "Reframe the following statement to emphasize its dystopian risks: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Explain Simply",
+    "topic_label": "AI",
+    "prompt_text": "Write a simple, jargon-free explanation of: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator_label": "Ask Question",
+    "topic_label": "AI",
+    "prompt_text": "What would you ask a researcher about this? Artificial intelligence is transforming science, medicine, and creativity."
+  }
+]

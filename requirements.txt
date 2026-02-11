@@ -1,0 +1,29 @@
+# Core scientific computing
+numpy
+scipy
+pandas
+
+# Machine learning
+scikit-learn
+
+# Deep learning
+torch
+transformers
+
+# Visualization
+matplotlib
+seaborn
+
+# Clustering & signal processing
+hdbscan
+ruptures
+
+# Utilities
+tqdm
+psutil
+
+# Optional: GPU acceleration (Windows DirectML)
+# torch-directml
+
+# Optional: Google Generative AI API (used only in EXP-01)
+# google-generativeai

@@ -1,0 +1,253 @@
+A. MVP Protocol (Embeddings-only, falsifiable)
+Core objects
+
+Turn index 
+𝑡
+t
+
+State embedding 
+𝑠
+𝑡
+∈
+𝑅
+𝑑
+s
+t
+	​
+
+∈R
+d
+ computed from text at turn 
+𝑡
+t
+
+Warp vector 
+Δ
+𝑡
+=
+𝑠
+𝑡
+−
+𝑠
+𝑡
+−
+1
+Δ
+t
+	​
+
+=s
+t
+	​
+
+−s
+t−1
+	​
+
+
+Warp features: 
+∥
+Δ
+𝑡
+∥
+∥Δ
+t
+	​
+
+∥, 
+cos
+⁡
+(
+Δ
+𝑡
+,
+Δ
+𝑡
+−
+1
+)
+cos(Δ
+t
+	​
+
+,Δ
+t−1
+	​
+
+), etc.
+
+Hypotheses (testable)
+
+H1 (Operator existence): Warps cluster into stable families across paraphrases of the “same operator move.”
+H2 (Operator predictability): A model can predict the next operator cluster better than baselines (majority, Markov-1, random).
+H3 (Cross-topic invariance): Operator clusters generalize across topics (same operator, different content).
+
+What falsifies it (be explicit)
+
+Clusters are unstable across seeds/algorithms (no consistent structure).
+
+Clusters collapse to topic clusters rather than operator clusters (content dominates).
+
+Next-operator prediction doesn’t beat baselines.
+
+B. Dataset design (you need this to make results meaningful)
+1) Operator set (start with 10)
+
+Use a small, high-contrast set:
+
+Clarify (ask questions / disambiguate)
+
+Summarize
+
+Reframe
+
+Zoom out (broader context)
+
+Zoom in (concrete steps/details)
+
+Steelman
+
+Devil’s advocate
+
+Formalize (equations/definitions)
+
+Decompose (break into subproblems)
+
+Plan (actionable sequence)
+
+2) Prompt families (paraphrase invariance)
+
+For each operator, make 10 paraphrases that mean the same move.
+
+Example “Reframe” paraphrases:
+
+“Reinterpret this in a more constructive light”
+
+“Show a different way to view this”
+
+“Turn this into a learning opportunity”
+
+“How else can we frame this?”
+
+3) Topic crossing (content invariance)
+
+Pick 5 topics (AI safety, relationships, career, politics, health) and apply each operator to each topic prompt.
+
+So: 10 operators × 10 paraphrases × 5 topics = 500 operator turns (that’s already plenty).
+
+C. State embedding choices (do 3, compare robustness)
+
+Compute embeddings for each turn using three definitions:
+
+Assistant-only: embed assistant message 
+𝑎
+𝑡
+a
+t
+	​
+
+
+Pair: embed 
+𝑢
+𝑡
++
+“
+\n
+\n
+”
++
+𝑎
+𝑡
+u
+t
+	​
+
++“\n\n”+a
+t
+	​
+
+
+Rolling window: embed last 
+𝑘
+=
+2
+k=2 turns concatenated
+
+If operator clusters appear under all three, your claim gets much stronger.
+
+D. Analysis plan (minimum but publishable)
+Step 1: Compute warps
+
+For each conversation:
+
+𝑠
+𝑡
+=
+embed
+(
+text
+𝑡
+)
+s
+t
+	​
+
+=embed(text
+t
+	​
+
+)
+
+Δ
+𝑡
+=
+𝑠
+𝑡
+−
+𝑠
+𝑡
+−
+1
+Δ
+t
+	​
+
+=s
+t
+	​
+
+−s
+t−1
+	​
+
+
+Step 2: Cluster warps
+
+Run:
+
+HDBSCAN (good for unknown cluster count)
+
+k-means baseline (pick k=10 or pick by elbow)
+
+Evaluate:
+
+cluster stability across seeds
+
+silhouette (where applicable)
+
+“purity” w.r.t. operator label vs topic label
+(You WANT clusters to align with operator, NOT topic.)
+
+Step 3: Predict next operator
+
+Train:
+
+baseline Markov-1: predict next cluster from previous cluster
+
+small sequence model: predict next cluster from last N clusters (N=3–5)
+
+Evaluate:
+
+accuracy / macro-F1
+
+calibration if using probabilities

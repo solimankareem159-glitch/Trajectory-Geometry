@@ -1,0 +1,154 @@
+% Roadmap: Trajectory Geometry Research Directions (0.5B-scale)
+% Standalone section file; include from main.tex if desired.
+
+\section{Roadmap: High-Value Trajectory-Geometry Research (0.5B-scale)}\label{sec:roadmap}
+
+This roadmap prioritizes exploratory directions that are (i) feasible with a $\leq 0.5$B model under tight compute, (ii) likely to produce transferable insights that others can replicate at larger scales, and (iii) focused on deepening the \emph{measurement science} of trajectory geometry under chain-of-thought (CoT) prompting.
+
+\subsection{Note on using Gemini ``Deep Research'' for literature review}
+
+If you use Gemini's ``Deep Research'' mode as a literature assistant, the highest-value way to integrate it here is:
+\begin{itemize}[leftmargin=*]
+\item Use it to \emph{propose} candidate geometric metrics, related work, and alternative definitions.
+\item Treat its output as an \emph{index} into primary sources (papers, official docs), not as ground truth.
+\item Prefer to cite the original papers directly in the manuscript, even if the idea was discovered via a research assistant.
+\end{itemize}
+
+\subsection{Operating constraints and design principles}
+
+\begin{itemize}[leftmargin=*]
+\item \textbf{Compute constraint:} assume a single 0.5B model, greedy decoding, and modest dataset sizes (e.g., 200--2{,}000 items).
+\item \textbf{Prefer metrics that are:} (i) cheap to compute from hidden states you already extract, (ii) robust to length/tokenization artifacts, and (iii) interpretable across tasks.
+\item \textbf{Comparability first:} preserve a fixed analysis window (e.g., first 32 generated tokens) but also report a sensitivity check on window length (e.g., 16/32/64) when feasible.
+\item \textbf{Avoid scope creep:} stay with CoT prompting initially; treat taxonomy-building as a second phase after metric validity is improved.
+\end{itemize}
+
+\subsection{Phase 1 (highest value): validate and expand the metric set}
+
+\paragraph{Note on current experiments.} You are already running turning angle, directional autocorrelation, tortuosity, and effective-dimension experiments. This roadmap therefore prioritizes \emph{next} highest-value analyses that can be computed from the same hidden-state extractions you already have (per-layer hidden states for a fixed token window).
+
+\paragraph{Goal:} move from ``a few correlated statistics'' to a small, defensible \emph{measurement suite} with ablations that rule out obvious confounds and that cleanly decompose \emph{prompt-induced} vs. \emph{outcome-induced} dynamics.
+
+\subsubsection{P1.1 Fractal dimension (is the trajectory ``rough'' in failure cases?)}
+
+Yes---\textbf{fractal dimension can be a valuable metric}, provided it is defined and estimated carefully.
+It is attractive because it attempts to quantify the \emph{roughness} / space-filling character of a trajectory, which is conceptually close to the ``random-walk'' vs. ``controlled curvature'' distinction.
+
+Importantly, fractal dimension can be estimated from your existing data without rerunning the model.
+Candidate estimators include:
+\begin{itemize}[leftmargin=*]
+\item \textbf{Higuchi fractal dimension} applied to a 1D summary of the trajectory (e.g., step norm time series or projection onto a fixed direction).
+\item \textbf{Box-counting / correlation dimension} on the point cloud $\{\mathbf{h}_t\}$ or step vectors $\{\Delta\mathbf{h}_t\}$ (with caution due to the small number of points $T$).
+\end{itemize}
+
+\textbf{Deliverable:} report estimator choice, sensitivity to window size (e.g., 16 vs 32 tokens), and whether the estimator separates (CoT vs Direct) more than (Success vs Failure).
+
+\subsubsection{P1.2 Intrinsic dimensionality (ID) without PCA}
+
+If you have not already implemented a non-linear ID estimator, this is a strong next step.
+Unlike PCA-based effective dimension, local ID estimators aim to measure the local degrees of freedom of the manifold.
+
+\textbf{Practical guidance:} With only $T\approx 32$ points per example, per-example ID estimates will be noisy; prefer aggregating across examples (e.g., pool step vectors within a group and layer, or compute ID on batched windows) and bootstrapping across prompts.
+
+\textbf{Deliverable:} an ID-vs-layer profile (per group) and a decomposition showing whether ID shifts are primarily prompt-driven or outcome-driven.
+
+\subsubsection{P1.3 Convergence-to-final-state metrics (target-free ``stabilization'' alternatives)}
+
+You can compute several convergence metrics from the same hidden-state sequences:
+\begin{itemize}[leftmargin=*]
+\item \textbf{Cosine-to-final-state:} $\cos(\mathbf{h}_t, \mathbf{h}_T)$ over $t$; summarize by slope or early/late difference.
+\item \textbf{Distance-to-final-state:} $\lVert \mathbf{h}_t - \mathbf{h}_T \rVert_2$; summarize by slope/curvature.
+\item \textbf{Step-norm profile features:} beyond a single linear slope, compute early/late means, change-points, or monotonicity scores on $\lVert\Delta\mathbf{h}_t\rVert$.
+\end{itemize}
+
+These metrics help separate ``the trajectory is turning'' from ``the trajectory is failing to settle.''
+
+\textbf{Deliverable:} show whether (CoT vs Direct) and (Success vs Failure) differ in convergence rate to a terminal representation within the fixed window.
+
+\subsubsection{P1.4 Recurrence / loopiness diagnostics (low-cost topology proxy)}
+
+Without heavy topological data analysis, you can still quantify loop-like behavior using recurrence-based statistics:
+\begin{itemize}[leftmargin=*]
+\item \textbf{Recurrence rate:} fraction of pairs $(t,t')$ with $\lVert\mathbf{h}_t-\mathbf{h}_{t'}\rVert < \epsilon$.
+\item \textbf{Determinism:} proportion of recurrent points that form diagonal lines in a recurrence plot (proxy for repeated patterns).
+\end{itemize}
+
+\textbf{Deliverable:} test whether failures show higher recurrence/loopiness than successes, and whether that effect remains after controlling for prompt condition.
+
+\subsubsection{P1.5 Metric sanity checks (cheap ablations that increase credibility)}
+
+\begin{itemize}[leftmargin=*]
+\item \textbf{Outcome-conditional comparisons:} always report G4 vs G3 and G2 vs G1 (success effects within prompt), plus G3 vs G1 and G4 vs G2 (prompting effects within outcome).
+\item \textbf{Window sensitivity:} report 16/32-token sensitivity for any new metric (especially fractal/ID).
+\item \textbf{Trim sensitivity:} repeat with mild trimming (e.g., 5\%) to ensure effects are not driven by outliers.
+\end{itemize}
+
+\textbf{Deliverable:} a small table attributing variance to (prompt condition, outcome) and their interaction.
+
+\subsection{Phase 2: predictive and practical value (still 0.5B-feasible)}
+
+\paragraph{Goal:} demonstrate that geometry is not only descriptive but can support actionable monitoring.
+
+\subsubsection{P2.1 Early-warning predictors}
+
+Train simple predictors (logistic regression, small random forest) on a \emph{small prefix} of geometry features (e.g., first 8--12 generated tokens) to predict final success. Use strict splits and report AUROC.
+
+\textbf{Why high-value:} if early geometry predicts failure, it motivates adaptive decoding/prompting policies that can be evaluated even with a small model.
+
+\subsubsection{P2.2 ``Switch-to-CoT'' gating under a fixed compute budget}
+
+Even if you want to keep CoT as the primary regime, you can evaluate a systems-relevant policy:
+\begin{itemize}[leftmargin=*]
+\item Start with a short direct-answer decode (e.g., 8 tokens) and compute early geometry.
+\item If risk is high, restart with CoT; otherwise continue direct.
+\item Measure accuracy vs. average tokens/forward-passes.
+\end{itemize}
+
+\textbf{Deliverable:} a compute/accuracy trade-off curve that others can replicate at larger scales.
+
+\subsection{Phase 3: geometry as structure (toward a taxonomy, but measurement-led)}
+
+\paragraph{Goal:} identify repeatable trajectory \emph{families} using unsupervised structure, but only after Phase 1 metrics are robust.
+
+\subsubsection{P3.1 Segment the trajectory into ``phases'' (piecewise dynamics)}
+
+Use change-point detection on step norms or convergence-to-final-state curves to identify segments (e.g., explore $\rightarrow$ commit $\rightarrow$ stabilize).
+
+\textbf{Deliverable:} show whether successes have a consistent phase ordering absent in failures.
+
+\subsubsection{P3.2 Cluster runs by geometry fingerprints}
+
+Represent each run by a compact fingerprint (e.g., per-layer averages of speed, DC, stabilization, curvature
+after your current run; plus new features such as fractal-dimension estimates, intrinsic dimensionality, and convergence-to-final-state slopes; optionally early vs late). Cluster (k-means / GMM) and inspect whether clusters correspond to outcome types (success, near-miss, format failures).
+
+\textbf{Deliverable:} a preliminary taxonomy hypothesis that is explicitly metric-dependent and replication-friendly.
+
+\subsection{Recommended minimal experiment set (high signal per unit compute)}
+
+\begin{enumerate}[leftmargin=*]\item \textbf{Arithmetic replication (your current task):} add fractal dimension, intrinsic dimensionality, convergence-to-final-state, and recurrence features; rerun on 300--1{,}000 items..
+\item \textbf{One non-arithmetic task with automatic labels:} e.g., simple string transforms, bracket matching, or small synthetic logic where success is unambiguous.
+\item \textbf{One ``format-sensitive'' task:} short code completion with unit-test-like checks (even 50--200 problems can suffice).
+\end{enumerate}
+
+This gives cross-task evidence while keeping labels cheap and avoiding the need for larger models.
+
+\subsection{Reporting checklist (to maximize replicability at larger scales)}
+
+\begin{itemize}[leftmargin=*]
+\item Exact model identifier, tokenizer, and layer indexing convention.
+\item Prompt templates (verbatim) and decoding settings.
+\item Hidden state definition (pre/post layer norm; residual stream choice).
+\item Token windowing policy and any filtering criteria.
+\item Metric definitions with numerical stability notes (e.g., $\epsilon$ for norms).
+\item Release a small CSV of per-example features (no weights) so others can re-run analysis.
+\end{itemize}
+
+\subsection{What to deprioritize (given 0.5B compute limits)}
+
+\begin{itemize}[leftmargin=*]
+\item Heavy multi-sample methods (e.g., self-consistency) as a primary axis.
+\item Large-scale benchmark sweeps with weak labels.
+\item Complex causal interventions (e.g., activation patching across many layers/tokens) before the metric suite is validated.
+\end{itemize}
+
+\paragraph{Summary.} The highest-value next step is to strengthen the \emph{geometric measurement suite} using metrics that can be computed from your existing hidden-state trajectories (fractal dimension, intrinsic dimensionality, convergence-to-final-state, and recurrence/loopiness), and to run targeted sanity checks that separate prompt-induced dynamics from outcome-related dynamics. Once these metrics are stable, move to early-warning predictors and compute-aware gating policies, which are both feasible at 0.5B.

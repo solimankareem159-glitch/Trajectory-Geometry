@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-02-03T23:59:13.315761",
+  "seed": 42,
+  "cpu_cores": 24,
+  "directml_available": true,
+  "directml_is_available": true,
+  "directml_device": "AMD Radeon RX 5700 XT\u0000",
+  "cuda_available": false,
+  "cuda_device": null,
+  "compute_device": "privateuseone:0",
+  "generation_device": "privateuseone:0",
+  "torch_version": "2.4.1+cpu"
+}

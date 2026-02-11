@@ -1,0 +1,72 @@
+[
+  {
+    "operator": "Summarize",
+    "type": "single",
+    "full_prompt": "Summarize the following text in one sentence: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator": "Criticize",
+    "type": "single",
+    "full_prompt": "Critically analyze the following statement, pointing out potential flaws: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator": "Reframe Positively",
+    "type": "single",
+    "full_prompt": "Reframe the following statement to emphasize its optimistic potential: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator": "Reframe Negatively",
+    "type": "single",
+    "full_prompt": "Reframe the following statement to emphasize its dystopian risks: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator": "Poetic",
+    "type": "single",
+    "full_prompt": "Write a short poem inspired by the essence of this statement: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator": "Explain Technically",
+    "type": "single",
+    "full_prompt": "Explain the technical implications of this statement for a computer scientist: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator": "Ethical Risks",
+    "type": "single",
+    "full_prompt": "Evaluate the ethical risks implied by this statement: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator": "Opposite Stance",
+    "type": "single",
+    "full_prompt": "Argue persuasively for the exact opposite of this statement: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator": "Ask Question",
+    "type": "single",
+    "full_prompt": "Ask a provocative question inspired by this statement: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator": "Summarize + Criticize",
+    "type": "composite",
+    "full_prompt": "Summarize the following text in one sentence, but also critically analyze its flaws: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator": "Reframe Negatively + Summarize",
+    "type": "composite",
+    "full_prompt": "Reframe this statement to emphasize dystopian risks, then summarize the main threat in one sentence: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator": "Poetic + Criticize",
+    "type": "composite",
+    "full_prompt": "Write a critical analysis of this statement in the form of a short poem: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator": "Explain Technically + Ethical Risks",
+    "type": "composite",
+    "full_prompt": "Explain the technical implications of this statement while evaluating its ethical risks: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator": "Opposite Stance + Ask Question",
+    "type": "composite",
+    "full_prompt": "Argue for the opposite of this statement and then ask a provocative question about your new stance: Artificial intelligence is transforming science, medicine, and creativity."
+  }
+]

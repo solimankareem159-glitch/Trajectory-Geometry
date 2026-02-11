@@ -1,0 +1,52 @@
+[
+  {
+    "operator": "Summarize",
+    "base_content": "Artificial intelligence is transforming science, medicine, and creativity.",
+    "full_prompt": "Summarize the following text in one sentence: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator": "Criticize",
+    "base_content": "Artificial intelligence is transforming science, medicine, and creativity.",
+    "full_prompt": "Critically analyze the following statement, pointing out potential flaws: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator": "Reframe Positively",
+    "base_content": "Artificial intelligence is transforming science, medicine, and creativity.",
+    "full_prompt": "Reframe the following statement to emphasize its optimistic potential: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator": "Reframe Negatively",
+    "base_content": "Artificial intelligence is transforming science, medicine, and creativity.",
+    "full_prompt": "Reframe the following statement to emphasize its dystopian risks: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator": "Ask Question",
+    "base_content": "Artificial intelligence is transforming science, medicine, and creativity.",
+    "full_prompt": "Ask a provocative question inspired by this statement: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator": "Explain Simply",
+    "base_content": "Artificial intelligence is transforming science, medicine, and creativity.",
+    "full_prompt": "Explain the core idea of this statement to a five-year-old: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator": "Explain Technically",
+    "base_content": "Artificial intelligence is transforming science, medicine, and creativity.",
+    "full_prompt": "Explain the technical implications of this statement for a computer scientist: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator": "Opposite Stance",
+    "base_content": "Artificial intelligence is transforming science, medicine, and creativity.",
+    "full_prompt": "Argue persuasively for the exact opposite of this statement: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator": "Poetic",
+    "base_content": "Artificial intelligence is transforming science, medicine, and creativity.",
+    "full_prompt": "Write a short poem inspired by the essence of this statement: Artificial intelligence is transforming science, medicine, and creativity."
+  },
+  {
+    "operator": "Ethical Risks",
+    "base_content": "Artificial intelligence is transforming science, medicine, and creativity.",
+    "full_prompt": "Evaluate the ethical risks implied by this statement: Artificial intelligence is transforming science, medicine, and creativity."
+  }
+]

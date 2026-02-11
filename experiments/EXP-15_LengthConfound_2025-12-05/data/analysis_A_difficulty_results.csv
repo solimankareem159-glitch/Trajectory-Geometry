@@ -1,0 +1,401 @@
+mag_bin,layer,metric,cohens_d,n_g4,n_g2
+Small,0,radius_of_gyration,8.507274128137079,69,18
+Small,0,effective_dim,2.5685018736746112,69,18
+Small,0,msd_exponent,4.262290781567571,69,18
+Small,0,cos_to_late_window,-3.0215084322546653,69,18
+Small,1,radius_of_gyration,4.73958555239651,69,18
+Small,1,effective_dim,4.224562796246005,69,18
+Small,1,msd_exponent,3.547450086943915,69,18
+Small,1,cos_to_late_window,-2.7934866823164928,69,18
+Small,2,radius_of_gyration,8.536386676329416,69,18
+Small,2,effective_dim,4.108633719830535,69,18
+Small,2,msd_exponent,3.433428783217458,69,18
+Small,2,cos_to_late_window,-2.086604825859205,69,18
+Small,3,radius_of_gyration,6.995657458255555,69,18
+Small,3,effective_dim,4.707378319037668,69,18
+Small,3,msd_exponent,3.5420184332458406,69,18
+Small,3,cos_to_late_window,-2.20478371194009,69,18
+Small,4,radius_of_gyration,6.910393300491172,69,18
+Small,4,effective_dim,4.533625792560998,69,18
+Small,4,msd_exponent,6.020010613398372,69,18
+Small,4,cos_to_late_window,-2.204215323381556,69,18
+Small,5,radius_of_gyration,5.462278824638338,69,18
+Small,5,effective_dim,3.8686432841253136,69,18
+Small,5,msd_exponent,6.217388712405861,69,18
+Small,5,cos_to_late_window,-2.236080578302475,69,18
+Small,6,radius_of_gyration,5.6591701393984835,69,18
+Small,6,effective_dim,3.7848778645404515,69,18
+Small,6,msd_exponent,5.078198756074832,69,18
+Small,6,cos_to_late_window,-2.1961460576227227,69,18
+Small,7,radius_of_gyration,6.199640301189585,69,18
+Small,7,effective_dim,3.8084605453298677,69,18
+Small,7,msd_exponent,6.452744306849505,69,18
+Small,7,cos_to_late_window,-1.8841769182501926,69,18
+Small,8,radius_of_gyration,4.7165535351786785,69,18
+Small,8,effective_dim,3.964922977381827,69,18
+Small,8,msd_exponent,6.247632096033527,69,18
+Small,8,cos_to_late_window,-1.7489578962685202,69,18
+Small,9,radius_of_gyration,4.036041368986509,69,18
+Small,9,effective_dim,3.947355258171365,69,18
+Small,9,msd_exponent,5.162197975598685,69,18
+Small,9,cos_to_late_window,-2.2898951795620284,69,18
+Small,10,radius_of_gyration,3.5109029835224295,69,18
+Small,10,effective_dim,4.089978914085939,69,18
+Small,10,msd_exponent,5.442037222313242,69,18
+Small,10,cos_to_late_window,-2.0988588280114797,69,18
+Small,11,radius_of_gyration,3.747283202002675,69,18
+Small,11,effective_dim,4.065565141265258,69,18
+Small,11,msd_exponent,6.115821299851373,69,18
+Small,11,cos_to_late_window,-2.176951310643414,69,18
+Small,12,radius_of_gyration,3.6395359202871527,69,18
+Small,12,effective_dim,4.188592373469162,69,18
+Small,12,msd_exponent,6.060894060774013,69,18
+Small,12,cos_to_late_window,-1.8491579838923429,69,18
+Small,13,radius_of_gyration,4.171120380180707,69,18
+Small,13,effective_dim,4.0950201480171335,69,18
+Small,13,msd_exponent,6.220441826356294,69,18
+Small,13,cos_to_late_window,-1.7103520789962248,69,18
+Small,14,radius_of_gyration,4.377287202251349,69,18
+Small,14,effective_dim,4.200325158748988,69,18
+Small,14,msd_exponent,5.9928891939301785,69,18
+Small,14,cos_to_late_window,-1.9138055389243152,69,18
+Small,15,radius_of_gyration,4.087518934539114,69,18
+Small,15,effective_dim,4.2466740788075885,69,18
+Small,15,msd_exponent,6.633805346078143,69,18
+Small,15,cos_to_late_window,-1.4440029568810802,69,18
+Small,16,radius_of_gyration,5.438538823639008,69,18
+Small,16,effective_dim,4.066022532376057,69,18
+Small,16,msd_exponent,6.296017531932225,69,18
+Small,16,cos_to_late_window,-1.1284573511340732,69,18
+Small,17,radius_of_gyration,3.63218998741972,69,18
+Small,17,effective_dim,4.976812776134113,69,18
+Small,17,msd_exponent,3.987497579430137,69,18
+Small,17,cos_to_late_window,-0.8537978633606753,69,18
+Small,18,radius_of_gyration,2.5190750474730885,69,18
+Small,18,effective_dim,4.460180476440096,69,18
+Small,18,msd_exponent,3.9205091545005226,69,18
+Small,18,cos_to_late_window,-0.7455902066806013,69,18
+Small,19,radius_of_gyration,2.2029902875089675,69,18
+Small,19,effective_dim,4.293817787237027,69,18
+Small,19,msd_exponent,3.9030700382677184,69,18
+Small,19,cos_to_late_window,-0.6236275879739335,69,18
+Small,20,radius_of_gyration,2.56409949806468,69,18
+Small,20,effective_dim,4.133066104054717,69,18
+Small,20,msd_exponent,3.923137419073286,69,18
+Small,20,cos_to_late_window,-0.7547129931617941,69,18
+Small,21,radius_of_gyration,2.7408779338632536,69,18
+Small,21,effective_dim,3.9946137870366054,69,18
+Small,21,msd_exponent,3.794308327259502,69,18
+Small,21,cos_to_late_window,-0.751675199366732,69,18
+Small,22,radius_of_gyration,1.7465117888028483,69,18
+Small,22,effective_dim,3.5514299294350207,69,18
+Small,22,msd_exponent,3.4251099279552637,69,18
+Small,22,cos_to_late_window,-0.8153178564654742,69,18
+Small,23,radius_of_gyration,1.6053798655953053,69,18
+Small,23,effective_dim,3.34753634713648,69,18
+Small,23,msd_exponent,3.820899520657278,69,18
+Small,23,cos_to_late_window,-0.8241614552548373,69,18
+Small,24,radius_of_gyration,5.652372453760143,69,18
+Small,24,effective_dim,3.0633432789625585,69,18
+Small,24,msd_exponent,3.845487788655886,69,18
+Small,24,cos_to_late_window,-1.5151051602003385,69,18
+Medium,0,radius_of_gyration,5.3334718580506975,64,12
+Medium,0,effective_dim,2.768586775010231,64,12
+Medium,0,msd_exponent,4.4497574866520155,64,11
+Medium,0,cos_to_late_window,-2.5909654083929516,64,11
+Medium,1,radius_of_gyration,3.97778425263781,64,12
+Medium,1,effective_dim,4.707633361144693,64,12
+Medium,1,msd_exponent,4.377713561763975,64,11
+Medium,1,cos_to_late_window,-2.647359900796256,64,11
+Medium,2,radius_of_gyration,5.499650578114938,64,12
+Medium,2,effective_dim,4.406688829045793,64,12
+Medium,2,msd_exponent,4.420130346748185,64,11
+Medium,2,cos_to_late_window,-2.105867389534424,64,11
+Medium,3,radius_of_gyration,5.3311142688926925,64,12
+Medium,3,effective_dim,4.656323458361337,64,12
+Medium,3,msd_exponent,4.4710470524079,64,11
+Medium,3,cos_to_late_window,-2.518607915134616,64,11
+Medium,4,radius_of_gyration,5.381988864595786,64,12
+Medium,4,effective_dim,4.4595551333212065,64,12
+Medium,4,msd_exponent,6.449980706848473,64,11
+Medium,4,cos_to_late_window,-2.315111502507225,64,11
+Medium,5,radius_of_gyration,4.558923992345738,64,12
+Medium,5,effective_dim,4.279296971183627,64,12
+Medium,5,msd_exponent,6.948007377577876,64,11
+Medium,5,cos_to_late_window,-2.4575572222750997,64,11
+Medium,6,radius_of_gyration,5.24559030512153,64,12
+Medium,6,effective_dim,4.002998481824039,64,12
+Medium,6,msd_exponent,5.481374850244595,64,11
+Medium,6,cos_to_late_window,-2.5127551768316887,64,11
+Medium,7,radius_of_gyration,5.337053474877462,64,12
+Medium,7,effective_dim,3.928895387721941,64,12
+Medium,7,msd_exponent,6.728763199139557,64,11
+Medium,7,cos_to_late_window,-2.0274069758789666,64,11
+Medium,8,radius_of_gyration,4.054980744177308,64,12
+Medium,8,effective_dim,4.004695002015796,64,12
+Medium,8,msd_exponent,7.106703342230031,64,11
+Medium,8,cos_to_late_window,-1.873698173364982,64,11
+Medium,9,radius_of_gyration,3.528953718268447,64,12
+Medium,9,effective_dim,3.9863392961324924,64,12
+Medium,9,msd_exponent,5.90027536080659,64,11
+Medium,9,cos_to_late_window,-2.602291444486557,64,11
+Medium,10,radius_of_gyration,3.07485100301612,64,12
+Medium,10,effective_dim,4.129397316887072,64,12
+Medium,10,msd_exponent,6.098140300667234,64,11
+Medium,10,cos_to_late_window,-2.423753740820616,64,11
+Medium,11,radius_of_gyration,3.397677367016614,64,12
+Medium,11,effective_dim,4.163259527726221,64,12
+Medium,11,msd_exponent,6.432313064480335,64,11
+Medium,11,cos_to_late_window,-2.4749009934720445,64,11
+Medium,12,radius_of_gyration,3.2448484749519695,64,12
+Medium,12,effective_dim,4.254759843835967,64,12
+Medium,12,msd_exponent,7.061663837126922,64,11
+Medium,12,cos_to_late_window,-2.1267324842446187,64,11
+Medium,13,radius_of_gyration,3.733608865104269,64,12
+Medium,13,effective_dim,4.2578015069202175,64,12
+Medium,13,msd_exponent,8.331967498915157,64,11
+Medium,13,cos_to_late_window,-2.1978084066663466,64,11
+Medium,14,radius_of_gyration,3.935509707219622,64,12
+Medium,14,effective_dim,4.304646747725046,64,12
+Medium,14,msd_exponent,8.098215646272955,64,11
+Medium,14,cos_to_late_window,-2.478363893491282,64,11
+Medium,15,radius_of_gyration,3.803686462540683,64,12
+Medium,15,effective_dim,4.380281965270568,64,12
+Medium,15,msd_exponent,6.765764249838671,64,11
+Medium,15,cos_to_late_window,-1.8784909914119743,64,11
+Medium,16,radius_of_gyration,4.97609085981264,64,12
+Medium,16,effective_dim,4.189047308428725,64,12
+Medium,16,msd_exponent,7.582718476888306,64,11
+Medium,16,cos_to_late_window,-1.36158903713368,64,11
+Medium,17,radius_of_gyration,3.4883843582083474,64,12
+Medium,17,effective_dim,5.243988040015346,64,12
+Medium,17,msd_exponent,5.980142320384926,64,11
+Medium,17,cos_to_late_window,-0.8697921249016465,64,11
+Medium,18,radius_of_gyration,3.3055078016084045,64,12
+Medium,18,effective_dim,4.789386894248972,64,12
+Medium,18,msd_exponent,5.840414107521248,64,11
+Medium,18,cos_to_late_window,-0.8497446777004714,64,11
+Medium,19,radius_of_gyration,2.6026884642832857,64,12
+Medium,19,effective_dim,4.545236222474245,64,12
+Medium,19,msd_exponent,5.661252535138164,64,11
+Medium,19,cos_to_late_window,-0.6408171310520978,64,11
+Medium,20,radius_of_gyration,3.007003303215989,64,12
+Medium,20,effective_dim,4.3107239177778,64,12
+Medium,20,msd_exponent,5.52080873706093,64,11
+Medium,20,cos_to_late_window,-0.8869380749119822,64,11
+Medium,21,radius_of_gyration,2.892759355509176,64,12
+Medium,21,effective_dim,4.174686014921919,64,12
+Medium,21,msd_exponent,6.086851440015513,64,11
+Medium,21,cos_to_late_window,-0.9088257558164875,64,11
+Medium,22,radius_of_gyration,1.8112581141824922,64,12
+Medium,22,effective_dim,3.7589206546980725,64,12
+Medium,22,msd_exponent,6.405270280063444,64,11
+Medium,22,cos_to_late_window,-1.024246413123593,64,11
+Medium,23,radius_of_gyration,1.4776804211373475,64,12
+Medium,23,effective_dim,3.7177218662655434,64,12
+Medium,23,msd_exponent,6.2584642759581275,64,11
+Medium,23,cos_to_late_window,-1.0097102346028208,64,11
+Medium,24,radius_of_gyration,5.5194153872510485,64,12
+Medium,24,effective_dim,2.6022388519116193,64,12
+Medium,24,msd_exponent,6.480035619621307,64,11
+Medium,24,cos_to_late_window,-2.0323240794816817,64,11
+Large,0,radius_of_gyration,6.7433931806136505,59,17
+Large,0,effective_dim,2.1388468641640763,59,17
+Large,0,msd_exponent,3.4577181298731863,59,17
+Large,0,cos_to_late_window,-1.8320725051202906,59,17
+Large,1,radius_of_gyration,3.829681045244093,59,17
+Large,1,effective_dim,3.0685086498897256,59,17
+Large,1,msd_exponent,4.153322758774243,59,17
+Large,1,cos_to_late_window,-1.4944116984536573,59,17
+Large,2,radius_of_gyration,5.238194128088201,59,17
+Large,2,effective_dim,2.817400600707853,59,17
+Large,2,msd_exponent,4.214946281732151,59,17
+Large,2,cos_to_late_window,-1.24857109197663,59,17
+Large,3,radius_of_gyration,4.625784799847773,59,17
+Large,3,effective_dim,2.9614572883409482,59,17
+Large,3,msd_exponent,4.274206667474027,59,17
+Large,3,cos_to_late_window,-1.7912553269042177,59,17
+Large,4,radius_of_gyration,4.611796713352799,59,17
+Large,4,effective_dim,2.8726513983203517,59,17
+Large,4,msd_exponent,4.898844241501434,59,17
+Large,4,cos_to_late_window,-1.446045390679547,59,17
+Large,5,radius_of_gyration,3.441637876387294,59,17
+Large,5,effective_dim,2.712076635323094,59,17
+Large,5,msd_exponent,4.849787316569475,59,17
+Large,5,cos_to_late_window,-1.3438068545413662,59,17
+Large,6,radius_of_gyration,3.8081038191222927,59,17
+Large,6,effective_dim,2.6306438066085063,59,17
+Large,6,msd_exponent,4.49609681167958,59,17
+Large,6,cos_to_late_window,-1.3489762194201464,59,17
+Large,7,radius_of_gyration,4.369783362998894,59,17
+Large,7,effective_dim,2.557995094105998,59,17
+Large,7,msd_exponent,4.462146838962445,59,17
+Large,7,cos_to_late_window,-1.1884086380242695,59,17
+Large,8,radius_of_gyration,3.528488286953921,59,17
+Large,8,effective_dim,2.5855310650646675,59,17
+Large,8,msd_exponent,4.757972139537905,59,17
+Large,8,cos_to_late_window,-1.1181673193263386,59,17
+Large,9,radius_of_gyration,3.0690065420950745,59,17
+Large,9,effective_dim,2.5644514849343754,59,17
+Large,9,msd_exponent,4.410553892747307,59,17
+Large,9,cos_to_late_window,-1.5271632690117327,59,17
+Large,10,radius_of_gyration,2.6609943483710565,59,17
+Large,10,effective_dim,2.6018127158392033,59,17
+Large,10,msd_exponent,4.100250128912331,59,17
+Large,10,cos_to_late_window,-1.4436682354756847,59,17
+Large,11,radius_of_gyration,2.6988510339703864,59,17
+Large,11,effective_dim,2.6258165454139513,59,17
+Large,11,msd_exponent,4.652164514421864,59,17
+Large,11,cos_to_late_window,-1.5278726470408475,59,17
+Large,12,radius_of_gyration,2.7437706140157907,59,17
+Large,12,effective_dim,2.6595619175120495,59,17
+Large,12,msd_exponent,4.556253268277919,59,17
+Large,12,cos_to_late_window,-1.2271969220188976,59,17
+Large,13,radius_of_gyration,3.146291732705428,59,17
+Large,13,effective_dim,2.663482887575114,59,17
+Large,13,msd_exponent,5.402655945630188,59,17
+Large,13,cos_to_late_window,-1.3211745019747472,59,17
+Large,14,radius_of_gyration,3.4876389826573213,59,17
+Large,14,effective_dim,2.721954169015695,59,17
+Large,14,msd_exponent,5.116056377523696,59,17
+Large,14,cos_to_late_window,-1.389670235510832,59,17
+Large,15,radius_of_gyration,3.4128957538694507,59,17
+Large,15,effective_dim,2.757505500070645,59,17
+Large,15,msd_exponent,4.836459109960511,59,17
+Large,15,cos_to_late_window,-1.2164802248748732,59,17
+Large,16,radius_of_gyration,4.1009857939569265,59,17
+Large,16,effective_dim,2.724895857739574,59,17
+Large,16,msd_exponent,5.079705908673884,59,17
+Large,16,cos_to_late_window,-1.0162315838481968,59,17
+Large,17,radius_of_gyration,3.0467356312815075,59,17
+Large,17,effective_dim,3.3015166630467094,59,17
+Large,17,msd_exponent,5.263536183909944,59,17
+Large,17,cos_to_late_window,-0.7379792304031594,59,17
+Large,18,radius_of_gyration,2.0375804660465584,59,17
+Large,18,effective_dim,3.0462306347196337,59,17
+Large,18,msd_exponent,5.859135181711283,59,17
+Large,18,cos_to_late_window,-0.7256847382878715,59,17
+Large,19,radius_of_gyration,1.419878156819385,59,17
+Large,19,effective_dim,2.9115365082179028,59,17
+Large,19,msd_exponent,6.335957103716969,59,17
+Large,19,cos_to_late_window,-0.608190877869231,59,17
+Large,20,radius_of_gyration,1.412233936126214,59,17
+Large,20,effective_dim,2.782670998516791,59,17
+Large,20,msd_exponent,5.7432958161760475,59,17
+Large,20,cos_to_late_window,-0.726784693339996,59,17
+Large,21,radius_of_gyration,1.447551646047216,59,17
+Large,21,effective_dim,2.6583109890916354,59,17
+Large,21,msd_exponent,5.479467871447833,59,17
+Large,21,cos_to_late_window,-0.6965837014173423,59,17
+Large,22,radius_of_gyration,0.8848294674347641,59,17
+Large,22,effective_dim,2.4088826959006893,59,17
+Large,22,msd_exponent,6.159893114927327,59,17
+Large,22,cos_to_late_window,-0.7507128810020971,59,17
+Large,23,radius_of_gyration,0.7719640750791927,59,17
+Large,23,effective_dim,2.335673381935473,59,17
+Large,23,msd_exponent,6.385221867730578,59,17
+Large,23,cos_to_late_window,-0.7575681223899459,59,17
+Large,24,radius_of_gyration,3.338533634492484,59,17
+Large,24,effective_dim,1.628066518167073,59,17
+Large,24,msd_exponent,5.824689572679998,59,17
+Large,24,cos_to_late_window,-1.2495812155727692,59,17
+Extra Large,0,radius_of_gyration,5.207979970423686,31,6
+Extra Large,0,effective_dim,1.9366181357691625,31,6
+Extra Large,0,msd_exponent,3.1230161186847663,31,6
+Extra Large,0,cos_to_late_window,-1.5400105614505426,31,6
+Extra Large,1,radius_of_gyration,3.6710508209521118,31,6
+Extra Large,1,effective_dim,2.690545013410949,31,6
+Extra Large,1,msd_exponent,3.5968273183383017,31,6
+Extra Large,1,cos_to_late_window,-1.3606705240161956,31,6
+Extra Large,2,radius_of_gyration,4.236575666474564,31,6
+Extra Large,2,effective_dim,2.4730632844938865,31,6
+Extra Large,2,msd_exponent,3.761089003787366,31,6
+Extra Large,2,cos_to_late_window,-1.212446123045233,31,6
+Extra Large,3,radius_of_gyration,3.9242442096015244,31,6
+Extra Large,3,effective_dim,2.6204638845473975,31,6
+Extra Large,3,msd_exponent,3.949267672323705,31,6
+Extra Large,3,cos_to_late_window,-1.5756942964458724,31,6
+Extra Large,4,radius_of_gyration,4.157882064676527,31,6
+Extra Large,4,effective_dim,2.612105717494657,31,6
+Extra Large,4,msd_exponent,3.9910898831156176,31,6
+Extra Large,4,cos_to_late_window,-1.418203762399515,31,6
+Extra Large,5,radius_of_gyration,2.8954948568834045,31,6
+Extra Large,5,effective_dim,2.4039391599404416,31,6
+Extra Large,5,msd_exponent,4.587475981608474,31,6
+Extra Large,5,cos_to_late_window,-1.206212495261779,31,6
+Extra Large,6,radius_of_gyration,3.3392814354618943,31,6
+Extra Large,6,effective_dim,2.3711954268547535,31,6
+Extra Large,6,msd_exponent,4.7169128116944785,31,6
+Extra Large,6,cos_to_late_window,-1.3566181607736343,31,6
+Extra Large,7,radius_of_gyration,3.7499561086322797,31,6
+Extra Large,7,effective_dim,2.307806176635303,31,6
+Extra Large,7,msd_exponent,4.506827651673647,31,6
+Extra Large,7,cos_to_late_window,-1.2257486068096948,31,6
+Extra Large,8,radius_of_gyration,3.1466045495581216,31,6
+Extra Large,8,effective_dim,2.282814255078195,31,6
+Extra Large,8,msd_exponent,4.28079177446904,31,6
+Extra Large,8,cos_to_late_window,-1.055174297173581,31,6
+Extra Large,9,radius_of_gyration,2.8021594717964193,31,6
+Extra Large,9,effective_dim,2.257618279559373,31,6
+Extra Large,9,msd_exponent,3.886513312688341,31,6
+Extra Large,9,cos_to_late_window,-1.2871828233021156,31,6
+Extra Large,10,radius_of_gyration,2.3884774592297986,31,6
+Extra Large,10,effective_dim,2.272411943057486,31,6
+Extra Large,10,msd_exponent,3.6288599787558216,31,6
+Extra Large,10,cos_to_late_window,-1.3489874320150916,31,6
+Extra Large,11,radius_of_gyration,2.418984815049714,31,6
+Extra Large,11,effective_dim,2.283009756270276,31,6
+Extra Large,11,msd_exponent,4.467370040576534,31,6
+Extra Large,11,cos_to_late_window,-1.4451802561571188,31,6
+Extra Large,12,radius_of_gyration,2.6205862323769558,31,6
+Extra Large,12,effective_dim,2.337144216951785,31,6
+Extra Large,12,msd_exponent,5.298025189205284,31,6
+Extra Large,12,cos_to_late_window,-1.1875927033393063,31,6
+Extra Large,13,radius_of_gyration,2.923597923579484,31,6
+Extra Large,13,effective_dim,2.374898941233661,31,6
+Extra Large,13,msd_exponent,5.847912875172008,31,6
+Extra Large,13,cos_to_late_window,-1.3005292443384056,31,6
+Extra Large,14,radius_of_gyration,3.2334073241870325,31,6
+Extra Large,14,effective_dim,2.4278638912856385,31,6
+Extra Large,14,msd_exponent,6.1482948124899695,31,6
+Extra Large,14,cos_to_late_window,-1.3145897535120536,31,6
+Extra Large,15,radius_of_gyration,3.151648356668267,31,6
+Extra Large,15,effective_dim,2.5275141008012767,31,6
+Extra Large,15,msd_exponent,4.55256063150596,31,6
+Extra Large,15,cos_to_late_window,-1.1465268353845726,31,6
+Extra Large,16,radius_of_gyration,3.4776077343829375,31,6
+Extra Large,16,effective_dim,2.484903568166369,31,6
+Extra Large,16,msd_exponent,5.297098911139305,31,6
+Extra Large,16,cos_to_late_window,-1.014486306799832,31,6
+Extra Large,17,radius_of_gyration,2.224194902464097,31,6
+Extra Large,17,effective_dim,3.0581124366260846,31,6
+Extra Large,17,msd_exponent,4.322531607059162,31,6
+Extra Large,17,cos_to_late_window,-0.7461671680951711,31,6
+Extra Large,18,radius_of_gyration,1.5624757072451505,31,6
+Extra Large,18,effective_dim,2.811062668748933,31,6
+Extra Large,18,msd_exponent,5.001354525652186,31,6
+Extra Large,18,cos_to_late_window,-0.7429342404897503,31,6
+Extra Large,19,radius_of_gyration,0.979392781538572,31,6
+Extra Large,19,effective_dim,2.7310795003544013,31,6
+Extra Large,19,msd_exponent,5.291036757201499,31,6
+Extra Large,19,cos_to_late_window,-0.6658606490406854,31,6
+Extra Large,20,radius_of_gyration,0.9415001763498795,31,6
+Extra Large,20,effective_dim,2.6646789057130187,31,6
+Extra Large,20,msd_exponent,4.867259783684402,31,6
+Extra Large,20,cos_to_late_window,-0.7588266982254188,31,6
+Extra Large,21,radius_of_gyration,1.0215448650050376,31,6
+Extra Large,21,effective_dim,2.4551027839058923,31,6
+Extra Large,21,msd_exponent,4.813276837189553,31,6
+Extra Large,21,cos_to_late_window,-0.7514614917968838,31,6
+Extra Large,22,radius_of_gyration,0.44697921168463434,31,6
+Extra Large,22,effective_dim,2.3446126072908733,31,6
+Extra Large,22,msd_exponent,5.610497513633529,31,6
+Extra Large,22,cos_to_late_window,-0.7969408785290727,31,6
+Extra Large,23,radius_of_gyration,0.4710077532828321,31,6
+Extra Large,23,effective_dim,2.278220395288868,31,6
+Extra Large,23,msd_exponent,6.200749944658715,31,6
+Extra Large,23,cos_to_late_window,-0.8249879752346471,31,6
+Extra Large,24,radius_of_gyration,2.6826080827079792,31,6
+Extra Large,24,effective_dim,1.859675584249091,31,6
+Extra Large,24,msd_exponent,4.20714736784823,31,6
+Extra Large,24,cos_to_late_window,-1.2439916435795915,31,6

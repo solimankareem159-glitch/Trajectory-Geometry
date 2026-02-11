@@ -1,0 +1,94 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "gpu": "AMD Radeon RX 5700 XT\u0000",
+  "checks": {
+    "DirectML Available": true,
+    "Model Loaded": true,
+    "Architecture Readable": true,
+    "Hidden State Shape": true,
+    "Metric Import": true,
+    "Metrics Compute": true,
+    "Memory Budget": true
+  },
+  "n_layers": 36,
+  "hidden_dim": 2048,
+  "test_responses": [
+    {
+      "problem": "(11 * 10)  +  41",
+      "truth": 151,
+      "response": " To calculate the expression (11 * 10) + 41, follow these steps:\n\nStep 1: Perform the multiplication first.\n(1",
+      "shape": [
+        37,
+        32,
+        2048
+      ]
+    },
+    {
+      "problem": "(44 * 4)  +  85",
+      "truth": 261,
+      "response": " To calculate the expression (44 * 4) + 85, follow these steps:\n\n1. First, perform the multiplication inside the parentheses:\n  ",
+      "shape": [
+        37,
+        32,
+        2048
+      ]
+    },
+    {
+      "problem": "15 * (8  +  39)",
+      "truth": 705,
+      "response": " To calculate the expression 15 * (8 + 39), follow these steps:\n\nStep 1: Perform the operation inside the parentheses first.\n8",
+      "shape": [
+        37,
+        32,
+        2048
+      ]
+    },
+    {
+      "problem": "45 * (8  +  93)",
+      "truth": 4545,
+      "response": " First, we need to solve the expression inside the parentheses:\n\n\\( 8 + 93 = 101 \\)\n\nNow that we have the value",
+      "shape": [
+        37,
+        32,
+        2048
+      ]
+    },
+    {
+      "problem": "(24 * 16)  -  85",
+      "truth": 299,
+      "response": " To calculate the expression (24 * 16) - 85, follow these steps:\n\nStep 1: Multiply 24 by 1",
+      "shape": [
+        37,
+        32,
+        2048
+      ]
+    }
+  ],
+  "hidden_shapes": [
+    [
+      37,
+      32,
+      2048
+    ],
+    [
+      37,
+      32,
+      2048
+    ],
+    [
+      37,
+      32,
+      2048
+    ],
+    [
+      37,
+      32,
+      2048
+    ],
+    [
+      37,
+      32,
+      2048
+    ]
+  ]
+}

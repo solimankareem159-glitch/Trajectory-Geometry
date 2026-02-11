@@ -1,0 +1,261 @@
+{
+  "total_comparisons": 4420,
+  "bonferroni_alpha": 0.008333333333333333,
+  "n_permutations": 10000,
+  "significant_findings": {
+    "CoT Success vs Direct Fail": {
+      "total": 737,
+      "significant": 624,
+      "percentage": 84.66757123473542
+    },
+    "Direct Success vs Direct Fail": {
+      "total": 734,
+      "significant": 411,
+      "percentage": 55.99455040871935
+    },
+    "CoT Success vs CoT Fail": {
+      "total": 744,
+      "significant": 636,
+      "percentage": 85.48387096774194
+    },
+    "Direct Success vs CoT Fail": {
+      "total": 734,
+      "significant": 652,
+      "percentage": 88.8283378746594
+    },
+    "CoT Success vs Direct Success": {
+      "total": 734,
+      "significant": 634,
+      "percentage": 86.37602179836512
+    },
+    "CoT Fail vs Direct Fail": {
+      "total": 737,
+      "significant": 653,
+      "percentage": 88.60244233378562
+    }
+  },
+  "top_effects": {
+    "CoT Success vs Direct Fail": [
+      {
+        "metric": "stabilization",
+        "layer": 1,
+        "cohens_d": 17.38971835285,
+        "p_value": 0.0,
+        "significant": true
+      },
+      {
+        "metric": "dist_slope",
+        "layer": 1,
+        "cohens_d": 17.313203852004754,
+        "p_value": 0.0,
+        "significant": true
+      },
+      {
+        "metric": "dist_slope",
+        "layer": 23,
+        "cohens_d": 16.124076019919624,
+        "p_value": 0.0,
+        "significant": true
+      },
+      {
+        "metric": "stabilization",
+        "layer": 2,
+        "cohens_d": 16.048561408833542,
+        "p_value": 0.0,
+        "significant": true
+      },
+      {
+        "metric": "dist_slope",
+        "layer": 22,
+        "cohens_d": 16.04820539864134,
+        "p_value": 0.0,
+        "significant": true
+      }
+    ],
+    "Direct Success vs Direct Fail": [
+      {
+        "metric": "drift_to_spread",
+        "layer": 27,
+        "cohens_d": 2.3731710084037494,
+        "p_value": 0.0,
+        "significant": true
+      },
+      {
+        "metric": "depth_accel_tortuosity",
+        "layer": -1,
+        "cohens_d": 2.0551278941005595,
+        "p_value": 0.0,
+        "significant": true
+      },
+      {
+        "metric": "stabilization",
+        "layer": 27,
+        "cohens_d": 2.0177334191058547,
+        "p_value": 0.0,
+        "significant": true
+      },
+      {
+        "metric": "stabilization",
+        "layer": 26,
+        "cohens_d": 1.9182827399932965,
+        "p_value": 0.0,
+        "significant": true
+      },
+      {
+        "metric": "vel_autocorr_lag1",
+        "layer": 27,
+        "cohens_d": 1.8032816608056268,
+        "p_value": 0.0,
+        "significant": true
+      }
+    ],
+    "CoT Success vs CoT Fail": [
+      {
+        "metric": "interlayer_alignment_mean",
+        "layer": -1,
+        "cohens_d": 4.336409815627467,
+        "p_value": 0.0,
+        "significant": true
+      },
+      {
+        "metric": "speed",
+        "layer": 25,
+        "cohens_d": 3.924540071583552,
+        "p_value": 0.0,
+        "significant": true
+      },
+      {
+        "metric": "speed",
+        "layer": 24,
+        "cohens_d": 3.7549488033543934,
+        "p_value": 0.0,
+        "significant": true
+      },
+      {
+        "metric": "speed",
+        "layer": 26,
+        "cohens_d": 3.6286762021107193,
+        "p_value": 0.0,
+        "significant": true
+      },
+      {
+        "metric": "speed",
+        "layer": 23,
+        "cohens_d": 3.6135940237702173,
+        "p_value": 0.0,
+        "significant": true
+      }
+    ],
+    "Direct Success vs CoT Fail": [
+      {
+        "metric": "tortuosity",
+        "layer": 18,
+        "cohens_d": 14.384392861897147,
+        "p_value": 0.0,
+        "significant": true
+      },
+      {
+        "metric": "tortuosity",
+        "layer": 13,
+        "cohens_d": 14.36930254231879,
+        "p_value": 0.0,
+        "significant": true
+      },
+      {
+        "metric": "tortuosity",
+        "layer": 14,
+        "cohens_d": 14.32456410353312,
+        "p_value": 0.0,
+        "significant": true
+      },
+      {
+        "metric": "tortuosity",
+        "layer": 17,
+        "cohens_d": 14.30634757642646,
+        "p_value": 0.0,
+        "significant": true
+      },
+      {
+        "metric": "tortuosity",
+        "layer": 15,
+        "cohens_d": 14.28505035892002,
+        "p_value": 0.0,
+        "significant": true
+      }
+    ],
+    "CoT Success vs Direct Success": [
+      {
+        "metric": "vel_autocorr_lag4",
+        "layer": 6,
+        "cohens_d": 7.9526643647257425,
+        "p_value": 0.0,
+        "significant": true
+      },
+      {
+        "metric": "cos_to_running_mean",
+        "layer": 25,
+        "cohens_d": 7.87510636340365,
+        "p_value": 0.0,
+        "significant": true
+      },
+      {
+        "metric": "cos_to_running_mean",
+        "layer": 24,
+        "cohens_d": 6.979894231364579,
+        "p_value": 0.0,
+        "significant": true
+      },
+      {
+        "metric": "cos_to_running_mean",
+        "layer": 21,
+        "cohens_d": 6.95875612910615,
+        "p_value": 0.0,
+        "significant": true
+      },
+      {
+        "metric": "cos_to_running_mean",
+        "layer": 23,
+        "cohens_d": 6.703361639823919,
+        "p_value": 0.0,
+        "significant": true
+      }
+    ],
+    "CoT Fail vs Direct Fail": [
+      {
+        "metric": "dist_slope",
+        "layer": 1,
+        "cohens_d": 67.57667954112976,
+        "p_value": 0.0,
+        "significant": true
+      },
+      {
+        "metric": "stabilization",
+        "layer": 1,
+        "cohens_d": 67.53608940454325,
+        "p_value": 0.0,
+        "significant": true
+      },
+      {
+        "metric": "stabilization",
+        "layer": 20,
+        "cohens_d": 62.953240817093075,
+        "p_value": 0.0,
+        "significant": true
+      },
+      {
+        "metric": "stabilization",
+        "layer": 19,
+        "cohens_d": 62.94284506592987,
+        "p_value": 0.0,
+        "significant": true
+      },
+      {
+        "metric": "stabilization",
+        "layer": 21,
+        "cohens_d": 62.7689866309202,
+        "p_value": 0.0,
+        "significant": true
+      }
+    ]
+  }
+}

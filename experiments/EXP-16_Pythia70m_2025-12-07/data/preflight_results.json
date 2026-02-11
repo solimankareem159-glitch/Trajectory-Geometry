@@ -1,0 +1,7 @@
+{
+  "direct_accuracy": 0.5,
+  "cot_accuracy": 0.0,
+  "direct_correct": 5,
+  "cot_correct": 0,
+  "n_test": 10
+}

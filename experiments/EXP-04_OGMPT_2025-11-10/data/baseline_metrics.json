@@ -1,0 +1,14 @@
+{
+  "overall_accuracy": 0.26666666666666666,
+  "by_operator": {
+    "Constraint": 0.35,
+    "Reasoning": 0.4,
+    "Safety": 0.05
+  },
+  "by_topic": {
+    "Finance": 0.5,
+    "Health": 0.23529411764705882,
+    "Politics": 0.1,
+    "Science": 0.17647058823529413
+  }
+}

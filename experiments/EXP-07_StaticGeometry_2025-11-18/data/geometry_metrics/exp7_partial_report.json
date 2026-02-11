@@ -1,0 +1,69 @@
+{
+  "n_samples": 2000,
+  "layers": {
+    "0": {
+      "separation_cosine": 0.07684333049729249,
+      "stability_score": 0.8546741786289374,
+      "ncc_f1": 0.2457450517349588,
+      "top_pairs_cos": [],
+      "mean_subspace_angle": 0.7301532089710235
+    },
+    "10": {
+      "separation_cosine": 0.03172148819907513,
+      "stability_score": 0.918195519186704,
+      "ncc_f1": 0.28936974202291654,
+      "top_pairs_cos": [],
+      "mean_subspace_angle": 0.8171384718683031
+    },
+    "11": {
+      "separation_cosine": 0.03279851280417734,
+      "stability_score": 0.9179048926969365,
+      "ncc_f1": 0.30095506473032374,
+      "top_pairs_cos": [],
+      "mean_subspace_angle": 0.8213301234775119
+    },
+    "12": {
+      "separation_cosine": 0.03421774435726507,
+      "stability_score": 0.918283797128343,
+      "ncc_f1": 0.27842701720550345,
+      "top_pairs_cos": [],
+      "mean_subspace_angle": 0.8236022763782077
+    },
+    "13": {
+      "separation_cosine": 0.033710896967830827,
+      "stability_score": 0.9196716031908521,
+      "ncc_f1": 0.25898036381493494,
+      "top_pairs_cos": [],
+      "mean_subspace_angle": 0.8208808905548519
+    },
+    "14": {
+      "separation_cosine": 0.03431308006129178,
+      "stability_score": 0.9193757084282085,
+      "ncc_f1": 0.2999718973112036,
+      "top_pairs_cos": [],
+      "mean_subspace_angle": 0.8189138385984632
+    },
+    "15": {
+      "separation_cosine": 0.03325604877966701,
+      "stability_score": 0.9218768492409005,
+      "ncc_f1": 0.29123492803964296,
+      "top_pairs_cos": [],
+      "mean_subspace_angle": 0.8116088575787015
+    },
+    "16": {
+      "separation_cosine": 0.03530358149882815,
+      "stability_score": 0.9240249941582466,
+      "ncc_f1": 0.3061368117155367,
+      "top_pairs_cos": [],
+      "mean_subspace_angle": 0.8131431519985199
+    },
+    "24": {
+      "separation_cosine": 0.030862713120315414,
+      "stability_score": 0.9115097634522338,
+      "ncc_f1": 0.2488515725802324,
+      "top_pairs_cos": [],
+      "mean_subspace_angle": 0.6965935501787398
+    }
+  },
+  "best_stability_layer": 16
+}
