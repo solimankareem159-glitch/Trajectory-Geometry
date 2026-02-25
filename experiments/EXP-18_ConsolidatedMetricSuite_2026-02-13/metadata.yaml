@@ -1,0 +1,11 @@
+id: EXP-18
+date: 2026-02-13
+title: Consolidated Metric Suite
+objective: Consolidate Experiment 9 dataset and Experiment 14 hidden states to compute the definitive metric suite across all layers.
+model: Qwen2.5-0.5B-Instruct (from Exp 14)
+dataset: Experiment 9 (arithmetic)
+status: in_progress
+tags:
+  - trajectory_geometry
+  - metrics
+  - consolidation

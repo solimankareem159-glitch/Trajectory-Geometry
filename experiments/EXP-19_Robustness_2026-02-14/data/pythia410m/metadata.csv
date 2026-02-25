@@ -1,0 +1,1968 @@
+problem_id,condition,group,correct,parsed_answer,truth,bin,op_type,response,clean_response,n_clean_tokens,n_gen_tokens,n_full_tokens,answer_token_idx,filename,has_trajectory,issues,contaminated
+0,direct,G1,False,2,6,UltraSmall,A," (2 * 2)
+",2,1,6,6,0,000_direct.npy,True,,False
+0,cot,G3,False,2,6,UltraSmall,A," (2 * 2) + 2 is (2 * 2) + 2. ANSWER: (2 * 2) + 2
+
+Question:", (2 * 2) + 2 is (2 * 2) + 2. ANSWER: (2 * 2) + 2,29,31,31,28,000_cot.npy,True,,False
+1,direct,G1,False,5,19,UltraSmall,B," (5 * 4)
+",5,1,6,6,0,001_direct.npy,True,,False
+1,cot,G3,False,1,19,UltraSmall,B," (5 * 4) - 1 is (5 * 4) - 1. ANSWER: (5 * 4) - 1
+
+Question:", (5 * 4) - 1 is (5 * 4) - 1. ANSWER: (5 * 4) - 1,29,31,31,28,001_cot.npy,True,,False
+2,direct,G1,False,8,3,UltraSmall,C," 8
+",8,2,2,2,1,002_direct.npy,True,,False
+2,cot,G4,True,3,3,UltraSmall,C," 1 plus 2 is 3. ANSWER: 3
+
+Question:", 1 plus 2 is 3. ANSWER: 3,13,15,15,12,002_cot.npy,True,,False
+3,direct,G1,False,8,3,UltraSmall,D," 8
+",8,2,2,2,1,003_direct.npy,True,,False
+3,cot,G3,False,8,3,UltraSmall,D," 1 * (5 - 2) is 8. ANSWER: 8
+
+Question:", 1 * (5 - 2) is 8. ANSWER: 8,17,19,19,16,003_cot.npy,True,,False
+4,direct,G1,False,5,22,UltraSmall,A," (5 * 4)
+",5,1,6,6,0,004_direct.npy,True,,False
+4,cot,G3,False,2,22,UltraSmall,A," (5 * 4) plus 2 is (5 * 4) + 2. ANSWER: (5 * 4) + 2
+
+Question:", (5 * 4) plus 2 is (5 * 4) + 2. ANSWER: (5 * 4) + 2,29,31,31,28,004_cot.npy,True,,False
+5,direct,G1,False,8,17,UltraSmall,B," (8 * 9)
+",8,1,6,6,0,005_direct.npy,True,,False
+5,cot,G3,False,3,17,UltraSmall,B," (4 * 5) minus 3 is (4 * 5) - 3. ANSWER: (4 * 5) - 3
+
+Question:", (4 * 5) minus 3 is (4 * 5) - 3. ANSWER: (4 * 5) - 3,29,31,31,28,005_cot.npy,True,,False
+6,direct,G1,False,8,6,UltraSmall,C," 8
+",8,2,2,2,1,006_direct.npy,True,,False
+6,cot,G3,False,8,6,UltraSmall,C," 1 * (2 + 4) is 8. ANSWER: 8
+
+Question:", 1 * (2 + 4) is 8. ANSWER: 8,17,19,19,16,006_cot.npy,True,,False
+7,direct,G1,False,8,3,UltraSmall,D," 8
+",8,2,2,2,1,007_direct.npy,True,,False
+7,cot,G3,False,1,3,UltraSmall,D," 1 * (4 - 1) is 1. ANSWER: 1
+
+Question:", 1 * (4 - 1) is 1. ANSWER: 1,17,19,19,16,007_cot.npy,True,,False
+8,direct,G1,False,7,14,UltraSmall,A," (7 * 7)
+",7,1,6,6,0,008_direct.npy,True,,False
+8,cot,G3,False,5,14,UltraSmall,A," (3 * 3) + 5 is (3 * 3) + 5. ANSWER: (3 * 3) + 5
+
+Question:", (3 * 3) + 5 is (3 * 3) + 5. ANSWER: (3 * 3) + 5,29,31,31,28,008_cot.npy,True,,False
+9,direct,G1,False,5,10,UltraSmall,B," (5 * 3)
+",5,1,6,6,0,009_direct.npy,True,,False
+9,cot,G3,False,5,10,UltraSmall,B," (5 * 3) - 5 is (5 * 3) - 5. ANSWER: (5 * 3) - 5
+
+Question:", (5 * 3) - 5 is (5 * 3) - 5. ANSWER: (5 * 3) - 5,29,31,31,28,009_cot.npy,True,,False
+10,direct,G2,True,8,8,UltraSmall,C," 8
+",8,2,2,2,1,010_direct.npy,True,,False
+10,cot,G3,False,7,8,UltraSmall,C," 2 * (3 + 1) is 7. ANSWER: 7
+
+Question:", 2 * (3 + 1) is 7. ANSWER: 7,17,19,19,16,010_cot.npy,True,,False
+11,direct,G1,False,8,-6,UltraSmall,D," 8
+",8,2,2,2,1,011_direct.npy,True,,False
+11,cot,G3,False,8,-6,UltraSmall,D," 2 * (1 - 4) is 8. ANSWER: 8
+
+Question:", 2 * (1 - 4) is 8. ANSWER: 8,17,19,19,16,011_cot.npy,True,,False
+12,direct,G1,False,7,15,UltraSmall,A," (7 * 8)
+",7,1,6,6,0,012_direct.npy,True,,False
+12,cot,G3,False,3,15,UltraSmall,A," (3 * 4) + 3 is (3 + 4) + 3. ANSWER: (3 + 4) + 3
+
+Question:", (3 * 4) + 3 is (3 + 4) + 3. ANSWER: (3 + 4) + 3,29,31,31,28,012_cot.npy,True,,False
+13,direct,G1,False,2,5,UltraSmall,B," (2 * 3)
+",2,1,6,6,0,013_direct.npy,True,,False
+13,cot,G3,False,1,5,UltraSmall,B," (2 * 3) - 1 is (2 * 3) - 1. ANSWER: (2 * 3) - 1
+
+Question:", (2 * 3) - 1 is (2 * 3) - 1. ANSWER: (2 * 3) - 1,29,31,31,28,013_cot.npy,True,,False
+14,direct,G1,False,8,35,UltraSmall,C," 8
+",8,2,2,2,1,014_direct.npy,True,,False
+14,cot,G3,False,8,35,UltraSmall,C," 5 * (2 + 5) is 8. ANSWER: 8
+
+Question:", 5 * (2 + 5) is 8. ANSWER: 8,17,19,19,16,014_cot.npy,True,,False
+15,direct,G1,False,8,-4,UltraSmall,D," 8
+",8,2,2,2,1,015_direct.npy,True,,False
+15,cot,G3,False,8,-4,UltraSmall,D," 2 * (2 - 4) is 8. ANSWER: 8
+
+Question:", 2 * (2 - 4) is 8. ANSWER: 8,17,19,19,16,015_cot.npy,True,,False
+16,direct,G1,False,8,17,UltraSmall,A," (8 * 4)
+",8,1,6,6,0,016_direct.npy,True,,False
+16,cot,G3,False,5,17,UltraSmall,A," (4 * 3) plus 5 is (4 * 3) + 5. ANSWER: 5
+
+Question:", (4 * 3) plus 5 is (4 * 3) + 5. ANSWER: 5,23,25,25,22,016_cot.npy,True,,False
+17,direct,G1,False,2,5,UltraSmall,B," (2 * 3)
+",2,1,6,6,0,017_direct.npy,True,,False
+17,cot,G3,False,1,5,UltraSmall,B," (2 * 3) - 1 is (2 * 3) - 1. ANSWER: (2 * 3) - 1
+
+Question:", (2 * 3) - 1 is (2 * 3) - 1. ANSWER: (2 * 3) - 1,29,31,31,28,017_cot.npy,True,,False
+18,direct,G2,True,8,8,UltraSmall,C," 8
+",8,2,2,2,1,018_direct.npy,True,,False
+18,cot,G4,True,8,8,UltraSmall,C," 2 * (1 + 3) is 8. ANSWER: 8
+
+Question:", 2 * (1 + 3) is 8. ANSWER: 8,17,19,19,16,018_cot.npy,True,,False
+19,direct,G2,True,8,8,UltraSmall,D," 8
+",8,2,2,2,1,019_direct.npy,True,,False
+19,cot,G4,True,8,8,UltraSmall,D," 4 * (3 - 1) is 8. ANSWER: 8
+
+Question:", 4 * (3 - 1) is 8. ANSWER: 8,17,19,19,16,019_cot.npy,True,,False
+20,direct,G1,False,2,13,UltraSmall,A," (2 * 5) + 3
+",2,1,8,8,0,020_direct.npy,True,,False
+20,cot,G3,False,8,13,UltraSmall,A," (2 * 5) plus 3 is 8. ANSWER: 8
+
+Question:", (2 * 5) plus 3 is 8. ANSWER: 8,17,19,19,16,020_cot.npy,True,,False
+21,direct,G1,False,4,5,UltraSmall,B," (4 * 2)
+",4,1,6,6,0,021_direct.npy,True,,False
+21,cot,G3,False,3,5,UltraSmall,B," (4 * 2) minus 3 is (4 * 2) - 3. ANSWER: (4 * 2) - 3
+
+Question:", (4 * 2) minus 3 is (4 * 2) - 3. ANSWER: (4 * 2) - 3,29,31,31,28,021_cot.npy,True,,False
+22,direct,G1,False,8,14,UltraSmall,C," 8
+",8,2,2,2,1,022_direct.npy,True,,False
+22,cot,G3,False,8,14,UltraSmall,C," 2 * (2 + 5) is 8. ANSWER: 8
+
+Question:", 2 * (2 + 5) is 8. ANSWER: 8,17,19,19,16,022_cot.npy,True,,False
+23,direct,G1,False,7,-10,UltraSmall,D," 7
+",7,2,2,2,1,023_direct.npy,True,,False
+23,cot,G3,False,8,-10,UltraSmall,D," 5 * (3 - 5) is 8. ANSWER: 8
+
+Question:", 5 * (3 - 5) is 8. ANSWER: 8,17,19,19,16,023_cot.npy,True,,False
+24,direct,G1,False,8,24,UltraSmall,A," (8 * 8)
+",8,1,6,6,0,024_direct.npy,True,,False
+24,cot,G3,False,8,24,UltraSmall,A," (4 * 5) plus 4 is 8. ANSWER: 8
+
+Question:", (4 * 5) plus 4 is 8. ANSWER: 8,17,19,19,16,024_cot.npy,True,,False
+25,direct,G1,False,3,4,UltraSmall,B," (3 * 2)
+",3,1,6,6,0,025_direct.npy,True,,False
+25,cot,G3,False,2,4,UltraSmall,B," (3 * 2) - 2 is (3 * 2) - 2. ANSWER: (3 * 2) - 2
+
+Question:", (3 * 2) - 2 is (3 * 2) - 2. ANSWER: (3 * 2) - 2,29,31,31,28,025_cot.npy,True,,False
+26,direct,G1,False,8,3,UltraSmall,C," 8
+",8,2,2,2,1,026_direct.npy,True,,False
+26,cot,G4,True,3,3,UltraSmall,C," 1 plus 2 is 3. ANSWER: 3
+
+Question:", 1 plus 2 is 3. ANSWER: 3,13,15,15,12,026_cot.npy,True,,False
+27,direct,G1,False,8,-2,UltraSmall,D," 8
+",8,2,2,2,1,027_direct.npy,True,,False
+27,cot,G3,False,8,-2,UltraSmall,D," 2 * (4 - 5) is 8. ANSWER: 8
+
+Question:", 2 * (4 - 5) is 8. ANSWER: 8,17,19,19,16,027_cot.npy,True,,False
+28,direct,G1,False,5,25,UltraSmall,A," (5 * 4)
+",5,1,6,6,0,028_direct.npy,True,,False
+28,cot,G3,False,5,25,UltraSmall,A," (5 * 4) + 5 is (5 + 4) + 5. ANSWER: (5 + 4) + 5
+
+Question:", (5 * 4) + 5 is (5 + 4) + 5. ANSWER: (5 + 4) + 5,29,31,31,28,028_cot.npy,True,,False
+29,direct,G1,False,3,14,UltraSmall,B," (3 * 5)
+",3,1,6,6,0,029_direct.npy,True,,False
+29,cot,G3,False,1,14,UltraSmall,B," (3 * 5) - 1 is (3 + 5) - 1. ANSWER: (3 + 5) - 1
+
+Question:", (3 * 5) - 1 is (3 + 5) - 1. ANSWER: (3 + 5) - 1,29,31,31,28,029_cot.npy,True,,False
+30,direct,G2,True,8,8,UltraSmall,C," 8
+",8,2,2,2,1,030_direct.npy,True,,False
+30,cot,G3,False,5,8,UltraSmall,C," 1 * (5 + 3) is 5. ANSWER: 5
+
+Question:", 1 * (5 + 3) is 5. ANSWER: 5,17,19,19,16,030_cot.npy,True,,False
+31,direct,G1,False,8,-6,UltraSmall,D," 8
+",8,2,2,2,1,031_direct.npy,True,,False
+31,cot,G3,False,3,-6,UltraSmall,D," 3 * (1 - 3) is 3. ANSWER: 3
+
+Question:", 3 * (1 - 3) is 3. ANSWER: 3,17,19,19,16,031_cot.npy,True,,False
+32,direct,G1,False,8,12,UltraSmall,A," (8 * 2)
+",8,1,6,6,0,032_direct.npy,True,,False
+32,cot,G3,False,8,12,UltraSmall,A," (4 * 2) plus 4 is 8. ANSWER: 8
+
+Question:", (4 * 2) plus 4 is 8. ANSWER: 8,17,19,19,16,032_cot.npy,True,,False
+33,direct,G1,False,2,9,UltraSmall,B," (2 * 5)
+",2,1,6,6,0,033_direct.npy,True,,False
+33,cot,G3,False,1,9,UltraSmall,B," (2 * 5) - 1 is (2 * 5) - 1. ANSWER: (2 * 5) - 1
+
+Question:", (2 * 5) - 1 is (2 * 5) - 1. ANSWER: (2 * 5) - 1,29,31,31,28,033_cot.npy,True,,False
+34,direct,G1,False,8,30,UltraSmall,C," 8
+",8,2,2,2,1,034_direct.npy,True,,False
+34,cot,G3,False,7,30,UltraSmall,C," 3 * (5 + 5) is 7. ANSWER: 7
+
+Question:", 3 * (5 + 5) is 7. ANSWER: 7,17,19,19,16,034_cot.npy,True,,False
+35,direct,G1,False,8,-2,UltraSmall,D," 8
+",8,2,2,2,1,035_direct.npy,True,,False
+35,cot,G3,False,8,-2,UltraSmall,D," 2 * (2 - 3) is 8. ANSWER: 8
+
+Question:", 2 * (2 - 3) is 8. ANSWER: 8,17,19,19,16,035_cot.npy,True,,False
+36,direct,G1,False,2,15,UltraSmall,A," (2 * 5)
+",2,1,6,6,0,036_direct.npy,True,,False
+36,cot,G3,False,5,15,UltraSmall,A," (2 * 5) + 5 is (2 * 5) + 5. ANSWER: (2 * 5) + 5
+
+Question:", (2 * 5) + 5 is (2 * 5) + 5. ANSWER: (2 * 5) + 5,29,31,31,28,036_cot.npy,True,,False
+37,direct,G1,False,3,7,UltraSmall,B," (3 * 3) - 2
+",3,1,8,8,0,037_direct.npy,True,,False
+37,cot,G3,False,2,7,UltraSmall,B," (3 * 3) - 2 is (3 * 3) - 2. ANSWER: (3 * 3) - 2
+
+Question:", (3 * 3) - 2 is (3 * 3) - 2. ANSWER: (3 * 3) - 2,29,31,31,28,037_cot.npy,True,,False
+38,direct,G1,False,8,7,UltraSmall,C," 8
+",8,2,2,2,1,038_direct.npy,True,,False
+38,cot,G3,False,8,7,UltraSmall,C," 1 * (2 + 5) is 8. ANSWER: 8
+
+Question:", 1 * (2 + 5) is 8. ANSWER: 8,17,19,19,16,038_cot.npy,True,,False
+39,direct,G1,False,8,-3,UltraSmall,D," 8
+",8,2,2,2,1,039_direct.npy,True,,False
+39,cot,G3,False,1,-3,UltraSmall,D," 1 - 4 is 1. ANSWER: 1
+
+Question:", 1 - 4 is 1. ANSWER: 1,13,15,15,12,039_cot.npy,True,,False
+40,direct,G1,False,2,13,UltraSmall,A," (2 * 4) + 5
+",2,1,8,8,0,040_direct.npy,True,,False
+40,cot,G3,False,5,13,UltraSmall,A," (2 * 4) plus 5 is (2 * 4) + 5. ANSWER: (2 * 4) + 5
+
+Question:", (2 * 4) plus 5 is (2 * 4) + 5. ANSWER: (2 * 4) + 5,29,31,31,28,040_cot.npy,True,,False
+41,direct,G1,False,2,1,UltraSmall,B," (2 * 3) - 5
+",2,1,8,8,0,041_direct.npy,True,,False
+41,cot,G3,False,5,1,UltraSmall,B," (2 * 3) minus 5 is (2 * 3) - 5. ANSWER: (2 * 3) - 5
+
+Question:", (2 * 3) minus 5 is (2 * 3) - 5. ANSWER: (2 * 3) - 5,29,31,31,28,041_cot.npy,True,,False
+42,direct,G1,False,9,30,UltraSmall,C," 9
+",9,2,2,2,1,042_direct.npy,True,,False
+42,cot,G3,False,8,30,UltraSmall,C," 5 * (4 + 2) is 8. ANSWER: 8
+
+Question:", 5 * (4 + 2) is 8. ANSWER: 8,17,19,19,16,042_cot.npy,True,,False
+43,direct,G1,False,8,-5,UltraSmall,D," 8
+",8,2,2,2,1,043_direct.npy,True,,False
+43,cot,G3,False,8,-5,UltraSmall,D," 5 * (2 - 3) is 8. ANSWER: 8
+
+Question:", 5 * (2 - 3) is 8. ANSWER: 8,17,19,19,16,043_cot.npy,True,,False
+44,direct,G1,False,7,16,UltraSmall,A," (7 * 2)
+",7,1,6,6,0,044_direct.npy,True,,False
+44,cot,G3,False,8,16,UltraSmall,A," (4 * 3) plus 4 is 8. ANSWER: 8
+
+Question:", (4 * 3) plus 4 is 8. ANSWER: 8,17,19,19,16,044_cot.npy,True,,False
+45,direct,G1,False,5,19,UltraSmall,B," (5 * 4)
+",5,1,6,6,0,045_direct.npy,True,,False
+45,cot,G3,False,1,19,UltraSmall,B," (5 * 4) - 1 is (5 * 4) - 1. ANSWER: (5 * 4) - 1
+
+Question:", (5 * 4) - 1 is (5 * 4) - 1. ANSWER: (5 * 4) - 1,29,31,31,28,045_cot.npy,True,,False
+46,direct,G1,False,8,6,UltraSmall,C," 8
+",8,2,2,2,1,046_direct.npy,True,,False
+46,cot,G3,False,8,6,UltraSmall,C," 2 * (2 + 1) is 8. ANSWER: 8
+
+Question:", 2 * (2 + 1) is 8. ANSWER: 8,17,19,19,16,046_cot.npy,True,,False
+47,direct,G1,False,8,-12,UltraSmall,D," 8
+",8,2,2,2,1,047_direct.npy,True,,False
+47,cot,G3,False,8,-12,UltraSmall,D," 3 * (1 - 5) is 8. ANSWER: 8
+
+Question:", 3 * (1 - 5) is 8. ANSWER: 8,17,19,19,16,047_cot.npy,True,,False
+48,direct,G1,False,5,15,UltraSmall,A," (5 * 2)
+",5,1,6,6,0,048_direct.npy,True,,False
+48,cot,G3,False,5,15,UltraSmall,A," (5 * 2) + 5 is (5 + 5) + 5. ANSWER: (5 + 5) + 5
+
+Question:", (5 * 2) + 5 is (5 + 5) + 5. ANSWER: (5 + 5) + 5,29,31,31,28,048_cot.npy,True,,False
+49,direct,G1,False,5,7,UltraSmall,B," (5 * 2)
+",5,1,6,6,0,049_direct.npy,True,,False
+49,cot,G3,False,3,7,UltraSmall,B," (5 * 2) - 3 is (5 * 2) - 3. ANSWER: (5 * 2) - 3
+
+Question:", (5 * 2) - 3 is (5 * 2) - 3. ANSWER: (5 * 2) - 3,29,31,31,28,049_cot.npy,True,,False
+50,direct,G1,False,8,28,UltraSmall,C," 8
+",8,2,2,2,1,050_direct.npy,True,,False
+50,cot,G3,False,8,28,UltraSmall,C," 4 * (2 + 5) is 8. ANSWER: 8
+
+Question:", 4 * (2 + 5) is 8. ANSWER: 8,17,19,19,16,050_cot.npy,True,,False
+51,direct,G1,False,8,-8,UltraSmall,D," 8
+",8,2,2,2,1,051_direct.npy,True,,False
+51,cot,G3,False,8,-8,UltraSmall,D," 4 * (2 - 4) is 8. ANSWER: 8
+
+Question:", 4 * (2 - 4) is 8. ANSWER: 8,17,19,19,16,051_cot.npy,True,,False
+52,direct,G1,False,4,9,UltraSmall,A," (4 * 2)
+",4,1,6,6,0,052_direct.npy,True,,False
+52,cot,G3,False,1,9,UltraSmall,A," (4 * 2) + 1 is (4 * 2) + 1. ANSWER: (4 * 2) + 1
+
+Question:", (4 * 2) + 1 is (4 * 2) + 1. ANSWER: (4 * 2) + 1,29,31,31,28,052_cot.npy,True,,False
+53,direct,G1,False,4,12,UltraSmall,B," (4 * 4)
+",4,1,6,6,0,053_direct.npy,True,,False
+53,cot,G3,False,4,12,UltraSmall,B," (4 * 4) minus 4 is (4 * 4) - 4. ANSWER: (4 * 4) - 4
+
+Question:", (4 * 4) minus 4 is (4 * 4) - 4. ANSWER: (4 * 4) - 4,29,31,31,28,053_cot.npy,True,,False
+54,direct,G1,False,1,2,UltraSmall,C," 1
+",1,2,2,2,1,054_direct.npy,True,,False
+54,cot,G3,False,1,2,UltraSmall,C," 1 * (1 + 1) is 1. ANSWER: 1
+
+Question:", 1 * (1 + 1) is 1. ANSWER: 1,17,19,19,16,054_cot.npy,True,,False
+55,direct,G2,True,8,8,UltraSmall,D," 8
+",8,2,2,2,1,055_direct.npy,True,,False
+55,cot,G4,True,8,8,UltraSmall,D," 4 * (3 - 1) is 8. ANSWER: 8
+
+Question:", 4 * (3 - 1) is 8. ANSWER: 8,17,19,19,16,055_cot.npy,True,,False
+56,direct,G1,False,2,6,UltraSmall,A," (2 * 2)
+",2,1,6,6,0,056_direct.npy,True,,False
+56,cot,G3,False,2,6,UltraSmall,A," (2 * 2) + 2 is (2 * 2) + 2. ANSWER: (2 * 2) + 2
+
+Question:", (2 * 2) + 2 is (2 * 2) + 2. ANSWER: (2 * 2) + 2,29,31,31,28,056_cot.npy,True,,False
+57,direct,G1,False,5,18,UltraSmall,B," (5 * 4)
+",5,1,6,6,0,057_direct.npy,True,,False
+57,cot,G3,False,2,18,UltraSmall,B," (5 * 4) minus 2 is (5 * 4) - 2. ANSWER: (5 * 4) - 2
+
+Question:", (5 * 4) minus 2 is (5 * 4) - 2. ANSWER: (5 * 4) - 2,29,31,31,28,057_cot.npy,True,,False
+58,direct,G1,False,8,20,UltraSmall,C," 8
+",8,2,2,2,1,058_direct.npy,True,,False
+58,cot,G3,False,8,20,UltraSmall,C," 4 * (2 + 3) is 8. ANSWER: 8
+
+Question:", 4 * (2 + 3) is 8. ANSWER: 8,17,19,19,16,058_cot.npy,True,,False
+59,direct,G1,False,8,4,UltraSmall,D," 8
+",8,2,2,2,1,059_direct.npy,True,,False
+59,cot,G3,False,1,4,UltraSmall,D," 1 * (5 - 1) is 1. ANSWER: 1
+
+Question:", 1 * (5 - 1) is 1. ANSWER: 1,17,19,19,16,059_cot.npy,True,,False
+60,direct,G1,False,8,20,UltraSmall,A," (8 * 8)
+",8,1,6,6,0,060_direct.npy,True,,False
+60,cot,G3,False,8,20,UltraSmall,A," (4 * 4) plus 4 is 8. ANSWER: 8
+
+Question:", (4 * 4) plus 4 is 8. ANSWER: 8,17,19,19,16,060_cot.npy,True,,False
+61,direct,G1,False,2,7,UltraSmall,B," (2 * 4)
+",2,1,6,6,0,061_direct.npy,True,,False
+61,cot,G3,False,1,7,UltraSmall,B," (2 * 4) - 1 is (2 * 4) - 1. ANSWER: (2 * 4) - 1
+
+Question:", (2 * 4) - 1 is (2 * 4) - 1. ANSWER: (2 * 4) - 1,29,31,31,28,061_cot.npy,True,,False
+62,direct,G1,False,8,10,UltraSmall,C," 8
+",8,2,2,2,1,062_direct.npy,True,,False
+62,cot,G3,False,8,10,UltraSmall,C," 2 * (4 + 1) is 8. ANSWER: 8
+
+Question:", 2 * (4 + 1) is 8. ANSWER: 8,17,19,19,16,062_cot.npy,True,,False
+63,direct,G1,False,8,-4,UltraSmall,D," 8
+",8,2,2,2,1,063_direct.npy,True,,False
+63,cot,G3,False,8,-4,UltraSmall,D," 4 * (3 - 4) is 8. ANSWER: 8
+
+Question:", 4 * (3 - 4) is 8. ANSWER: 8,17,19,19,16,063_cot.npy,True,,False
+64,direct,G1,False,7,17,UltraSmall,A," (7 * 8)
+",7,1,6,6,0,064_direct.npy,True,,False
+64,cot,G3,False,5,17,UltraSmall,A," (3 * 4) plus 5 is (3 * 4) + 5. ANSWER: (3 * 4) + 5
+
+Question:", (3 * 4) plus 5 is (3 * 4) + 5. ANSWER: (3 * 4) + 5,29,31,31,28,064_cot.npy,True,,False
+65,direct,G1,False,8,6,UltraSmall,B," 8
+",8,2,2,2,1,065_direct.npy,True,,False
+65,cot,G3,False,2,6,UltraSmall,B," (4 * 2) minus 2 is (4 * 2) - 2. ANSWER: (4 * 2) - 2
+
+Question:", (4 * 2) minus 2 is (4 * 2) - 2. ANSWER: (4 * 2) - 2,29,31,31,28,065_cot.npy,True,,False
+66,direct,G1,False,8,30,UltraSmall,C," 8
+",8,2,2,2,1,066_direct.npy,True,,False
+66,cot,G3,False,8,30,UltraSmall,C," 5 * (5 + 1) is 8. ANSWER: 8
+
+Question:", 5 * (5 + 1) is 8. ANSWER: 8,17,19,19,16,066_cot.npy,True,,False
+67,direct,G1,False,8,-5,UltraSmall,D," 8
+",8,2,2,2,1,067_direct.npy,True,,False
+67,cot,G3,False,8,-5,UltraSmall,D," 5 * (4 - 5) is 8. ANSWER: 8
+
+Question:", 5 * (4 - 5) is 8. ANSWER: 8,17,19,19,16,067_cot.npy,True,,False
+68,direct,G1,False,5,11,UltraSmall,A," (5 * 2)
+",5,1,6,6,0,068_direct.npy,True,,False
+68,cot,G3,False,1,11,UltraSmall,A," (5 * 2) + 1 is (5 + 1)
+ANSWER: (5 + 1)
+
+Question:"," (5 * 2) + 1 is (5 + 1)
+ANSWER: (5 + 1)",25,27,27,24,068_cot.npy,True,,False
+69,direct,G1,False,2,7,UltraSmall,B," (2 * 4)
+",2,1,6,6,0,069_direct.npy,True,,False
+69,cot,G3,False,1,7,UltraSmall,B," (2 * 4) - 1 is (2 * 4) - 1. ANSWER: (2 * 4) - 1
+
+Question:", (2 * 4) - 1 is (2 * 4) - 1. ANSWER: (2 * 4) - 1,29,31,31,28,069_cot.npy,True,,False
+70,direct,G1,False,8,35,UltraSmall,C," 8
+",8,2,2,2,1,070_direct.npy,True,,False
+70,cot,G3,False,8,35,UltraSmall,C," 5 * (2 + 5) is 8. ANSWER: 8
+
+Question:", 5 * (2 + 5) is 8. ANSWER: 8,17,19,19,16,070_cot.npy,True,,False
+71,direct,G1,False,8,-20,UltraSmall,D," 8
+",8,2,2,2,1,071_direct.npy,True,,False
+71,cot,G3,False,8,-20,UltraSmall,D," 5 * (1 - 5) is 8. ANSWER: 8
+
+Question:", 5 * (1 - 5) is 8. ANSWER: 8,17,19,19,16,071_cot.npy,True,,False
+72,direct,G1,False,5,28,UltraSmall,A," (5 * 5) + 3
+",5,1,8,8,0,072_direct.npy,True,,False
+72,cot,G3,False,3,28,UltraSmall,A," (5 * 5) + 3 is (5 + 3) + 3. ANSWER: (5 + 3) + 3
+
+Question:", (5 * 5) + 3 is (5 + 3) + 3. ANSWER: (5 + 3) + 3,29,31,31,28,072_cot.npy,True,,False
+73,direct,G1,False,8,15,UltraSmall,B," (8 * 9)
+",8,1,6,6,0,073_direct.npy,True,,False
+73,cot,G3,False,5,15,UltraSmall,B," (4 * 5) minus 5 is (4 * 5) - 5. ANSWER: (4 * 5) - 5
+
+Question:", (4 * 5) minus 5 is (4 * 5) - 5. ANSWER: (4 * 5) - 5,29,31,31,28,073_cot.npy,True,,False
+74,direct,G1,False,8,6,UltraSmall,C," 8
+",8,2,2,2,1,074_direct.npy,True,,False
+74,cot,G3,False,1,6,UltraSmall,C," 1 * (1 + 5) is 1. ANSWER: 1
+
+Question:", 1 * (1 + 5) is 1. ANSWER: 1,17,19,19,16,074_cot.npy,True,,False
+75,direct,G1,False,8,-2,UltraSmall,D," 8
+",8,2,2,2,1,075_direct.npy,True,,False
+75,cot,G3,False,8,-2,UltraSmall,D," 2 * (4 - 5) is 8. ANSWER: 8
+
+Question:", 2 * (4 - 5) is 8. ANSWER: 8,17,19,19,16,075_cot.npy,True,,False
+76,direct,G1,False,7,20,UltraSmall,A," (7 * 8)
+",7,1,6,6,0,076_direct.npy,True,,False
+76,cot,G3,False,5,20,UltraSmall,A," (3 * 5) + 5 is (3 + 5) + 5. ANSWER: (3 + 5) + 5
+
+Question:", (3 * 5) + 5 is (3 + 5) + 5. ANSWER: (3 + 5) + 5,29,31,31,28,076_cot.npy,True,,False
+77,direct,G1,False,5,7,UltraSmall,B," (5 * 2)
+",5,1,6,6,0,077_direct.npy,True,,False
+77,cot,G3,False,3,7,UltraSmall,B," (5 * 2) - 3 is (5 * 2) - 3. ANSWER: (5 * 2) - 3
+
+Question:", (5 * 2) - 3 is (5 * 2) - 3. ANSWER: (5 * 2) - 3,29,31,31,28,077_cot.npy,True,,False
+78,direct,G1,False,8,16,UltraSmall,C," 8
+",8,2,2,2,1,078_direct.npy,True,,False
+78,cot,G3,False,8,16,UltraSmall,C," 2 * (3 + 5) is 8. ANSWER: 8
+
+Question:", 2 * (3 + 5) is 8. ANSWER: 8,17,19,19,16,078_cot.npy,True,,False
+79,direct,G2,True,8,8,UltraSmall,D," 8
+",8,2,2,2,1,079_direct.npy,True,,False
+79,cot,G4,True,8,8,UltraSmall,D," 4 * (3 - 1) is 8. ANSWER: 8
+
+Question:", 4 * (3 - 1) is 8. ANSWER: 8,17,19,19,16,079_cot.npy,True,,False
+80,direct,G1,False,7,29,Small,A," (7 * 8)
+",7,1,6,6,0,080_direct.npy,True,,False
+80,cot,G3,False,8,29,Small,A," (3 * 8) + 5 is (3 + 5) * 8. ANSWER: (3 + 5) * 8
+
+Question:", (3 * 8) + 5 is (3 + 5) * 8. ANSWER: (3 + 5) * 8,29,31,31,28,080_cot.npy,True,,False
+81,direct,G1,False,2,-2,Small,B," (2 * 2) - 6
+",2,1,8,8,0,081_direct.npy,True,,False
+81,cot,G3,False,6,-2,Small,B," (2 * 2) - 6 is (2 * 2) - 6. ANSWER: (2 * 2) - 6
+
+Question:", (2 * 2) - 6 is (2 * 2) - 6. ANSWER: (2 * 2) - 6,29,31,31,28,081_cot.npy,True,,False
+82,direct,G1,False,8,36,Small,C," 8
+",8,2,2,2,1,082_direct.npy,True,,False
+82,cot,G3,False,8,36,Small,C," 4 * (6 + 3) is 8. ANSWER: 8
+
+Question:", 4 * (6 + 3) is 8. ANSWER: 8,17,19,19,16,082_cot.npy,True,,False
+83,direct,G1,False,8,-9,Small,D," 8
+",8,2,2,2,1,083_direct.npy,True,,False
+83,cot,G3,False,9,-9,Small,D," 9 * (8 - 9) is 9. ANSWER: 9
+
+Question:", 9 * (8 - 9) is 9. ANSWER: 9,17,19,19,16,083_cot.npy,True,,False
+84,direct,G1,False,2,8,Small,A," (2 * 3)
+",2,1,6,6,0,084_direct.npy,True,,False
+84,cot,G3,False,2,8,Small,A," (2 * 3) plus 2 is (2 * 3) + 2. ANSWER: (2 * 3) + 2
+
+Question:", (2 * 3) plus 2 is (2 * 3) + 2. ANSWER: (2 * 3) + 2,29,31,31,28,084_cot.npy,True,,False
+85,direct,G1,False,4,29,Small,B," (4 * 8) - 3
+",4,1,8,8,0,085_direct.npy,True,,False
+85,cot,G3,False,3,29,Small,B," (4 * 8) minus 3 is (4 * 8) - 3. ANSWER: (4 * 8) - 3
+
+Question:", (4 * 8) minus 3 is (4 * 8) - 3. ANSWER: (4 * 8) - 3,29,31,31,28,085_cot.npy,True,,False
+86,direct,G1,False,8,24,Small,C," 8
+",8,2,2,2,1,086_direct.npy,True,,False
+86,cot,G3,False,8,24,Small,C," 2 * (6 + 6) is 8. ANSWER: 8
+
+Question:", 2 * (6 + 6) is 8. ANSWER: 8,17,19,19,16,086_cot.npy,True,,False
+87,direct,G1,False,8,6,Small,D," 8
+",8,2,2,2,1,087_direct.npy,True,,False
+87,cot,G3,False,8,6,Small,D," 2 * (7 - 4) is 8. ANSWER: 8
+
+Question:", 2 * (7 - 4) is 8. ANSWER: 8,17,19,19,16,087_cot.npy,True,,False
+88,direct,G1,False,5,21,Small,A," (5 * 3) + 6
+",5,1,8,8,0,088_direct.npy,True,,False
+88,cot,G3,False,6,21,Small,A," (5 * 3) + 6 is (5 + 6) + 6. ANSWER: 6
+
+Question:", (5 * 3) + 6 is (5 + 6) + 6. ANSWER: 6,23,25,25,22,088_cot.npy,True,,False
+89,direct,G1,False,8,28,Small,B," (8 * 4)
+",8,1,6,6,0,089_direct.npy,True,,False
+89,cot,G3,False,4,28,Small,B," (8 * 4) - 4 is (8 * 4) - 4. ANSWER: (8 * 4) - 4
+
+Question:", (8 * 4) - 4 is (8 * 4) - 4. ANSWER: (8 * 4) - 4,29,31,31,28,089_cot.npy,True,,False
+90,direct,G1,False,8,44,Small,C," 8
+",8,2,2,2,1,090_direct.npy,True,,False
+90,cot,G3,False,8,44,Small,C," 4 * (4 + 7) is 8. ANSWER: 8
+
+Question:", 4 * (4 + 7) is 8. ANSWER: 8,17,19,19,16,090_cot.npy,True,,False
+91,direct,G1,False,8,-4,Small,D," 8
+",8,2,2,2,1,091_direct.npy,True,,False
+91,cot,G3,False,8,-4,Small,D," 2 * (4 - 6) is 8. ANSWER: 8
+
+Question:", 2 * (4 - 6) is 8. ANSWER: 8,17,19,19,16,091_cot.npy,True,,False
+92,direct,G1,False,8,45,Small,A," (8 * 5)
+",8,1,6,6,0,092_direct.npy,True,,False
+92,cot,G3,False,5,45,Small,A," (8 * 5) + 5 is (8 * 5) + 5. ANSWER: (8 * 5) + 5
+
+Question:", (8 * 5) + 5 is (8 * 5) + 5. ANSWER: (8 * 5) + 5,29,31,31,28,092_cot.npy,True,,False
+93,direct,G1,False,4,5,Small,B," (4 * 3) - (7)
+",4,1,10,10,0,093_direct.npy,True,,False
+93,cot,G3,False,7,5,Small,B," (4 * 3) - 7 is (4 * 3) - 7. ANSWER: (4 * 3) - 7
+
+Question:", (4 * 3) - 7 is (4 * 3) - 7. ANSWER: (4 * 3) - 7,29,31,31,28,093_cot.npy,True,,False
+94,direct,G1,False,9,26,Small,C," 9
+",9,2,2,2,1,094_direct.npy,True,,False
+94,cot,G3,False,8,26,Small,C," 2 * (9 + 4) is 8. ANSWER: 8
+
+Question:", 2 * (9 + 4) is 8. ANSWER: 8,17,19,19,16,094_cot.npy,True,,False
+95,direct,G1,False,8,15,Small,D," 8
+",8,2,2,2,1,095_direct.npy,True,,False
+95,cot,G3,False,8,15,Small,D," 5 * (9 - 6) is 8. ANSWER: 8
+
+Question:", 5 * (9 - 6) is 8. ANSWER: 8,17,19,19,16,095_cot.npy,True,,False
+96,direct,G1,False,6,34,Small,A," (6 * 5)
+",6,1,6,6,0,096_direct.npy,True,,False
+96,cot,G3,False,4,34,Small,A," (6 * 5) plus 4 is (6 * 5) + 4. ANSWER: (6 * 5) + 4
+
+Question:", (6 * 5) plus 4 is (6 * 5) + 4. ANSWER: (6 * 5) + 4,29,31,31,28,096_cot.npy,True,,False
+97,direct,G1,False,2,3,Small,B," (2 * 5)
+",2,1,6,6,0,097_direct.npy,True,,False
+97,cot,G3,False,7,3,Small,B," (2 * 5) minus 7 is (2 * 5) - 7. ANSWER: (2 * 5) - 7
+
+Question:", (2 * 5) minus 7 is (2 * 5) - 7. ANSWER: (2 * 5) - 7,29,31,31,28,097_cot.npy,True,,False
+98,direct,G1,False,8,56,Small,C," 8
+",8,2,2,2,1,098_direct.npy,True,,False
+98,cot,G3,False,8,56,Small,C," 7 times (6 + 2) is 8. ANSWER: 8
+
+Question:", 7 times (6 + 2) is 8. ANSWER: 8,17,19,19,16,098_cot.npy,True,,False
+99,direct,G1,False,8,-12,Small,D," 8
+",8,2,2,2,1,099_direct.npy,True,,False
+99,cot,G3,False,8,-12,Small,D," 6 * (7 - 9) is 8. ANSWER: 8
+
+Question:", 6 * (7 - 9) is 8. ANSWER: 8,17,19,19,16,099_cot.npy,True,,False
+100,direct,G1,False,8,57,Small,A," (8 * 7)
+",8,1,6,6,0,100_direct.npy,True,,False
+100,cot,G3,False,8,57,Small,A," (8 * 7) + 1 is 8. ANSWER: 8
+
+Question:", (8 * 7) + 1 is 8. ANSWER: 8,17,19,19,16,100_cot.npy,True,,False
+101,direct,G1,False,3,15,Small,B," (3 * 6)
+",3,1,6,6,0,101_direct.npy,True,,False
+101,cot,G3,False,3,15,Small,B," (3 * 6) - 3 is (3 + 6) - 3. ANSWER: (3 + 6) - 3
+
+Question:", (3 * 6) - 3 is (3 + 6) - 3. ANSWER: (3 + 6) - 3,29,31,31,28,101_cot.npy,True,,False
+102,direct,G1,False,8,24,Small,C," 8
+",8,2,2,2,1,102_direct.npy,True,,False
+102,cot,G3,False,8,24,Small,C," 6 * (2 + 2) is 8. ANSWER: 8
+
+Question:", 6 * (2 + 2) is 8. ANSWER: 8,17,19,19,16,102_cot.npy,True,,False
+103,direct,G1,False,8,-32,Small,D," 8
+",8,2,2,2,1,103_direct.npy,True,,False
+103,cot,G3,False,8,-32,Small,D," 8 * (3 - 7) is 8. ANSWER: 8
+
+Question:", 8 * (3 - 7) is 8. ANSWER: 8,17,19,19,16,103_cot.npy,True,,False
+104,direct,G1,False,5,31,Small,A," (5 * 6)
+",5,1,6,6,0,104_direct.npy,True,,False
+104,cot,G3,False,1,31,Small,A," (5 * 6) + 1 is (5 + 6) + 1. ANSWER: (5 + 6) + 1
+
+Question:", (5 * 6) + 1 is (5 + 6) + 1. ANSWER: (5 + 6) + 1,29,31,31,28,104_cot.npy,True,,False
+105,direct,G1,False,8,7,Small,B," (8 * 2)
+",8,1,6,6,0,105_direct.npy,True,,False
+105,cot,G3,False,9,7,Small,B," (8 * 2) minus 9 is (8 * 2) - 9. ANSWER: (8 * 2) - 9
+
+Question:", (8 * 2) minus 9 is (8 * 2) - 9. ANSWER: (8 * 2) - 9,29,31,31,28,105_cot.npy,True,,False
+106,direct,G1,False,8,70,Small,C," 8
+",8,2,2,2,1,106_direct.npy,True,,False
+106,cot,G3,False,8,70,Small,C," 5 * (7 + 7) is 8. ANSWER: 8
+
+Question:", 5 * (7 + 7) is 8. ANSWER: 8,17,19,19,16,106_cot.npy,True,,False
+107,direct,G1,False,8,-9,Small,D," 8
+",8,2,2,2,1,107_direct.npy,True,,False
+107,cot,G3,False,7,-9,Small,D," 3 * (6 - 9) is 7. ANSWER: 7
+
+Question:", 3 * (6 - 9) is 7. ANSWER: 7,17,19,19,16,107_cot.npy,True,,False
+108,direct,G1,False,6,54,Small,A," (6 * 8)
+",6,1,6,6,0,108_direct.npy,True,,False
+108,cot,G3,False,6,54,Small,A," (6 * 8) + 6 is (6 + 6) + 6. ANSWER: 6 + 6
+
+Question:", (6 * 8) + 6 is (6 + 6) + 6. ANSWER: 6,21,27,27,20,108_cot.npy,True,,False
+109,direct,G1,False,8,39,Small,B," (8 * 6) - (8 * 6)
+",8,1,12,12,0,109_direct.npy,True,,False
+109,cot,G3,False,9,39,Small,B," (8 * 6) - 9 is (8 * 6) - 9. ANSWER: 9
+
+Question:", (8 * 6) - 9 is (8 * 6) - 9. ANSWER: 9,23,25,25,22,109_cot.npy,True,,False
+110,direct,G1,False,8,48,Small,C," 8
+",8,2,2,2,1,110_direct.npy,True,,False
+110,cot,G3,False,8,48,Small,C," 4 * (5 + 7) is 8. ANSWER: 8
+
+Question:", 4 * (5 + 7) is 8. ANSWER: 8,17,19,19,16,110_cot.npy,True,,False
+111,direct,G1,False,8,-8,Small,D," 8
+",8,2,2,2,1,111_direct.npy,True,,False
+111,cot,G3,False,8,-8,Small,D," 8 * (4 - 5) is 8. ANSWER: 8
+
+Question:", 8 * (4 - 5) is 8. ANSWER: 8,17,19,19,16,111_cot.npy,True,,False
+112,direct,G1,False,8,21,Small,A," (8 * 2) + 5
+",8,1,8,8,0,112_direct.npy,True,,False
+112,cot,G3,False,5,21,Small,A," (8 * 2) + 5 is (8 * 2) + 5. ANSWER: (8 * 2) + 5
+
+Question:", (8 * 2) + 5 is (8 * 2) + 5. ANSWER: (8 * 2) + 5,29,31,31,28,112_cot.npy,True,,False
+113,direct,G1,False,6,23,Small,B," (6 * 5) - (6 * 5)
+",6,1,12,12,0,113_direct.npy,True,,False
+113,cot,G3,False,7,23,Small,B," (6 * 5) minus 7 is (6 * 5) - 7. ANSWER: 7
+
+Question:", (6 * 5) minus 7 is (6 * 5) - 7. ANSWER: 7,23,25,25,22,113_cot.npy,True,,False
+114,direct,G1,False,9,119,Small,C," 9
+",9,2,2,2,1,114_direct.npy,True,,False
+114,cot,G3,False,8,119,Small,C," 7 * (9 + 8) is 8. ANSWER: 8
+
+Question:", 7 * (9 + 8) is 8. ANSWER: 8,17,19,19,16,114_cot.npy,True,,False
+115,direct,G1,False,8,-36,Small,D," 8
+",8,2,2,2,1,115_direct.npy,True,,False
+115,cot,G3,False,8,-36,Small,D," 9 * (5 - 9) is 8. ANSWER: 8
+
+Question:", 9 * (5 - 9) is 8. ANSWER: 8,17,19,19,16,115_cot.npy,True,,False
+116,direct,G1,False,9,38,Small,A," (9 * 4)
+",9,1,6,6,0,116_direct.npy,True,,False
+116,cot,G3,False,2,38,Small,A," (9 * 4) + 2 is (9 * 4) + 2. ANSWER: (9 * 4) + 2
+
+Question:", (9 * 4) + 2 is (9 * 4) + 2. ANSWER: (9 * 4) + 2,29,31,31,28,116_cot.npy,True,,False
+117,direct,G1,False,6,40,Small,B," (6 * 7)
+",6,1,6,6,0,117_direct.npy,True,,False
+117,cot,G3,False,8,40,Small,B," (6 * 7) minus 2 is 8. ANSWER: 8
+
+Question:", (6 * 7) minus 2 is 8. ANSWER: 8,17,19,19,16,117_cot.npy,True,,False
+118,direct,G1,False,8,50,Small,C," 8
+",8,2,2,2,1,118_direct.npy,True,,False
+118,cot,G3,False,7,50,Small,C," 5 * (6 + 4) is 7. ANSWER: 7
+
+Question:", 5 * (6 + 4) is 7. ANSWER: 7,17,19,19,16,118_cot.npy,True,,False
+119,direct,G1,False,8,15,Small,D," 8
+",8,2,2,2,1,119_direct.npy,True,,False
+119,cot,G3,False,8,15,Small,D," 5 * (4 - 1) is 8. ANSWER: 8
+
+Question:", 5 * (4 - 1) is 8. ANSWER: 8,17,19,19,16,119_cot.npy,True,,False
+120,direct,G1,False,2,18,Small,A," (2 * 5) + 8
+",2,1,8,8,0,120_direct.npy,True,,False
+120,cot,G3,False,8,18,Small,A," (2 * 5) plus 8 is (2 * 5) + 8. ANSWER: (2 * 5) + 8
+
+Question:", (2 * 5) plus 8 is (2 * 5) + 8. ANSWER: (2 * 5) + 8,29,31,31,28,120_cot.npy,True,,False
+121,direct,G1,False,3,20,Small,B," (3 * 9)
+",3,1,6,6,0,121_direct.npy,True,,False
+121,cot,G3,False,7,20,Small,B," (3 * 9) minus 7 is (3 * 8) - 7. ANSWER: (3 * 8) - 7
+
+Question:", (3 * 9) minus 7 is (3 * 8) - 7. ANSWER: (3 * 8) - 7,29,31,31,28,121_cot.npy,True,,False
+122,direct,G1,False,8,80,Small,C," 8
+",8,2,2,2,1,122_direct.npy,True,,False
+122,cot,G3,False,8,80,Small,C," 5 * (8 + 8) is 8. ANSWER: 8
+
+Question:", 5 * (8 + 8) is 8. ANSWER: 8,17,19,19,16,122_cot.npy,True,,False
+123,direct,G1,False,8,16,Small,D," 8
+",8,2,2,2,1,123_direct.npy,True,,False
+123,cot,G3,False,8,16,Small,D," 8 * (5 - 3) is 8. ANSWER: 8
+
+Question:", 8 * (5 - 3) is 8. ANSWER: 8,17,19,19,16,123_cot.npy,True,,False
+124,direct,G1,False,2,13,Small,A," (2 * 4) + 7
+",2,1,8,8,0,124_direct.npy,True,,False
+124,cot,G3,False,8,13,Small,A," (2 * 3) plus 7 is (2 * 3) plus 8. ANSWER: 8
+
+Question:", (2 * 3) plus 7 is (2 * 3) plus 8. ANSWER: 8,23,25,25,22,124_cot.npy,True,,False
+125,direct,G1,False,5,11,Small,B," (5 * 4) - (5 * 4)
+",5,1,12,12,0,125_direct.npy,True,,False
+125,cot,G3,False,9,11,Small,B," (5 * 4) - 9 is (5 + 4) - 9. ANSWER: 9
+
+Question:", (5 * 4) - 9 is (5 + 4) - 9. ANSWER: 9,23,25,25,22,125_cot.npy,True,,False
+126,direct,G1,False,8,99,Small,C," 8
+",8,2,2,2,1,126_direct.npy,True,,False
+126,cot,G3,False,9,99,Small,C," 9 * (2 + 9) is 9. ANSWER: 9
+
+Question:", 9 * (2 + 9) is 9. ANSWER: 9,17,19,19,16,126_cot.npy,True,,False
+127,direct,G1,False,8,-25,Small,D," 8
+",8,2,2,2,1,127_direct.npy,True,,False
+127,cot,G3,False,5,-25,Small,D," 5 * (3 - 8) is 5. ANSWER: 5
+
+Question:", 5 * (3 - 8) is 5. ANSWER: 5,17,19,19,16,127_cot.npy,True,,False
+128,direct,G1,False,4,45,Small,A," (4 * 9)
+",4,1,6,6,0,128_direct.npy,True,,False
+128,cot,G3,False,9,45,Small,A," (4 * 9) + 9 is (4 * 9) + 9. ANSWER: 9
+
+Question:", (4 * 9) + 9 is (4 * 9) + 9. ANSWER: 9,23,25,25,22,128_cot.npy,True,,False
+129,direct,G1,False,7,54,Small,B," (7 * 9)
+",7,1,6,6,0,129_direct.npy,True,,False
+129,cot,G3,False,9,54,Small,B," (7 * 9) - 9 is (7 + 9) - 9. ANSWER: (7 + 9) - 9
+
+Question:", (7 * 9) - 9 is (7 + 9) - 9. ANSWER: (7 + 9) - 9,29,31,31,28,129_cot.npy,True,,False
+130,direct,G1,False,9,96,Small,C," 9
+",9,2,2,2,1,130_direct.npy,True,,False
+130,cot,G3,False,8,96,Small,C," 8 * (9 + 3) is 8. ANSWER: 8
+
+Question:", 8 * (9 + 3) is 8. ANSWER: 8,17,19,19,16,130_cot.npy,True,,False
+131,direct,G1,False,8,36,Small,D," 8
+",8,2,2,2,1,131_direct.npy,True,,False
+131,cot,G3,False,9,36,Small,D," 9 * (9 - 5) is 9. ANSWER: 9
+
+Question:", 9 * (9 - 5) is 9. ANSWER: 9,17,19,19,16,131_cot.npy,True,,False
+132,direct,G1,False,5,39,Small,A," (5 * 6) + (5 * 6)
+",5,1,12,12,0,132_direct.npy,True,,False
+132,cot,G3,False,9,39,Small,A," (5 * 6) plus 9 is (5 * 6) + 9. ANSWER: 9
+
+Question:", (5 * 6) plus 9 is (5 * 6) + 9. ANSWER: 9,23,25,25,22,132_cot.npy,True,,False
+133,direct,G1,False,9,40,Small,B," (9 * 5)
+",9,1,6,6,0,133_direct.npy,True,,False
+133,cot,G3,False,8,40,Small,B," (9 * 5) minus 5 is 8. ANSWER: 8
+
+Question:", (9 * 5) minus 5 is 8. ANSWER: 8,17,19,19,16,133_cot.npy,True,,False
+134,direct,G1,False,8,72,Small,C," 8
+",8,2,2,2,1,134_direct.npy,True,,False
+134,cot,G3,False,8,72,Small,C," 9 * (3 + 5) is 8. ANSWER: 8
+
+Question:", 9 * (3 + 5) is 8. ANSWER: 8,17,19,19,16,134_cot.npy,True,,False
+135,direct,G1,False,9,-8,Small,D," 9
+",9,2,2,2,1,135_direct.npy,True,,False
+135,cot,G3,False,8,-8,Small,D," 4 * (5 - 7) is 8. ANSWER: 8
+
+Question:", 4 * (5 - 7) is 8. ANSWER: 8,17,19,19,16,135_cot.npy,True,,False
+136,direct,G1,False,8,22,Small,A," (8 * 9)
+",8,1,6,6,0,136_direct.npy,True,,False
+136,cot,G3,False,2,22,Small,A," (4 * 5) plus 2 is (4 * 5) + 2. ANSWER: (4 * 5) + 2
+
+Question:", (4 * 5) plus 2 is (4 * 5) + 2. ANSWER: (4 * 5) + 2,29,31,31,28,136_cot.npy,True,,False
+137,direct,G1,False,8,58,Small,B," (8 * 8) - 6
+",8,1,8,8,0,137_direct.npy,True,,False
+137,cot,G3,False,6,58,Small,B," (8 * 8) - 6 is (8 * 8) - 6. ANSWER: (8 * 8) - 6
+
+Question:", (8 * 8) - 6 is (8 * 8) - 6. ANSWER: (8 * 8) - 6,29,31,31,28,137_cot.npy,True,,False
+138,direct,G1,False,8,75,Small,C," 8
+",8,2,2,2,1,138_direct.npy,True,,False
+138,cot,G3,False,8,75,Small,C," 5 * (8 + 7) is 8. ANSWER: 8
+
+Question:", 5 * (8 + 7) is 8. ANSWER: 8,17,19,19,16,138_cot.npy,True,,False
+139,direct,G1,False,8,-8,Small,D," 8
+",8,2,2,2,1,139_direct.npy,True,,False
+139,cot,G3,False,9,-8,Small,D," 8 * (8 - 9) is 9. ANSWER: 9
+
+Question:", 8 * (8 - 9) is 9. ANSWER: 9,17,19,19,16,139_cot.npy,True,,False
+140,direct,G1,False,5,49,Small,A," (5 * 9)
+",5,1,6,6,0,140_direct.npy,True,,False
+140,cot,G3,False,4,49,Small,A," (5 * 9) plus 4 is (5 + 4) + 4. ANSWER: (5 + 4) + 4
+
+Question:", (5 * 9) plus 4 is (5 + 4) + 4. ANSWER: (5 + 4) + 4,29,31,31,28,140_cot.npy,True,,False
+141,direct,G1,False,6,40,Small,B," (6 * 8)
+",6,1,6,6,0,141_direct.npy,True,,False
+141,cot,G3,False,8,40,Small,B," (6 * 8) - 8 is (6 * 8) - 8. ANSWER: (6 * 8) - 8
+
+Question:", (6 * 8) - 8 is (6 * 8) - 8. ANSWER: (6 * 8) - 8,29,31,31,28,141_cot.npy,True,,False
+142,direct,G1,False,8,28,Small,C," 8
+",8,2,2,2,1,142_direct.npy,True,,False
+142,cot,G3,False,8,28,Small,C," 2 * (8 + 6) is 8. ANSWER: 8
+
+Question:", 2 * (8 + 6) is 8. ANSWER: 8,17,19,19,16,142_cot.npy,True,,False
+143,direct,G1,False,8,-32,Small,D," 8
+",8,2,2,2,1,143_direct.npy,True,,False
+143,cot,G3,False,8,-32,Small,D," 8 * (4 - 8) is 8. ANSWER: 8
+
+Question:", 8 * (4 - 8) is 8. ANSWER: 8,17,19,19,16,143_cot.npy,True,,False
+144,direct,G1,False,8,15,Small,A," (8 * 2)
+",8,1,6,6,0,144_direct.npy,True,,False
+144,cot,G3,False,8,15,Small,A," (4 * 2) + 7 is (8 + 8) + 8. ANSWER: (8 + 8) + 8
+
+Question:", (4 * 2) + 7 is (8 + 8) + 8. ANSWER: (8 + 8) + 8,29,31,31,28,144_cot.npy,True,,False
+145,direct,G1,False,2,-1,Small,B," (2 * 4) - 8
+",2,1,8,8,0,145_direct.npy,True,,False
+145,cot,G3,False,7,-1,Small,B," (2 * 3) - 7 is (2 * 3) - 7. ANSWER: (2 * 3) - 7
+
+Question:", (2 * 3) - 7 is (2 * 3) - 7. ANSWER: (2 * 3) - 7,29,31,31,28,145_cot.npy,True,,False
+146,direct,G1,False,9,48,Small,C," 9
+",9,2,2,2,1,146_direct.npy,True,,False
+146,cot,G3,False,8,48,Small,C," 4 * (9 + 3) is 8. ANSWER: 8
+
+Question:", 4 * (9 + 3) is 8. ANSWER: 8,17,19,19,16,146_cot.npy,True,,False
+147,direct,G1,False,8,-2,Small,D," 8
+",8,2,2,2,1,147_direct.npy,True,,False
+147,cot,G3,False,8,-2,Small,D," 2 * (6 - 7) is 8. ANSWER: 8
+
+Question:", 2 * (6 - 7) is 8. ANSWER: 8,17,19,19,16,147_cot.npy,True,,False
+148,direct,G1,False,7,43,Small,A," (7 * 5)
+",7,1,6,6,0,148_direct.npy,True,,False
+148,cot,G3,False,8,43,Small,A," (7 * 5) + 8 is (7 + 8)
+
+Question:", (7 * 5) + 8 is (7 + 8),15,17,17,14,148_cot.npy,True,,False
+149,direct,G1,False,7,42,Small,B," (7 * 7)
+",7,1,6,6,0,149_direct.npy,True,,False
+149,cot,G3,False,7,42,Small,B," (7 * 7) - 7 is (7 * 7) - 7. ANSWER: (7 * 7) - 7
+
+Question:", (7 * 7) - 7 is (7 * 7) - 7. ANSWER: (7 * 7) - 7,29,31,31,28,149_cot.npy,True,,False
+150,direct,G1,False,8,78,Small,C," 8
+",8,2,2,2,1,150_direct.npy,True,,False
+150,cot,G3,False,8,78,Small,C," 6 * (8 + 5) is 8. ANSWER: 8
+
+Question:", 6 * (8 + 5) is 8. ANSWER: 8,17,19,19,16,150_cot.npy,True,,False
+151,direct,G1,False,8,24,Small,D," 8
+",8,2,2,2,1,151_direct.npy,True,,False
+151,cot,G3,False,8,24,Small,D," 3 * (9 - 1) is 8. ANSWER: 8
+
+Question:", 3 * (9 - 1) is 8. ANSWER: 8,17,19,19,16,151_cot.npy,True,,False
+152,direct,G1,False,2,18,Small,A," (2 * 8)
+",2,1,6,6,0,152_direct.npy,True,,False
+152,cot,G3,False,4,18,Small,A," (2 * 7) plus 4 is (2 * 7) + 4. ANSWER: (2 * 7) + 4
+
+Question:", (2 * 7) plus 4 is (2 * 7) + 4. ANSWER: (2 * 7) + 4,29,31,31,28,152_cot.npy,True,,False
+153,direct,G1,False,3,5,Small,B," (3 * 2)
+",3,1,6,6,0,153_direct.npy,True,,False
+153,cot,G3,False,1,5,Small,B," (3 * 2) - 1 is (3 * 2) - 1. ANSWER: (3 * 2) - 1
+
+Question:", (3 * 2) - 1 is (3 * 2) - 1. ANSWER: (3 * 2) - 1,29,31,31,28,153_cot.npy,True,,False
+154,direct,G1,False,8,30,Small,C," 8
+",8,2,2,2,1,154_direct.npy,True,,False
+154,cot,G3,False,8,30,Small,C," 5 * (5 + 1) is 8. ANSWER: 8
+
+Question:", 5 * (5 + 1) is 8. ANSWER: 8,17,19,19,16,154_cot.npy,True,,False
+155,direct,G2,True,8,8,Small,D," 8
+",8,2,2,2,1,155_direct.npy,True,,False
+155,cot,G4,True,8,8,Small,D," 4 * (5 - 3) is 8. ANSWER: 8
+
+Question:", 4 * (5 - 3) is 8. ANSWER: 8,17,19,19,16,155_cot.npy,True,,False
+156,direct,G1,False,9,31,Small,A," (9 * 3)
+",9,1,6,6,0,156_direct.npy,True,,False
+156,cot,G3,False,4,31,Small,A," (9 * 3) plus 4 is (9 * 3) + 4. ANSWER: (9 * 3) + 4
+
+Question:", (9 * 3) plus 4 is (9 * 3) + 4. ANSWER: (9 * 3) + 4,29,31,31,28,156_cot.npy,True,,False
+157,direct,G1,False,9,48,Small,B," (9 * 6)
+",9,1,6,6,0,157_direct.npy,True,,False
+157,cot,G3,False,6,48,Small,B," (9 * 6) - 6 is (9 * 6) - 6. ANSWER: (9 * 6) - 6
+
+Question:", (9 * 6) - 6 is (9 * 6) - 6. ANSWER: (9 * 6) - 6,29,31,31,28,157_cot.npy,True,,False
+158,direct,G1,False,8,24,Small,C," 8
+",8,2,2,2,1,158_direct.npy,True,,False
+158,cot,G3,False,8,24,Small,C," 4 * (3 + 3) is 8. ANSWER: 8
+
+Question:", 4 * (3 + 3) is 8. ANSWER: 8,17,19,19,16,158_cot.npy,True,,False
+159,direct,G1,False,8,12,Small,D," 8
+",8,2,2,2,1,159_direct.npy,True,,False
+159,cot,G3,False,7,12,Small,D," 6 * (3 - 1) is 7. ANSWER: 7
+
+Question:", 6 * (3 - 1) is 7. ANSWER: 7,17,19,19,16,159_cot.npy,True,,False
+160,direct,G1,False,29,441,Medium,A," (29 * 14) + 35
+",29,1,8,8,0,160_direct.npy,True,,False
+160,cot,G3,False,35,441,Medium,A, (29 * 14) + 35 is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is, (29 * 14) + 35 is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is (29 + 35) is,200,200,200,199,160_cot.npy,True,,False
+161,direct,G1,False,22,41,Medium,B," (22 * 4) - 47
+",22,1,8,8,0,161_direct.npy,True,,False
+161,cot,G3,False,47,41,Medium,B," (22 * 4) - 47 is (22 * 4) - 47. ANSWER: 47
+
+Question:", (22 * 4) - 47 is (22 * 4) - 47. ANSWER: 47,23,25,25,22,161_cot.npy,True,,False
+162,direct,G1,False,8,850,Medium,C," 8
+",8,2,2,2,1,162_direct.npy,True,,False
+162,cot,G3,False,25,850,Medium,C," 25 * (5 + 29) is 25. ANSWER: 25
+
+Question:", 25 * (5 + 29) is 25. ANSWER: 25,17,19,19,16,162_cot.npy,True,,False
+163,direct,G1,False,8,-1968,Medium,D," 8
+",8,2,2,2,1,163_direct.npy,True,,False
+163,cot,G3,False,48,-1968,Medium,D," 48 * (5 - 46) is 48. ANSWER: 48
+
+Question:", 48 * (5 - 46) is 48. ANSWER: 48,17,19,19,16,163_cot.npy,True,,False
+164,direct,G1,False,12,200,Medium,A," (12 * 13) + 44
+",12,1,8,8,0,164_direct.npy,True,,False
+164,cot,G3,False,44,200,Medium,A," (12 * 13) + 44 is (12 + 13) * 44. ANSWER: (12 + 13) * 44
+
+Question:", (12 * 13) + 44 is (12 + 13) * 44. ANSWER: (12 + 13) * 44,29,31,31,28,164_cot.npy,True,,False
+165,direct,G1,False,37,467,Medium,B," (37 * 13)
+",37,1,6,6,0,165_direct.npy,True,,False
+165,cot,G3,False,14,467,Medium,B," (37 * 13) - 14 is (37 + 13) - 14. ANSWER: (37 + 13) - 14
+
+Question:", (37 * 13) - 14 is (37 + 13) - 14. ANSWER: (37 + 13) - 14,29,31,31,28,165_cot.npy,True,,False
+166,direct,G1,False,8,924,Medium,C," 8
+",8,2,2,2,1,166_direct.npy,True,,False
+166,cot,G3,False,42,924,Medium,C," 42 * (12 + 10) is 42. ANSWER: 42
+
+Question:", 42 * (12 + 10) is 42. ANSWER: 42,17,19,19,16,166_cot.npy,True,,False
+167,direct,G1,False,8,-962,Medium,D," 8
+",8,2,2,2,1,167_direct.npy,True,,False
+167,cot,G3,False,37,-962,Medium,D," 37 * (13 - 39) is 37. ANSWER: 37
+
+Question:", 37 * (13 - 39) is 37. ANSWER: 37,17,19,19,16,167_cot.npy,True,,False
+168,direct,G1,False,19,306,Medium,A," (19 * 15) + 21
+",19,1,8,8,0,168_direct.npy,True,,False
+168,cot,G3,False,21,306,Medium,A," (19 * 15) + 21 is (19 * 15) + 21. ANSWER: (19 * 15) + 21
+
+Question:", (19 * 15) + 21 is (19 * 15) + 21. ANSWER: (19 * 15) + 21,29,31,31,28,168_cot.npy,True,,False
+169,direct,G1,False,43,381,Medium,B," (43 * 10)
+",43,1,6,6,0,169_direct.npy,True,,False
+169,cot,G3,False,49,381,Medium,B," (43 * 10) - 49 is (43 * 10) - 49. ANSWER: 49
+
+Question:", (43 * 10) - 49 is (43 * 10) - 49. ANSWER: 49,23,25,25,22,169_cot.npy,True,,False
+170,direct,G1,False,8,2464,Medium,C," 8
+",8,2,2,2,1,170_direct.npy,True,,False
+170,cot,G3,False,44,2464,Medium,C," 44 * (17 + 39) is 44. ANSWER: 44
+
+Question:", 44 * (17 + 39) is 44. ANSWER: 44,17,19,19,16,170_cot.npy,True,,False
+171,direct,G1,False,8,-740,Medium,D," 8
+",8,2,2,2,1,171_direct.npy,True,,False
+171,cot,G3,False,37,-740,Medium,D," 37 * (10 - 30) is 37. ANSWER: 37
+
+Question:", 37 * (10 - 30) is 37. ANSWER: 37,17,19,19,16,171_cot.npy,True,,False
+172,direct,G1,False,25,127,Medium,A," (25 * 4) + (27)
+",25,1,10,10,0,172_direct.npy,True,,False
+172,cot,G3,False,4,127,Medium,A," (25 * 4) + 27 is (25 + 27) * 4. ANSWER: (25 + 27) * 4
+
+Question:", (25 * 4) + 27 is (25 + 27) * 4. ANSWER: (25 + 27) * 4,29,31,31,28,172_cot.npy,True,,False
+173,direct,G1,False,38,303,Medium,B," (38 * 9)
+",38,1,6,6,0,173_direct.npy,True,,False
+173,cot,G3,False,39,303,Medium,B," 38 - 39 is (38 + 39) - 39. ANSWER: 39
+
+Question:", 38 - 39 is (38 + 39) - 39. ANSWER: 39,19,21,21,18,173_cot.npy,True,,False
+174,direct,G1,False,8,2070,Medium,C," 8
+",8,2,2,2,1,174_direct.npy,True,,False
+174,cot,G3,False,46,2070,Medium,C," 46 * (14 + 31) is 46. ANSWER: 46
+
+Question:", 46 * (14 + 31) is 46. ANSWER: 46,17,19,19,16,174_cot.npy,True,,False
+175,direct,G1,False,8,-143,Medium,D," 8
+",8,2,2,2,1,175_direct.npy,True,,False
+175,cot,G3,False,17,-143,Medium,D," 11 * (17 - 30) is 17. ANSWER: 17
+
+Question:", 11 * (17 - 30) is 17. ANSWER: 17,17,19,19,16,175_cot.npy,True,,False
+176,direct,G1,False,21,380,Medium,A," (21 * 17) + 23
+",21,1,8,8,0,176_direct.npy,True,,False
+176,cot,G3,False,23,380,Medium,A, (21 * 17) + 23 is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is, (21 * 17) + 23 is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is (21 + 23) is,200,200,200,199,176_cot.npy,True,,False
+177,direct,G1,False,32,289,Medium,B," (32 * 10)
+",32,1,6,6,0,177_direct.npy,True,,False
+177,cot,G3,False,31,289,Medium,B," (32 * 10) minus 31 is (32 * 10) - 31. ANSWER: 31
+
+Question:", (32 * 10) minus 31 is (32 * 10) - 31. ANSWER: 31,23,25,25,22,177_cot.npy,True,,False
+178,direct,G1,False,8,1485,Medium,C," 8
+",8,2,2,2,1,178_direct.npy,True,,False
+178,cot,G3,False,27,1485,Medium,C," 27 * (10 + 45) is 27. ANSWER: 27
+
+Question:", 27 * (10 + 45) is 27. ANSWER: 27,17,19,19,16,178_cot.npy,True,,False
+179,direct,G1,False,8,-40,Medium,D," 8
+",8,2,2,2,1,179_direct.npy,True,,False
+179,cot,G3,False,8,-40,Medium,D," 10 * (18 - 22) is 8. ANSWER: 8
+
+Question:", 10 * (18 - 22) is 8. ANSWER: 8,17,19,19,16,179_cot.npy,True,,False
+180,direct,G1,False,15,171,Medium,A," (15 * 9) + 36
+",15,1,8,8,0,180_direct.npy,True,,False
+180,cot,G3,False,36,171,Medium,A," (15 * 9) + 36 is (15 * 9) + 36. ANSWER: 36
+
+Question:", (15 * 9) + 36 is (15 * 9) + 36. ANSWER: 36,23,25,25,22,180_cot.npy,True,,False
+181,direct,G1,False,41,754,Medium,B," (41 * 19) - 25
+",41,1,8,8,0,181_direct.npy,True,,False
+181,cot,G3,False,25,754,Medium,B," (41 * 19) - 25 is (41 * 19) - 25. ANSWER: (41 * 19) - 25
+
+Question:", (41 * 19) - 25 is (41 * 19) - 25. ANSWER: (41 * 19) - 25,29,31,31,28,181_cot.npy,True,,False
+182,direct,G1,False,8,2200,Medium,C," 8
+",8,2,2,2,1,182_direct.npy,True,,False
+182,cot,G3,False,40,2200,Medium,C," 40 * (17 + 38) is 40. ANSWER: 40
+
+Question:", 40 * (17 + 38) is 40. ANSWER: 40,17,19,19,16,182_cot.npy,True,,False
+183,direct,G1,False,8,-264,Medium,D," 8
+",8,2,2,2,1,183_direct.npy,True,,False
+183,cot,G3,False,8,-264,Medium,D," 11 * (4 - 28) is 8. ANSWER: 8
+
+Question:", 11 * (4 - 28) is 8. ANSWER: 8,17,19,19,16,183_cot.npy,True,,False
+184,direct,G1,False,24,361,Medium,A," (24 * 14) + 25
+",24,1,8,8,0,184_direct.npy,True,,False
+184,cot,G3,False,25,361,Medium,A, (24 * 14) + 25 is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is, (24 * 14) + 25 is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is (24 + 25) is,200,200,200,199,184_cot.npy,True,,False
+185,direct,G1,False,29,337,Medium,B," (29 * 13) - 40
+",29,1,8,8,0,185_direct.npy,True,,False
+185,cot,G3,False,40,337,Medium,B," (29 * 13) - 40 is (29 * 13) - 40. ANSWER: (29 * 13) - 40
+
+Question:", (29 * 13) - 40 is (29 * 13) - 40. ANSWER: (29 * 13) - 40,29,31,31,28,185_cot.npy,True,,False
+186,direct,G1,False,8,2250,Medium,C," 8
+",8,2,2,2,1,186_direct.npy,True,,False
+186,cot,G3,False,45,2250,Medium,C," 45 * (18 + 32) is 45. ANSWER: 45
+
+Question:", 45 * (18 + 32) is 45. ANSWER: 45,17,19,19,16,186_cot.npy,True,,False
+187,direct,G1,False,8,-444,Medium,D," 8
+",8,2,2,2,1,187_direct.npy,True,,False
+187,cot,G3,False,37,-444,Medium,D," 37 * (19 - 31) is 37. ANSWER: 37
+
+Question:", 37 * (19 - 31) is 37. ANSWER: 37,17,19,19,16,187_cot.npy,True,,False
+188,direct,G1,False,32,539,Medium,A," (32 * 16) + 27
+",32,1,8,8,0,188_direct.npy,True,,False
+188,cot,G3,False,27,539,Medium,A," (32 * 16) + 27 is (32 * 16) + 27. ANSWER: (32 * 16) + 27
+
+Question:", (32 * 16) + 27 is (32 * 16) + 27. ANSWER: (32 * 16) + 27,29,31,31,28,188_cot.npy,True,,False
+189,direct,G1,False,29,266,Medium,B," (29 * 10)
+",29,1,6,6,0,189_direct.npy,True,,False
+189,cot,G3,False,24,266,Medium,B," (29 * 10) minus 24 is (29 * 10) - 24. ANSWER: 24
+
+Question:", (29 * 10) minus 24 is (29 * 10) - 24. ANSWER: 24,23,25,25,22,189_cot.npy,True,,False
+190,direct,G1,False,8,646,Medium,C," 8
+",8,2,2,2,1,190_direct.npy,True,,False
+190,cot,G3,False,30,646,Medium,C, 17 * (8 + 30) is (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) =, 17 * (8 + 30) is (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) = (8 + 30) + (8 + 30) =,200,200,200,199,190_cot.npy,True,,False
+191,direct,G1,False,9,-34,Medium,D," 9
+",9,2,2,2,1,191_direct.npy,True,,False
+191,cot,G3,False,19,-34,Medium,D," 17 * (19 - 21) is 19. ANSWER: 19
+
+Question:", 17 * (19 - 21) is 19. ANSWER: 19,17,19,19,16,191_cot.npy,True,,False
+192,direct,G1,False,22,216,Medium,A," (22 * 8) + 40
+",22,1,8,8,0,192_direct.npy,True,,False
+192,cot,G3,False,40,216,Medium,A," (22 * 8) + 40 is (22 * 8) + 40. ANSWER: (22 * 8) + 40
+
+Question:", (22 * 8) + 40 is (22 * 8) + 40. ANSWER: (22 * 8) + 40,29,31,31,28,192_cot.npy,True,,False
+193,direct,G1,False,27,438,Medium,B," (27 * 18) - 48
+",27,1,8,8,0,193_direct.npy,True,,False
+193,cot,G3,False,48,438,Medium,B," (27 * 18) minus 48 is (27 * 18) - 48. ANSWER: 48
+
+Question:", (27 * 18) minus 48 is (27 * 18) - 48. ANSWER: 48,23,25,25,22,193_cot.npy,True,,False
+194,direct,G1,False,8,756,Medium,C," 8
+",8,2,2,2,1,194_direct.npy,True,,False
+194,cot,G3,False,28,756,Medium,C," 28 * (5 + 22) is 28. ANSWER: 28
+
+Question:", 28 * (5 + 22) is 28. ANSWER: 28,17,19,19,16,194_cot.npy,True,,False
+195,direct,G1,False,8,-672,Medium,D," 8
+",8,2,2,2,1,195_direct.npy,True,,False
+195,cot,G3,False,9,-672,Medium,D," 28 - 33 is 9. ANSWER: 9
+
+Question:", 28 - 33 is 9. ANSWER: 9,13,15,15,12,195_cot.npy,True,,False
+196,direct,G1,False,21,241,Medium,A," (21 * 11)
+",21,1,6,6,0,196_direct.npy,True,,False
+196,cot,G3,False,10,241,Medium,A," (21 * 11) + 10 is (21 * 11) + 10. ANSWER: (21 * 11) + 10
+
+Question:", (21 * 11) + 10 is (21 * 11) + 10. ANSWER: (21 * 11) + 10,29,31,31,28,196_cot.npy,True,,False
+197,direct,G1,False,44,237,Medium,B," (44 * 6) - 27
+",44,1,8,8,0,197_direct.npy,True,,False
+197,cot,G3,False,27,237,Medium,B, (44 * 6) - 27 is (44 + 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is, (44 * 6) - 27 is (44 + 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is (44 - 27) is,200,200,200,199,197_cot.npy,True,,False
+198,direct,G1,False,8,576,Medium,C," 8
+",8,2,2,2,1,198_direct.npy,True,,False
+198,cot,G3,False,12,576,Medium,C," 12 * (3 + 45) is 12. ANSWER: 12
+
+Question:", 12 * (3 + 45) is 12. ANSWER: 12,17,19,19,16,198_cot.npy,True,,False
+199,direct,G1,False,8,-980,Medium,D," 8
+",8,2,2,2,1,199_direct.npy,True,,False
+199,cot,G3,False,8,-980,Medium,D," 28 - (6 - 41) is 8. ANSWER: 8
+
+Question:", 28 - (6 - 41) is 8. ANSWER: 8,17,19,19,16,199_cot.npy,True,,False
+200,direct,G1,False,16,78,Medium,A," (16 * 2) + 46
+",16,1,8,8,0,200_direct.npy,True,,False
+200,cot,G3,False,46,78,Medium,A," (16 * 2) + 46 is (16 * 2) + 46. ANSWER: 46
+
+Question:", (16 * 2) + 46 is (16 * 2) + 46. ANSWER: 46,23,25,25,22,200_cot.npy,True,,False
+201,direct,G1,False,28,436,Medium,B," (28 * 17) - 40
+",28,1,8,8,0,201_direct.npy,True,,False
+201,cot,G3,False,40,436,Medium,B," (28 * 17) - 40 is (28 + 17) - 40. ANSWER: (28 + 17) - 40
+
+Question:", (28 * 17) - 40 is (28 + 17) - 40. ANSWER: (28 + 17) - 40,29,31,31,28,201_cot.npy,True,,False
+202,direct,G1,False,8,1254,Medium,C," 8
+",8,2,2,2,1,202_direct.npy,True,,False
+202,cot,G3,False,38,1254,Medium,C," 38 * (12 + 21) is 38. ANSWER: 38
+
+Question:", 38 * (12 + 21) is 38. ANSWER: 38,17,19,19,16,202_cot.npy,True,,False
+203,direct,G1,False,8,-390,Medium,D," 8
+",8,2,2,2,1,203_direct.npy,True,,False
+203,cot,G3,False,40,-390,Medium,D," 13 * (10 - 40) is 40. ANSWER: 40
+
+Question:", 13 * (10 - 40) is 40. ANSWER: 40,17,19,19,16,203_cot.npy,True,,False
+204,direct,G1,False,17,103,Medium,A," (17 * 4) + 35
+",17,1,8,8,0,204_direct.npy,True,,False
+204,cot,G3,False,35,103,Medium,A, (17 * 4) + 35 is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35, (17 * 4) + 35 is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35) + (17 * 4) is (35,200,200,200,199,204_cot.npy,True,,False
+205,direct,G1,False,41,118,Medium,B," (41 * 4) - (46)
+",41,1,10,10,0,205_direct.npy,True,,False
+205,cot,G3,False,46,118,Medium,B," (41 * 4) minus 46 is (41 * 4) - 46. ANSWER: 46
+
+Question:", (41 * 4) minus 46 is (41 * 4) - 46. ANSWER: 46,23,25,25,22,205_cot.npy,True,,False
+206,direct,G1,False,8,325,Medium,C," 8
+",8,2,2,2,1,206_direct.npy,True,,False
+206,cot,G3,False,12,325,Medium,C," 13 * (6 + 19) is 12. ANSWER: 12
+
+Question:", 13 * (6 + 19) is 12. ANSWER: 12,17,19,19,16,206_cot.npy,True,,False
+207,direct,G1,False,8,-184,Medium,D," 8
+",8,2,2,2,1,207_direct.npy,True,,False
+207,cot,G3,False,46,-184,Medium,D," 46 * (11 - 15) is 46. ANSWER: 46
+
+Question:", 46 * (11 - 15) is 46. ANSWER: 46,17,19,19,16,207_cot.npy,True,,False
+208,direct,G1,False,25,170,Medium,A," (25 * 5) + 45
+",25,1,8,8,0,208_direct.npy,True,,False
+208,cot,G3,False,45,170,Medium,A," (25 * 5) + 45 is (25 * 5) + 45. ANSWER: (25 * 5) + 45
+
+Question:", (25 * 5) + 45 is (25 * 5) + 45. ANSWER: (25 * 5) + 45,29,31,31,28,208_cot.npy,True,,False
+209,direct,G1,False,36,281,Medium,B," (36 * 9)
+",36,1,6,6,0,209_direct.npy,True,,False
+209,cot,G3,False,43,281,Medium,B," (36 * 9) minus 43 is (36 * 9) - 43. ANSWER: 43
+
+Question:", (36 * 9) minus 43 is (36 * 9) - 43. ANSWER: 43,23,25,25,22,209_cot.npy,True,,False
+210,direct,G1,False,8,1836,Medium,C," 8
+",8,2,2,2,1,210_direct.npy,True,,False
+210,cot,G3,False,8,1836,Medium,C," 34 * (16 + 38) is 8. ANSWER: 8
+
+Question:", 34 * (16 + 38) is 8. ANSWER: 8,17,19,19,16,210_cot.npy,True,,False
+211,direct,G1,False,8,-406,Medium,D," 8
+",8,2,2,2,1,211_direct.npy,True,,False
+211,cot,G3,False,29,-406,Medium,D," 29 * (15 - 29) is 29. ANSWER: 29
+
+Question:", 29 * (15 - 29) is 29. ANSWER: 29,17,19,19,16,211_cot.npy,True,,False
+212,direct,G1,False,46,187,Medium,A," (46 * 3) + 49
+",46,1,8,8,0,212_direct.npy,True,,False
+212,cot,G3,False,49,187,Medium,A, (46 * 3) + 49 is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is, (46 * 3) + 49 is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is (46 + 49) is,200,200,200,199,212_cot.npy,True,,False
+213,direct,G1,False,16,105,Medium,B," (16 * 8) - 23
+",16,1,8,8,0,213_direct.npy,True,,False
+213,cot,G3,False,23,105,Medium,B," (16 * 8) - 23 is (16 * 8) - 23. ANSWER: 23
+
+Question:", (16 * 8) - 23 is (16 * 8) - 23. ANSWER: 23,23,25,25,22,213_cot.npy,True,,False
+214,direct,G1,False,8,624,Medium,C," 8
+",8,2,2,2,1,214_direct.npy,True,,False
+214,cot,G3,False,26,624,Medium,C," 26 * (4 + 20) is 26. ANSWER: 26
+
+Question:", 26 * (4 + 20) is 26. ANSWER: 26,17,19,19,16,214_cot.npy,True,,False
+215,direct,G1,False,8,-950,Medium,D," 8
+",8,2,2,2,1,215_direct.npy,True,,False
+215,cot,G3,False,45,-950,Medium,D," 25 * (7 - 45) is 45. ANSWER: 45
+
+Question:", 25 * (7 - 45) is 45. ANSWER: 45,17,19,19,16,215_cot.npy,True,,False
+216,direct,G1,False,14,108,Medium,A," (14 * 8) + 10
+",14,1,8,8,0,216_direct.npy,True,,False
+216,cot,G3,False,10,108,Medium,A," (14 * 7) + 10 is (14 * 8) + 10. ANSWER: (14 * 8) + 10
+
+Question:", (14 * 7) + 10 is (14 * 8) + 10. ANSWER: (14 * 8) + 10,29,31,31,28,216_cot.npy,True,,False
+217,direct,G1,False,36,528,Medium,B," (36 * 16)
+",36,1,6,6,0,217_direct.npy,True,,False
+217,cot,G3,False,48,528,Medium,B," (36 * 16) - 48 is (36 * 16) - 48. ANSWER: 48
+
+Question:", (36 * 16) - 48 is (36 * 16) - 48. ANSWER: 48,23,25,25,22,217_cot.npy,True,,False
+218,direct,G1,False,8,920,Medium,C," 8
+",8,2,2,2,1,218_direct.npy,True,,False
+218,cot,G3,False,40,920,Medium,C," 40 * (11 + 12) is 40. ANSWER: 40
+
+Question:", 40 * (11 + 12) is 40. ANSWER: 40,17,19,19,16,218_cot.npy,True,,False
+219,direct,G1,False,8,-408,Medium,D," 8
+",8,2,2,2,1,219_direct.npy,True,,False
+219,cot,G3,False,24,-408,Medium,D," 24 * (11 - 28) is 24. ANSWER: 24
+
+Question:", 24 * (11 - 28) is 24. ANSWER: 24,17,19,19,16,219_cot.npy,True,,False
+220,direct,G1,False,39,180,Medium,A," (39 * 4) + 24
+",39,1,8,8,0,220_direct.npy,True,,False
+220,cot,G3,False,24,180,Medium,A," (39 * 4) + 24 is (39 * 4) + 24. ANSWER: (39 * 4) + 24
+
+Question:", (39 * 4) + 24 is (39 * 4) + 24. ANSWER: (39 * 4) + 24,29,31,31,28,220_cot.npy,True,,False
+221,direct,G1,False,26,171,Medium,B," (26 * 8) - 37
+",26,1,8,8,0,221_direct.npy,True,,False
+221,cot,G3,False,37,171,Medium,B," (26 * 8) - 37 is (26 * 8) - 37. ANSWER: (26 * 8) - 37
+
+Question:", (26 * 8) - 37 is (26 * 8) - 37. ANSWER: (26 * 8) - 37,29,31,31,28,221_cot.npy,True,,False
+222,direct,G1,False,9,731,Medium,C," 9
+",9,2,2,2,1,222_direct.npy,True,,False
+222,cot,G3,False,24,731,Medium,C," 17 times (19 + 24) is 24. ANSWER: 24
+
+Question:", 17 times (19 + 24) is 24. ANSWER: 24,17,19,19,16,222_cot.npy,True,,False
+223,direct,G1,False,8,-171,Medium,D," 8
+",8,2,2,2,1,223_direct.npy,True,,False
+223,cot,G3,False,9,-171,Medium,D," 19 * (10 - 19) is 9. ANSWER: 9
+
+Question:", 19 * (10 - 19) is 9. ANSWER: 9,17,19,19,16,223_cot.npy,True,,False
+224,direct,G1,False,14,62,Medium,A," (14 * 3) + 20
+",14,1,8,8,0,224_direct.npy,True,,False
+224,cot,G3,False,20,62,Medium,A," (14 * 3) + 20 is (14 * 3) + 20. ANSWER: (14 * 3) + 20
+
+Question:", (14 * 3) + 20 is (14 * 3) + 20. ANSWER: (14 * 3) + 20,29,31,31,28,224_cot.npy,True,,False
+225,direct,G1,False,29,281,Medium,B," (29 * 11) - 38
+",29,1,8,8,0,225_direct.npy,True,,False
+225,cot,G3,False,38,281,Medium,B," (29 * 11) - 38 is (29 * 11) - 38. ANSWER: 38
+
+Question:", (29 * 11) - 38 is (29 * 11) - 38. ANSWER: 38,23,25,25,22,225_cot.npy,True,,False
+226,direct,G1,False,9,765,Medium,C," 9
+",9,2,2,2,1,226_direct.npy,True,,False
+226,cot,G3,False,17,765,Medium,C," 17 * (16 + 29) is 17. ANSWER: 17
+
+Question:", 17 * (16 + 29) is 17. ANSWER: 17,17,19,19,16,226_cot.npy,True,,False
+227,direct,G1,False,8,-1120,Medium,D," 8
+",8,2,2,2,1,227_direct.npy,True,,False
+227,cot,G3,False,35,-1120,Medium,D," 35 * (10 - 42) is 35. ANSWER: 35
+
+Question:", 35 * (10 - 42) is 35. ANSWER: 35,17,19,19,16,227_cot.npy,True,,False
+228,direct,G1,False,44,786,Medium,A," (44 * 17) + 38
+",44,1,8,8,0,228_direct.npy,True,,False
+228,cot,G3,False,38,786,Medium,A, (44 * 17) + 38 is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is, (44 * 17) + 38 is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is (44 + 38) is,200,200,200,199,228_cot.npy,True,,False
+229,direct,G1,False,15,8,Medium,B," (15 * 3) - 37
+",15,1,8,8,0,229_direct.npy,True,,False
+229,cot,G3,False,37,8,Medium,B," (15 * 3) - 37 is (15 * 3) - 37. ANSWER: (15 * 3) - 37
+
+Question:", (15 * 3) - 37 is (15 * 3) - 37. ANSWER: (15 * 3) - 37,29,31,31,28,229_cot.npy,True,,False
+230,direct,G1,False,8,630,Medium,C," 8
+",8,2,2,2,1,230_direct.npy,True,,False
+230,cot,G3,False,30,630,Medium,C," 30 * (10 + 11) is 30. ANSWER: 30
+
+Question:", 30 * (10 + 11) is 30. ANSWER: 30,17,19,19,16,230_cot.npy,True,,False
+231,direct,G1,False,8,-555,Medium,D," 8
+",8,2,2,2,1,231_direct.npy,True,,False
+231,cot,G3,False,46,-555,Medium,D," 15 * (9 - 46) is (15 + 9) * (9 - 46). ANSWER: (15 + 9) * (9 - 46)
+
+Question:", 15 * (9 - 46) is (15 + 9) * (9 - 46). ANSWER: (15 + 9) * (9 - 46),36,38,38,35,231_cot.npy,True,,False
+232,direct,G1,False,47,121,Medium,A," (47 * 2) + 27
+",47,1,8,8,0,232_direct.npy,True,,False
+232,cot,G3,False,27,121,Medium,A," (47 * 2) + 27 is (47 * 2) + 27. ANSWER: (47 * 2) + 27
+
+Question:", (47 * 2) + 27 is (47 * 2) + 27. ANSWER: (47 * 2) + 27,29,31,31,28,232_cot.npy,True,,False
+233,direct,G1,False,46,117,Medium,B," (46 * 3) - 21
+",46,1,8,8,0,233_direct.npy,True,,False
+233,cot,G3,False,21,117,Medium,B," (46 * 3) - 21 is (46 * 3) - 21. ANSWER: (46 * 3) - 21
+
+Question:", (46 * 3) - 21 is (46 * 3) - 21. ANSWER: (46 * 3) - 21,29,31,31,28,233_cot.npy,True,,False
+234,direct,G1,False,8,2240,Medium,C," 8
+",8,2,2,2,1,234_direct.npy,True,,False
+234,cot,G3,False,40,2240,Medium,C," 40 * (18 + 38) is 40. ANSWER: 40
+
+Question:", 40 * (18 + 38) is 40. ANSWER: 40,17,19,19,16,234_cot.npy,True,,False
+235,direct,G1,False,8,-1080,Medium,D," 8
+",8,2,2,2,1,235_direct.npy,True,,False
+235,cot,G3,False,27,-1080,Medium,D," 27 times (7 - 47) is 27. ANSWER: 27
+
+Question:", 27 times (7 - 47) is 27. ANSWER: 27,17,19,19,16,235_cot.npy,True,,False
+236,direct,G1,False,37,644,Medium,A," (37 * 17) + 15
+",37,1,8,8,0,236_direct.npy,True,,False
+236,cot,G3,False,15,644,Medium,A," (37 * 17) + 15 is (37 * 17) + 15. ANSWER: (37 * 17) + 15
+
+Question:", (37 * 17) + 15 is (37 * 17) + 15. ANSWER: (37 * 17) + 15,29,31,31,28,236_cot.npy,True,,False
+237,direct,G1,False,40,484,Medium,B," (40 * 13)
+",40,1,6,6,0,237_direct.npy,True,,False
+237,cot,G3,False,36,484,Medium,B," (40 * 13) minus 36 is (40 * 13) - 36. ANSWER: 36
+
+Question:", (40 * 13) minus 36 is (40 * 13) - 36. ANSWER: 36,23,25,25,22,237_cot.npy,True,,False
+238,direct,G1,False,9,868,Medium,C," 9
+",9,2,2,2,1,238_direct.npy,True,,False
+238,cot,G3,False,32,868,Medium,C," 31 * (12 + 16) is 32. ANSWER: 32
+
+Question:", 31 * (12 + 16) is 32. ANSWER: 32,17,19,19,16,238_cot.npy,True,,False
+239,direct,G1,False,8,-480,Medium,D," 8
+",8,2,2,2,1,239_direct.npy,True,,False
+239,cot,G3,False,36,-480,Medium,D," 20 * (12 - 36) is 36. ANSWER: 36
+
+Question:", 20 * (12 - 36) is 36. ANSWER: 36,17,19,19,16,239_cot.npy,True,,False
+240,direct,G1,False,98,7200,Large,A," (98 * 73) + 46
+",98,1,8,8,0,240_direct.npy,True,,False
+240,cot,G3,False,46,7200,Large,A," (98 * 73) + 46 is (98 * 73) + 46. ANSWER: (98 * 73) + 46
+
+Question:", (98 * 73) + 46 is (98 * 73) + 46. ANSWER: (98 * 73) + 46,29,31,31,28,240_cot.npy,True,,False
+241,direct,G1,False,94,5654,Large,B," (94 * 61) - (80)
+",94,1,10,10,0,241_direct.npy,True,,False
+241,cot,G3,False,80,5654,Large,B," (94 * 61) - 80 is (94 * 61) - 80. ANSWER: 80
+
+Question:", (94 * 61) - 80 is (94 * 61) - 80. ANSWER: 80,23,25,25,22,241_cot.npy,True,,False
+242,direct,G1,False,8,1246,Large,C," 8
+",8,2,2,2,1,242_direct.npy,True,,False
+242,cot,G3,False,68,1246,Large,C," 14 * (68 + 21) is 68. ANSWER: 68
+
+Question:", 14 * (68 + 21) is 68. ANSWER: 68,17,19,19,16,242_cot.npy,True,,False
+243,direct,G1,False,8,-450,Large,D," 8
+",8,2,2,2,1,243_direct.npy,True,,False
+243,cot,G3,False,50,-450,Large,D," 50 * (42 - 51) is 50. ANSWER: 50
+
+Question:", 50 * (42 - 51) is 50. ANSWER: 50,17,19,19,16,243_cot.npy,True,,False
+244,direct,G1,False,24,1539,Large,A," (24 * 61) + 75
+",24,1,8,8,0,244_direct.npy,True,,False
+244,cot,G3,False,75,1539,Large,A," (24 * 61) + 75 is (24 * 61) + 75. ANSWER: (24 * 61) + 75
+
+Question:", (24 * 61) + 75 is (24 * 61) + 75. ANSWER: (24 * 61) + 75,29,31,31,28,244_cot.npy,True,,False
+245,direct,G1,False,10,861,Large,B," (10 * 94)
+",10,1,6,6,0,245_direct.npy,True,,False
+245,cot,G3,False,79,861,Large,B," (10 * 94) - 79 is (10 * 94) - 79. ANSWER: (10 * 94) - 79
+
+Question:", (10 * 94) - 79 is (10 * 94) - 79. ANSWER: (10 * 94) - 79,29,31,31,28,245_cot.npy,True,,False
+246,direct,G1,False,7,5382,Large,C," 7
+",7,2,2,2,1,246_direct.npy,True,,False
+246,cot,G3,False,69,5382,Large,C," 69 * (62 + 16) is 69. ANSWER: 69
+
+Question:", 69 * (62 + 16) is 69. ANSWER: 69,17,19,19,16,246_cot.npy,True,,False
+247,direct,G1,False,8,680,Large,D," 8
+",8,2,2,2,1,247_direct.npy,True,,False
+247,cot,G3,False,76,680,Large,D," 34 * (76 - 56) is 76. ANSWER: 76
+
+Question:", 34 * (76 - 56) is 76. ANSWER: 76,17,19,19,16,247_cot.npy,True,,False
+248,direct,G1,False,89,6587,Large,A," (89 * 73)
+",89,1,6,6,0,248_direct.npy,True,,False
+248,cot,G3,False,90,6587,Large,A," (89 * 73) + 90 is (89 + 90)
+
+Question:", (89 * 73) + 90 is (89 + 90),15,17,17,14,248_cot.npy,True,,False
+249,direct,G1,False,66,1020,Large,B," (66 * 16)
+",66,1,6,6,0,249_direct.npy,True,,False
+249,cot,G3,False,36,1020,Large,B," (66 * 16) - 36 is (66 * 16) - 36. ANSWER: 36
+
+Question:", (66 * 16) - 36 is (66 * 16) - 36. ANSWER: 36,23,25,25,22,249_cot.npy,True,,False
+250,direct,G1,False,8,4664,Large,C," 8
+",8,2,2,2,1,250_direct.npy,True,,False
+250,cot,G3,False,88,4664,Large,C," 44 * (80 + 26) is 88. ANSWER: 88
+
+Question:", 44 * (80 + 26) is 88. ANSWER: 88,17,19,19,16,250_cot.npy,True,,False
+251,direct,G1,False,8,-1518,Large,D," 8
+",8,2,2,2,1,251_direct.npy,True,,False
+251,cot,G3,False,9,-1518,Large,D," 46 * (66 - 99) is 9. ANSWER: 9
+
+Question:", 46 * (66 - 99) is 9. ANSWER: 9,17,19,19,16,251_cot.npy,True,,False
+252,direct,G1,False,72,1813,Large,A," (72 * 25) + 13
+",72,1,8,8,0,252_direct.npy,True,,False
+252,cot,G3,False,13,1813,Large,A," (72 * 25) + 13 is (72 * 25) + 13. ANSWER: 13
+
+Question:", (72 * 25) + 13 is (72 * 25) + 13. ANSWER: 13,23,25,25,22,252_cot.npy,True,,False
+253,direct,G1,False,90,7790,Large,B," (90 * 87)
+",90,1,6,6,0,253_direct.npy,True,,False
+253,cot,G3,False,40,7790,Large,B," (90 * 87) - 40 is (90 * 87) - 40. ANSWER: (90 * 87) - 40
+
+Question:", (90 * 87) - 40 is (90 * 87) - 40. ANSWER: (90 * 87) - 40,29,31,31,28,253_cot.npy,True,,False
+254,direct,G1,False,8,3870,Large,C," 8
+",8,2,2,2,1,254_direct.npy,True,,False
+254,cot,G3,False,49,3870,Large,C," 30 * (49 + 80) is 49. ANSWER: 49
+
+Question:", 30 * (49 + 80) is 49. ANSWER: 49,17,19,19,16,254_cot.npy,True,,False
+255,direct,G1,False,8,198,Large,D," 8
+",8,2,2,2,1,255_direct.npy,True,,False
+255,cot,G3,False,80,198,Large,D," 11 * (80 - 62) is 80. ANSWER: 80
+
+Question:", 11 * (80 - 62) is 80. ANSWER: 80,17,19,19,16,255_cot.npy,True,,False
+256,direct,G1,False,21,822,Large,A," (21 * 38) + 24
+",21,1,8,8,0,256_direct.npy,True,,False
+256,cot,G3,False,24,822,Large,A," (21 * 38) + 24 is (21 * 38) + 24. ANSWER: (21 * 38) + 24
+
+Question:", (21 * 38) + 24 is (21 * 38) + 24. ANSWER: (21 * 38) + 24,29,31,31,28,256_cot.npy,True,,False
+257,direct,G1,False,69,1633,Large,B," (69 * 25)
+",69,1,6,6,0,257_direct.npy,True,,False
+257,cot,G3,False,92,1633,Large,B," (69 * 25) - 92 is (69 * 25) - 92. ANSWER: 92
+
+Question:", (69 * 25) - 92 is (69 * 25) - 92. ANSWER: 92,23,25,25,22,257_cot.npy,True,,False
+258,direct,G1,False,8,3480,Large,C," 8
+",8,2,2,2,1,258_direct.npy,True,,False
+258,cot,G3,False,8,3480,Large,C," 29 * (73 + 47) is 8. ANSWER: 8
+
+Question:", 29 * (73 + 47) is 8. ANSWER: 8,17,19,19,16,258_cot.npy,True,,False
+259,direct,G1,False,8,-1425,Large,D," 8
+",8,2,2,2,1,259_direct.npy,True,,False
+259,cot,G3,False,63,-1425,Large,D, 75 * (44 - 63) is (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) =, 75 * (44 - 63) is (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) = (75 + 44) * (44 - 63) =,200,200,200,199,259_cot.npy,True,,False
+260,direct,G1,False,71,5011,Large,A," (71 * 70) + 41
+",71,1,8,8,0,260_direct.npy,True,,False
+260,cot,G3,False,41,5011,Large,A," (71 * 70) + 41 is (71 * 70) + 41. ANSWER: (71 * 70) + 41
+
+Question:", (71 * 70) + 41 is (71 * 70) + 41. ANSWER: (71 * 70) + 41,29,31,31,28,260_cot.npy,True,,False
+261,direct,G1,False,68,5412,Large,B," (68 * 80)
+",68,1,6,6,0,261_direct.npy,True,,False
+261,cot,G3,False,28,5412,Large,B," (68 * 80) - 28 is (68 + 80) - 28. ANSWER: (68 + 80) - 28
+
+Question:", (68 * 80) - 28 is (68 + 80) - 28. ANSWER: (68 + 80) - 28,29,31,31,28,261_cot.npy,True,,False
+262,direct,G1,False,8,7080,Large,C," 8
+",8,2,2,2,1,262_direct.npy,True,,False
+262,cot,G3,False,86,7080,Large,C, 59 * (34 + 86) is (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) =, 59 * (34 + 86) is (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) = (59 + 86) * (34 + 86) =,200,200,200,199,262_cot.npy,True,,False
+263,direct,G1,False,8,675,Large,D," 8
+",8,2,2,2,1,263_direct.npy,True,,False
+263,cot,G3,False,75,675,Large,D," 75 * (27 - 18) is 75. ANSWER: 75
+
+Question:", 75 * (27 - 18) is 75. ANSWER: 75,17,19,19,16,263_cot.npy,True,,False
+264,direct,G1,False,45,2888,Large,A," (45 * 63)
+",45,1,6,6,0,264_direct.npy,True,,False
+264,cot,G3,False,63,2888,Large,A," (45 * 63) + 53 is (45 + 53) * 63. ANSWER: (45 + 53) * 63
+
+Question:", (45 * 63) + 53 is (45 + 53) * 63. ANSWER: (45 + 53) * 63,29,31,31,28,264_cot.npy,True,,False
+265,direct,G1,False,74,3246,Large,B," (74 * 44)
+",74,1,6,6,0,265_direct.npy,True,,False
+265,cot,G3,False,10,3246,Large,B," (74 * 44) - 10 is (74 * 44) - 10. ANSWER: (74 * 44) - 10
+
+Question:", (74 * 44) - 10 is (74 * 44) - 10. ANSWER: (74 * 44) - 10,29,31,31,28,265_cot.npy,True,,False
+266,direct,G1,False,8,6118,Large,C," 8
+",8,2,2,2,1,266_direct.npy,True,,False
+266,cot,G3,False,48,6118,Large,C," 46 * (48 + 85) is 48. ANSWER: 48
+
+Question:", 46 * (48 + 85) is 48. ANSWER: 48,17,19,19,16,266_cot.npy,True,,False
+267,direct,G1,False,8,1848,Large,D," 8
+",8,2,2,2,1,267_direct.npy,True,,False
+267,cot,G3,False,8,1848,Large,D," 84 * (94 - 72) is 8. ANSWER: 8
+
+Question:", 84 * (94 - 72) is 8. ANSWER: 8,17,19,19,16,267_cot.npy,True,,False
+268,direct,G1,False,29,2021,Large,A," (29 * 67) + 78
+",29,1,8,8,0,268_direct.npy,True,,False
+268,cot,G3,False,78,2021,Large,A," (29 * 67) + 78 is (29 * 67) + 78. ANSWER: (29 * 67) + 78
+
+Question:", (29 * 67) + 78 is (29 * 67) + 78. ANSWER: (29 * 67) + 78,29,31,31,28,268_cot.npy,True,,False
+269,direct,G1,False,71,3782,Large,B," (71 * 54)
+",71,1,6,6,0,269_direct.npy,True,,False
+269,cot,G3,False,52,3782,Large,B," (71 * 54) - 52 is (71 * 54) - 52. ANSWER: (71 * 54) - 52
+
+Question:", (71 * 54) - 52 is (71 * 54) - 52. ANSWER: (71 * 54) - 52,29,31,31,28,269_cot.npy,True,,False
+270,direct,G1,False,8,10960,Large,C," 8
+",8,2,2,2,1,270_direct.npy,True,,False
+270,cot,G3,False,8,10960,Large,C," 80 * (79 + 58) is 8. ANSWER: 8
+
+Question:", 80 * (79 + 58) is 8. ANSWER: 8,17,19,19,16,270_cot.npy,True,,False
+271,direct,G1,False,8,1156,Large,D," 8
+",8,2,2,2,1,271_direct.npy,True,,False
+271,cot,G3,False,68,1156,Large,D," 68 - 34 is 68. ANSWER: 68
+
+Question:", 68 - 34 is 68. ANSWER: 68,13,15,15,12,271_cot.npy,True,,False
+272,direct,G1,False,99,4043,Large,A," (99 * 40)
+",99,1,6,6,0,272_direct.npy,True,,False
+272,cot,G3,False,83,4043,Large,A," (99 * 40) + 83 is (99 * 40) + 83. ANSWER: (99 * 40) + 83
+
+Question:", (99 * 40) + 83 is (99 * 40) + 83. ANSWER: (99 * 40) + 83,29,31,31,28,272_cot.npy,True,,False
+273,direct,G1,False,59,2239,Large,B," (59 * 39) - 62
+",59,1,8,8,0,273_direct.npy,True,,False
+273,cot,G3,False,62,2239,Large,B," (59 * 39) - 62 is (59 * 39) - 62. ANSWER: 62
+
+Question:", (59 * 39) - 62 is (59 * 39) - 62. ANSWER: 62,23,25,25,22,273_cot.npy,True,,False
+274,direct,G1,False,8,1800,Large,C," 8
+",8,2,2,2,1,274_direct.npy,True,,False
+274,cot,G3,False,50,1800,Large,C," 15 * (50 + 70) is 50. ANSWER: 50
+
+Question:", 15 * (50 + 70) is 50. ANSWER: 50,17,19,19,16,274_cot.npy,True,,False
+275,direct,G1,False,8,-2030,Large,D," 8
+",8,2,2,2,1,275_direct.npy,True,,False
+275,cot,G3,False,58,-2030,Large,D," 58 + 94 is 58. ANSWER: 58
+
+Question:", 58 + 94 is 58. ANSWER: 58,13,15,15,12,275_cot.npy,True,,False
+276,direct,G1,False,93,2770,Large,A," (93 * 29)
+",93,1,6,6,0,276_direct.npy,True,,False
+276,cot,G3,False,29,2770,Large,A," (93 * 29) + 73 is (93 + 73) * 29. ANSWER: (93 + 73) * 29
+
+Question:", (93 * 29) + 73 is (93 + 73) * 29. ANSWER: (93 + 73) * 29,29,31,31,28,276_cot.npy,True,,False
+277,direct,G1,False,14,290,Large,B," (14 * 26) - 74
+",14,1,8,8,0,277_direct.npy,True,,False
+277,cot,G3,False,74,290,Large,B," (14 * 26) - 74 is (14 * 26) - 74. ANSWER: 74
+
+Question:", (14 * 26) - 74 is (14 * 26) - 74. ANSWER: 74,23,25,25,22,277_cot.npy,True,,False
+278,direct,G1,False,8,6290,Large,C," 8
+",8,2,2,2,1,278_direct.npy,True,,False
+278,cot,G3,False,85,6290,Large,C," 85 * (52 + 22) is 85. ANSWER: 85
+
+Question:", 85 * (52 + 22) is 85. ANSWER: 85,17,19,19,16,278_cot.npy,True,,False
+279,direct,G1,False,8,-3630,Large,D," 8
+",8,2,2,2,1,279_direct.npy,True,,False
+279,cot,G3,False,66,-3630,Large,D," 66 * (22 - 77) is 66. ANSWER: 66
+
+Question:", 66 * (22 - 77) is 66. ANSWER: 66,17,19,19,16,279_cot.npy,True,,False
+280,direct,G1,False,68,776,Large,A," (68 * 11) + 28
+",68,1,8,8,0,280_direct.npy,True,,False
+280,cot,G3,False,11,776,Large,A," (68 * 11) + 28 is (68 + 28) * 11. ANSWER: (68 + 28) * 11
+
+Question:", (68 * 11) + 28 is (68 + 28) * 11. ANSWER: (68 + 28) * 11,29,31,31,28,280_cot.npy,True,,False
+281,direct,G1,False,62,5737,Large,B," (62 * 93)
+",62,1,6,6,0,281_direct.npy,True,,False
+281,cot,G3,False,29,5737,Large,B," (62 * 93) - 29 is (62 * 93) - 29. ANSWER: 29
+
+Question:", (62 * 93) - 29 is (62 * 93) - 29. ANSWER: 29,23,25,25,22,281_cot.npy,True,,False
+282,direct,G1,False,8,2147,Large,C," 8
+",8,2,2,2,1,282_direct.npy,True,,False
+282,cot,G3,False,43,2147,Large,C, 19 * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is, 19 * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is (70 + 43) * (70 + 43) is,200,200,200,199,282_cot.npy,True,,False
+283,direct,G1,False,8,-477,Large,D," 8
+",8,2,2,2,1,283_direct.npy,True,,False
+283,cot,G3,False,8,-477,Large,D," 53 * (89 - 98) is 8. ANSWER: 8
+
+Question:", 53 * (89 - 98) is 8. ANSWER: 8,17,19,19,16,283_cot.npy,True,,False
+284,direct,G1,False,60,5600,Large,A," (60 * 93)
+",60,1,6,6,0,284_direct.npy,True,,False
+284,cot,G3,False,2,5600,Large,A," (60 * 93) + 20 is (60 + 20) * 2. ANSWER: (60 + 20) * 2
+
+Question:", (60 * 93) + 20 is (60 + 20) * 2. ANSWER: (60 + 20) * 2,29,31,31,28,284_cot.npy,True,,False
+285,direct,G1,False,52,4914,Large,B," (52 * 96)
+",52,1,6,6,0,285_direct.npy,True,,False
+285,cot,G3,False,78,4914,Large,B," (52 * 96) - 78 is (52 * 96) - 78. ANSWER: 78
+
+Question:", (52 * 96) - 78 is (52 * 96) - 78. ANSWER: 78,23,25,25,22,285_cot.npy,True,,False
+286,direct,G1,False,8,8120,Large,C," 8
+",8,2,2,2,1,286_direct.npy,True,,False
+286,cot,G3,False,58,8120,Large,C," 58 * (50 + 90) is 58. ANSWER: 58
+
+Question:", 58 * (50 + 90) is 58. ANSWER: 58,17,19,19,16,286_cot.npy,True,,False
+287,direct,G1,False,8,4680,Large,D," 8
+",8,2,2,2,1,287_direct.npy,True,,False
+287,cot,G3,False,72,4680,Large,D," 72 * (79 - 14) is 72. ANSWER: 72
+
+Question:", 72 * (79 - 14) is 72. ANSWER: 72,17,19,19,16,287_cot.npy,True,,False
+288,direct,G1,False,89,1642,Large,A," (89 * 18) + 40
+",89,1,8,8,0,288_direct.npy,True,,False
+288,cot,G3,False,40,1642,Large,A," (89 * 18) + 40 is (89 * 18) + 40. ANSWER: (89 * 18) + 40
+
+Question:", (89 * 18) + 40 is (89 * 18) + 40. ANSWER: (89 * 18) + 40,29,31,31,28,288_cot.npy,True,,False
+289,direct,G1,False,90,8684,Large,B," (90 * 97) - 46
+",90,1,8,8,0,289_direct.npy,True,,False
+289,cot,G3,False,46,8684,Large,B," (90 * 97) - 46 is (90 * 97) - 46. ANSWER: 46
+
+Question:", (90 * 97) - 46 is (90 * 97) - 46. ANSWER: 46,23,25,25,22,289_cot.npy,True,,False
+290,direct,G1,False,8,3354,Large,C," 8
+",8,2,2,2,1,290_direct.npy,True,,False
+290,cot,G3,False,39,3354,Large,C," 39 * (21 + 65) is 39. ANSWER: 39
+
+Question:", 39 * (21 + 65) is 39. ANSWER: 39,17,19,19,16,290_cot.npy,True,,False
+291,direct,G1,False,8,1518,Large,D," 8
+",8,2,2,2,1,291_direct.npy,True,,False
+291,cot,G3,False,8,1518,Large,D," 22 * (91 - 22) is 8. ANSWER: 8
+
+Question:", 22 * (91 - 22) is 8. ANSWER: 8,17,19,19,16,291_cot.npy,True,,False
+292,direct,G1,False,66,2144,Large,A," (66 * 31) + 98
+",66,1,8,8,0,292_direct.npy,True,,False
+292,cot,G3,False,98,2144,Large,A," (66 * 31) + 98 is (66 + 98)
+
+Question:", (66 * 31) + 98 is (66 + 98),15,17,17,14,292_cot.npy,True,,False
+293,direct,G1,False,48,609,Large,B," (48 * 13)
+",48,1,6,6,0,293_direct.npy,True,,False
+293,cot,G3,False,15,609,Large,B, (48 * 13) - 15 is (48 + 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is, (48 * 13) - 15 is (48 + 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is (48 - 15) is,200,200,200,199,293_cot.npy,True,,False
+294,direct,G1,False,8,3264,Large,C," 8
+",8,2,2,2,1,294_direct.npy,True,,False
+294,cot,G3,False,51,3264,Large,C," 51 * (17 + 47) is 51. ANSWER: 51
+
+Question:", 51 * (17 + 47) is 51. ANSWER: 51,17,19,19,16,294_cot.npy,True,,False
+295,direct,G1,False,8,-440,Large,D," 8
+",8,2,2,2,1,295_direct.npy,True,,False
+295,cot,G3,False,55,-440,Large,D," 55 + (57 - 65) is 55. ANSWER: 55
+
+Question:", 55 + (57 - 65) is 55. ANSWER: 55,17,19,19,16,295_cot.npy,True,,False
+296,direct,G1,False,28,1225,Large,A," (28 * 41) + 77
+",28,1,8,8,0,296_direct.npy,True,,False
+296,cot,G3,False,77,1225,Large,A," (28 * 41) + 77 is (28 * 41) + 77. ANSWER: (28 * 41) + 77
+
+Question:", (28 * 41) + 77 is (28 * 41) + 77. ANSWER: (28 * 41) + 77,29,31,31,28,296_cot.npy,True,,False
+297,direct,G1,False,62,4987,Large,B," (62 * 82)
+",62,1,6,6,0,297_direct.npy,True,,False
+297,cot,G3,False,97,4987,Large,B," (62 * 82) - 97 is (62 * 82) - 97. ANSWER: (62 * 82) - 97
+
+Question:", (62 * 82) - 97 is (62 * 82) - 97. ANSWER: (62 * 82) - 97,29,31,31,28,297_cot.npy,True,,False
+298,direct,G1,False,9,2079,Large,C," 9
+",9,2,2,2,1,298_direct.npy,True,,False
+298,cot,G3,False,33,2079,Large,C," 33 * (31 + 32) is 33. ANSWER: 33
+
+Question:", 33 * (31 + 32) is 33. ANSWER: 33,17,19,19,16,298_cot.npy,True,,False
+299,direct,G1,False,8,600,Large,D," 8
+",8,2,2,2,1,299_direct.npy,True,,False
+299,cot,G3,False,88,600,Large,D," 20 * (88 - 58) is 88. ANSWER: 88
+
+Question:", 20 * (88 - 58) is 88. ANSWER: 88,17,19,19,16,299_cot.npy,True,,False
+300,direct,G1,False,89,8673,Large,A," (89 * 97) + 40
+",89,1,8,8,0,300_direct.npy,True,,False
+300,cot,G3,False,40,8673,Large,A," (89 * 97) + 40 is (89 * 97) + 40. ANSWER: (89 * 97) + 40
+
+Question:", (89 * 97) + 40 is (89 * 97) + 40. ANSWER: (89 * 97) + 40,29,31,31,28,300_cot.npy,True,,False
+301,direct,G1,False,73,6104,Large,B," (73 * 84)
+",73,1,6,6,0,301_direct.npy,True,,False
+301,cot,G3,False,28,6104,Large,B," (73 * 84) - 28 is (73 + 84) - 28. ANSWER: (73 + 84) - 28
+
+Question:", (73 * 84) - 28 is (73 + 84) - 28. ANSWER: (73 + 84) - 28,29,31,31,28,301_cot.npy,True,,False
+302,direct,G1,False,8,6240,Large,C," 8
+",8,2,2,2,1,302_direct.npy,True,,False
+302,cot,G3,False,91,6240,Large,C, 39 * (69 + 91) is (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) =, 39 * (69 + 91) is (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) = (39 + 91) * (69 + 91) =,200,200,200,199,302_cot.npy,True,,False
+303,direct,G1,False,8,1092,Large,D," 8
+",8,2,2,2,1,303_direct.npy,True,,False
+303,cot,G3,False,8,1092,Large,D," 42 * (68 - 42) is 8. ANSWER: 8
+
+Question:", 42 * (68 - 42) is 8. ANSWER: 8,17,19,19,16,303_cot.npy,True,,False
+304,direct,G1,False,95,1114,Large,A," (95 * 11)
+",95,1,6,6,0,304_direct.npy,True,,False
+304,cot,G3,False,69,1114,Large,A," (95 * 11) + 69 is (95 * 11) + 69. ANSWER: 69
+
+Question:", (95 * 11) + 69 is (95 * 11) + 69. ANSWER: 69,23,25,25,22,304_cot.npy,True,,False
+305,direct,G1,False,46,4337,Large,B," (46 * 96) - (79)
+",46,1,10,10,0,305_direct.npy,True,,False
+305,cot,G3,False,79,4337,Large,B," (46 * 96) - 79 is (46 * 96) - 79. ANSWER: (46 * 96) - 79
+
+Question:", (46 * 96) - 79 is (46 * 96) - 79. ANSWER: (46 * 96) - 79,29,31,31,28,305_cot.npy,True,,False
+306,direct,G1,False,8,2550,Large,C," 8
+",8,2,2,2,1,306_direct.npy,True,,False
+306,cot,G3,False,66,2550,Large,C, 30 * (19 + 66) is (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) =, 30 * (19 + 66) is (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) = (30 + 19) * (19 + 66) =,200,200,200,199,306_cot.npy,True,,False
+307,direct,G1,False,8,1998,Large,D," 8
+",8,2,2,2,1,307_direct.npy,True,,False
+307,cot,G3,False,55,1998,Large,D," 54 + (85 - 48) is 55. ANSWER: 55
+
+Question:", 54 + (85 - 48) is 55. ANSWER: 55,17,19,19,16,307_cot.npy,True,,False
+308,direct,G1,False,91,5922,Large,A," (91 * 64) + 98
+",91,1,8,8,0,308_direct.npy,True,,False
+308,cot,G3,False,98,5922,Large,A," (91 * 64) + 98 is (91 * 64) + 98. ANSWER: (91 * 64) + 98
+
+Question:", (91 * 64) + 98 is (91 * 64) + 98. ANSWER: (91 * 64) + 98,29,31,31,28,308_cot.npy,True,,False
+309,direct,G1,False,42,2808,Large,B," (42 * 68) - 48
+",42,1,8,8,0,309_direct.npy,True,,False
+309,cot,G3,False,48,2808,Large,B," (42 * 68) minus 48 is (42 + 68) - 48. ANSWER: 48
+
+Question:", (42 * 68) minus 48 is (42 + 68) - 48. ANSWER: 48,23,25,25,22,309_cot.npy,True,,False
+310,direct,G1,False,8,4550,Large,C," 8
+",8,2,2,2,1,310_direct.npy,True,,False
+310,cot,G3,False,71,4550,Large,C, 35 * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is, 35 * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is (59 + 71) * (59 + 71) is,200,200,200,199,310_cot.npy,True,,False
+311,direct,G1,False,8,-414,Large,D," 8
+",8,2,2,2,1,311_direct.npy,True,,False
+311,cot,G3,False,23,-414,Large,D," 23 * (40 - 58) is 23. ANSWER: 23
+
+Question:", 23 * (40 - 58) is 23. ANSWER: 23,17,19,19,16,311_cot.npy,True,,False
+312,direct,G1,False,83,4648,Large,A," (83 * 55)
+",83,1,6,6,0,312_direct.npy,True,,False
+312,cot,G3,False,83,4648,Large,A," (83 * 55) + 83 is (83 * 55) + 83. ANSWER: (83 * 55) + 83
+
+Question:", (83 * 55) + 83 is (83 * 55) + 83. ANSWER: (83 * 55) + 83,29,31,31,28,312_cot.npy,True,,False
+313,direct,G1,False,47,4606,Large,B," (47 * 99)
+",47,1,6,6,0,313_direct.npy,True,,False
+313,cot,G3,False,47,4606,Large,B," (47 * 99) - 47 is (47 * 99) - 47. ANSWER: 47
+
+Question:", (47 * 99) - 47 is (47 * 99) - 47. ANSWER: 47,23,25,25,22,313_cot.npy,True,,False
+314,direct,G1,False,8,1848,Large,C," 8
+",8,2,2,2,1,314_direct.npy,True,,False
+314,cot,G3,False,60,1848,Large,C, 12 * (94 + 60) is (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) =, 12 * (94 + 60) is (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) = (94 + 60) + (94 + 60) =,200,200,200,199,314_cot.npy,True,,False
+315,direct,G1,False,8,-3195,Large,D," 8
+",8,2,2,2,1,315_direct.npy,True,,False
+315,cot,G3,False,82,-3195,Large,D," 45 * (11 - 82) is (45 + 82) * (11 - 82). ANSWER: (45 + 82) * (11 - 82)
+
+Question:", 45 * (11 - 82) is (45 + 82) * (11 - 82). ANSWER: (45 + 82) * (11 - 82),36,38,38,35,315_cot.npy,True,,False
+316,direct,G1,False,97,1639,Large,A," (97 * 16) + 87
+",97,1,8,8,0,316_direct.npy,True,,False
+316,cot,G3,False,87,1639,Large,A," (97 * 16) + 87 is (97 * 16) + 87. ANSWER: 87
+
+Question:", (97 * 16) + 87 is (97 * 16) + 87. ANSWER: 87,23,25,25,22,316_cot.npy,True,,False
+317,direct,G1,False,73,3319,Large,B," (73 * 46)
+",73,1,6,6,0,317_direct.npy,True,,False
+317,cot,G3,False,39,3319,Large,B," (73 * 46) - 39 is (73 + 46) - 39. ANSWER: (73 + 46) - 39
+
+Question:", (73 * 46) - 39 is (73 + 46) - 39. ANSWER: (73 + 46) - 39,29,31,31,28,317_cot.npy,True,,False
+318,direct,G1,False,8,8091,Large,C," 8
+",8,2,2,2,1,318_direct.npy,True,,False
+318,cot,G3,False,38,8091,Large,C, 87 * (55 + 38) is (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) =, 87 * (55 + 38) is (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) = (55 + 38) * (55 + 38) =,200,200,200,199,318_cot.npy,True,,False
+319,direct,G1,False,8,-5005,Large,D," 8
+",8,2,2,2,1,319_direct.npy,True,,False
+319,cot,G3,False,8,-5005,Large,D," 91 * (34 - 89) is 8. ANSWER: 8
+
+Question:", 91 * (34 - 89) is 8. ANSWER: 8,17,19,19,16,319_cot.npy,True,,False
+320,direct,G1,False,26,140,Negative,A," (26 * 6) + -16
+",26,1,9,9,0,320_direct.npy,True,,False
+320,cot,G3,False,-16,140,Negative,A," (26 * 6) + -16 is (26 * 6) + -16. ANSWER: (26 * 6) + -16
+
+Question:", (26 * 6) + -16 is (26 * 6) + -16. ANSWER: (26 * 6) + -16,32,34,34,31,320_cot.npy,True,,False
+321,direct,G1,False,-12,-170,Negative,B," (-12 * 11)
+",-12,1,6,6,0,321_direct.npy,True,,False
+321,cot,G3,False,-12,-170,Negative,B," (-12 * 11) - 38 is -12. ANSWER: -12
+
+Question:", (-12 * 11) - 38 is -12. ANSWER: -12,19,21,21,18,321_cot.npy,True,,False
+322,direct,G1,False,-47,-1457,Negative,C," -47
+",-47,3,3,3,2,322_direct.npy,True,,False
+322,cot,G3,False,-47,-1457,Negative,C," -47 * (13 + 18) is -47. ANSWER: -47
+
+Question:", -47 * (13 + 18) is -47. ANSWER: -47,20,22,22,19,322_cot.npy,True,,False
+323,direct,G1,False,-28,672,Negative,D," -28
+",-28,3,3,3,2,323_direct.npy,True,,False
+323,cot,G3,False,-28,672,Negative,D," -28 * (12 - 36) is -28. ANSWER: -28
+
+Question:", -28 * (12 - 36) is -28. ANSWER: -28,20,22,22,19,323_cot.npy,True,,False
+324,direct,G1,False,22,-88,Negative,A," (22 * -6) + 44
+",22,1,9,9,0,324_direct.npy,True,,False
+324,cot,G3,False,2,-88,Negative,A," (22 * -6) + 44 is (22 + 44) * 2. ANSWER: (22 + 44) * 2
+
+Question:", (22 * -6) + 44 is (22 + 44) * 2. ANSWER: (22 + 44) * 2,30,32,32,29,324_cot.npy,True,,False
+325,direct,G1,False,-43,-801,Negative,B," -43
+",-43,3,3,3,2,325_direct.npy,True,,False
+325,cot,G3,False,-43,-801,Negative,B," (-43 * 18) - 27 is -43. ANSWER: -43
+
+Question:", (-43 * 18) - 27 is -43. ANSWER: -43,19,21,21,18,325_cot.npy,True,,False
+326,direct,G1,False,-1,-286,Negative,C," -1
+",-1,3,3,3,2,326_direct.npy,True,,False
+326,cot,G3,False,27,-286,Negative,C," 26 * (17 + -28) is 27. ANSWER: 27
+
+Question:", 26 * (17 + -28) is 27. ANSWER: 27,18,20,20,17,326_cot.npy,True,,False
+327,direct,G1,False,-31,1054,Negative,D," -31
+",-31,3,3,3,2,327_direct.npy,True,,False
+327,cot,G3,False,-31,1054,Negative,D," -31 * (5 - 39) is -31. ANSWER: -31
+
+Question:", -31 * (5 - 39) is -31. ANSWER: -31,20,22,22,19,327_cot.npy,True,,False
+328,direct,G1,False,-35,136,Negative,A," -35
+",-35,3,3,3,2,328_direct.npy,True,,False
+328,cot,G3,False,35,136,Negative,A," (19 * 9) + -35 is (19 * 9) + 35. ANSWER: 35
+
+Question:", (19 * 9) + -35 is (19 * 9) + 35. ANSWER: 35,24,26,26,23,328_cot.npy,True,,False
+329,direct,G1,False,-33,-167,Negative,B," -33
+",-33,3,3,3,2,329_direct.npy,True,,False
+329,cot,G3,False,-33,-167,Negative,B," (-33 * 4) - 35 is -33. ANSWER: -33
+
+Question:", (-33 * 4) - 35 is -33. ANSWER: -33,19,21,21,18,329_cot.npy,True,,False
+330,direct,G1,False,-2,-52,Negative,C," -2
+",-2,3,3,3,2,330_direct.npy,True,,False
+330,cot,G3,False,-19,-52,Negative,C," 26 - 19 is -19. ANSWER: -19
+
+Question:", 26 - 19 is -19. ANSWER: -19,15,17,17,14,330_cot.npy,True,,False
+331,direct,G1,False,-2,-1881,Negative,D," -2
+",-2,3,3,3,2,331_direct.npy,True,,False
+331,cot,G3,False,-8,-1881,Negative,D," 33 * (-10 - 47) is -8. ANSWER: -8
+
+Question:", 33 * (-10 - 47) is -8. ANSWER: -8,19,21,21,18,331_cot.npy,True,,False
+332,direct,G1,False,33,-141,Negative,A," (33 * -5) + 24
+",33,1,9,9,0,332_direct.npy,True,,False
+332,cot,G3,False,24,-141,Negative,A," (33 * -5) + 24 is (33 * -5) + 24. ANSWER: (33 * -5) + 24
+
+Question:", (33 * -5) + 24 is (33 * -5) + 24. ANSWER: (33 * -5) + 24,32,34,34,31,332_cot.npy,True,,False
+333,direct,G1,False,11,239,Negative,B," (11 * 19) - -30
+",11,1,9,9,0,333_direct.npy,True,,False
+333,cot,G3,False,30,239,Negative,B," (11 * 19) minus 30 is (11 * 19) - 30. ANSWER: (11 * 19) - 30
+
+Question:", (11 * 19) minus 30 is (11 * 19) - 30. ANSWER: (11 * 19) - 30,29,31,31,28,333_cot.npy,True,,False
+334,direct,G1,False,-2,-840,Negative,C," -2
+",-2,3,3,3,2,334_direct.npy,True,,False
+334,cot,G3,False,8,-840,Negative,C," 24 * (4 + -39) is 8. ANSWER: 8
+
+Question:", 24 * (4 + -39) is 8. ANSWER: 8,18,20,20,17,334_cot.npy,True,,False
+335,direct,G1,False,-29,58,Negative,D," -29
+",-29,3,3,3,2,335_direct.npy,True,,False
+335,cot,G3,False,-29,58,Negative,D," -29 * (15 - 17) is -29. ANSWER: -29
+
+Question:", -29 * (15 - 17) is -29. ANSWER: -29,20,22,22,19,335_cot.npy,True,,False
+336,direct,G1,False,12,-7,Negative,A," (12 * -3) + 29
+",12,1,9,9,0,336_direct.npy,True,,False
+336,cot,G3,False,29,-7,Negative,A," (12 * -3) + 29 is (12 * -3) + 29. ANSWER: 29
+
+Question:", (12 * -3) + 29 is (12 * -3) + 29. ANSWER: 29,25,27,27,24,336_cot.npy,True,,False
+337,direct,G1,False,,110,Negative,B, - - - - - - - - - - - - - - -,- - - - - - - - - - - - - - -,15,15,15,14,337_direct.npy,True,,False
+337,cot,G3,False,25.0,110,Negative,B," (17 * 5) - -25 is (17 * 5) - 25. ANSWER: 25
+
+Question:", (17 * 5) - -25 is (17 * 5) - 25. ANSWER: 25,24,26,26,23,337_cot.npy,True,,False
+338,direct,G1,False,-1,450,Negative,C," -1
+",-1,3,3,3,2,338_direct.npy,True,,False
+338,cot,G3,False,-14,450,Negative,C," 18 - 39 is -14. ANSWER: -14
+
+Question:", 18 - 39 is -14. ANSWER: -14,15,17,17,14,338_cot.npy,True,,False
+339,direct,G1,False,-1,2728,Negative,D," -1
+",-1,3,3,3,2,339_direct.npy,True,,False
+339,cot,G3,False,-47,2728,Negative,D," 44 * (15 - -47) is -47. ANSWER: -47
+
+Question:", 44 * (15 - -47) is -47. ANSWER: -47,20,22,22,19,339_cot.npy,True,,False
+340,direct,G1,False,19,-269,Negative,A," (19 * -15) + 16
+",19,1,9,9,0,340_direct.npy,True,,False
+340,cot,G3,False,16,-269,Negative,A," (19 * -15) + 16 is (19 * -15) + 16. ANSWER: (19 * -15) + 16
+
+Question:", (19 * -15) + 16 is (19 * -15) + 16. ANSWER: (19 * -15) + 16,32,34,34,31,340_cot.npy,True,,False
+341,direct,G1,False,-49,-762,Negative,B," (-49 * 15)
+",-49,1,6,6,0,341_direct.npy,True,,False
+341,cot,G3,False,-49,-762,Negative,B," (-49 * 15) - 27 is -49. ANSWER: -49
+
+Question:", (-49 * 15) - 27 is -49. ANSWER: -49,19,21,21,18,341_cot.npy,True,,False
+342,direct,G1,False,-8,990,Negative,C," -8
+",-8,3,3,3,2,342_direct.npy,True,,False
+342,cot,G3,False,-8,990,Negative,C," 33 - 38 is -8. ANSWER: -8
+
+Question:", 33 - 38 is -8. ANSWER: -8,15,17,17,14,342_cot.npy,True,,False
+343,direct,G1,False,-1,725,Negative,D," -1
+",-1,3,3,3,2,343_direct.npy,True,,False
+343,cot,G3,False,25,725,Negative,D," 25 * (13 - -16) is 25. ANSWER: 25
+
+Question:", 25 * (13 - -16) is 25. ANSWER: 25,18,20,20,17,343_cot.npy,True,,False
+344,direct,G1,False,-33,-595,Negative,A," -33
+",-33,3,3,3,2,344_direct.npy,True,,False
+344,cot,G3,False,32,-595,Negative,A," (-33 * 19) is 32. ANSWER: 32
+
+Question:", (-33 * 19) is 32. ANSWER: 32,15,17,17,14,344_cot.npy,True,,False
+345,direct,G1,False,-35,-372,Negative,B," -35
+",-35,3,3,3,2,345_direct.npy,True,,False
+345,cot,G3,False,-35,-372,Negative,B," (-35 * 10) minus 22 is -35. ANSWER: -35
+
+Question:", (-35 * 10) minus 22 is -35. ANSWER: -35,19,21,21,18,345_cot.npy,True,,False
+346,direct,G1,False,-1,-741,Negative,C," -1
+",-1,3,3,3,2,346_direct.npy,True,,False
+346,cot,G3,False,39,-741,Negative,C," 39 * (4 + -23) is 39. ANSWER: 39
+
+Question:", 39 * (4 + -23) is 39. ANSWER: 39,18,20,20,17,346_cot.npy,True,,False
+347,direct,G1,False,8,-720,Negative,D," 8
+",8,2,2,2,1,347_direct.npy,True,,False
+347,cot,G3,False,48,-720,Negative,D," 48 * (-2 - 13) is 48. ANSWER: 48
+
+Question:", 48 * (-2 - 13) is 48. ANSWER: 48,17,19,19,16,347_cot.npy,True,,False
+348,direct,G1,False,-25,-104,Negative,A," -25
+",-25,3,3,3,2,348_direct.npy,True,,False
+348,cot,G3,False,-25,-104,Negative,A," (-25 * 6) - 46 is -25. ANSWER: -25
+
+Question:", (-25 * 6) - 46 is -25. ANSWER: -25,19,21,21,18,348_cot.npy,True,,False
+349,direct,G1,False,14,289,Negative,B," (14 * 19) - -23
+",14,1,9,9,0,349_direct.npy,True,,False
+349,cot,G3,False,-23,289,Negative,B," (14 * 19) - -23 is (14 * 19) - -23. ANSWER: (14 * 19) - -23
+
+Question:", (14 * 19) - -23 is (14 * 19) - -23. ANSWER: (14 * 19) - -23,32,34,34,31,349_cot.npy,True,,False
+350,direct,G1,False,-23,-920,Negative,C," -23
+",-23,3,3,3,2,350_direct.npy,True,,False
+350,cot,G3,False,-23,-920,Negative,C," -23 * (9 + 31) is -23. ANSWER: -23
+
+Question:", -23 * (9 + 31) is -23. ANSWER: -23,20,22,22,19,350_cot.npy,True,,False
+351,direct,G1,False,-48,1200,Negative,D," -48
+",-48,3,3,3,2,351_direct.npy,True,,False
+351,cot,G3,False,-48,1200,Negative,D," -48 * (2 - 27) is -48. ANSWER: -48
+
+Question:", -48 * (2 - 27) is -48. ANSWER: -48,20,22,22,19,351_cot.npy,True,,False
+352,direct,G1,False,-18,-316,Negative,A," -18
+",-18,3,3,3,2,352_direct.npy,True,,False
+352,cot,G3,False,26,-316,Negative,A," (-18 * 19) is (-18 * 19) + 26. ANSWER: (-18 * 19) + 26
+
+Question:", (-18 * 19) is (-18 * 19) + 26. ANSWER: (-18 * 19) + 26,27,29,29,26,352_cot.npy,True,,False
+353,direct,G1,False,-17,-52,Negative,B," -17
+",-17,3,3,3,2,353_direct.npy,True,,False
+353,cot,G3,False,-17,-52,Negative,B," (-17 * 2) - 18 is -17. ANSWER: -17
+
+Question:", (-17 * 2) - 18 is -17. ANSWER: -17,19,21,21,18,353_cot.npy,True,,False
+354,direct,G1,False,-1,1216,Negative,C," -1
+",-1,3,3,3,2,354_direct.npy,True,,False
+354,cot,G3,False,-47,1216,Negative,C," 32 - 9 is -47. ANSWER: -47
+
+Question:", 32 - 9 is -47. ANSWER: -47,15,17,17,14,354_cot.npy,True,,False
+355,direct,G1,False,-8,209,Negative,D," -8
+",-8,3,3,3,2,355_direct.npy,True,,False
+355,cot,G3,False,-11,209,Negative,D," -11 * (7 - 26) is -11. ANSWER: -11
+
+Question:", -11 * (7 - 26) is -11. ANSWER: -11,20,22,22,19,355_cot.npy,True,,False
+356,direct,G1,False,-18,-227,Negative,A," -18
+",-18,3,3,3,2,356_direct.npy,True,,False
+356,cot,G3,False,43,-227,Negative,A," (-18 * 15) is 43. ANSWER: 43
+
+Question:", (-18 * 15) is 43. ANSWER: 43,15,17,17,14,356_cot.npy,True,,False
+357,direct,G1,False,14,-276,Negative,B," (14 * -17) - 38
+",14,1,9,9,0,357_direct.npy,True,,False
+357,cot,G3,False,38,-276,Negative,B," (14 * -17) - 38 is (14 * -17) - 38. ANSWER: 38
+
+Question:", (14 * -17) - 38 is (14 * -17) - 38. ANSWER: 38,25,27,27,24,357_cot.npy,True,,False
+358,direct,G1,False,-2,-1386,Negative,C," -2
+",-2,3,3,3,2,358_direct.npy,True,,False
+358,cot,G3,False,42,-1386,Negative,C," 42 * (5 + -38) is 42. ANSWER: 42
+
+Question:", 42 * (5 + -38) is 42. ANSWER: 42,18,20,20,17,358_cot.npy,True,,False
+359,direct,G1,False,-1,-1104,Negative,D," -1
+",-1,3,3,3,2,359_direct.npy,True,,False
+359,cot,G3,False,-1,-1104,Negative,D," 24 - 43 is -1. ANSWER: -1
+
+Question:", 24 - 43 is -1. ANSWER: -1,15,17,17,14,359_cot.npy,True,,False
+360,direct,G1,False,39,-65,Negative,A," (39 * -2) + 13
+",39,1,9,9,0,360_direct.npy,True,,False
+360,cot,G3,False,13,-65,Negative,A," (39 * -2) + 13 is (39 * -2) + 13. ANSWER: (39 * -2) + 13
+
+Question:", (39 * -2) + 13 is (39 * -2) + 13. ANSWER: (39 * -2) + 13,32,34,34,31,360_cot.npy,True,,False
+361,direct,G1,False,35,-541,Negative,B," (35 * -15) - 16
+",35,1,9,9,0,361_direct.npy,True,,False
+361,cot,G3,False,16,-541,Negative,B," (35 * -15) - 16 is (35 * -15) - 16. ANSWER: (35 * -15) - 16
+
+Question:", (35 * -15) - 16 is (35 * -15) - 16. ANSWER: (35 * -15) - 16,32,34,34,31,361_cot.npy,True,,False
+362,direct,G1,False,8,418,Negative,C," 8
+",8,2,2,2,1,362_direct.npy,True,,False
+362,cot,G3,False,-8,418,Negative,C," 38 - 15 is -8. ANSWER: -8
+
+Question:", 38 - 15 is -8. ANSWER: -8,15,17,17,14,362_cot.npy,True,,False
+363,direct,G1,False,-48,384,Negative,D," -48
+",-48,3,3,3,2,363_direct.npy,True,,False
+363,cot,G3,False,-48,384,Negative,D," -48 * (6 - 14) is -48. ANSWER: -48
+
+Question:", -48 * (6 - 14) is -48. ANSWER: -48,20,22,22,19,363_cot.npy,True,,False
+364,direct,G1,False,27,-483,Negative,A," (27 * -19) + 30
+",27,1,9,9,0,364_direct.npy,True,,False
+364,cot,G3,False,30,-483,Negative,A," (27 * -19) + 30 is (27 + 19) + 30. ANSWER: 30
+
+Question:", (27 * -19) + 30 is (27 + 19) + 30. ANSWER: 30,24,26,26,23,364_cot.npy,True,,False
+365,direct,G1,False,48,-892,Negative,B," (48 * -18) - 28
+",48,1,9,9,0,365_direct.npy,True,,False
+365,cot,G3,False,28,-892,Negative,B," (48 * -18) - 28 is (48 * -18) - 28. ANSWER: 28
+
+Question:", (48 * -18) - 28 is (48 * -18) - 28. ANSWER: 28,25,27,27,24,365_cot.npy,True,,False
+366,direct,G1,False,-1,-42,Negative,C," -1
+",-1,3,3,3,2,366_direct.npy,True,,False
+366,cot,G3,False,42,-42,Negative,C," 42 * (15 + -16) is 42. ANSWER: 42
+
+Question:", 42 * (15 + -16) is 42. ANSWER: 42,18,20,20,17,366_cot.npy,True,,False
+367,direct,G1,False,-1,-714,Negative,D," -1
+",-1,3,3,3,2,367_direct.npy,True,,False
+367,cot,G3,False,-19,-714,Negative,D," 17 - 19 is -19. ANSWER: -19
+
+Question:", 17 - 19 is -19. ANSWER: -19,15,17,17,14,367_cot.npy,True,,False
+368,direct,G1,False,38,-306,Negative,A," (38 * -9)
+",38,1,7,7,0,368_direct.npy,True,,False
+368,cot,G3,False,36,-306,Negative,A," 38 - 9 is 36. ANSWER: 36
+
+Question:", 38 - 9 is 36. ANSWER: 36,13,15,15,12,368_cot.npy,True,,False
+369,direct,G1,False,39,582,Negative,B," (39 * 14) - -36
+",39,1,9,9,0,369_direct.npy,True,,False
+369,cot,G3,False,36,582,Negative,B," (39 * 14) minus 36 is (39 * 14) - 36. ANSWER: 36
+
+Question:", (39 * 14) minus 36 is (39 * 14) - 36. ANSWER: 36,23,25,25,22,369_cot.npy,True,,False
+370,direct,G1,False,-1,400,Negative,C," -1
+",-1,3,3,3,2,370_direct.npy,True,,False
+370,cot,G3,False,-12,400,Negative,C," 16 - 12 is -12. ANSWER: -12
+
+Question:", 16 - 12 is -12. ANSWER: -12,15,17,17,14,370_cot.npy,True,,False
+371,direct,G1,False,-1,832,Negative,D," -1
+",-1,3,3,3,2,371_direct.npy,True,,False
+371,cot,G3,False,26,832,Negative,D," 26 times (13 - -19) is 26. ANSWER: 26
+
+Question:", 26 times (13 - -19) is 26. ANSWER: 26,18,20,20,17,371_cot.npy,True,,False
+372,direct,G1,False,-40,-145,Negative,A," -40
+",-40,3,3,3,2,372_direct.npy,True,,False
+372,cot,G3,False,-40,-145,Negative,A," (-40 * 4) - 15 is -40. ANSWER: -40
+
+Question:", (-40 * 4) - 15 is -40. ANSWER: -40,19,21,21,18,372_cot.npy,True,,False
+373,direct,G1,False,15,241,Negative,B," (15 * 15) - (16)
+",15,1,10,10,0,373_direct.npy,True,,False
+373,cot,G3,False,16,241,Negative,B," (15 * 15) minus 16 is (15 * 15) - 16. ANSWER: 16
+
+Question:", (15 * 15) minus 16 is (15 * 15) - 16. ANSWER: 16,23,25,25,22,373_cot.npy,True,,False
+374,direct,G1,False,-33,-1683,Negative,C," -33
+",-33,3,3,3,2,374_direct.npy,True,,False
+374,cot,G3,False,-33,-1683,Negative,C," -33 * (6 + 45) is -33. ANSWER: -33
+
+Question:", -33 * (6 + 45) is -33. ANSWER: -33,20,22,22,19,374_cot.npy,True,,False
+375,direct,G1,False,-1,-3008,Negative,D," -1
+",-1,3,3,3,2,375_direct.npy,True,,False
+375,cot,G3,False,-19,-3008,Negative,D," 47 - (-19 - 45) is -19. ANSWER: -19
+
+Question:", 47 - (-19 - 45) is -19. ANSWER: -19,19,21,21,18,375_cot.npy,True,,False
+376,direct,G1,False,-32,223,Negative,A," -32
+",-32,3,3,3,2,376_direct.npy,True,,False
+376,cot,G3,False,32,223,Negative,A," (17 * 15) + -32 is (17 * 15) + 32. ANSWER: 32
+
+Question:", (17 * 15) + -32 is (17 * 15) + 32. ANSWER: 32,24,26,26,23,376_cot.npy,True,,False
+377,direct,G1,False,37,139,Negative,B," (37 * 3) - -28
+",37,1,9,9,0,377_direct.npy,True,,False
+377,cot,G3,False,-28,139,Negative,B," (37 * 3) - -28 is (37 * 3) - -28. ANSWER: (37 * 3) - -28
+
+Question:", (37 * 3) - -28 is (37 * 3) - -28. ANSWER: (37 * 3) - -28,32,34,34,31,377_cot.npy,True,,False
+378,direct,G1,False,-1,-87,Negative,C," -1
+",-1,3,3,3,2,378_direct.npy,True,,False
+378,cot,G3,False,-29,-87,Negative,C," 29 * (13 + -16) is -29. ANSWER: -29
+
+Question:", 29 * (13 + -16) is -29. ANSWER: -29,20,22,22,19,378_cot.npy,True,,False
+379,direct,G1,False,-1,1134,Negative,D," -1
+",-1,3,3,3,2,379_direct.npy,True,,False
+379,cot,G3,False,-2,1134,Negative,D," 42 * (8 - -19) is -2. ANSWER: -2
+
+Question:", 42 * (8 - -19) is -2. ANSWER: -2,20,22,22,19,379_cot.npy,True,,False
+380,direct,G1,False,40,-344,Negative,A," (40 * -9) + 16
+",40,1,9,9,0,380_direct.npy,True,,False
+380,cot,G3,False,16,-344,Negative,A," (40 * -9) + 16 is (40 * -9) + 16. ANSWER: (40 * -9) + 16
+
+Question:", (40 * -9) + 16 is (40 * -9) + 16. ANSWER: (40 * -9) + 16,32,34,34,31,380_cot.npy,True,,False
+381,direct,G1,False,45,-602,Negative,B," (45 * -13) - 17
+",45,1,9,9,0,381_direct.npy,True,,False
+381,cot,G3,False,17,-602,Negative,B," (45 * -13) - 17 is (45 * -13) - 17. ANSWER: (45 * -13) - 17
+
+Question:", (45 * -13) - 17 is (45 * -13) - 17. ANSWER: (45 * -13) - 17,32,34,34,31,381_cot.npy,True,,False
+382,direct,G1,False,-1,-1288,Negative,C," -1
+",-1,3,3,3,2,382_direct.npy,True,,False
+382,cot,G3,False,-1,-1288,Negative,C," 46 * (9 + -37) is -1. ANSWER: -1
+
+Question:", 46 * (9 + -37) is -1. ANSWER: -1,20,22,22,19,382_cot.npy,True,,False
+383,direct,G1,False,-1,1470,Negative,D," -1
+",-1,3,3,3,2,383_direct.npy,True,,False
+383,cot,G3,False,49,1470,Negative,D," 49 * (19 - -11) is 49. ANSWER: 49
+
+Question:", 49 * (19 - -11) is 49. ANSWER: 49,18,20,20,17,383_cot.npy,True,,False
+384,direct,G1,False,27,-33,Negative,A," (27 * -2)
+",27,1,7,7,0,384_direct.npy,True,,False
+384,cot,G3,False,21,-33,Negative,A," (27 * -2) + 21 is (27 * -2) + 21. ANSWER: 21
+
+Question:", (27 * -2) + 21 is (27 * -2) + 21. ANSWER: 21,25,27,27,24,384_cot.npy,True,,False
+385,direct,G1,False,-29,-380,Negative,B," (-29 * 12)
+",-29,1,6,6,0,385_direct.npy,True,,False
+385,cot,G3,False,-32,-380,Negative,B," (-29 * 12) - 32 is -32. ANSWER: -32
+
+Question:", (-29 * 12) - 32 is -32. ANSWER: -32,19,21,21,18,385_cot.npy,True,,False
+386,direct,G1,False,8,-840,Negative,C," 8
+",8,2,2,2,1,386_direct.npy,True,,False
+386,cot,G3,False,-2,-840,Negative,C," 21 * (6 + -46) is -2. ANSWER: -2
+
+Question:", 21 * (6 + -46) is -2. ANSWER: -2,20,22,22,19,386_cot.npy,True,,False
+387,direct,G1,False,-1,805,Negative,D," -1
+",-1,3,3,3,2,387_direct.npy,True,,False
+387,cot,G3,False,-19,805,Negative,D," 35 * (4 - -19) is -19. ANSWER: -19
+
+Question:", 35 * (4 - -19) is -19. ANSWER: -19,20,22,22,19,387_cot.npy,True,,False
+388,direct,G1,False,-11,-1,Negative,A," -11
+",-11,3,3,3,2,388_direct.npy,True,,False
+388,cot,G3,False,-11,-1,Negative,A," (-11 * 4) - 43 is -11. ANSWER: -11
+
+Question:", (-11 * 4) - 43 is -11. ANSWER: -11,19,21,21,18,388_cot.npy,True,,False
+389,direct,G1,False,34,-549,Negative,B," (34 * -15) - 39
+",34,1,9,9,0,389_direct.npy,True,,False
+389,cot,G3,False,39,-549,Negative,B," (34 * -15) - 39 is (34 * -15) - 39. ANSWER: (34 * -15) - 39
+
+Question:", (34 * -15) - 39 is (34 * -15) - 39. ANSWER: (34 * -15) - 39,32,34,34,31,389_cot.npy,True,,False
+390,direct,G1,False,8,-320,Negative,C," 8
+",8,2,2,2,1,390_direct.npy,True,,False
+390,cot,G3,False,20,-320,Negative,C," 20 * (13 + -29) is 20. ANSWER: 20
+
+Question:", 20 * (13 + -29) is 20. ANSWER: 20,18,20,20,17,390_cot.npy,True,,False
+391,direct,G1,False,-30,270,Negative,D," -30
+",-30,3,3,3,2,391_direct.npy,True,,False
+391,cot,G3,False,-30,270,Negative,D," -30 * (4 - 13) is -30. ANSWER: -30
+
+Question:", -30 * (4 - 13) is -30. ANSWER: -30,20,22,22,19,391_cot.npy,True,,False
+392,direct,G1,False,20,-45,Negative,A," (20 * -3) + 15
+",20,1,9,9,0,392_direct.npy,True,,False
+392,cot,G3,False,15,-45,Negative,A," (20 * -3) + 15 is (20 * -3) + 15. ANSWER: 15
+
+Question:", (20 * -3) + 15 is (20 * -3) + 15. ANSWER: 15,25,27,27,24,392_cot.npy,True,,False
+393,direct,G1,False,38,611,Negative,B," (38 * 15)
+",38,1,6,6,0,393_direct.npy,True,,False
+393,cot,G3,False,-41,611,Negative,B," (38 * 15) - -41 is (38 * 15) - -41. ANSWER: (38 * 15) - -41
+
+Question:", (38 * 15) - -41 is (38 * 15) - -41. ANSWER: (38 * 15) - -41,32,34,34,31,393_cot.npy,True,,False
+394,direct,G1,False,-38,-1596,Negative,C," -38
+",-38,3,3,3,2,394_direct.npy,True,,False
+394,cot,G3,False,-38,-1596,Negative,C," -38 * (15 + 27) is -38. ANSWER: -38
+
+Question:", -38 * (15 + 27) is -38. ANSWER: -38,20,22,22,19,394_cot.npy,True,,False
+395,direct,G1,False,-1,-1554,Negative,D," -1
+",-1,3,3,3,2,395_direct.npy,True,,False
+395,cot,G3,False,-5,-1554,Negative,D," 42 - 32 is -5. ANSWER: -5
+
+Question:", 42 - 32 is -5. ANSWER: -5,15,17,17,14,395_cot.npy,True,,False
+396,direct,G1,False,17,-140,Negative,A," (17 * -11) + 47
+",17,1,9,9,0,396_direct.npy,True,,False
+396,cot,G3,False,47,-140,Negative,A," (17 * -11) + 47 is (17 + 47)
+
+Question:", (17 * -11) + 47 is (17 + 47),16,18,18,15,396_cot.npy,True,,False
+397,direct,G1,False,-43,-485,Negative,B," -43
+",-43,3,3,3,2,397_direct.npy,True,,False
+397,cot,G3,False,-43,-485,Negative,B," (-43 * 11) - 12 is -43. ANSWER: -43
+
+Question:", (-43 * 11) - 12 is -43. ANSWER: -43,19,21,21,18,397_cot.npy,True,,False
+398,direct,G1,False,-35,-455,Negative,C," -35
+",-35,3,3,3,2,398_direct.npy,True,,False
+398,cot,G3,False,-35,-455,Negative,C," -35 * (3 + 10) is -35. ANSWER: -35
+
+Question:", -35 * (3 + 10) is -35. ANSWER: -35,20,22,22,19,398_cot.npy,True,,False
+399,direct,G1,False,-1,-754,Negative,D," -1
+",-1,3,3,3,2,399_direct.npy,True,,False
+399,cot,G3,False,-8,-754,Negative,D," 29 - (-8 - 18) is -8. ANSWER: -8
+
+Question:", 29 - (-8 - 18) is -8. ANSWER: -8,19,21,21,18,399_cot.npy,True,,False

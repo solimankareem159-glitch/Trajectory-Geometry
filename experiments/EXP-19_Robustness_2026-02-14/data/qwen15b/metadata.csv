@@ -1,0 +1,2401 @@
+problem_id,condition,group,correct,parsed_answer,truth,bin,op_type,response,clean_response,n_clean_tokens,n_gen_tokens,n_full_tokens,answer_token_idx,filename,has_trajectory,issues,contaminated
+0,direct,G2,True,6,6,UltraSmall,A," 6
+
+",6,3,3,3,2,000_direct.npy,True,,False
+0,cot,G4,True,6,6,UltraSmall,A," First, multiply 2 by 2 to get 4. Then, add 2 to 4 to get 6. ANSWER: 6
+
+Question:"," First, multiply 2 by 2 to get 4. Then, add 2 to 4 to get 6. ANSWER: 6",32,34,34,31,000_cot.npy,True,,False
+1,direct,G2,True,19,19,UltraSmall,B," 19
+
+",19,4,4,4,3,001_direct.npy,True,,False
+1,cot,G4,True,19,19,UltraSmall,B," First, multiply 5 by 4 to get 20. Then, subtract 1 from 20 to get 19. ANSWER: 19
+
+Question:"," First, multiply 5 by 4 to get 20. Then, subtract 1 from 20 to get 19. ANSWER: 19",36,38,38,35,001_cot.npy,True,,False
+2,direct,G2,True,3,3,UltraSmall,C," 3
+
+",3,3,3,3,2,002_direct.npy,True,,False
+2,cot,G4,True,3,3,UltraSmall,C," 1 multiplied by (1 plus 2) is 3. ANSWER: 3
+
+Question:", 1 multiplied by (1 plus 2) is 3. ANSWER: 3,20,22,22,19,002_cot.npy,True,,False
+3,direct,G2,True,3,3,UltraSmall,D," 3
+
+",3,3,3,3,2,003_direct.npy,True,,False
+3,cot,G4,True,3,3,UltraSmall,D," First, we solve the expression inside the parentheses: 5 - 2 = 3. Then, we multiply the result by 1: 1 * 3 = 3. ANSWER: 3
+
+Question:"," First, we solve the expression inside the parentheses: 5 - 2 = 3. Then, we multiply the result by 1: 1 * 3 = 3. ANSWER: 3",44,46,46,43,003_cot.npy,True,,False
+4,direct,G2,True,22,22,UltraSmall,A," 22
+
+",22,4,4,4,3,004_direct.npy,True,,False
+4,cot,G4,True,22,22,UltraSmall,A," First, multiply 5 by 4 to get 20. Then, add 2 to 20 to get 22. ANSWER: 22
+
+Question:"," First, multiply 5 by 4 to get 20. Then, add 2 to 20 to get 22. ANSWER: 22",36,38,38,35,004_cot.npy,True,,False
+5,direct,G2,True,17,17,UltraSmall,B," 17
+
+",17,4,4,4,3,005_direct.npy,True,,False
+5,cot,G4,True,17,17,UltraSmall,B," First, multiply 4 by 5 to get 20. Then, subtract 3 from 20 to get 17. ANSWER: 17
+
+Question:"," First, multiply 4 by 5 to get 20. Then, subtract 3 from 20 to get 17. ANSWER: 17",36,38,38,35,005_cot.npy,True,,False
+6,direct,G1,False,10,6,UltraSmall,C," 10
+
+",10,4,4,4,3,006_direct.npy,True,,False
+6,cot,G4,True,6,6,UltraSmall,C," First, we solve the expression inside the parentheses: 2 + 4 = 6. Then, we multiply the result by 1: 1 * 6 = 6. ANSWER: 6
+
+Question:"," First, we solve the expression inside the parentheses: 2 + 4 = 6. Then, we multiply the result by 1: 1 * 6 = 6. ANSWER: 6",44,46,46,43,006_cot.npy,True,,False
+7,direct,G2,True,3,3,UltraSmall,D," 3
+
+",3,3,3,3,2,007_direct.npy,True,,False
+7,cot,G4,True,3,3,UltraSmall,D," First, we need to solve the expression inside the parentheses: 4 - 1 equals 3. Then, we multiply 1 by 3, which equals 3. ANSWER: 3
+
+Question:"," First, we need to solve the expression inside the parentheses: 4 - 1 equals 3. Then, we multiply 1 by 3, which equals 3. ANSWER: 3",42,44,44,41,007_cot.npy,True,,False
+8,direct,G2,True,14,14,UltraSmall,A," 14
+
+",14,4,4,4,3,008_direct.npy,True,,False
+8,cot,G4,True,14,14,UltraSmall,A," First, multiply 3 by 3 to get 9. Then, add 5 to 9 to get 14. ANSWER: 14
+
+Question:"," First, multiply 3 by 3 to get 9. Then, add 5 to 9 to get 14. ANSWER: 14",34,36,36,33,008_cot.npy,True,,False
+9,direct,G2,True,10,10,UltraSmall,B," 10
+
+",10,4,4,4,3,009_direct.npy,True,,False
+9,cot,G4,True,10,10,UltraSmall,B," First, multiply 5 by 3 to get 15. Then, subtract 5 from 15 to get 10. ANSWER: 10
+
+Question:"," First, multiply 5 by 3 to get 15. Then, subtract 5 from 15 to get 10. ANSWER: 10",36,38,38,35,009_cot.npy,True,,False
+10,direct,G2,True,8,8,UltraSmall,C," 8
+
+",8,3,3,3,2,010_direct.npy,True,,False
+10,cot,G4,True,8,8,UltraSmall,C," First, we solve the expression inside the parentheses: 3 + 1 = 4. Then, we multiply the result by 2: 2 * 4 = 8. ANSWER: 8
+
+Question:"," First, we solve the expression inside the parentheses: 3 + 1 = 4. Then, we multiply the result by 2: 2 * 4 = 8. ANSWER: 8",44,46,46,43,010_cot.npy,True,,False
+11,direct,G2,True,-6,-6,UltraSmall,D," -6
+
+",-6,3,3,3,2,011_direct.npy,True,,False
+11,cot,G4,True,-6,-6,UltraSmall,D," 2 multiplied by (1 minus 4) is 2 multiplied by -3, which equals -6. ANSWER: -6
+
+Question:"," 2 multiplied by (1 minus 4) is 2 multiplied by -3, which equals -6. ANSWER: -6",29,31,31,28,011_cot.npy,True,,False
+12,direct,G2,True,15,15,UltraSmall,A," 15
+
+",15,4,4,4,3,012_direct.npy,True,,False
+12,cot,G4,True,15,15,UltraSmall,A," First, multiply 3 by 4 to get 12. Then, add 3 to 12 to get 15. ANSWER: 15
+
+Question:"," First, multiply 3 by 4 to get 12. Then, add 3 to 12 to get 15. ANSWER: 15",36,38,38,35,012_cot.npy,True,,False
+13,direct,G2,True,5,5,UltraSmall,B," 5
+
+",5,3,3,3,2,013_direct.npy,True,,False
+13,cot,G4,True,5,5,UltraSmall,B," First, multiply 2 by 3 to get 6. Then, subtract 1 from 6 to get 5. ANSWER: 5
+
+Question:"," First, multiply 2 by 3 to get 6. Then, subtract 1 from 6 to get 5. ANSWER: 5",32,34,34,31,013_cot.npy,True,,False
+14,direct,G2,True,35,35,UltraSmall,C," 35
+
+",35,4,4,4,3,014_direct.npy,True,,False
+14,cot,G4,True,35,35,UltraSmall,C," First, add 2 and 5 to get 7. Then, multiply 5 by 7 to get 35. ANSWER: 35
+
+Question:"," First, add 2 and 5 to get 7. Then, multiply 5 by 7 to get 35. ANSWER: 35",34,36,36,33,014_cot.npy,True,,False
+15,direct,G2,True,-4,-4,UltraSmall,D," -4
+
+",-4,3,3,3,2,015_direct.npy,True,,False
+15,cot,G4,True,-4,-4,UltraSmall,D," First, subtract 4 from 2 to get -2. Then, multiply -2 by 2 to get -4. ANSWER: -4
+
+Question:"," First, subtract 4 from 2 to get -2. Then, multiply -2 by 2 to get -4. ANSWER: -4",32,34,34,31,015_cot.npy,True,,False
+16,direct,G2,True,17,17,UltraSmall,A," 17
+
+",17,4,4,4,3,016_direct.npy,True,,False
+16,cot,G4,True,17,17,UltraSmall,A," First, multiply 4 by 3 to get 12. Then, add 5 to 12 to get 17. ANSWER: 17
+
+Question:"," First, multiply 4 by 3 to get 12. Then, add 5 to 12 to get 17. ANSWER: 17",36,38,38,35,016_cot.npy,True,,False
+17,direct,G2,True,5,5,UltraSmall,B," 5
+
+",5,3,3,3,2,017_direct.npy,True,,False
+17,cot,G4,True,5,5,UltraSmall,B," First, multiply 2 by 3 to get 6. Then, subtract 1 from 6 to get 5. ANSWER: 5
+
+Question:"," First, multiply 2 by 3 to get 6. Then, subtract 1 from 6 to get 5. ANSWER: 5",32,34,34,31,017_cot.npy,True,,False
+18,direct,G2,True,8,8,UltraSmall,C," 8
+
+",8,3,3,3,2,018_direct.npy,True,,False
+18,cot,G4,True,8,8,UltraSmall,C," First, add 1 and 3 to get 4. Then, multiply 2 by 4 to get 8. ANSWER: 8
+
+Question:"," First, add 1 and 3 to get 4. Then, multiply 2 by 4 to get 8. ANSWER: 8",32,34,34,31,018_cot.npy,True,,False
+19,direct,G2,True,8,8,UltraSmall,D," 8
+
+",8,3,3,3,2,019_direct.npy,True,,False
+19,cot,G4,True,8,8,UltraSmall,D," First, we solve the expression inside the parentheses: 3 - 1 equals 2. Then, we multiply 4 by 2, which equals 8. ANSWER: 8
+
+Question:"," First, we solve the expression inside the parentheses: 3 - 1 equals 2. Then, we multiply 4 by 2, which equals 8. ANSWER: 8",40,42,42,39,019_cot.npy,True,,False
+20,direct,G2,True,13,13,UltraSmall,A," 13
+
+",13,4,4,4,3,020_direct.npy,True,,False
+20,cot,G4,True,13,13,UltraSmall,A," First, multiply 2 by 5 to get 10. Then, add 3 to 10 to get 13. ANSWER: 13
+
+Question:"," First, multiply 2 by 5 to get 10. Then, add 3 to 10 to get 13. ANSWER: 13",36,38,38,35,020_cot.npy,True,,False
+21,direct,G2,True,5,5,UltraSmall,B," 5
+
+",5,3,3,3,2,021_direct.npy,True,,False
+21,cot,G4,True,5,5,UltraSmall,B," First, multiply 4 by 2 to get 8. Then, subtract 3 from 8 to get 5. ANSWER: 5
+
+Question:"," First, multiply 4 by 2 to get 8. Then, subtract 3 from 8 to get 5. ANSWER: 5",32,34,34,31,021_cot.npy,True,,False
+22,direct,G2,True,14,14,UltraSmall,C," 14
+
+",14,4,4,4,3,022_direct.npy,True,,False
+22,cot,G4,True,14,14,UltraSmall,C," First, we solve the expression inside the parentheses: 2 + 5 = 7. Then, we multiply the result by 2: 2 * 7 = 14. ANSWER: 14
+
+Question:"," First, we solve the expression inside the parentheses: 2 + 5 = 7. Then, we multiply the result by 2: 2 * 7 = 14. ANSWER: 14",46,48,48,45,022_cot.npy,True,,False
+23,direct,G2,True,-10,-10,UltraSmall,D," -10
+
+",-10,4,4,4,3,023_direct.npy,True,,False
+23,cot,G4,True,-10,-10,UltraSmall,D," First, we need to solve the expression inside the parentheses: 3 - 5 = -2. Then, we multiply the result by 5: 5 * -2 = -10. ANSWER: -10
+
+Question:"," First, we need to solve the expression inside the parentheses: 3 - 5 = -2. Then, we multiply the result by 5: 5 * -2 = -10. ANSWER: -10",48,50,50,47,023_cot.npy,True,,False
+24,direct,G2,True,24,24,UltraSmall,A," 24
+
+",24,4,4,4,3,024_direct.npy,True,,False
+24,cot,G4,True,24,24,UltraSmall,A," First, multiply 4 by 5 to get 20. Then, add 4 to 20 to get 24. ANSWER: 24
+
+Question:"," First, multiply 4 by 5 to get 20. Then, add 4 to 20 to get 24. ANSWER: 24",36,38,38,35,024_cot.npy,True,,False
+25,direct,G2,True,4,4,UltraSmall,B," 4
+
+",4,3,3,3,2,025_direct.npy,True,,False
+25,cot,G4,True,4,4,UltraSmall,B," First, multiply 3 by 2 to get 6. Then, subtract 2 from 6 to get 4. ANSWER: 4
+
+Question:"," First, multiply 3 by 2 to get 6. Then, subtract 2 from 6 to get 4. ANSWER: 4",32,34,34,31,025_cot.npy,True,,False
+26,direct,G2,True,3,3,UltraSmall,C," 3
+
+",3,3,3,3,2,026_direct.npy,True,,False
+26,cot,G4,True,3,3,UltraSmall,C," 1 multiplied by (1 plus 2) is 3. ANSWER: 3
+
+Question:", 1 multiplied by (1 plus 2) is 3. ANSWER: 3,20,22,22,19,026_cot.npy,True,,False
+27,direct,G2,True,-2,-2,UltraSmall,D," -2
+
+",-2,3,3,3,2,027_direct.npy,True,,False
+27,cot,G4,True,-2,-2,UltraSmall,D," First, we need to solve the expression inside the parentheses: 4 - 5 = -1. Then, we multiply the result by 2: 2 * -1 = -2. ANSWER: -2
+
+Question:"," First, we need to solve the expression inside the parentheses: 4 - 5 = -1. Then, we multiply the result by 2: 2 * -1 = -2. ANSWER: -2",46,48,48,45,027_cot.npy,True,,False
+28,direct,G2,True,25,25,UltraSmall,A," 25
+
+",25,4,4,4,3,028_direct.npy,True,,False
+28,cot,G4,True,25,25,UltraSmall,A," First, multiply 5 by 4 to get 20. Then, add 5 to 20 to get 25. ANSWER: 25
+
+Question:"," First, multiply 5 by 4 to get 20. Then, add 5 to 20 to get 25. ANSWER: 25",36,38,38,35,028_cot.npy,True,,False
+29,direct,G2,True,14,14,UltraSmall,B," 14
+
+",14,4,4,4,3,029_direct.npy,True,,False
+29,cot,G4,True,14,14,UltraSmall,B," First, multiply 3 by 5 to get 15. Then, subtract 1 from 15 to get 14. ANSWER: 14
+
+Question:"," First, multiply 3 by 5 to get 15. Then, subtract 1 from 15 to get 14. ANSWER: 14",36,38,38,35,029_cot.npy,True,,False
+30,direct,G2,True,8,8,UltraSmall,C," 8
+
+",8,3,3,3,2,030_direct.npy,True,,False
+30,cot,G4,True,8,8,UltraSmall,C," First, we solve the expression inside the parentheses: 5 + 3 = 8. Then, we multiply the result by 1: 1 * 8 = 8. ANSWER: 8
+
+Question:"," First, we solve the expression inside the parentheses: 5 + 3 = 8. Then, we multiply the result by 1: 1 * 8 = 8. ANSWER: 8",44,46,46,43,030_cot.npy,True,,False
+31,direct,G2,True,-6,-6,UltraSmall,D," -6
+
+",-6,3,3,3,2,031_direct.npy,True,,False
+31,cot,G4,True,-6,-6,UltraSmall,D," First, subtract 3 from 1 to get -2. Then, multiply -2 by 3 to get -6. ANSWER: -6
+
+Question:"," First, subtract 3 from 1 to get -2. Then, multiply -2 by 3 to get -6. ANSWER: -6",32,34,34,31,031_cot.npy,True,,False
+32,direct,G2,True,12,12,UltraSmall,A," 12
+
+",12,4,4,4,3,032_direct.npy,True,,False
+32,cot,G4,True,12,12,UltraSmall,A," First, multiply 4 by 2 to get 8. Then, add 4 to 8 to get 12. ANSWER: 12
+
+Question:"," First, multiply 4 by 2 to get 8. Then, add 4 to 8 to get 12. ANSWER: 12",34,36,36,33,032_cot.npy,True,,False
+33,direct,G2,True,9,9,UltraSmall,B," 9
+
+",9,3,3,3,2,033_direct.npy,True,,False
+33,cot,G4,True,9,9,UltraSmall,B," First, multiply 2 by 5 to get 10. Then, subtract 1 from 10 to get 9. ANSWER: 9
+
+Question:"," First, multiply 2 by 5 to get 10. Then, subtract 1 from 10 to get 9. ANSWER: 9",34,36,36,33,033_cot.npy,True,,False
+34,direct,G2,True,30,30,UltraSmall,C," 30
+
+",30,4,4,4,3,034_direct.npy,True,,False
+34,cot,G4,True,30,30,UltraSmall,C," First, add 5 and 5 to get 10. Then, multiply 3 by 10 to get 30. ANSWER: 30
+
+Question:"," First, add 5 and 5 to get 10. Then, multiply 3 by 10 to get 30. ANSWER: 30",36,38,38,35,034_cot.npy,True,,False
+35,direct,G1,False,-4,-2,UltraSmall,D," -4
+
+",-4,3,3,3,2,035_direct.npy,True,,False
+35,cot,G4,True,-2,-2,UltraSmall,D," First, we solve the expression inside the parentheses: 2 - 3 equals -1. Then, we multiply the result by 2: 2 * -1 equals -2. ANSWER: -2
+
+Question:"," First, we solve the expression inside the parentheses: 2 - 3 equals -1. Then, we multiply the result by 2: 2 * -1 equals -2. ANSWER: -2",44,46,46,43,035_cot.npy,True,,False
+36,direct,G2,True,15,15,UltraSmall,A," 15
+
+",15,4,4,4,3,036_direct.npy,True,,False
+36,cot,G4,True,15,15,UltraSmall,A," First, multiply 2 by 5 to get 10. Then, add 5 to 10 to get 15. ANSWER: 15
+
+Question:"," First, multiply 2 by 5 to get 10. Then, add 5 to 10 to get 15. ANSWER: 15",36,38,38,35,036_cot.npy,True,,False
+37,direct,G2,True,7,7,UltraSmall,B," 7
+
+",7,3,3,3,2,037_direct.npy,True,,False
+37,cot,G4,True,7,7,UltraSmall,B," First, multiply 3 by 3 to get 9. Then, subtract 2 from 9 to get 7. ANSWER: 7
+
+Question:"," First, multiply 3 by 3 to get 9. Then, subtract 2 from 9 to get 7. ANSWER: 7",32,34,34,31,037_cot.npy,True,,False
+38,direct,G1,False,17,7,UltraSmall,C," 17
+
+",17,4,4,4,3,038_direct.npy,True,,False
+38,cot,G4,True,7,7,UltraSmall,C," First, we solve the expression inside the parentheses: 2 + 5 = 7. Then, we multiply the result by 1: 1 * 7 = 7. ANSWER: 7
+
+Question:"," First, we solve the expression inside the parentheses: 2 + 5 = 7. Then, we multiply the result by 1: 1 * 7 = 7. ANSWER: 7",44,46,46,43,038_cot.npy,True,,False
+39,direct,G2,True,-3,-3,UltraSmall,D," -3
+
+",-3,3,3,3,2,039_direct.npy,True,,False
+39,cot,G4,True,-3,-3,UltraSmall,D," 1 multiplied by (1 minus 4) is -3. ANSWER: -3
+
+Question:", 1 multiplied by (1 minus 4) is -3. ANSWER: -3,20,22,22,19,039_cot.npy,True,,False
+40,direct,G2,True,13,13,UltraSmall,A," 13
+
+",13,4,4,4,3,040_direct.npy,True,,False
+40,cot,G4,True,13,13,UltraSmall,A," First, multiply 2 by 4 to get 8. Then, add 5 to 8 to get 13. ANSWER: 13
+
+Question:"," First, multiply 2 by 4 to get 8. Then, add 5 to 8 to get 13. ANSWER: 13",34,36,36,33,040_cot.npy,True,,False
+41,direct,G2,True,1,1,UltraSmall,B," 1
+
+",1,3,3,3,2,041_direct.npy,True,,False
+41,cot,G4,True,1,1,UltraSmall,B," First, multiply 2 and 3 to get 6. Then, subtract 5 from 6 to get 1. ANSWER: 1
+
+Question:"," First, multiply 2 and 3 to get 6. Then, subtract 5 from 6 to get 1. ANSWER: 1",32,34,34,31,041_cot.npy,True,,False
+42,direct,G2,True,30,30,UltraSmall,C," 30
+
+",30,4,4,4,3,042_direct.npy,True,,False
+42,cot,G4,True,30,30,UltraSmall,C," First, add 4 and 2 to get 6. Then, multiply 5 by 6 to get 30. ANSWER: 30
+
+Question:"," First, add 4 and 2 to get 6. Then, multiply 5 by 6 to get 30. ANSWER: 30",34,36,36,33,042_cot.npy,True,,False
+43,direct,G2,True,-5,-5,UltraSmall,D," -5
+
+",-5,3,3,3,2,043_direct.npy,True,,False
+43,cot,G4,True,-5,-5,UltraSmall,D," First, we need to solve the expression inside the parentheses: 2 - 3 = -1. Then, we multiply the result by 5: 5 * -1 = -5. ANSWER: -5
+
+Question:"," First, we need to solve the expression inside the parentheses: 2 - 3 = -1. Then, we multiply the result by 5: 5 * -1 = -5. ANSWER: -5",46,48,48,45,043_cot.npy,True,,False
+44,direct,G2,True,16,16,UltraSmall,A," 16
+
+",16,4,4,4,3,044_direct.npy,True,,False
+44,cot,G4,True,16,16,UltraSmall,A," First, multiply 4 by 3 to get 12. Then, add 4 to 12 to get 16. ANSWER: 16
+
+Question:"," First, multiply 4 by 3 to get 12. Then, add 4 to 12 to get 16. ANSWER: 16",36,38,38,35,044_cot.npy,True,,False
+45,direct,G2,True,19,19,UltraSmall,B," 19
+
+",19,4,4,4,3,045_direct.npy,True,,False
+45,cot,G4,True,19,19,UltraSmall,B," First, multiply 5 by 4 to get 20. Then, subtract 1 from 20 to get 19. ANSWER: 19
+
+Question:"," First, multiply 5 by 4 to get 20. Then, subtract 1 from 20 to get 19. ANSWER: 19",36,38,38,35,045_cot.npy,True,,False
+46,direct,G2,True,6,6,UltraSmall,C," 6
+
+",6,3,3,3,2,046_direct.npy,True,,False
+46,cot,G4,True,6,6,UltraSmall,C," First, add 2 and 1 to get 3. Then, multiply 2 by 3 to get 6. ANSWER: 6
+
+Question:"," First, add 2 and 1 to get 3. Then, multiply 2 by 3 to get 6. ANSWER: 6",32,34,34,31,046_cot.npy,True,,False
+47,direct,G2,True,-12,-12,UltraSmall,D," -12
+
+",-12,4,4,4,3,047_direct.npy,True,,False
+47,cot,G4,True,-12,-12,UltraSmall,D," First, subtract 5 from 1 to get -4. Then, multiply 3 by -4 to get -12. ANSWER: -12
+
+Question:"," First, subtract 5 from 1 to get -4. Then, multiply 3 by -4 to get -12. ANSWER: -12",34,36,36,33,047_cot.npy,True,,False
+48,direct,G2,True,15,15,UltraSmall,A," 15
+
+",15,4,4,4,3,048_direct.npy,True,,False
+48,cot,G4,True,15,15,UltraSmall,A," First, multiply 5 by 2 to get 10. Then, add 5 to 10 to get 15. ANSWER: 15
+
+Question:"," First, multiply 5 by 2 to get 10. Then, add 5 to 10 to get 15. ANSWER: 15",36,38,38,35,048_cot.npy,True,,False
+49,direct,G2,True,7,7,UltraSmall,B," 7
+
+",7,3,3,3,2,049_direct.npy,True,,False
+49,cot,G4,True,7,7,UltraSmall,B," First, multiply 5 by 2 to get 10. Then, subtract 3 from 10 to get 7. ANSWER: 7
+
+Question:"," First, multiply 5 by 2 to get 10. Then, subtract 3 from 10 to get 7. ANSWER: 7",34,36,36,33,049_cot.npy,True,,False
+50,direct,G2,True,28,28,UltraSmall,C," 28
+
+",28,4,4,4,3,050_direct.npy,True,,False
+50,cot,G4,True,28,28,UltraSmall,C," First, we solve the expression inside the parentheses: 2 + 5 = 7. Then, we multiply 4 by 7: 4 * 7 = 28. ANSWER: 28
+
+Question:"," First, we solve the expression inside the parentheses: 2 + 5 = 7. Then, we multiply 4 by 7: 4 * 7 = 28. ANSWER: 28",46,48,48,45,050_cot.npy,True,,False
+51,direct,G2,True,-8,-8,UltraSmall,D," -8
+
+",-8,3,3,3,2,051_direct.npy,True,,False
+51,cot,G4,True,-8,-8,UltraSmall,D," First, we need to solve the expression inside the parentheses: 2 - 4 = -2. Then, we multiply the result by 4: 4 * -2 = -8. ANSWER: -8
+
+Question:"," First, we need to solve the expression inside the parentheses: 2 - 4 = -2. Then, we multiply the result by 4: 4 * -2 = -8. ANSWER: -8",46,48,48,45,051_cot.npy,True,,False
+52,direct,G2,True,9,9,UltraSmall,A," 9
+
+",9,3,3,3,2,052_direct.npy,True,,False
+52,cot,G4,True,9,9,UltraSmall,A," First, multiply 4 by 2 to get 8. Then, add 1 to 8 to get 9. ANSWER: 9
+
+Question:"," First, multiply 4 by 2 to get 8. Then, add 1 to 8 to get 9. ANSWER: 9",32,34,34,31,052_cot.npy,True,,False
+53,direct,G2,True,12,12,UltraSmall,B," 12
+
+",12,4,4,4,3,053_direct.npy,True,,False
+53,cot,G4,True,12,12,UltraSmall,B," First, calculate 4 multiplied by 4, which equals 16. Then, subtract 4 from 16, which equals 12. ANSWER: 12
+
+Question:"," First, calculate 4 multiplied by 4, which equals 16. Then, subtract 4 from 16, which equals 12. ANSWER: 12",39,41,41,38,053_cot.npy,True,,False
+54,direct,G2,True,2,2,UltraSmall,C," 2
+
+",2,3,3,3,2,054_direct.npy,True,,False
+54,cot,G4,True,2,2,UltraSmall,C," 1 multiplied by (1 plus 1) is 2. ANSWER: 2
+
+Question:", 1 multiplied by (1 plus 1) is 2. ANSWER: 2,20,22,22,19,054_cot.npy,True,,False
+55,direct,G2,True,8,8,UltraSmall,D," 8
+
+",8,3,3,3,2,055_direct.npy,True,,False
+55,cot,G4,True,8,8,UltraSmall,D," First, we solve the expression inside the parentheses: 3 - 1 equals 2. Then, we multiply 4 by 2, which equals 8. ANSWER: 8
+
+Question:"," First, we solve the expression inside the parentheses: 3 - 1 equals 2. Then, we multiply 4 by 2, which equals 8. ANSWER: 8",40,42,42,39,055_cot.npy,True,,False
+56,direct,G2,True,6,6,UltraSmall,A," 6
+
+",6,3,3,3,2,056_direct.npy,True,,False
+56,cot,G4,True,6,6,UltraSmall,A," First, multiply 2 by 2 to get 4. Then, add 2 to 4 to get 6. ANSWER: 6
+
+Question:"," First, multiply 2 by 2 to get 4. Then, add 2 to 4 to get 6. ANSWER: 6",32,34,34,31,056_cot.npy,True,,False
+57,direct,G2,True,18,18,UltraSmall,B," 18
+
+",18,4,4,4,3,057_direct.npy,True,,False
+57,cot,G4,True,18,18,UltraSmall,B," First, multiply 5 by 4 to get 20. Then, subtract 2 from 20 to get 18. ANSWER: 18
+
+Question:"," First, multiply 5 by 4 to get 20. Then, subtract 2 from 20 to get 18. ANSWER: 18",36,38,38,35,057_cot.npy,True,,False
+58,direct,G2,True,20,20,UltraSmall,C," 20
+
+",20,4,4,4,3,058_direct.npy,True,,False
+58,cot,G4,True,20,20,UltraSmall,C," First, add 2 and 3 to get 5. Then, multiply 4 by 5 to get 20. ANSWER: 20
+
+Question:"," First, add 2 and 3 to get 5. Then, multiply 4 by 5 to get 20. ANSWER: 20",34,36,36,33,058_cot.npy,True,,False
+59,direct,G2,True,4,4,UltraSmall,D," 4
+
+",4,3,3,3,2,059_direct.npy,True,,False
+59,cot,G4,True,4,4,UltraSmall,D," First, subtract 1 from 5 to get 4. Then, multiply 4 by 1 to get 4. ANSWER: 4
+
+Question:"," First, subtract 1 from 5 to get 4. Then, multiply 4 by 1 to get 4. ANSWER: 4",32,34,34,31,059_cot.npy,True,,False
+60,direct,G2,True,20,20,UltraSmall,A," 20
+
+",20,4,4,4,3,060_direct.npy,True,,False
+60,cot,G4,True,20,20,UltraSmall,A," First, multiply 4 by 4 to get 16. Then, add 4 to 16 to get 20. ANSWER: 20
+
+Question:"," First, multiply 4 by 4 to get 16. Then, add 4 to 16 to get 20. ANSWER: 20",36,38,38,35,060_cot.npy,True,,False
+61,direct,G2,True,7,7,UltraSmall,B," 7
+
+",7,3,3,3,2,061_direct.npy,True,,False
+61,cot,G4,True,7,7,UltraSmall,B," First, multiply 2 by 4 to get 8. Then, subtract 1 from 8 to get 7. ANSWER: 7
+
+Question:"," First, multiply 2 by 4 to get 8. Then, subtract 1 from 8 to get 7. ANSWER: 7",32,34,34,31,061_cot.npy,True,,False
+62,direct,G2,True,10,10,UltraSmall,C," 10
+
+",10,4,4,4,3,062_direct.npy,True,,False
+62,cot,G4,True,10,10,UltraSmall,C," First, add 4 and 1 to get 5. Then, multiply 2 by 5 to get 10. ANSWER: 10
+
+Question:"," First, add 4 and 1 to get 5. Then, multiply 2 by 5 to get 10. ANSWER: 10",34,36,36,33,062_cot.npy,True,,False
+63,direct,G2,True,-4,-4,UltraSmall,D," -4
+
+",-4,3,3,3,2,063_direct.npy,True,,False
+63,cot,G4,True,-4,-4,UltraSmall,D," First, we need to solve the expression inside the parentheses: 3 - 4 = -1. Then, we multiply the result by 4: 4 * -1 = -4. ANSWER: -4
+
+Question:"," First, we need to solve the expression inside the parentheses: 3 - 4 = -1. Then, we multiply the result by 4: 4 * -1 = -4. ANSWER: -4",46,48,48,45,063_cot.npy,True,,False
+64,direct,G2,True,17,17,UltraSmall,A," 17
+
+",17,4,4,4,3,064_direct.npy,True,,False
+64,cot,G4,True,17,17,UltraSmall,A," First, multiply 3 by 4 to get 12. Then, add 5 to 12 to get 17. ANSWER: 17
+
+Question:"," First, multiply 3 by 4 to get 12. Then, add 5 to 12 to get 17. ANSWER: 17",36,38,38,35,064_cot.npy,True,,False
+65,direct,G2,True,6,6,UltraSmall,B," 6
+
+",6,3,3,3,2,065_direct.npy,True,,False
+65,cot,G4,True,6,6,UltraSmall,B," First, multiply 4 by 2 to get 8. Then, subtract 2 from 8 to get 6. ANSWER: 6
+
+Question:"," First, multiply 4 by 2 to get 8. Then, subtract 2 from 8 to get 6. ANSWER: 6",32,34,34,31,065_cot.npy,True,,False
+66,direct,G2,True,30,30,UltraSmall,C," 30
+
+",30,4,4,4,3,066_direct.npy,True,,False
+66,cot,G4,True,30,30,UltraSmall,C," First, add 5 and 1 to get 6. Then, multiply 5 by 6 to get 30. ANSWER: 30
+
+Question:"," First, add 5 and 1 to get 6. Then, multiply 5 by 6 to get 30. ANSWER: 30",34,36,36,33,066_cot.npy,True,,False
+67,direct,G2,True,-5,-5,UltraSmall,D," -5
+
+",-5,3,3,3,2,067_direct.npy,True,,False
+67,cot,G4,True,-5,-5,UltraSmall,D," First, subtract 5 from 4 to get -1. Then, multiply -1 by 5 to get -5. ANSWER: -5
+
+Question:"," First, subtract 5 from 4 to get -1. Then, multiply -1 by 5 to get -5. ANSWER: -5",32,34,34,31,067_cot.npy,True,,False
+68,direct,G2,True,11,11,UltraSmall,A," 11
+
+",11,4,4,4,3,068_direct.npy,True,,False
+68,cot,G4,True,11,11,UltraSmall,A," First, multiply 5 by 2 to get 10. Then, add 1 to 10 to get 11. ANSWER: 11
+
+Question:"," First, multiply 5 by 2 to get 10. Then, add 1 to 10 to get 11. ANSWER: 11",36,38,38,35,068_cot.npy,True,,False
+69,direct,G2,True,7,7,UltraSmall,B," 7
+
+",7,3,3,3,2,069_direct.npy,True,,False
+69,cot,G4,True,7,7,UltraSmall,B," First, multiply 2 by 4 to get 8. Then, subtract 1 from 8 to get 7. ANSWER: 7
+
+Question:"," First, multiply 2 by 4 to get 8. Then, subtract 1 from 8 to get 7. ANSWER: 7",32,34,34,31,069_cot.npy,True,,False
+70,direct,G2,True,35,35,UltraSmall,C," 35
+
+",35,4,4,4,3,070_direct.npy,True,,False
+70,cot,G4,True,35,35,UltraSmall,C," First, add 2 and 5 to get 7. Then, multiply 5 by 7 to get 35. ANSWER: 35
+
+Question:"," First, add 2 and 5 to get 7. Then, multiply 5 by 7 to get 35. ANSWER: 35",34,36,36,33,070_cot.npy,True,,False
+71,direct,G2,True,-20,-20,UltraSmall,D," -20
+
+",-20,4,4,4,3,071_direct.npy,True,,False
+71,cot,G4,True,-20,-20,UltraSmall,D," First, subtract 5 from 1 to get -4. Then, multiply -4 by 5 to get -20. ANSWER: -20
+
+Question:"," First, subtract 5 from 1 to get -4. Then, multiply -4 by 5 to get -20. ANSWER: -20",34,36,36,33,071_cot.npy,True,,False
+72,direct,G2,True,28,28,UltraSmall,A," 28
+
+",28,4,4,4,3,072_direct.npy,True,,False
+72,cot,G4,True,28,28,UltraSmall,A," First, multiply 5 by 5 to get 25. Then, add 3 to 25 to get 28. ANSWER: 28
+
+Question:"," First, multiply 5 by 5 to get 25. Then, add 3 to 25 to get 28. ANSWER: 28",36,38,38,35,072_cot.npy,True,,False
+73,direct,G2,True,15,15,UltraSmall,B," 15
+
+",15,4,4,4,3,073_direct.npy,True,,False
+73,cot,G4,True,15,15,UltraSmall,B," First, multiply 4 by 5 to get 20. Then, subtract 5 from 20 to get 15. ANSWER: 15
+
+Question:"," First, multiply 4 by 5 to get 20. Then, subtract 5 from 20 to get 15. ANSWER: 15",36,38,38,35,073_cot.npy,True,,False
+74,direct,G2,True,6,6,UltraSmall,C," 6
+
+",6,3,3,3,2,074_direct.npy,True,,False
+74,cot,G4,True,6,6,UltraSmall,C," 1 multiplied by (1 plus 5) is 6. ANSWER: 6
+
+Question:", 1 multiplied by (1 plus 5) is 6. ANSWER: 6,20,22,22,19,074_cot.npy,True,,False
+75,direct,G2,True,-2,-2,UltraSmall,D," -2
+
+",-2,3,3,3,2,075_direct.npy,True,,False
+75,cot,G4,True,-2,-2,UltraSmall,D," First, we need to solve the expression inside the parentheses: 4 - 5 = -1. Then, we multiply the result by 2: 2 * -1 = -2. ANSWER: -2
+
+Question:"," First, we need to solve the expression inside the parentheses: 4 - 5 = -1. Then, we multiply the result by 2: 2 * -1 = -2. ANSWER: -2",46,48,48,45,075_cot.npy,True,,False
+76,direct,G2,True,20,20,UltraSmall,A," 20
+
+",20,4,4,4,3,076_direct.npy,True,,False
+76,cot,G4,True,20,20,UltraSmall,A," First, multiply 3 by 5 to get 15. Then, add 5 to 15 to get 20. ANSWER: 20
+
+Question:"," First, multiply 3 by 5 to get 15. Then, add 5 to 15 to get 20. ANSWER: 20",36,38,38,35,076_cot.npy,True,,False
+77,direct,G2,True,7,7,UltraSmall,B," 7
+
+",7,3,3,3,2,077_direct.npy,True,,False
+77,cot,G4,True,7,7,UltraSmall,B," First, multiply 5 by 2 to get 10. Then, subtract 3 from 10 to get 7. ANSWER: 7
+
+Question:"," First, multiply 5 by 2 to get 10. Then, subtract 3 from 10 to get 7. ANSWER: 7",34,36,36,33,077_cot.npy,True,,False
+78,direct,G2,True,16,16,UltraSmall,C," 16
+
+",16,4,4,4,3,078_direct.npy,True,,False
+78,cot,G4,True,16,16,UltraSmall,C," First, we solve the expression inside the parentheses: 3 + 5 = 8. Then, we multiply the result by 2: 2 * 8 = 16. ANSWER: 16
+
+Question:"," First, we solve the expression inside the parentheses: 3 + 5 = 8. Then, we multiply the result by 2: 2 * 8 = 16. ANSWER: 16",46,48,48,45,078_cot.npy,True,,False
+79,direct,G2,True,8,8,UltraSmall,D," 8
+
+",8,3,3,3,2,079_direct.npy,True,,False
+79,cot,G4,True,8,8,UltraSmall,D," First, we solve the expression inside the parentheses: 3 - 1 equals 2. Then, we multiply 4 by 2, which equals 8. ANSWER: 8
+
+Question:"," First, we solve the expression inside the parentheses: 3 - 1 equals 2. Then, we multiply 4 by 2, which equals 8. ANSWER: 8",40,42,42,39,079_cot.npy,True,,False
+80,direct,G2,True,29,29,Small,A," 29
+
+",29,4,4,4,3,080_direct.npy,True,,False
+80,cot,G4,True,29,29,Small,A," First, multiply 3 by 8 to get 24. Then, add 5 to 24 to get 29. ANSWER: 29
+
+Question:"," First, multiply 3 by 8 to get 24. Then, add 5 to 24 to get 29. ANSWER: 29",36,38,38,35,080_cot.npy,True,,False
+81,direct,G1,False,2,-2,Small,B," 2
+
+",2,3,3,3,2,081_direct.npy,True,,False
+81,cot,G4,True,-2,-2,Small,B," First, multiply 2 by 2 to get 4. Then, subtract 6 from 4 to get -2. ANSWER: -2
+
+Question:"," First, multiply 2 by 2 to get 4. Then, subtract 6 from 4 to get -2. ANSWER: -2",32,34,34,31,081_cot.npy,True,,False
+82,direct,G2,True,36,36,Small,C," 36
+
+",36,4,4,4,3,082_direct.npy,True,,False
+82,cot,G4,True,36,36,Small,C," First, add 6 and 3 to get 9. Then, multiply 4 by 9 to get 36. ANSWER: 36
+
+Question:"," First, add 6 and 3 to get 9. Then, multiply 4 by 9 to get 36. ANSWER: 36",34,36,36,33,082_cot.npy,True,,False
+83,direct,G2,True,-9,-9,Small,D," -9
+
+",-9,3,3,3,2,083_direct.npy,True,,False
+83,cot,G4,True,-9,-9,Small,D," First, we need to solve the expression inside the parentheses: 8 - 9 = -1. Then, we multiply the result by 9: 9 * -1 = -9. ANSWER: -9
+
+Question:"," First, we need to solve the expression inside the parentheses: 8 - 9 = -1. Then, we multiply the result by 9: 9 * -1 = -9. ANSWER: -9",46,48,48,45,083_cot.npy,True,,False
+84,direct,G2,True,8,8,Small,A," 8
+
+",8,3,3,3,2,084_direct.npy,True,,False
+84,cot,G4,True,8,8,Small,A," First, multiply 2 and 3 to get 6. Then, add 2 to 6 to get 8. ANSWER: 8
+
+Question:"," First, multiply 2 and 3 to get 6. Then, add 2 to 6 to get 8. ANSWER: 8",32,34,34,31,084_cot.npy,True,,False
+85,direct,G2,True,29,29,Small,B," 29
+
+",29,4,4,4,3,085_direct.npy,True,,False
+85,cot,G4,True,29,29,Small,B," First, multiply 4 by 8 to get 32. Then, subtract 3 from 32 to get 29. ANSWER: 29
+
+Question:"," First, multiply 4 by 8 to get 32. Then, subtract 3 from 32 to get 29. ANSWER: 29",36,38,38,35,085_cot.npy,True,,False
+86,direct,G2,True,24,24,Small,C," 24
+
+",24,4,4,4,3,086_direct.npy,True,,False
+86,cot,G4,True,24,24,Small,C," First, add 6 and 6 to get 12. Then, multiply 2 by 12 to get 24. ANSWER: 24
+
+Question:"," First, add 6 and 6 to get 12. Then, multiply 2 by 12 to get 24. ANSWER: 24",36,38,38,35,086_cot.npy,True,,False
+87,direct,G2,True,6,6,Small,D," 6
+
+",6,3,3,3,2,087_direct.npy,True,,False
+87,cot,G4,True,6,6,Small,D," First, we solve the expression inside the parentheses: 7 - 4 equals 3. Then, we multiply 2 by 3, which equals 6. ANSWER: 6
+
+Question:"," First, we solve the expression inside the parentheses: 7 - 4 equals 3. Then, we multiply 2 by 3, which equals 6. ANSWER: 6",40,42,42,39,087_cot.npy,True,,False
+88,direct,G2,True,21,21,Small,A," 21
+
+",21,4,4,4,3,088_direct.npy,True,,False
+88,cot,G4,True,21,21,Small,A," First, multiply 5 by 3 to get 15. Then, add 6 to 15 to get 21. ANSWER: 21
+
+Question:"," First, multiply 5 by 3 to get 15. Then, add 6 to 15 to get 21. ANSWER: 21",36,38,38,35,088_cot.npy,True,,False
+89,direct,G1,False,24,28,Small,B," 24
+
+",24,4,4,4,3,089_direct.npy,True,,False
+89,cot,G4,True,28,28,Small,B," First, multiply 8 by 4 to get 32. Then, subtract 4 from 32 to get 28. ANSWER: 28
+
+Question:"," First, multiply 8 by 4 to get 32. Then, subtract 4 from 32 to get 28. ANSWER: 28",36,38,38,35,089_cot.npy,True,,False
+90,direct,G1,False,48,44,Small,C," 48
+
+",48,4,4,4,3,090_direct.npy,True,,False
+90,cot,G4,True,44,44,Small,C," First, we solve the expression inside the parentheses: 4 + 7 = 11. Then, we multiply the result by 4: 4 * 11 = 44. ANSWER: 44
+
+Question:"," First, we solve the expression inside the parentheses: 4 + 7 = 11. Then, we multiply the result by 4: 4 * 11 = 44. ANSWER: 44",48,50,50,47,090_cot.npy,True,,False
+91,direct,G2,True,-4,-4,Small,D," -4
+
+",-4,3,3,3,2,091_direct.npy,True,,False
+91,cot,G4,True,-4,-4,Small,D," First, we need to solve the expression inside the parentheses: 4 - 6 equals -2. Then, we multiply the result by 2: 2 * -2 equals -4. ANSWER: -4
+
+Question:"," First, we need to solve the expression inside the parentheses: 4 - 6 equals -2. Then, we multiply the result by 2: 2 * -2 equals -4. ANSWER: -4",46,48,48,45,091_cot.npy,True,,False
+92,direct,G2,True,45,45,Small,A," 45
+
+",45,4,4,4,3,092_direct.npy,True,,False
+92,cot,G4,True,45,45,Small,A," First, multiply 8 by 5 to get 40. Then, add 5 to 40 to get 45. ANSWER: 45
+
+Question:"," First, multiply 8 by 5 to get 40. Then, add 5 to 40 to get 45. ANSWER: 45",36,38,38,35,092_cot.npy,True,,False
+93,direct,G2,True,5,5,Small,B," 5
+
+",5,3,3,3,2,093_direct.npy,True,,False
+93,cot,G4,True,5,5,Small,B," First, multiply 4 by 3 to get 12. Then, subtract 7 from 12 to get 5. ANSWER: 5
+
+Question:"," First, multiply 4 by 3 to get 12. Then, subtract 7 from 12 to get 5. ANSWER: 5",34,36,36,33,093_cot.npy,True,,False
+94,direct,G1,False,34,26,Small,C," 34
+
+",34,4,4,4,3,094_direct.npy,True,,False
+94,cot,G4,True,26,26,Small,C," First, add 9 and 4 to get 13. Then, multiply 2 by 13 to get 26. ANSWER: 26
+
+Question:"," First, add 9 and 4 to get 13. Then, multiply 2 by 13 to get 26. ANSWER: 26",36,38,38,35,094_cot.npy,True,,False
+95,direct,G2,True,15,15,Small,D," 15
+
+",15,4,4,4,3,095_direct.npy,True,,False
+95,cot,G4,True,15,15,Small,D," First, we need to solve the expression inside the parentheses: 9 - 6 = 3. Then, we multiply the result by 5: 5 * 3 = 15. ANSWER: 15
+
+Question:"," First, we need to solve the expression inside the parentheses: 9 - 6 = 3. Then, we multiply the result by 5: 5 * 3 = 15. ANSWER: 15",48,50,50,47,095_cot.npy,True,,False
+96,direct,G2,True,34,34,Small,A," 34
+
+",34,4,4,4,3,096_direct.npy,True,,False
+96,cot,G4,True,34,34,Small,A," First, multiply 6 by 5 to get 30. Then, add 4 to 30 to get 34. ANSWER: 34
+
+Question:"," First, multiply 6 by 5 to get 30. Then, add 4 to 30 to get 34. ANSWER: 34",36,38,38,35,096_cot.npy,True,,False
+97,direct,G2,True,3,3,Small,B," 3
+
+",3,3,3,3,2,097_direct.npy,True,,False
+97,cot,G4,True,3,3,Small,B," First, multiply 2 by 5 to get 10. Then, subtract 7 from 10 to get 3. ANSWER: 3
+
+Question:"," First, multiply 2 by 5 to get 10. Then, subtract 7 from 10 to get 3. ANSWER: 3",34,36,36,33,097_cot.npy,True,,False
+98,direct,G2,True,56,56,Small,C," 56
+
+",56,4,4,4,3,098_direct.npy,True,,False
+98,cot,G4,True,56,56,Small,C," First, add 6 and 2 to get 8. Then, multiply 7 by 8 to get 56. ANSWER: 56
+
+Question:"," First, add 6 and 2 to get 8. Then, multiply 7 by 8 to get 56. ANSWER: 56",34,36,36,33,098_cot.npy,True,,False
+99,direct,G2,True,-12,-12,Small,D," -12
+
+",-12,4,4,4,3,099_direct.npy,True,,False
+99,cot,G4,True,-12,-12,Small,D," First, we need to solve the expression inside the parentheses: 7 - 9 = -2. Then, we multiply the result by 6: 6 * -2 = -12. ANSWER: -12
+
+Question:"," First, we need to solve the expression inside the parentheses: 7 - 9 = -2. Then, we multiply the result by 6: 6 * -2 = -12. ANSWER: -12",48,50,50,47,099_cot.npy,True,,False
+100,direct,G2,True,57,57,Small,A," 57
+
+",57,4,4,4,3,100_direct.npy,True,,False
+100,cot,G4,True,57,57,Small,A," First, multiply 8 by 7 to get 56. Then, add 1 to 56 to get 57. ANSWER: 57
+
+Question:"," First, multiply 8 by 7 to get 56. Then, add 1 to 56 to get 57. ANSWER: 57",36,38,38,35,100_cot.npy,True,,False
+101,direct,G2,True,15,15,Small,B," 15
+
+",15,4,4,4,3,101_direct.npy,True,,False
+101,cot,G4,True,15,15,Small,B," First, multiply 3 by 6 to get 18. Then, subtract 3 from 18 to get 15. ANSWER: 15
+
+Question:"," First, multiply 3 by 6 to get 18. Then, subtract 3 from 18 to get 15. ANSWER: 15",36,38,38,35,101_cot.npy,True,,False
+102,direct,G2,True,24,24,Small,C," 24
+
+",24,4,4,4,3,102_direct.npy,True,,False
+102,cot,G4,True,24,24,Small,C," First, add 2 and 2 to get 4. Then, multiply 6 by 4 to get 24. ANSWER: 24
+
+Question:"," First, add 2 and 2 to get 4. Then, multiply 6 by 4 to get 24. ANSWER: 24",34,36,36,33,102_cot.npy,True,,False
+103,direct,G1,False,-24,-32,Small,D," -24
+
+",-24,4,4,4,3,103_direct.npy,True,,False
+103,cot,G4,True,-32,-32,Small,D," First, we need to solve the expression inside the parentheses: 3 - 7 = -4. Then, we multiply the result by 8: 8 * (-4) = -32. ANSWER: -32
+
+Question:"," First, we need to solve the expression inside the parentheses: 3 - 7 = -4. Then, we multiply the result by 8: 8 * (-4) = -32. ANSWER: -32",49,51,51,48,103_cot.npy,True,,False
+104,direct,G2,True,31,31,Small,A," 31
+
+",31,4,4,4,3,104_direct.npy,True,,False
+104,cot,G4,True,31,31,Small,A," First, multiply 5 by 6 to get 30. Then, add 1 to 30 to get 31. ANSWER: 31
+
+Question:"," First, multiply 5 by 6 to get 30. Then, add 1 to 30 to get 31. ANSWER: 31",36,38,38,35,104_cot.npy,True,,False
+105,direct,G2,True,7,7,Small,B," 7
+
+",7,3,3,3,2,105_direct.npy,True,,False
+105,cot,G4,True,7,7,Small,B," First, multiply 8 by 2 to get 16. Then, subtract 9 from 16 to get 7. ANSWER: 7
+
+Question:"," First, multiply 8 by 2 to get 16. Then, subtract 9 from 16 to get 7. ANSWER: 7",34,36,36,33,105_cot.npy,True,,False
+106,direct,G2,True,70,70,Small,C," 70
+
+",70,4,4,4,3,106_direct.npy,True,,False
+106,cot,G4,True,70,70,Small,C," First, add 7 and 7 to get 14. Then, multiply 5 by 14 to get 70. ANSWER: 70
+
+Question:"," First, add 7 and 7 to get 14. Then, multiply 5 by 14 to get 70. ANSWER: 70",36,38,38,35,106_cot.npy,True,,False
+107,direct,G1,False,-12,-9,Small,D," -12
+
+",-12,4,4,4,3,107_direct.npy,True,,False
+107,cot,G4,True,-9,-9,Small,D," First, we need to solve the expression inside the parentheses: 6 - 9 = -3. Then, we multiply the result by 3: 3 * -3 = -9. ANSWER: -9
+
+Question:"," First, we need to solve the expression inside the parentheses: 6 - 9 = -3. Then, we multiply the result by 3: 3 * -3 = -9. ANSWER: -9",46,48,48,45,107_cot.npy,True,,False
+108,direct,G2,True,54,54,Small,A," 54
+
+",54,4,4,4,3,108_direct.npy,True,,False
+108,cot,G4,True,54,54,Small,A," First, multiply 6 by 8 to get 48. Then, add 6 to 48 to get 54. ANSWER: 54
+
+Question:"," First, multiply 6 by 8 to get 48. Then, add 6 to 48 to get 54. ANSWER: 54",36,38,38,35,108_cot.npy,True,,False
+109,direct,G1,False,33,39,Small,B," 33
+
+",33,4,4,4,3,109_direct.npy,True,,False
+109,cot,G4,True,39,39,Small,B," First, multiply 8 by 6 to get 48. Then, subtract 9 from 48 to get 39. ANSWER: 39
+
+Question:"," First, multiply 8 by 6 to get 48. Then, subtract 9 from 48 to get 39. ANSWER: 39",36,38,38,35,109_cot.npy,True,,False
+110,direct,G2,True,48,48,Small,C," 48
+
+",48,4,4,4,3,110_direct.npy,True,,False
+110,cot,G4,True,48,48,Small,C," First, add 5 and 7 to get 12. Then, multiply 4 by 12 to get 48. ANSWER: 48
+
+Question:"," First, add 5 and 7 to get 12. Then, multiply 4 by 12 to get 48. ANSWER: 48",36,38,38,35,110_cot.npy,True,,False
+111,direct,G1,False,-4,-8,Small,D," -4
+
+",-4,3,3,3,2,111_direct.npy,True,,False
+111,cot,G4,True,-8,-8,Small,D," First, we need to solve the expression inside the parentheses: 4 - 5 = -1. Then, we multiply the result by 8: 8 * -1 = -8. ANSWER: -8
+
+Question:"," First, we need to solve the expression inside the parentheses: 4 - 5 = -1. Then, we multiply the result by 8: 8 * -1 = -8. ANSWER: -8",46,48,48,45,111_cot.npy,True,,False
+112,direct,G2,True,21,21,Small,A," 21
+
+",21,4,4,4,3,112_direct.npy,True,,False
+112,cot,G4,True,21,21,Small,A," First, multiply 8 by 2 to get 16. Then, add 5 to 16 to get 21. ANSWER: 21
+
+Question:"," First, multiply 8 by 2 to get 16. Then, add 5 to 16 to get 21. ANSWER: 21",36,38,38,35,112_cot.npy,True,,False
+113,direct,G2,True,23,23,Small,B," 23
+
+",23,4,4,4,3,113_direct.npy,True,,False
+113,cot,G4,True,23,23,Small,B," First, multiply 6 by 5 to get 30. Then, subtract 7 from 30 to get 23. ANSWER: 23
+
+Question:"," First, multiply 6 by 5 to get 30. Then, subtract 7 from 30 to get 23. ANSWER: 23",36,38,38,35,113_cot.npy,True,,False
+114,direct,G1,False,145,119,Small,C," 145
+
+",145,5,5,5,4,114_direct.npy,True,,False
+114,cot,G4,True,119,119,Small,C," First, add 9 and 8 to get 17. Then, multiply 7 by 17 to get 119. ANSWER: 119
+
+Question:"," First, add 9 and 8 to get 17. Then, multiply 7 by 17 to get 119. ANSWER: 119",38,40,40,37,114_cot.npy,True,,False
+115,direct,G2,True,-36,-36,Small,D," -36
+
+",-36,4,4,4,3,115_direct.npy,True,,False
+115,cot,G4,True,-36,-36,Small,D," First, we need to solve the expression inside the parentheses: 5 - 9 = -4. Then, we multiply the result by 9: 9 * (-4) = -36. ANSWER: -36
+
+Question:"," First, we need to solve the expression inside the parentheses: 5 - 9 = -4. Then, we multiply the result by 9: 9 * (-4) = -36. ANSWER: -36",49,51,51,48,115_cot.npy,True,,False
+116,direct,G2,True,38,38,Small,A," 38
+
+",38,4,4,4,3,116_direct.npy,True,,False
+116,cot,G4,True,38,38,Small,A," First, multiply 9 by 4 to get 36. Then, add 2 to 36 to get 38. ANSWER: 38
+
+Question:"," First, multiply 9 by 4 to get 36. Then, add 2 to 36 to get 38. ANSWER: 38",36,38,38,35,116_cot.npy,True,,False
+117,direct,G1,False,38,40,Small,B," 38
+
+",38,4,4,4,3,117_direct.npy,True,,False
+117,cot,G4,True,40,40,Small,B," First, multiply 6 by 7 to get 42. Then, subtract 2 from 42 to get 40. ANSWER: 40
+
+Question:"," First, multiply 6 by 7 to get 42. Then, subtract 2 from 42 to get 40. ANSWER: 40",36,38,38,35,117_cot.npy,True,,False
+118,direct,G2,True,50,50,Small,C," 50
+
+",50,4,4,4,3,118_direct.npy,True,,False
+118,cot,G4,True,50,50,Small,C," First, add 6 and 4 to get 10. Then, multiply 5 by 10 to get 50. ANSWER: 50
+
+Question:"," First, add 6 and 4 to get 10. Then, multiply 5 by 10 to get 50. ANSWER: 50",36,38,38,35,118_cot.npy,True,,False
+119,direct,G2,True,15,15,Small,D," 15
+
+",15,4,4,4,3,119_direct.npy,True,,False
+119,cot,G4,True,15,15,Small,D," First, subtract 1 from 4 to get 3. Then, multiply 5 by 3 to get 15. ANSWER: 15
+
+Question:"," First, subtract 1 from 4 to get 3. Then, multiply 5 by 3 to get 15. ANSWER: 15",34,36,36,33,119_cot.npy,True,,False
+120,direct,G2,True,18,18,Small,A," 18
+
+",18,4,4,4,3,120_direct.npy,True,,False
+120,cot,G4,True,18,18,Small,A," First, multiply 2 by 5 to get 10. Then, add 8 to 10 to get 18. ANSWER: 18
+
+Question:"," First, multiply 2 by 5 to get 10. Then, add 8 to 10 to get 18. ANSWER: 18",36,38,38,35,120_cot.npy,True,,False
+121,direct,G1,False,16,20,Small,B," 16
+
+",16,4,4,4,3,121_direct.npy,True,,False
+121,cot,G4,True,20,20,Small,B," First, multiply 3 by 9 to get 27. Then, subtract 7 from 27 to get 20. ANSWER: 20
+
+Question:"," First, multiply 3 by 9 to get 27. Then, subtract 7 from 27 to get 20. ANSWER: 20",36,38,38,35,121_cot.npy,True,,False
+122,direct,G2,True,80,80,Small,C," 80
+
+",80,4,4,4,3,122_direct.npy,True,,False
+122,cot,G4,True,80,80,Small,C," First, add 8 and 8 to get 16. Then, multiply 5 by 16 to get 80. ANSWER: 80
+
+Question:"," First, add 8 and 8 to get 16. Then, multiply 5 by 16 to get 80. ANSWER: 80",36,38,38,35,122_cot.npy,True,,False
+123,direct,G2,True,16,16,Small,D," 16
+
+",16,4,4,4,3,123_direct.npy,True,,False
+123,cot,G4,True,16,16,Small,D," First, we need to solve the expression inside the parentheses: 5 - 3 = 2. Then, we multiply the result by 8: 8 * 2 = 16. ANSWER: 16
+
+Question:"," First, we need to solve the expression inside the parentheses: 5 - 3 = 2. Then, we multiply the result by 8: 8 * 2 = 16. ANSWER: 16",48,50,50,47,123_cot.npy,True,,False
+124,direct,G2,True,13,13,Small,A," 13
+
+",13,4,4,4,3,124_direct.npy,True,,False
+124,cot,G4,True,13,13,Small,A," First, multiply 2 and 3 to get 6. Then, add 7 to 6 to get 13. ANSWER: 13
+
+Question:"," First, multiply 2 and 3 to get 6. Then, add 7 to 6 to get 13. ANSWER: 13",34,36,36,33,124_cot.npy,True,,False
+125,direct,G2,True,11,11,Small,B," 11
+
+",11,4,4,4,3,125_direct.npy,True,,False
+125,cot,G4,True,11,11,Small,B," First, multiply 5 by 4 to get 20. Then, subtract 9 from 20 to get 11. ANSWER: 11
+
+Question:"," First, multiply 5 by 4 to get 20. Then, subtract 9 from 20 to get 11. ANSWER: 11",36,38,38,35,125_cot.npy,True,,False
+126,direct,G1,False,81,99,Small,C," 81
+
+",81,4,4,4,3,126_direct.npy,True,,False
+126,cot,G4,True,99,99,Small,C," First, we need to solve the expression inside the parentheses: 2 + 9 = 11. Then, we multiply 9 by 11: 9 * 11 = 99. ANSWER: 99
+
+Question:"," First, we need to solve the expression inside the parentheses: 2 + 9 = 11. Then, we multiply 9 by 11: 9 * 11 = 99. ANSWER: 99",51,53,53,50,126_cot.npy,True,,False
+127,direct,G2,True,-25,-25,Small,D," -25
+
+",-25,4,4,4,3,127_direct.npy,True,,False
+127,cot,G4,True,-25,-25,Small,D," First, we need to solve the expression inside the parentheses: 3 - 8 = -5. Then, we multiply the result by 5: 5 * (-5) = -25. ANSWER: -25
+
+Question:"," First, we need to solve the expression inside the parentheses: 3 - 8 = -5. Then, we multiply the result by 5: 5 * (-5) = -25. ANSWER: -25",49,51,51,48,127_cot.npy,True,,False
+128,direct,G2,True,45,45,Small,A," 45
+
+",45,4,4,4,3,128_direct.npy,True,,False
+128,cot,G4,True,45,45,Small,A," First, multiply 4 by 9 to get 36. Then, add 9 to 36 to get 45. ANSWER: 45
+
+Question:"," First, multiply 4 by 9 to get 36. Then, add 9 to 36 to get 45. ANSWER: 45",36,38,38,35,128_cot.npy,True,,False
+129,direct,G2,True,54,54,Small,B," 54
+
+",54,4,4,4,3,129_direct.npy,True,,False
+129,cot,G4,True,54,54,Small,B," First, multiply 7 by 9 to get 63. Then, subtract 9 from 63 to get 54. ANSWER: 54
+
+Question:"," First, multiply 7 by 9 to get 63. Then, subtract 9 from 63 to get 54. ANSWER: 54",36,38,38,35,129_cot.npy,True,,False
+130,direct,G1,False,104,96,Small,C," 104
+
+",104,5,5,5,4,130_direct.npy,True,,False
+130,cot,G4,True,96,96,Small,C," First, add 9 and 3 to get 12. Then, multiply 8 by 12 to get 96. ANSWER: 96
+
+Question:"," First, add 9 and 3 to get 12. Then, multiply 8 by 12 to get 96. ANSWER: 96",36,38,38,35,130_cot.npy,True,,False
+131,direct,G2,True,36,36,Small,D," 36
+
+",36,4,4,4,3,131_direct.npy,True,,False
+131,cot,G4,True,36,36,Small,D," First, subtract 5 from 9 to get 4. Then, multiply 9 by 4 to get 36. ANSWER: 36
+
+Question:"," First, subtract 5 from 9 to get 4. Then, multiply 9 by 4 to get 36. ANSWER: 36",34,36,36,33,131_cot.npy,True,,False
+132,direct,G1,False,45,39,Small,A," 45
+
+",45,4,4,4,3,132_direct.npy,True,,False
+132,cot,G4,True,39,39,Small,A," First, multiply 5 by 6 to get 30. Then, add 9 to 30 to get 39. ANSWER: 39
+
+Question:"," First, multiply 5 by 6 to get 30. Then, add 9 to 30 to get 39. ANSWER: 39",36,38,38,35,132_cot.npy,True,,False
+133,direct,G2,True,40,40,Small,B," 40
+
+",40,4,4,4,3,133_direct.npy,True,,False
+133,cot,G4,True,40,40,Small,B," First, multiply 9 by 5 to get 45. Then, subtract 5 from 45 to get 40. ANSWER: 40
+
+Question:"," First, multiply 9 by 5 to get 45. Then, subtract 5 from 45 to get 40. ANSWER: 40",36,38,38,35,133_cot.npy,True,,False
+134,direct,G2,True,72,72,Small,C," 72
+
+",72,4,4,4,3,134_direct.npy,True,,False
+134,cot,G4,True,72,72,Small,C," First, we need to solve the expression inside the parentheses: 3 + 5 = 8. Then, we multiply the result by 9: 9 * 8 = 72. ANSWER: 72
+
+Question:"," First, we need to solve the expression inside the parentheses: 3 + 5 = 8. Then, we multiply the result by 9: 9 * 8 = 72. ANSWER: 72",48,50,50,47,134_cot.npy,True,,False
+135,direct,G2,True,-8,-8,Small,D," -8
+
+",-8,3,3,3,2,135_direct.npy,True,,False
+135,cot,G4,True,-8,-8,Small,D," First, we need to solve the expression inside the parentheses: 5 - 7 = -2. Then, we multiply the result by 4: 4 * (-2) = -8. ANSWER: -8
+
+Question:"," First, we need to solve the expression inside the parentheses: 5 - 7 = -2. Then, we multiply the result by 4: 4 * (-2) = -8. ANSWER: -8",47,49,49,46,135_cot.npy,True,,False
+136,direct,G2,True,22,22,Small,A," 22
+
+",22,4,4,4,3,136_direct.npy,True,,False
+136,cot,G4,True,22,22,Small,A," First, multiply 4 by 5 to get 20. Then, add 2 to 20 to get 22. ANSWER: 22
+
+Question:"," First, multiply 4 by 5 to get 20. Then, add 2 to 20 to get 22. ANSWER: 22",36,38,38,35,136_cot.npy,True,,False
+137,direct,G1,False,50,58,Small,B," 50
+
+",50,4,4,4,3,137_direct.npy,True,,False
+137,cot,G4,True,58,58,Small,B," First, multiply 8 by 8 to get 64. Then, subtract 6 from 64 to get 58. ANSWER: 58
+
+Question:"," First, multiply 8 by 8 to get 64. Then, subtract 6 from 64 to get 58. ANSWER: 58",36,38,38,35,137_cot.npy,True,,False
+138,direct,G1,False,105,75,Small,C," 105
+
+",105,5,5,5,4,138_direct.npy,True,,False
+138,cot,G4,True,75,75,Small,C," First, add 8 and 7 to get 15. Then, multiply 5 by 15 to get 75. ANSWER: 75
+
+Question:"," First, add 8 and 7 to get 15. Then, multiply 5 by 15 to get 75. ANSWER: 75",36,38,38,35,138_cot.npy,True,,False
+139,direct,G1,False,0,-8,Small,D," 0
+
+",0,3,3,3,2,139_direct.npy,True,,False
+139,cot,G4,True,-8,-8,Small,D," First, we need to solve the expression inside the parentheses: 8 - 9 = -1. Then, we multiply the result by 8: 8 * -1 = -8. ANSWER: -8
+
+Question:"," First, we need to solve the expression inside the parentheses: 8 - 9 = -1. Then, we multiply the result by 8: 8 * -1 = -8. ANSWER: -8",46,48,48,45,139_cot.npy,True,,False
+140,direct,G2,True,49,49,Small,A," 49
+
+",49,4,4,4,3,140_direct.npy,True,,False
+140,cot,G4,True,49,49,Small,A," First, multiply 5 by 9 to get 45. Then, add 4 to 45 to get 49. ANSWER: 49
+
+Question:"," First, multiply 5 by 9 to get 45. Then, add 4 to 45 to get 49. ANSWER: 49",36,38,38,35,140_cot.npy,True,,False
+141,direct,G1,False,32,40,Small,B," 32
+
+",32,4,4,4,3,141_direct.npy,True,,False
+141,cot,G4,True,40,40,Small,B," First, calculate 6 multiplied by 8, which equals 48. Then, subtract 8 from 48, which equals 40. ANSWER: 40
+
+Question:"," First, calculate 6 multiplied by 8, which equals 48. Then, subtract 8 from 48, which equals 40. ANSWER: 40",39,41,41,38,141_cot.npy,True,,False
+142,direct,G1,False,32,28,Small,C," 32
+
+",32,4,4,4,3,142_direct.npy,True,,False
+142,cot,G4,True,28,28,Small,C," First, add 8 and 6 to get 14. Then, multiply 2 by 14 to get 28. ANSWER: 28
+
+Question:"," First, add 8 and 6 to get 14. Then, multiply 2 by 14 to get 28. ANSWER: 28",36,38,38,35,142_cot.npy,True,,False
+143,direct,G2,True,-32,-32,Small,D," -32
+
+",-32,4,4,4,3,143_direct.npy,True,,False
+143,cot,G4,True,-32,-32,Small,D," First, we need to solve the expression inside the parentheses: 4 - 8 = -4. Then, we multiply the result by 8: 8 * (-4) = -32. ANSWER: -32
+
+Question:"," First, we need to solve the expression inside the parentheses: 4 - 8 = -4. Then, we multiply the result by 8: 8 * (-4) = -32. ANSWER: -32",49,51,51,48,143_cot.npy,True,,False
+144,direct,G2,True,15,15,Small,A," 15
+
+",15,4,4,4,3,144_direct.npy,True,,False
+144,cot,G4,True,15,15,Small,A," First, multiply 4 by 2 to get 8. Then, add 7 to 8 to get 15. ANSWER: 15
+
+Question:"," First, multiply 4 by 2 to get 8. Then, add 7 to 8 to get 15. ANSWER: 15",34,36,36,33,144_cot.npy,True,,False
+145,direct,G1,False,1,-1,Small,B," 1
+
+",1,3,3,3,2,145_direct.npy,True,,False
+145,cot,G3,False,8,-1,Small,B," First, multiply 2 and 3 to get 6. Then, subtract 7 from 6 to get 8. ANSWER: 8
+
+Question:"," First, multiply 2 and 3 to get 6. Then, subtract 7 from 6 to get 8. ANSWER: 8",32,34,34,31,145_cot.npy,True,,False
+146,direct,G1,False,60,48,Small,C," 60
+
+",60,4,4,4,3,146_direct.npy,True,,False
+146,cot,G4,True,48,48,Small,C," First, add 9 and 3 to get 12. Then, multiply 4 by 12 to get 48. ANSWER: 48
+
+Question:"," First, add 9 and 3 to get 12. Then, multiply 4 by 12 to get 48. ANSWER: 48",36,38,38,35,146_cot.npy,True,,False
+147,direct,G2,True,-2,-2,Small,D," -2
+
+",-2,3,3,3,2,147_direct.npy,True,,False
+147,cot,G4,True,-2,-2,Small,D," First, we need to solve the expression inside the parentheses: 6 - 7 = -1. Then, we multiply the result by 2: 2 * -1 = -2. ANSWER: -2
+
+Question:"," First, we need to solve the expression inside the parentheses: 6 - 7 = -1. Then, we multiply the result by 2: 2 * -1 = -2. ANSWER: -2",46,48,48,45,147_cot.npy,True,,False
+148,direct,G2,True,43,43,Small,A," 43
+
+",43,4,4,4,3,148_direct.npy,True,,False
+148,cot,G4,True,43,43,Small,A," First, multiply 7 by 5 to get 35. Then, add 8 to 35 to get 43. ANSWER: 43
+
+Question:"," First, multiply 7 by 5 to get 35. Then, add 8 to 35 to get 43. ANSWER: 43",36,38,38,35,148_cot.npy,True,,False
+149,direct,G1,False,35,42,Small,B," 35
+
+",35,4,4,4,3,149_direct.npy,True,,False
+149,cot,G4,True,42,42,Small,B," First, calculate 7 * 7, which is 49. Then subtract 7 from 49, which gives 42. ANSWER: 42
+
+Question:"," First, calculate 7 * 7, which is 49. Then subtract 7 from 49, which gives 42. ANSWER: 42",37,39,39,36,149_cot.npy,True,,False
+150,direct,G2,True,78,78,Small,C," 78
+
+",78,4,4,4,3,150_direct.npy,True,,False
+150,cot,G4,True,78,78,Small,C," First, add 8 and 5 to get 13. Then, multiply 6 by 13 to get 78. ANSWER: 78
+
+Question:"," First, add 8 and 5 to get 13. Then, multiply 6 by 13 to get 78. ANSWER: 78",36,38,38,35,150_cot.npy,True,,False
+151,direct,G2,True,24,24,Small,D," 24
+
+",24,4,4,4,3,151_direct.npy,True,,False
+151,cot,G4,True,24,24,Small,D," First, subtract 1 from 9 to get 8. Then, multiply 3 by 8 to get 24. ANSWER: 24
+
+Question:"," First, subtract 1 from 9 to get 8. Then, multiply 3 by 8 to get 24. ANSWER: 24",34,36,36,33,151_cot.npy,True,,False
+152,direct,G2,True,18,18,Small,A," 18
+
+",18,4,4,4,3,152_direct.npy,True,,False
+152,cot,G4,True,18,18,Small,A," First, multiply 2 by 7 to get 14. Then, add 4 to 14 to get 18. ANSWER: 18
+
+Question:"," First, multiply 2 by 7 to get 14. Then, add 4 to 14 to get 18. ANSWER: 18",36,38,38,35,152_cot.npy,True,,False
+153,direct,G2,True,5,5,Small,B," 5
+
+",5,3,3,3,2,153_direct.npy,True,,False
+153,cot,G4,True,5,5,Small,B," First, multiply 3 by 2 to get 6. Then, subtract 1 from 6 to get 5. ANSWER: 5
+
+Question:"," First, multiply 3 by 2 to get 6. Then, subtract 1 from 6 to get 5. ANSWER: 5",32,34,34,31,153_cot.npy,True,,False
+154,direct,G2,True,30,30,Small,C," 30
+
+",30,4,4,4,3,154_direct.npy,True,,False
+154,cot,G4,True,30,30,Small,C," First, add 5 and 1 to get 6. Then, multiply 5 by 6 to get 30. ANSWER: 30
+
+Question:"," First, add 5 and 1 to get 6. Then, multiply 5 by 6 to get 30. ANSWER: 30",34,36,36,33,154_cot.npy,True,,False
+155,direct,G2,True,8,8,Small,D," 8
+
+",8,3,3,3,2,155_direct.npy,True,,False
+155,cot,G4,True,8,8,Small,D," First, we solve the expression inside the parentheses: 5 - 3 equals 2. Then, we multiply 4 by 2, which equals 8. ANSWER: 8
+
+Question:"," First, we solve the expression inside the parentheses: 5 - 3 equals 2. Then, we multiply 4 by 2, which equals 8. ANSWER: 8",40,42,42,39,155_cot.npy,True,,False
+156,direct,G2,True,31,31,Small,A," 31
+
+",31,4,4,4,3,156_direct.npy,True,,False
+156,cot,G4,True,31,31,Small,A," First, multiply 9 by 3 to get 27. Then, add 4 to 27 to get 31. ANSWER: 31
+
+Question:"," First, multiply 9 by 3 to get 27. Then, add 4 to 27 to get 31. ANSWER: 31",36,38,38,35,156_cot.npy,True,,False
+157,direct,G1,False,42,48,Small,B," 42
+
+",42,4,4,4,3,157_direct.npy,True,,False
+157,cot,G4,True,48,48,Small,B," First, multiply 9 by 6 to get 54. Then, subtract 6 from 54 to get 48. ANSWER: 48
+
+Question:"," First, multiply 9 by 6 to get 54. Then, subtract 6 from 54 to get 48. ANSWER: 48",36,38,38,35,157_cot.npy,True,,False
+158,direct,G2,True,24,24,Small,C," 24
+
+",24,4,4,4,3,158_direct.npy,True,,False
+158,cot,G4,True,24,24,Small,C," First, add 3 and 3 to get 6. Then, multiply 4 by 6 to get 24. ANSWER: 24
+
+Question:"," First, add 3 and 3 to get 6. Then, multiply 4 by 6 to get 24. ANSWER: 24",34,36,36,33,158_cot.npy,True,,False
+159,direct,G2,True,12,12,Small,D," 12
+
+",12,4,4,4,3,159_direct.npy,True,,False
+159,cot,G4,True,12,12,Small,D," First, subtract 1 from 3 to get 2. Then, multiply 6 by 2 to get 12. ANSWER: 12
+
+Question:"," First, subtract 1 from 3 to get 2. Then, multiply 6 by 2 to get 12. ANSWER: 12",34,36,36,33,159_cot.npy,True,,False
+160,direct,G2,True,441,441,Medium,A," 441
+
+",441,5,5,5,4,160_direct.npy,True,,False
+160,cot,G4,True,441,441,Medium,A," First, multiply 29 by 14 to get 406. Then, add 35 to 406 to get 441. ANSWER: 441
+
+Question:"," First, multiply 29 by 14 to get 406. Then, add 35 to 406 to get 441. ANSWER: 441",43,45,45,42,160_cot.npy,True,,False
+161,direct,G1,False,51,41,Medium,B," 51
+
+",51,4,4,4,3,161_direct.npy,True,,False
+161,cot,G4,True,41,41,Medium,B," First, multiply 22 by 4 to get 88. Then subtract 47 from 88 to get 41. ANSWER: 41
+
+Question:"," First, multiply 22 by 4 to get 88. Then subtract 47 from 88 to get 41. ANSWER: 41",37,39,39,36,161_cot.npy,True,,False
+162,direct,G1,False,25,850,Medium,C," 25 * 34 = 850
+
+",25,3,13,13,2,162_direct.npy,True,,False
+162,cot,G4,True,850,850,Medium,C," First, add 5 and 29 to get 34. Then, multiply 25 by 34 to get 850. ANSWER: 850
+
+Question:"," First, add 5 and 29 to get 34. Then, multiply 25 by 34 to get 850. ANSWER: 850",40,42,42,39,162_cot.npy,True,,False
+163,direct,G1,False,0,-1968,Medium,D," 0
+
+",0,3,3,3,2,163_direct.npy,True,,False
+163,cot,G4,True,-1968,-1968,Medium,D," First, we need to solve the expression inside the parentheses: 5 - 46 = -41. Then, we multiply 48 by -41: 48 * -41 = -1968. ANSWER: -1968
+
+Question:"," First, we need to solve the expression inside the parentheses: 5 - 46 = -41. Then, we multiply 48 by -41: 48 * -41 = -1968. ANSWER: -1968",58,60,60,57,163_cot.npy,True,,False
+164,direct,G1,False,196,200,Medium,A," 196
+
+",196,5,5,5,4,164_direct.npy,True,,False
+164,cot,G4,True,200,200,Medium,A," First, multiply 12 by 13 to get 156. Then, add 44 to 156 to get 200. ANSWER: 200
+
+Question:"," First, multiply 12 by 13 to get 156. Then, add 44 to 156 to get 200. ANSWER: 200",43,45,45,42,164_cot.npy,True,,False
+165,direct,G1,False,455,467,Medium,B," 455
+
+",455,5,5,5,4,165_direct.npy,True,,False
+165,cot,G4,True,467,467,Medium,B," First, multiply 37 by 13 to get 481. Then subtract 14 from 481 to get 467. ANSWER: 467
+
+Question:"," First, multiply 37 by 13 to get 481. Then subtract 14 from 481 to get 467. ANSWER: 467",42,44,44,41,165_cot.npy,True,,False
+166,direct,G1,False,720,924,Medium,C," 720
+
+",720,5,5,5,4,166_direct.npy,True,,False
+166,cot,G4,True,924,924,Medium,C," First, add 12 and 10 to get 22. Then, multiply 42 by 22 to get 924. ANSWER: 924
+
+Question:"," First, add 12 and 10 to get 22. Then, multiply 42 by 22 to get 924. ANSWER: 924",41,43,43,40,166_cot.npy,True,,False
+167,direct,G1,False,-1022,-962,Medium,D," -1022
+
+",-1022,6,6,6,5,167_direct.npy,True,,False
+167,cot,G4,True,-962,-962,Medium,D," First, we need to solve the expression inside the parentheses: 13 - 39 = -26. Then, we multiply the result by 37: 37 * (-26) = -962. ANSWER: -962
+
+Question:"," First, we need to solve the expression inside the parentheses: 13 - 39 = -26. Then, we multiply the result by 37: 37 * (-26) = -962. ANSWER: -962",57,59,59,56,167_cot.npy,True,,False
+168,direct,G1,False,286,306,Medium,A," 286
+
+",286,5,5,5,4,168_direct.npy,True,,False
+168,cot,G4,True,306,306,Medium,A," First, multiply 19 by 15 to get 285. Then, add 21 to 285 to get 306. ANSWER: 306
+
+Question:"," First, multiply 19 by 15 to get 285. Then, add 21 to 285 to get 306. ANSWER: 306",43,45,45,42,168_cot.npy,True,,False
+169,direct,G1,False,391,381,Medium,B," 391
+
+",391,5,5,5,4,169_direct.npy,True,,False
+169,cot,G4,True,381,381,Medium,B," First, calculate 43 multiplied by 10, which is 430. Then, subtract 49 from 430, which gives 381. ANSWER: 381
+
+Question:"," First, calculate 43 multiplied by 10, which is 430. Then, subtract 49 from 430, which gives 381. ANSWER: 381",46,48,48,45,169_cot.npy,True,,False
+170,direct,G1,False,1000,2464,Medium,C," 1000
+
+",1000,6,6,6,5,170_direct.npy,True,,False
+170,cot,G4,True,2464,2464,Medium,C," First, add 17 and 39 to get 56. Then, multiply 44 by 56 to get 2464. ANSWER: 2464
+
+Question:"," First, add 17 and 39 to get 56. Then, multiply 44 by 56 to get 2464. ANSWER: 2464",43,45,45,42,170_cot.npy,True,,False
+171,direct,G1,False,0,-740,Medium,D," 0
+
+",0,3,3,3,2,171_direct.npy,True,,False
+171,cot,G4,True,-740,-740,Medium,D," First, subtract 30 from 10 to get -20. Then, multiply 37 by -20 to get -740. ANSWER: -740
+
+Question:"," First, subtract 30 from 10 to get -20. Then, multiply 37 by -20 to get -740. ANSWER: -740",41,43,43,40,171_cot.npy,True,,False
+172,direct,G1,False,117,127,Medium,A," 117
+
+",117,5,5,5,4,172_direct.npy,True,,False
+172,cot,G4,True,127,127,Medium,A," First, multiply 25 by 4 to get 100. Then, add 27 to 100 to get 127. ANSWER: 127
+
+Question:"," First, multiply 25 by 4 to get 100. Then, add 27 to 100 to get 127. ANSWER: 127",42,44,44,41,172_cot.npy,True,,False
+173,direct,G2,True,303,303,Medium,B," 303
+
+",303,5,5,5,4,173_direct.npy,True,,False
+173,cot,G4,True,303,303,Medium,B," First, multiply 38 by 9 to get 342. Then, subtract 39 from 342 to get 303. ANSWER: 303
+
+Question:"," First, multiply 38 by 9 to get 342. Then, subtract 39 from 342 to get 303. ANSWER: 303",42,44,44,41,173_cot.npy,True,,False
+174,direct,G1,False,1000,2070,Medium,C," 1000
+
+",1000,6,6,6,5,174_direct.npy,True,,False
+174,cot,G4,True,2070,2070,Medium,C," First, add 14 and 31 to get 45. Then, multiply 45 by 46 to get 2070. ANSWER: 2070
+
+Question:"," First, add 14 and 31 to get 45. Then, multiply 45 by 46 to get 2070. ANSWER: 2070",43,45,45,42,174_cot.npy,True,,False
+175,direct,G1,False,-119,-143,Medium,D," -119
+
+",-119,5,5,5,4,175_direct.npy,True,,False
+175,cot,G4,True,-143,-143,Medium,D," First, we need to solve the expression inside the parentheses: 17 - 30 = -13. Then, we multiply the result by 11: 11 * (-13) = -143. ANSWER: -143
+
+Question:"," First, we need to solve the expression inside the parentheses: 17 - 30 = -13. Then, we multiply the result by 11: 11 * (-13) = -143. ANSWER: -143",57,59,59,56,175_cot.npy,True,,False
+176,direct,G1,False,370,380,Medium,A," 370
+
+",370,5,5,5,4,176_direct.npy,True,,False
+176,cot,G4,True,380,380,Medium,A," First, multiply 21 by 17 to get 357. Then, add 23 to 357 to get 380. ANSWER: 380
+
+Question:"," First, multiply 21 by 17 to get 357. Then, add 23 to 357 to get 380. ANSWER: 380",43,45,45,42,176_cot.npy,True,,False
+177,direct,G1,False,309,289,Medium,B," 309
+
+",309,5,5,5,4,177_direct.npy,True,,False
+177,cot,G4,True,289,289,Medium,B," First, calculate 32 multiplied by 10, which is 320. Then subtract 31 from 320, which gives 289. ANSWER: 289
+
+Question:"," First, calculate 32 multiplied by 10, which is 320. Then subtract 31 from 320, which gives 289. ANSWER: 289",45,47,47,44,177_cot.npy,True,,False
+178,direct,G1,False,1260,1485,Medium,C," 1260
+
+",1260,6,6,6,5,178_direct.npy,True,,False
+178,cot,G4,True,1485,1485,Medium,C," First, add 10 and 45 to get 55. Then, multiply 27 by 55 to get 1485. ANSWER: 1485
+
+Question:"," First, add 10 and 45 to get 55. Then, multiply 27 by 55 to get 1485. ANSWER: 1485",43,45,45,42,178_cot.npy,True,,False
+179,direct,G1,False,-20,-40,Medium,D," -20
+
+",-20,4,4,4,3,179_direct.npy,True,,False
+179,cot,G4,True,-40,-40,Medium,D," First, we need to solve the expression inside the parentheses: 18 - 22 = -4. Then, we multiply the result by 10: 10 * -4 = -40. ANSWER: -40
+
+Question:"," First, we need to solve the expression inside the parentheses: 18 - 22 = -4. Then, we multiply the result by 10: 10 * -4 = -40. ANSWER: -40",52,54,54,51,179_cot.npy,True,,False
+180,direct,G1,False,165,171,Medium,A," 165
+
+",165,5,5,5,4,180_direct.npy,True,,False
+180,cot,G4,True,171,171,Medium,A," First, multiply 15 by 9 to get 135. Then, add 36 to 135 to get 171. ANSWER: 171
+
+Question:"," First, multiply 15 by 9 to get 135. Then, add 36 to 135 to get 171. ANSWER: 171",42,44,44,41,180_cot.npy,True,,False
+181,direct,G1,False,714,754,Medium,B," 714
+
+",714,5,5,5,4,181_direct.npy,True,,False
+181,cot,G4,True,754,754,Medium,B," First, multiply 41 by 19 to get 779. Then subtract 25 from 779 to get 754. ANSWER: 754
+
+Question:"," First, multiply 41 by 19 to get 779. Then subtract 25 from 779 to get 754. ANSWER: 754",42,44,44,41,181_cot.npy,True,,False
+182,direct,G1,False,1020,2200,Medium,C," 1020
+
+",1020,6,6,6,5,182_direct.npy,True,,False
+182,cot,G4,True,2200,2200,Medium,C," First, add 17 and 38 to get 55. Then, multiply 40 by 55 to get 2200. ANSWER: 2200
+
+Question:"," First, add 17 and 38 to get 55. Then, multiply 40 by 55 to get 2200. ANSWER: 2200",43,45,45,42,182_cot.npy,True,,False
+183,direct,G1,False,-107,-264,Medium,D," -107
+
+",-107,5,5,5,4,183_direct.npy,True,,False
+183,cot,G4,True,-264,-264,Medium,D," First, we need to solve the expression inside the parentheses: 4 - 28 = -24. Then, we multiply the result by 11: 11 * (-24) = -264. ANSWER: -264
+
+Question:"," First, we need to solve the expression inside the parentheses: 4 - 28 = -24. Then, we multiply the result by 11: 11 * (-24) = -264. ANSWER: -264",56,58,58,55,183_cot.npy,True,,False
+184,direct,G1,False,359,361,Medium,A," 359
+
+",359,5,5,5,4,184_direct.npy,True,,False
+184,cot,G4,True,361,361,Medium,A," First, multiply 24 by 14 to get 336. Then, add 25 to 336 to get 361. ANSWER: 361
+
+Question:"," First, multiply 24 by 14 to get 336. Then, add 25 to 336 to get 361. ANSWER: 361",43,45,45,42,184_cot.npy,True,,False
+185,direct,G1,False,371,337,Medium,B," 371
+
+",371,5,5,5,4,185_direct.npy,True,,False
+185,cot,G4,True,337,337,Medium,B," First, multiply 29 by 13 to get 377. Then, subtract 40 from 377 to get 337. ANSWER: 337
+
+Question:"," First, multiply 29 by 13 to get 377. Then, subtract 40 from 377 to get 337. ANSWER: 337",43,45,45,42,185_cot.npy,True,,False
+186,direct,G1,False,1080,2250,Medium,C," 1080
+
+",1080,6,6,6,5,186_direct.npy,True,,False
+186,cot,G4,True,2250,2250,Medium,C," First, add 18 and 32 to get 50. Then, multiply 45 by 50 to get 2250. ANSWER: 2250
+
+Question:"," First, add 18 and 32 to get 50. Then, multiply 45 by 50 to get 2250. ANSWER: 2250",43,45,45,42,186_cot.npy,True,,False
+187,direct,G1,False,0,-444,Medium,D," 0
+
+",0,3,3,3,2,187_direct.npy,True,,False
+187,cot,G4,True,-444,-444,Medium,D," First, we need to solve the expression inside the parentheses: 19 - 31 = -12. Then, we multiply the result by 37: 37 * (-12) = -444. ANSWER: -444
+
+Question:"," First, we need to solve the expression inside the parentheses: 19 - 31 = -12. Then, we multiply the result by 37: 37 * (-12) = -444. ANSWER: -444",57,59,59,56,187_cot.npy,True,,False
+188,direct,G1,False,545,539,Medium,A," 545
+
+",545,5,5,5,4,188_direct.npy,True,,False
+188,cot,G4,True,539,539,Medium,A," First, multiply 32 by 16 to get 512. Then, add 27 to 512 to get 539. ANSWER: 539
+
+Question:"," First, multiply 32 by 16 to get 512. Then, add 27 to 512 to get 539. ANSWER: 539",43,45,45,42,188_cot.npy,True,,False
+189,direct,G2,True,266,266,Medium,B," 266
+
+",266,5,5,5,4,189_direct.npy,True,,False
+189,cot,G4,True,266,266,Medium,B," First, multiply 29 by 10 to get 290. Then, subtract 24 from 290 to get 266. ANSWER: 266
+
+Question:"," First, multiply 29 by 10 to get 290. Then, subtract 24 from 290 to get 266. ANSWER: 266",43,45,45,42,189_cot.npy,True,,False
+190,direct,G1,False,351,646,Medium,C," 351
+
+",351,5,5,5,4,190_direct.npy,True,,False
+190,cot,G4,True,646,646,Medium,C," First, add 8 and 30 to get 38. Then, multiply 17 by 38 to get 646. ANSWER: 646
+
+Question:"," First, add 8 and 30 to get 38. Then, multiply 17 by 38 to get 646. ANSWER: 646",40,42,42,39,190_cot.npy,True,,False
+191,direct,G1,False,170,-34,Medium,D," 170
+
+",170,5,5,5,4,191_direct.npy,True,,False
+191,cot,G4,True,-34,-34,Medium,D," First, we need to solve the expression inside the parentheses: 19 - 21 = -2. Then, we multiply the result by 17: 17 * (-2) = -34. ANSWER: -34
+
+Question:"," First, we need to solve the expression inside the parentheses: 19 - 21 = -2. Then, we multiply the result by 17: 17 * (-2) = -34. ANSWER: -34",53,55,55,52,191_cot.npy,True,,False
+192,direct,G1,False,204,216,Medium,A," 204
+
+",204,5,5,5,4,192_direct.npy,True,,False
+192,cot,G4,True,216,216,Medium,A," First, multiply 22 by 8 to get 176. Then, add 40 to 176 to get 216. ANSWER: 216
+
+Question:"," First, multiply 22 by 8 to get 176. Then, add 40 to 176 to get 216. ANSWER: 216",42,44,44,41,192_cot.npy,True,,False
+193,direct,G1,False,468,438,Medium,B," 468
+
+",468,5,5,5,4,193_direct.npy,True,,False
+193,cot,G4,True,438,438,Medium,B," First, calculate 27 multiplied by 18, which equals 486. Then, subtract 48 from 486, which equals 438. ANSWER: 438
+
+Question:"," First, calculate 27 multiplied by 18, which equals 486. Then, subtract 48 from 486, which equals 438. ANSWER: 438",46,48,48,45,193_cot.npy,True,,False
+194,direct,G1,False,150,756,Medium,C," 150
+
+",150,5,5,5,4,194_direct.npy,True,,False
+194,cot,G4,True,756,756,Medium,C," First, add 5 and 22 to get 27. Then, multiply 27 by 28 to get 756. ANSWER: 756
+
+Question:"," First, add 5 and 22 to get 27. Then, multiply 27 by 28 to get 756. ANSWER: 756",40,42,42,39,194_cot.npy,True,,False
+195,direct,G1,False,-204,-672,Medium,D," -204
+
+",-204,5,5,5,4,195_direct.npy,True,,False
+195,cot,G4,True,-672,-672,Medium,D," First, we need to solve the expression inside the parentheses: 9 - 33 = -24. Then, we multiply the result by 28: 28 * (-24) = -672. ANSWER: -672
+
+Question:"," First, we need to solve the expression inside the parentheses: 9 - 33 = -24. Then, we multiply the result by 28: 28 * (-24) = -672. ANSWER: -672",56,58,58,55,195_cot.npy,True,,False
+196,direct,G1,False,231,241,Medium,A," 231
+
+",231,5,5,5,4,196_direct.npy,True,,False
+196,cot,G4,True,241,241,Medium,A," First, multiply 21 by 11 to get 231. Then, add 10 to 231 to get 241. ANSWER: 241
+
+Question:"," First, multiply 21 by 11 to get 231. Then, add 10 to 231 to get 241. ANSWER: 241",43,45,45,42,196_cot.npy,True,,False
+197,direct,G1,False,255,237,Medium,B," 255
+
+",255,5,5,5,4,197_direct.npy,True,,False
+197,cot,G4,True,237,237,Medium,B," First, multiply 44 by 6 to get 264. Then, subtract 27 from 264 to get 237. ANSWER: 237
+
+Question:"," First, multiply 44 by 6 to get 264. Then, subtract 27 from 264 to get 237. ANSWER: 237",42,44,44,41,197_cot.npy,True,,False
+198,direct,G1,False,162,576,Medium,C," 162
+
+",162,5,5,5,4,198_direct.npy,True,,False
+198,cot,G4,True,576,576,Medium,C," First, we need to add 3 and 45, which equals 48. Then, we multiply 12 by 48, which equals 576. ANSWER: 576
+
+Question:"," First, we need to add 3 and 45, which equals 48. Then, we multiply 12 by 48, which equals 576. ANSWER: 576",46,48,48,45,198_cot.npy,True,,False
+199,direct,G1,False,-102,-980,Medium,D," -102
+
+",-102,5,5,5,4,199_direct.npy,True,,False
+199,cot,G4,True,-980,-980,Medium,D," First, we need to solve the expression inside the parentheses: 6 - 41 = -35. Then, we multiply the result by 28: 28 * (-35) = -980. ANSWER: -980
+
+Question:"," First, we need to solve the expression inside the parentheses: 6 - 41 = -35. Then, we multiply the result by 28: 28 * (-35) = -980. ANSWER: -980",56,58,58,55,199_cot.npy,True,,False
+200,direct,G1,False,82,78,Medium,A," 82
+
+",82,4,4,4,3,200_direct.npy,True,,False
+200,cot,G4,True,78,78,Medium,A," First, multiply 16 by 2 to get 32. Then, add 46 to 32 to get 78. ANSWER: 78
+
+Question:"," First, multiply 16 by 2 to get 32. Then, add 46 to 32 to get 78. ANSWER: 78",38,40,40,37,200_cot.npy,True,,False
+201,direct,G1,False,456,436,Medium,B," 456
+
+",456,5,5,5,4,201_direct.npy,True,,False
+201,cot,G4,True,436,436,Medium,B," First, multiply 28 by 17 to get 476. Then, subtract 40 from 476 to get 436. ANSWER: 436
+
+Question:"," First, multiply 28 by 17 to get 476. Then, subtract 40 from 476 to get 436. ANSWER: 436",43,45,45,42,201_cot.npy,True,,False
+202,direct,G1,False,660,1254,Medium,C," 660
+
+",660,5,5,5,4,202_direct.npy,True,,False
+202,cot,G4,True,1254,1254,Medium,C," First, add 12 and 21 to get 33. Then, multiply 38 by 33 to get 1254. ANSWER: 1254
+
+Question:"," First, add 12 and 21 to get 33. Then, multiply 38 by 33 to get 1254. ANSWER: 1254",43,45,45,42,202_cot.npy,True,,False
+203,direct,G1,False,-270,-390,Medium,D," -270
+
+",-270,5,5,5,4,203_direct.npy,True,,False
+203,cot,G4,True,-390,-390,Medium,D," First, we need to solve the expression inside the parentheses: 10 - 40 = -30. Then, we multiply the result by 13: 13 * -30 = -390. ANSWER: -390
+
+Question:"," First, we need to solve the expression inside the parentheses: 10 - 40 = -30. Then, we multiply the result by 13: 13 * -30 = -390. ANSWER: -390",56,58,58,55,203_cot.npy,True,,False
+204,direct,G1,False,87,103,Medium,A," 87
+
+",87,4,4,4,3,204_direct.npy,True,,False
+204,cot,G4,True,103,103,Medium,A," First, multiply 17 by 4 to get 68. Then, add 35 to 68 to get 103. ANSWER: 103
+
+Question:"," First, multiply 17 by 4 to get 68. Then, add 35 to 68 to get 103. ANSWER: 103",40,42,42,39,204_cot.npy,True,,False
+205,direct,G1,False,109,118,Medium,B," 109
+
+",109,5,5,5,4,205_direct.npy,True,,False
+205,cot,G4,True,118,118,Medium,B," First, multiply 41 by 4 to get 164. Then, subtract 46 from 164 to get 118. ANSWER: 118
+
+Question:"," First, multiply 41 by 4 to get 164. Then, subtract 46 from 164 to get 118. ANSWER: 118",42,44,44,41,205_cot.npy,True,,False
+206,direct,G1,False,259,325,Medium,C," 259
+
+",259,5,5,5,4,206_direct.npy,True,,False
+206,cot,G4,True,325,325,Medium,C," First, we need to add 6 and 19, which equals 25. Then, we multiply 13 by 25, which equals 325. ANSWER: 325
+
+Question:"," First, we need to add 6 and 19, which equals 25. Then, we multiply 13 by 25, which equals 325. ANSWER: 325",46,48,48,45,206_cot.npy,True,,False
+207,direct,G1,False,-100,-184,Medium,D," -100
+
+",-100,5,5,5,4,207_direct.npy,True,,False
+207,cot,G4,True,-184,-184,Medium,D," First, we need to solve the expression inside the parentheses: 11 - 15 = -4. Then, we multiply 46 by -4: 46 * -4 = -184. ANSWER: -184
+
+Question:"," First, we need to solve the expression inside the parentheses: 11 - 15 = -4. Then, we multiply 46 by -4: 46 * -4 = -184. ANSWER: -184",54,56,56,53,207_cot.npy,True,,False
+208,direct,G1,False,150,170,Medium,A," 150
+
+",150,5,5,5,4,208_direct.npy,True,,False
+208,cot,G4,True,170,170,Medium,A," First, multiply 25 by 5 to get 125. Then, add 45 to 125 to get 170. ANSWER: 170
+
+Question:"," First, multiply 25 by 5 to get 125. Then, add 45 to 125 to get 170. ANSWER: 170",42,44,44,41,208_cot.npy,True,,False
+209,direct,G1,False,291,281,Medium,B," 291
+
+",291,5,5,5,4,209_direct.npy,True,,False
+209,cot,G4,True,281,281,Medium,B," First, multiply 36 by 9 to get 324. Then, subtract 43 from 324 to get 281. ANSWER: 281
+
+Question:"," First, multiply 36 by 9 to get 324. Then, subtract 43 from 324 to get 281. ANSWER: 281",42,44,44,41,209_cot.npy,True,,False
+210,direct,G1,False,1020,1836,Medium,C," 1020
+
+",1020,6,6,6,5,210_direct.npy,True,,False
+210,cot,G4,True,1836,1836,Medium,C," First, add 16 and 38 to get 54. Then, multiply 34 by 54 to get 1836. ANSWER: 1836
+
+Question:"," First, add 16 and 38 to get 54. Then, multiply 34 by 54 to get 1836. ANSWER: 1836",43,45,45,42,210_cot.npy,True,,False
+211,direct,G1,False,-130,-406,Medium,D," -130
+
+",-130,5,5,5,4,211_direct.npy,True,,False
+211,cot,G4,True,-406,-406,Medium,D," First, we need to solve the expression inside the parentheses: 15 - 29 = -14. Then, we multiply the result by 29: 29 * -14 = -406. ANSWER: -406
+
+Question:"," First, we need to solve the expression inside the parentheses: 15 - 29 = -14. Then, we multiply the result by 29: 29 * -14 = -406. ANSWER: -406",56,58,58,55,211_cot.npy,True,,False
+212,direct,G1,False,175,187,Medium,A," 175
+
+",175,5,5,5,4,212_direct.npy,True,,False
+212,cot,G4,True,187,187,Medium,A," First, multiply 46 by 3 to get 138. Then, add 49 to 138 to get 187. ANSWER: 187
+
+Question:"," First, multiply 46 by 3 to get 138. Then, add 49 to 138 to get 187. ANSWER: 187",42,44,44,41,212_cot.npy,True,,False
+213,direct,G1,False,109,105,Medium,B," 109
+
+",109,5,5,5,4,213_direct.npy,True,,False
+213,cot,G4,True,105,105,Medium,B," First, multiply 16 by 8 to get 128. Then, subtract 23 from 128 to get 105. ANSWER: 105
+
+Question:"," First, multiply 16 by 8 to get 128. Then, subtract 23 from 128 to get 105. ANSWER: 105",42,44,44,41,213_cot.npy,True,,False
+214,direct,G1,False,100,624,Medium,C," 100
+
+",100,5,5,5,4,214_direct.npy,True,,False
+214,cot,G4,True,624,624,Medium,C," First, we need to add 4 and 20, which equals 24. Then, we multiply 24 by 26, which equals 624. ANSWER: 624
+
+Question:"," First, we need to add 4 and 20, which equals 24. Then, we multiply 24 by 26, which equals 624. ANSWER: 624",46,48,48,45,214_cot.npy,True,,False
+215,direct,G1,False,-100,-950,Medium,D," -100
+
+",-100,5,5,5,4,215_direct.npy,True,,False
+215,cot,G4,True,-950,-950,Medium,D," First, we need to solve the expression inside the parentheses: 7 - 45 = -38. Then, we multiply the result by 25: 25 * (-38) = -950. ANSWER: -950
+
+Question:"," First, we need to solve the expression inside the parentheses: 7 - 45 = -38. Then, we multiply the result by 25: 25 * (-38) = -950. ANSWER: -950",56,58,58,55,215_cot.npy,True,,False
+216,direct,G2,True,108,108,Medium,A," 108
+
+",108,5,5,5,4,216_direct.npy,True,,False
+216,cot,G4,True,108,108,Medium,A," First, multiply 14 by 7 to get 98. Then, add 10 to 98 to get 108. ANSWER: 108
+
+Question:"," First, multiply 14 by 7 to get 98. Then, add 10 to 98 to get 108. ANSWER: 108",40,42,42,39,216_cot.npy,True,,False
+217,direct,G2,True,528,528,Medium,B," 528
+
+",528,5,5,5,4,217_direct.npy,True,,False
+217,cot,G4,True,528,528,Medium,B," First, calculate 36 * 16, which equals 576. Then, subtract 48 from 576, which equals 528. ANSWER: 528
+
+Question:"," First, calculate 36 * 16, which equals 576. Then, subtract 48 from 576, which equals 528. ANSWER: 528",45,47,47,44,217_cot.npy,True,,False
+218,direct,G1,False,760,920,Medium,C," 760
+
+",760,5,5,5,4,218_direct.npy,True,,False
+218,cot,G4,True,920,920,Medium,C," First, add 11 and 12 to get 23. Then, multiply 40 by 23 to get 920. ANSWER: 920
+
+Question:"," First, add 11 and 12 to get 23. Then, multiply 40 by 23 to get 920. ANSWER: 920",41,43,43,40,218_cot.npy,True,,False
+219,direct,G1,False,-120,-408,Medium,D," -120
+
+",-120,5,5,5,4,219_direct.npy,True,,False
+219,cot,G4,True,-408,-408,Medium,D," First, we need to solve the expression inside the parentheses: 11 - 28 = -17. Then, we multiply the result by 24: 24 * (-17) = -408. ANSWER: -408
+
+Question:"," First, we need to solve the expression inside the parentheses: 11 - 28 = -17. Then, we multiply the result by 24: 24 * (-17) = -408. ANSWER: -408",57,59,59,56,219_cot.npy,True,,False
+220,direct,G1,False,171,180,Medium,A," 171
+
+",171,5,5,5,4,220_direct.npy,True,,False
+220,cot,G4,True,180,180,Medium,A," First, multiply 39 by 4 to get 156. Then, add 24 to 156 to get 180. ANSWER: 180
+
+Question:"," First, multiply 39 by 4 to get 156. Then, add 24 to 156 to get 180. ANSWER: 180",42,44,44,41,220_cot.npy,True,,False
+221,direct,G1,False,185,171,Medium,B," 185
+
+",185,5,5,5,4,221_direct.npy,True,,False
+221,cot,G4,True,171,171,Medium,B," First, multiply 26 by 8 to get 208. Then, subtract 37 from 208 to get 171. ANSWER: 171
+
+Question:"," First, multiply 26 by 8 to get 208. Then, subtract 37 from 208 to get 171. ANSWER: 171",42,44,44,41,221_cot.npy,True,,False
+222,direct,G1,False,761,731,Medium,C," 761
+
+",761,5,5,5,4,222_direct.npy,True,,False
+222,cot,G4,True,731,731,Medium,C," First, add 19 and 24 to get 43. Then, multiply 17 by 43 to get 731. ANSWER: 731
+
+Question:"," First, add 19 and 24 to get 43. Then, multiply 17 by 43 to get 731. ANSWER: 731",41,43,43,40,222_cot.npy,True,,False
+223,direct,G1,False,-190,-171,Medium,D," -190
+
+",-190,5,5,5,4,223_direct.npy,True,,False
+223,cot,G4,True,-171,-171,Medium,D," First, we need to calculate the value inside the parentheses: 10 - 19 = -9. Then, we multiply the result by 19: 19 * -9 = -171. ANSWER: -171
+
+Question:"," First, we need to calculate the value inside the parentheses: 10 - 19 = -9. Then, we multiply the result by 19: 19 * -9 = -171. ANSWER: -171",54,56,56,53,223_cot.npy,True,,False
+224,direct,G1,False,52,62,Medium,A," 52
+
+",52,4,4,4,3,224_direct.npy,True,,False
+224,cot,G4,True,62,62,Medium,A," First, multiply 14 by 3 to get 42. Then, add 20 to 42 to get 62. ANSWER: 62
+
+Question:"," First, multiply 14 by 3 to get 42. Then, add 20 to 42 to get 62. ANSWER: 62",38,40,40,37,224_cot.npy,True,,False
+225,direct,G1,False,301,281,Medium,B," 301
+
+",301,5,5,5,4,225_direct.npy,True,,False
+225,cot,G4,True,281,281,Medium,B," First, multiply 29 by 11 to get 319. Then, subtract 38 from 319 to get 281. ANSWER: 281
+
+Question:"," First, multiply 29 by 11 to get 319. Then, subtract 38 from 319 to get 281. ANSWER: 281",43,45,45,42,225_cot.npy,True,,False
+226,direct,G1,False,723,765,Medium,C," 723
+
+",723,5,5,5,4,226_direct.npy,True,,False
+226,cot,G4,True,765,765,Medium,C," First, add 16 and 29 to get 45. Then, multiply 17 by 45 to get 765. ANSWER: 765
+
+Question:"," First, add 16 and 29 to get 45. Then, multiply 17 by 45 to get 765. ANSWER: 765",41,43,43,40,226_cot.npy,True,,False
+227,direct,G1,False,-105,-1120,Medium,D," -105
+
+",-105,5,5,5,4,227_direct.npy,True,,False
+227,cot,G4,True,-1120,-1120,Medium,D," First, we need to solve the expression inside the parentheses: 10 - 42 = -32. Then, we multiply the result by 35: 35 * (-32) = -1120. ANSWER: -1120
+
+Question:"," First, we need to solve the expression inside the parentheses: 10 - 42 = -32. Then, we multiply the result by 35: 35 * (-32) = -1120. ANSWER: -1120",59,61,61,58,227_cot.npy,True,,False
+228,direct,G1,False,770,786,Medium,A," 770
+
+",770,5,5,5,4,228_direct.npy,True,,False
+228,cot,G4,True,786,786,Medium,A," First, multiply 44 by 17 to get 748. Then, add 38 to 748 to get 786. ANSWER: 786
+
+Question:"," First, multiply 44 by 17 to get 748. Then, add 38 to 748 to get 786. ANSWER: 786",43,45,45,42,228_cot.npy,True,,False
+229,direct,G1,False,18,8,Medium,B," 18
+
+",18,4,4,4,3,229_direct.npy,True,,False
+229,cot,G4,True,8,8,Medium,B," First, multiply 15 by 3 to get 45. Then, subtract 37 from 45 to get 8. ANSWER: 8
+
+Question:"," First, multiply 15 by 3 to get 45. Then, subtract 37 from 45 to get 8. ANSWER: 8",36,38,38,35,229_cot.npy,True,,False
+230,direct,G1,False,430,630,Medium,C," 430
+
+",430,5,5,5,4,230_direct.npy,True,,False
+230,cot,G4,True,630,630,Medium,C," First, add 10 and 11 to get 21. Then, multiply 30 by 21 to get 630. ANSWER: 630
+
+Question:"," First, add 10 and 11 to get 21. Then, multiply 30 by 21 to get 630. ANSWER: 630",41,43,43,40,230_cot.npy,True,,False
+231,direct,G1,False,-390,-555,Medium,D," -390
+
+",-390,5,5,5,4,231_direct.npy,True,,False
+231,cot,G4,True,-555,-555,Medium,D," First, we need to solve the expression inside the parentheses: 9 - 46 = -37. Then, we multiply the result by 15: 15 * (-37) = -555. ANSWER: -555
+
+Question:"," First, we need to solve the expression inside the parentheses: 9 - 46 = -37. Then, we multiply the result by 15: 15 * (-37) = -555. ANSWER: -555",56,58,58,55,231_cot.npy,True,,False
+232,direct,G1,False,111,121,Medium,A," 111
+
+",111,5,5,5,4,232_direct.npy,True,,False
+232,cot,G4,True,121,121,Medium,A," First, multiply 47 by 2 to get 94. Then, add 27 to 94 to get 121. ANSWER: 121
+
+Question:"," First, multiply 47 by 2 to get 94. Then, add 27 to 94 to get 121. ANSWER: 121",40,42,42,39,232_cot.npy,True,,False
+233,direct,G1,False,129,117,Medium,B," 129
+
+",129,5,5,5,4,233_direct.npy,True,,False
+233,cot,G4,True,117,117,Medium,B," First, multiply 46 by 3 to get 138. Then, subtract 21 from 138 to get 117. ANSWER: 117
+
+Question:"," First, multiply 46 by 3 to get 138. Then, subtract 21 from 138 to get 117. ANSWER: 117",42,44,44,41,233_cot.npy,True,,False
+234,direct,G1,False,1000,2240,Medium,C," 1000
+
+",1000,6,6,6,5,234_direct.npy,True,,False
+234,cot,G4,True,2240,2240,Medium,C," First, add 18 and 38 to get 56. Then, multiply 40 by 56 to get 2240. ANSWER: 2240
+
+Question:"," First, add 18 and 38 to get 56. Then, multiply 40 by 56 to get 2240. ANSWER: 2240",43,45,45,42,234_cot.npy,True,,False
+235,direct,G1,False,0,-1080,Medium,D," 0
+
+",0,3,3,3,2,235_direct.npy,True,,False
+235,cot,G4,True,-1080,-1080,Medium,D," First, we need to solve the expression inside the parentheses: 7 - 47 = -40. Then, we multiply 27 by -40: 27 * -40 = -1080. ANSWER: -1080
+
+Question:"," First, we need to solve the expression inside the parentheses: 7 - 47 = -40. Then, we multiply 27 by -40: 27 * -40 = -1080. ANSWER: -1080",58,60,60,57,235_cot.npy,True,,False
+236,direct,G1,False,632,644,Medium,A," 632
+
+",632,5,5,5,4,236_direct.npy,True,,False
+236,cot,G4,True,644,644,Medium,A," First, multiply 37 by 17 to get 629. Then add 15 to 629 to get 644. ANSWER: 644
+
+Question:"," First, multiply 37 by 17 to get 629. Then add 15 to 629 to get 644. ANSWER: 644",42,44,44,41,236_cot.npy,True,,False
+237,direct,G1,False,494,484,Medium,B," 494
+
+",494,5,5,5,4,237_direct.npy,True,,False
+237,cot,G4,True,484,484,Medium,B," First, multiply 40 by 13 to get 520. Then, subtract 36 from 520 to get 484. ANSWER: 484
+
+Question:"," First, multiply 40 by 13 to get 520. Then, subtract 36 from 520 to get 484. ANSWER: 484",43,45,45,42,237_cot.npy,True,,False
+238,direct,G1,False,732,868,Medium,C," 732
+
+",732,5,5,5,4,238_direct.npy,True,,False
+238,cot,G4,True,868,868,Medium,C," First, add 12 and 16 to get 28. Then, multiply 31 by 28 to get 868. ANSWER: 868
+
+Question:"," First, add 12 and 16 to get 28. Then, multiply 31 by 28 to get 868. ANSWER: 868",41,43,43,40,238_cot.npy,True,,False
+239,direct,G1,False,-240,-480,Medium,D," -240
+
+",-240,5,5,5,4,239_direct.npy,True,,False
+239,cot,G4,True,-480,-480,Medium,D," First, we need to solve the expression inside the parentheses: 12 - 36 = -24. Then, we multiply the result by 20: 20 * (-24) = -480. ANSWER: -480
+
+Question:"," First, we need to solve the expression inside the parentheses: 12 - 36 = -24. Then, we multiply the result by 20: 20 * (-24) = -480. ANSWER: -480",57,59,59,56,239_cot.npy,True,,False
+240,direct,G1,False,7150,7200,Large,A," 7150
+
+",7150,6,6,6,5,240_direct.npy,True,,False
+240,cot,G3,False,7160,7200,Large,A," First, multiply 98 by 73 to get 7114. Then, add 46 to 7114 to get 7160. ANSWER: 7160
+
+Question:"," First, multiply 98 by 73 to get 7114. Then, add 46 to 7114 to get 7160. ANSWER: 7160",47,49,49,46,240_cot.npy,True,,False
+241,direct,G1,False,5504,5654,Large,B," 5504
+
+",5504,6,6,6,5,241_direct.npy,True,,False
+241,cot,G4,True,5654,5654,Large,B," First, multiply 94 by 61 to get 5734. Then, subtract 80 from 5734 to get 5654. ANSWER: 5654
+
+Question:"," First, multiply 94 by 61 to get 5734. Then, subtract 80 from 5734 to get 5654. ANSWER: 5654",47,49,49,46,241_cot.npy,True,,False
+242,direct,G1,False,14,1246,Large,C," 14 * 89 = 1246
+
+",14,3,14,14,2,242_direct.npy,True,,False
+242,cot,G4,True,1246,1246,Large,C," First, add 68 and 21 to get 89. Then, multiply 14 by 89 to get 1246. ANSWER: 1246
+
+Question:"," First, add 68 and 21 to get 89. Then, multiply 14 by 89 to get 1246. ANSWER: 1246",43,45,45,42,242_cot.npy,True,,False
+243,direct,G1,False,-110,-450,Large,D," -110
+
+",-110,5,5,5,4,243_direct.npy,True,,False
+243,cot,G4,True,-450,-450,Large,D," First, we need to subtract 51 from 42. 42 - 51 is -9. Then, we multiply -9 by 50. -9 times 50 is -450. ANSWER: -450
+
+Question:"," First, we need to subtract 51 from 42. 42 - 51 is -9. Then, we multiply -9 by 50. -9 times 50 is -450. ANSWER: -450",56,58,58,55,243_cot.npy,True,,False
+244,direct,G2,True,1539,1539,Large,A," 1539
+
+",1539,6,6,6,5,244_direct.npy,True,,False
+244,cot,G4,True,1539,1539,Large,A," First, multiply 24 by 61 to get 1464. Then, add 75 to 1464 to get 1539. ANSWER: 1539
+
+Question:"," First, multiply 24 by 61 to get 1464. Then, add 75 to 1464 to get 1539. ANSWER: 1539",47,49,49,46,244_cot.npy,True,,False
+245,direct,G1,False,893,861,Large,B," 893
+
+",893,5,5,5,4,245_direct.npy,True,,False
+245,cot,G4,True,861,861,Large,B," First, multiply 10 by 94 to get 940. Then, subtract 79 from 940 to get 861. ANSWER: 861
+
+Question:"," First, multiply 10 by 94 to get 940. Then, subtract 79 from 940 to get 861. ANSWER: 861",43,45,45,42,245_cot.npy,True,,False
+246,direct,G1,False,4900,5382,Large,C," 4900
+
+",4900,6,6,6,5,246_direct.npy,True,,False
+246,cot,G3,False,5482,5382,Large,C," First, add 62 and 16 to get 78. Then, multiply 69 by 78 to get 5482. ANSWER: 5482
+
+Question:"," First, add 62 and 16 to get 78. Then, multiply 69 by 78 to get 5482. ANSWER: 5482",43,45,45,42,246_cot.npy,True,,False
+247,direct,G1,False,1000,680,Large,D," 1000
+
+",1000,6,6,6,5,247_direct.npy,True,,False
+247,cot,G4,True,680,680,Large,D," First, subtract 56 from 76 to get 20. Then, multiply 34 by 20 to get 680. ANSWER: 680
+
+Question:"," First, subtract 56 from 76 to get 20. Then, multiply 34 by 20 to get 680. ANSWER: 680",41,43,43,40,247_cot.npy,True,,False
+248,direct,G1,False,6407,6587,Large,A," 6407
+
+",6407,6,6,6,5,248_direct.npy,True,,False
+248,cot,G3,False,6567,6587,Large,A," First, multiply 89 by 73 to get 6477. Then add 90 to 6477 to get 6567. ANSWER: 6567
+
+Question:"," First, multiply 89 by 73 to get 6477. Then add 90 to 6477 to get 6567. ANSWER: 6567",46,48,48,45,248_cot.npy,True,,False
+249,direct,G1,False,1008,1020,Large,B," 1008
+
+",1008,6,6,6,5,249_direct.npy,True,,False
+249,cot,G4,True,1020,1020,Large,B," First, calculate 66 multiplied by 16, which equals 1056. Then, subtract 36 from 1056, which equals 1020. ANSWER: 1020
+
+Question:"," First, calculate 66 multiplied by 16, which equals 1056. Then, subtract 36 from 1056, which equals 1020. ANSWER: 1020",50,52,52,49,249_cot.npy,True,,False
+250,direct,G1,False,44,4664,Large,C," 44 * 106 = 4564
+
+",44,3,15,15,2,250_direct.npy,True,,False
+250,cot,G4,True,4664,4664,Large,C," First, add 80 and 26 to get 106. Then, multiply 44 by 106 to get 4664. ANSWER: 4664
+
+Question:"," First, add 80 and 26 to get 106. Then, multiply 44 by 106 to get 4664. ANSWER: 4664",45,47,47,44,250_cot.npy,True,,False
+251,direct,G1,False,0,-1518,Large,D," 0
+
+",0,3,3,3,2,251_direct.npy,True,,False
+251,cot,G4,True,-1518,-1518,Large,D," First, we need to subtract 99 from 66. 66 - 99 is -33. Then, we multiply 46 by -33. 46 * -33 is -1518. ANSWER: -1518
+
+Question:"," First, we need to subtract 99 from 66. 66 - 99 is -33. Then, we multiply 46 by -33. 46 * -33 is -1518. ANSWER: -1518",61,63,63,60,251_cot.npy,True,,False
+252,direct,G2,True,1813,1813,Large,A," 1813
+
+",1813,6,6,6,5,252_direct.npy,True,,False
+252,cot,G4,True,1813,1813,Large,A," First, multiply 72 by 25, which gives 1800. Then, add 13 to 1800, which gives 1813. ANSWER: 1813
+
+Question:"," First, multiply 72 by 25, which gives 1800. Then, add 13 to 1800, which gives 1813. ANSWER: 1813",49,51,51,48,252_cot.npy,True,,False
+253,direct,G1,False,7720,7790,Large,B," 7720
+
+",7720,6,6,6,5,253_direct.npy,True,,False
+253,cot,G4,True,7790,7790,Large,B," First, multiply 90 by 87 to get 7830. Then, subtract 40 from 7830 to get 7790. ANSWER: 7790
+
+Question:"," First, multiply 90 by 87 to get 7830. Then, subtract 40 from 7830 to get 7790. ANSWER: 7790",47,49,49,46,253_cot.npy,True,,False
+254,direct,G1,False,4900,3870,Large,C," 4900
+
+",4900,6,6,6,5,254_direct.npy,True,,False
+254,cot,G4,True,3870,3870,Large,C," First, add 49 and 80 to get 129. Then, multiply 30 by 129 to get 3870. ANSWER: 3870
+
+Question:"," First, add 49 and 80 to get 129. Then, multiply 30 by 129 to get 3870. ANSWER: 3870",45,47,47,44,254_cot.npy,True,,False
+255,direct,G1,False,108,198,Large,D," 108
+
+",108,5,5,5,4,255_direct.npy,True,,False
+255,cot,G4,True,198,198,Large,D," First, we need to subtract 62 from 80, which gives us 18. Then, we multiply 18 by 11, which gives us 198. ANSWER: 198
+
+Question:"," First, we need to subtract 62 from 80, which gives us 18. Then, we multiply 18 by 11, which gives us 198. ANSWER: 198",49,51,51,48,255_cot.npy,True,,False
+256,direct,G1,False,810,822,Large,A," 810
+
+",810,5,5,5,4,256_direct.npy,True,,False
+256,cot,G4,True,822,822,Large,A," First, multiply 21 by 38 to get 798. Then, add 24 to 798 to get 822. ANSWER: 822
+
+Question:"," First, multiply 21 by 38 to get 798. Then, add 24 to 798 to get 822. ANSWER: 822",43,45,45,42,256_cot.npy,True,,False
+257,direct,G1,False,1553,1633,Large,B," 1553
+
+",1553,6,6,6,5,257_direct.npy,True,,False
+257,cot,G4,True,1633,1633,Large,B," First, multiply 69 by 25 to get 1725. Then, subtract 92 from 1725 to get 1633. ANSWER: 1633
+
+Question:"," First, multiply 69 by 25 to get 1725. Then, subtract 92 from 1725 to get 1633. ANSWER: 1633",47,49,49,46,257_cot.npy,True,,False
+258,direct,G1,False,2900,3480,Large,C," 2900
+
+",2900,6,6,6,5,258_direct.npy,True,,False
+258,cot,G4,True,3480,3480,Large,C," First, add 73 and 47 to get 120. Then, multiply 29 by 120 to get 3480. ANSWER: 3480
+
+Question:"," First, add 73 and 47 to get 120. Then, multiply 29 by 120 to get 3480. ANSWER: 3480",45,47,47,44,258_cot.npy,True,,False
+259,direct,G1,False,-1500,-1425,Large,D," -1500
+
+",-1500,6,6,6,5,259_direct.npy,True,,False
+259,cot,G4,True,-1425,-1425,Large,D," First, we need to subtract 63 from 44, which gives us -19. Then, we multiply 75 by -19, which gives us -1425. ANSWER: -1425
+
+Question:"," First, we need to subtract 63 from 44, which gives us -19. Then, we multiply 75 by -19, which gives us -1425. ANSWER: -1425",51,53,53,50,259_cot.npy,True,,False
+260,direct,G1,False,5001,5011,Large,A," 5001
+
+",5001,6,6,6,5,260_direct.npy,True,,False
+260,cot,G4,True,5011,5011,Large,A," First, multiply 71 by 70, which equals 4970. Then, add 41 to 4970, which equals 5011. ANSWER: 5011
+
+Question:"," First, multiply 71 by 70, which equals 4970. Then, add 41 to 4970, which equals 5011. ANSWER: 5011",49,51,51,48,260_cot.npy,True,,False
+261,direct,G1,False,5000,5412,Large,B," 5000
+
+",5000,6,6,6,5,261_direct.npy,True,,False
+261,cot,G4,True,5412,5412,Large,B," First, multiply 68 by 80 to get 5440. Then, subtract 28 from 5440 to get 5412. ANSWER: 5412
+
+Question:"," First, multiply 68 by 80 to get 5440. Then, subtract 28 from 5440 to get 5412. ANSWER: 5412",47,49,49,46,261_cot.npy,True,,False
+262,direct,G1,False,10000,7080,Large,C," 10000
+
+",10000,7,7,7,6,262_direct.npy,True,,False
+262,cot,G4,True,7080,7080,Large,C," First, we need to add 34 and 86, which equals 120. Then, we multiply 59 by 120, which equals 7080. ANSWER: 7080
+
+Question:"," First, we need to add 34 and 86, which equals 120. Then, we multiply 59 by 120, which equals 7080. ANSWER: 7080",51,53,53,50,262_cot.npy,True,,False
+263,direct,G1,False,1350,675,Large,D," 1350
+
+",1350,6,6,6,5,263_direct.npy,True,,False
+263,cot,G4,True,675,675,Large,D," First, we need to solve the expression inside the parentheses: 27 - 18 = 9. Then, we multiply 75 by 9: 75 * 9 = 675. ANSWER: 675
+
+Question:"," First, we need to solve the expression inside the parentheses: 27 - 18 = 9. Then, we multiply 75 by 9: 75 * 9 = 675. ANSWER: 675",54,56,56,53,263_cot.npy,True,,False
+264,direct,G1,False,2884,2888,Large,A," 2884
+
+",2884,6,6,6,5,264_direct.npy,True,,False
+264,cot,G4,True,2888,2888,Large,A," First, multiply 45 by 63 to get 2835. Then, add 53 to 2835 to get 2888. ANSWER: 2888
+
+Question:"," First, multiply 45 by 63 to get 2835. Then, add 53 to 2835 to get 2888. ANSWER: 2888",47,49,49,46,264_cot.npy,True,,False
+265,direct,G1,False,3100,3246,Large,B," 3100
+
+",3100,6,6,6,5,265_direct.npy,True,,False
+265,cot,G3,False,3126,3246,Large,B," First, multiply 74 by 44 to get 3136. Then, subtract 10 from 3136 to get 3126. ANSWER: 3126
+
+Question:"," First, multiply 74 by 44 to get 3136. Then, subtract 10 from 3136 to get 3126. ANSWER: 3126",47,49,49,46,265_cot.npy,True,,False
+266,direct,G1,False,10000,6118,Large,C," 10000
+
+",10000,7,7,7,6,266_direct.npy,True,,False
+266,cot,G3,False,6058,6118,Large,C," First, add 48 and 85 to get 133. Then, multiply 46 by 133 to get 6058. ANSWER: 6058
+
+Question:"," First, add 48 and 85 to get 133. Then, multiply 46 by 133 to get 6058. ANSWER: 6058",45,47,47,44,266_cot.npy,True,,False
+267,direct,G1,False,1008,1848,Large,D," 1008
+
+",1008,6,6,6,5,267_direct.npy,True,,False
+267,cot,G4,True,1848,1848,Large,D," First, we need to subtract 72 from 94, which gives us 22. Then, we multiply 84 by 22, which gives us 1848. ANSWER: 1848
+
+Question:"," First, we need to subtract 72 from 94, which gives us 22. Then, we multiply 84 by 22, which gives us 1848. ANSWER: 1848",51,53,53,50,267_cot.npy,True,,False
+268,direct,G1,False,1985,2021,Large,A," 1985
+
+",1985,6,6,6,5,268_direct.npy,True,,False
+268,cot,G4,True,2021,2021,Large,A," First, multiply 29 by 67 to get 1943. Then, add 78 to 1943 to get 2021. ANSWER: 2021
+
+Question:"," First, multiply 29 by 67 to get 1943. Then, add 78 to 1943 to get 2021. ANSWER: 2021",47,49,49,46,268_cot.npy,True,,False
+269,direct,G1,False,3702,3782,Large,B," 3702
+
+",3702,6,6,6,5,269_direct.npy,True,,False
+269,cot,G3,False,3762,3782,Large,B," First, multiply 71 by 54 to get 3814. Then, subtract 52 from 3814 to get 3762. ANSWER: 3762
+
+Question:"," First, multiply 71 by 54 to get 3814. Then, subtract 52 from 3814 to get 3762. ANSWER: 3762",47,49,49,46,269_cot.npy,True,,False
+270,direct,G1,False,10000,10960,Large,C," 10000
+
+",10000,7,7,7,6,270_direct.npy,True,,False
+270,cot,G4,True,10960,10960,Large,C," First, add 79 and 58 to get 137. Then, multiply 80 by 137 to get 10960. ANSWER: 10960
+
+Question:"," First, add 79 and 58 to get 137. Then, multiply 80 by 137 to get 10960. ANSWER: 10960",47,49,49,46,270_cot.npy,True,,False
+271,direct,G1,False,2000,1156,Large,D," 2000
+
+",2000,6,6,6,5,271_direct.npy,True,,False
+271,cot,G4,True,1156,1156,Large,D," First, we need to subtract 34 from 51, which gives us 17. Then, we multiply 68 by 17, which gives us 1156. ANSWER: 1156
+
+Question:"," First, we need to subtract 34 from 51, which gives us 17. Then, we multiply 68 by 17, which gives us 1156. ANSWER: 1156",51,53,53,50,271_cot.npy,True,,False
+272,direct,G1,False,3992,4043,Large,A," 3992
+
+",3992,6,6,6,5,272_direct.npy,True,,False
+272,cot,G4,True,4043,4043,Large,A," First, multiply 99 by 40 to get 3960. Then, add 83 to 3960 to get 4043. ANSWER: 4043
+
+Question:"," First, multiply 99 by 40 to get 3960. Then, add 83 to 3960 to get 4043. ANSWER: 4043",47,49,49,46,272_cot.npy,True,,False
+273,direct,G1,False,2307,2239,Large,B," 2307
+
+",2307,6,6,6,5,273_direct.npy,True,,False
+273,cot,G3,False,2219,2239,Large,B," First, multiply 59 by 39 to get 2281. Then subtract 62 from 2281 to get 2219. ANSWER: 2219
+
+Question:"," First, multiply 59 by 39 to get 2281. Then subtract 62 from 2281 to get 2219. ANSWER: 2219",46,48,48,45,273_cot.npy,True,,False
+274,direct,G1,False,1500,1800,Large,C," 1500
+
+",1500,6,6,6,5,274_direct.npy,True,,False
+274,cot,G4,True,1800,1800,Large,C," First, add 50 and 70 to get 120. Then, multiply 120 by 15 to get 1800. ANSWER: 1800
+
+Question:"," First, add 50 and 70 to get 120. Then, multiply 120 by 15 to get 1800. ANSWER: 1800",45,47,47,44,274_cot.npy,True,,False
+275,direct,G1,False,0,-2030,Large,D," 0
+
+",0,3,3,3,2,275_direct.npy,True,,False
+275,cot,G4,True,-2030,-2030,Large,D," First, we need to subtract 94 from 59. 59 - 94 = -35. Then, we multiply 58 by -35. 58 * -35 = -2030. ANSWER: -2030
+
+Question:"," First, we need to subtract 94 from 59. 59 - 94 = -35. Then, we multiply 58 by -35. 58 * -35 = -2030. ANSWER: -2030",61,63,63,60,275_cot.npy,True,,False
+276,direct,G1,False,2650,2770,Large,A," 2650
+
+",2650,6,6,6,5,276_direct.npy,True,,False
+276,cot,G4,True,2770,2770,Large,A," First, multiply 93 by 29 to get 2697. Then, add 73 to 2697 to get 2770. ANSWER: 2770
+
+Question:"," First, multiply 93 by 29 to get 2697. Then, add 73 to 2697 to get 2770. ANSWER: 2770",47,49,49,46,276_cot.npy,True,,False
+277,direct,G1,False,286,290,Large,B," 286
+
+",286,5,5,5,4,277_direct.npy,True,,False
+277,cot,G4,True,290,290,Large,B," First, multiply 14 by 26 to get 364. Then, subtract 74 from 364 to get 290. ANSWER: 290
+
+Question:"," First, multiply 14 by 26 to get 364. Then, subtract 74 from 364 to get 290. ANSWER: 290",43,45,45,42,277_cot.npy,True,,False
+278,direct,G1,False,5000,6290,Large,C," 5000
+
+",5000,6,6,6,5,278_direct.npy,True,,False
+278,cot,G4,True,6290,6290,Large,C," First, add 52 and 22 to get 74. Then, multiply 85 by 74 to get 6290. ANSWER: 6290
+
+Question:"," First, add 52 and 22 to get 74. Then, multiply 85 by 74 to get 6290. ANSWER: 6290",43,45,45,42,278_cot.npy,True,,False
+279,direct,G1,False,0,-3630,Large,D," 0
+
+",0,3,3,3,2,279_direct.npy,True,,False
+279,cot,G4,True,-3630,-3630,Large,D," First, we need to solve the expression inside the parentheses: 22 - 77 = -55. Then, we multiply 66 by -55: 66 * -55 = -3630. ANSWER: -3630
+
+Question:"," First, we need to solve the expression inside the parentheses: 22 - 77 = -55. Then, we multiply 66 by -55: 66 * -55 = -3630. ANSWER: -3630",59,61,61,58,279_cot.npy,True,,False
+280,direct,G1,False,768,776,Large,A," 768
+
+",768,5,5,5,4,280_direct.npy,True,,False
+280,cot,G4,True,776,776,Large,A," First, multiply 68 by 11, which gives 748. Then, add 28 to 748, which gives 776. ANSWER: 776
+
+Question:"," First, multiply 68 by 11, which gives 748. Then, add 28 to 748, which gives 776. ANSWER: 776",45,47,47,44,280_cot.npy,True,,False
+281,direct,G1,False,5705,5737,Large,B," 5705
+
+",5705,6,6,6,5,281_direct.npy,True,,False
+281,cot,G3,False,5677,5737,Large,B," First, multiply 62 by 93 to get 5706. Then subtract 29 from 5706 to get 5677. ANSWER: 5677
+
+Question:"," First, multiply 62 by 93 to get 5706. Then subtract 29 from 5706 to get 5677. ANSWER: 5677",46,48,48,45,281_cot.npy,True,,False
+282,direct,G1,False,19,2147,Large,C," 19 * 113 = 2147
+
+",19,3,15,15,2,282_direct.npy,True,,False
+282,cot,G4,True,2147,2147,Large,C," First, add 70 and 43 to get 113. Then, multiply 113 by 19 to get 2147. ANSWER: 2147
+
+Question:"," First, add 70 and 43 to get 113. Then, multiply 113 by 19 to get 2147. ANSWER: 2147",45,47,47,44,282_cot.npy,True,,False
+283,direct,G1,False,100,-477,Large,D," 100
+
+",100,5,5,5,4,283_direct.npy,True,,False
+283,cot,G4,True,-477,-477,Large,D," First, we need to subtract 98 from 89. 89 - 98 = -9. Then, we multiply 53 by -9. 53 * -9 = -477. ANSWER: -477
+
+Question:"," First, we need to subtract 98 from 89. 89 - 98 = -9. Then, we multiply 53 by -9. 53 * -9 = -477. ANSWER: -477",56,58,58,55,283_cot.npy,True,,False
+284,direct,G1,False,5670,5600,Large,A," 5670
+
+",5670,6,6,6,5,284_direct.npy,True,,False
+284,cot,G4,True,5600,5600,Large,A," First, multiply 60 by 93, which gives 5580. Then, add 20 to 5580, which gives 5600. ANSWER: 5600
+
+Question:"," First, multiply 60 by 93, which gives 5580. Then, add 20 to 5580, which gives 5600. ANSWER: 5600",49,51,51,48,284_cot.npy,True,,False
+285,direct,G1,False,4800,4914,Large,B," 4800
+
+",4800,6,6,6,5,285_direct.npy,True,,False
+285,cot,G3,False,4930,4914,Large,B," First, multiply 52 by 96 to get 5008. Then, subtract 78 from 5008 to get 4930. ANSWER: 4930
+
+Question:"," First, multiply 52 by 96 to get 5008. Then, subtract 78 from 5008 to get 4930. ANSWER: 4930",47,49,49,46,285_cot.npy,True,,False
+286,direct,G1,False,5800,8120,Large,C," 5800
+
+",5800,6,6,6,5,286_direct.npy,True,,False
+286,cot,G3,False,7,8120,Large,C," First, add 50 and 90 to get 140. Then, multiply 58 by 140 to get 7,920. ANSWER: 7,920
+
+Question:"," First, add 50 and 90 to get 140. Then, multiply 58 by 140 to get 7,920. ANSWER: 7",42,49,49,41,286_cot.npy,True,,False
+287,direct,G1,False,5040,4680,Large,D," 5040
+
+",5040,6,6,6,5,287_direct.npy,True,,False
+287,cot,G4,True,4680,4680,Large,D," First, subtract 14 from 79, which gives 65. Then, multiply 72 by 65, which gives 4680. ANSWER: 4680
+
+Question:"," First, subtract 14 from 79, which gives 65. Then, multiply 72 by 65, which gives 4680. ANSWER: 4680",45,47,47,44,287_cot.npy,True,,False
+288,direct,G1,False,1668,1642,Large,A," 1668
+
+",1668,6,6,6,5,288_direct.npy,True,,False
+288,cot,G4,True,1642,1642,Large,A," First, multiply 89 by 18 to get 1602. Then, add 40 to 1602 to get 1642. ANSWER: 1642
+
+Question:"," First, multiply 89 by 18 to get 1602. Then, add 40 to 1602 to get 1642. ANSWER: 1642",47,49,49,46,288_cot.npy,True,,False
+289,direct,G1,False,8702,8684,Large,B," 8702
+
+",8702,6,6,6,5,289_direct.npy,True,,False
+289,cot,G4,True,8684,8684,Large,B," First, multiply 90 by 97 to get 8730. Then subtract 46 from 8730 to get 8684. ANSWER: 8684
+
+Question:"," First, multiply 90 by 97 to get 8730. Then subtract 46 from 8730 to get 8684. ANSWER: 8684",46,48,48,45,289_cot.npy,True,,False
+290,direct,G1,False,1080,3354,Large,C," 1080
+
+",1080,6,6,6,5,290_direct.npy,True,,False
+290,cot,G4,True,3354,3354,Large,C," First, we need to add 21 and 65, which equals 86. Then, we multiply 39 by 86, which equals 3354. ANSWER: 3354
+
+Question:"," First, we need to add 21 and 65, which equals 86. Then, we multiply 39 by 86, which equals 3354. ANSWER: 3354",49,51,51,48,290_cot.npy,True,,False
+291,direct,G1,False,1650,1518,Large,D," 1650
+
+",1650,6,6,6,5,291_direct.npy,True,,False
+291,cot,G3,False,1498,1518,Large,D," First, we need to subtract 22 from 91, which gives us 69. Then, we multiply 69 by 22, which gives us 1498. ANSWER: 1498
+
+Question:"," First, we need to subtract 22 from 91, which gives us 69. Then, we multiply 69 by 22, which gives us 1498. ANSWER: 1498",51,53,53,50,291_cot.npy,True,,False
+292,direct,G1,False,2000,2144,Large,A," 2000
+
+",2000,6,6,6,5,292_direct.npy,True,,False
+292,cot,G4,True,2144,2144,Large,A," First, multiply 66 by 31 to get 2046. Then, add 98 to 2046 to get 2144. ANSWER: 2144
+
+Question:"," First, multiply 66 by 31 to get 2046. Then, add 98 to 2046 to get 2144. ANSWER: 2144",47,49,49,46,292_cot.npy,True,,False
+293,direct,G1,False,587,609,Large,B," 587
+
+",587,5,5,5,4,293_direct.npy,True,,False
+293,cot,G4,True,609,609,Large,B," First, multiply 48 by 13 to get 624. Then, subtract 15 from 624 to get 609. ANSWER: 609
+
+Question:"," First, multiply 48 by 13 to get 624. Then, subtract 15 from 624 to get 609. ANSWER: 609",43,45,45,42,293_cot.npy,True,,False
+294,direct,G1,False,1000,3264,Large,C," 1000
+
+",1000,6,6,6,5,294_direct.npy,True,,False
+294,cot,G4,True,3264,3264,Large,C," First, add 17 and 47 to get 64. Then, multiply 51 by 64 to get 3264. ANSWER: 3264
+
+Question:"," First, add 17 and 47 to get 64. Then, multiply 51 by 64 to get 3264. ANSWER: 3264",43,45,45,42,294_cot.npy,True,,False
+295,direct,G1,False,1100,-440,Large,D," 1100
+
+",1100,6,6,6,5,295_direct.npy,True,,False
+295,cot,G3,False,660,-440,Large,D," First, subtract 65 from 57 to get 12. Then, multiply 55 by 12 to get 660. ANSWER: 660
+
+Question:"," First, subtract 65 from 57 to get 12. Then, multiply 55 by 12 to get 660. ANSWER: 660",41,43,43,40,295_cot.npy,True,,False
+296,direct,G1,False,1199,1225,Large,A," 1199
+
+",1199,6,6,6,5,296_direct.npy,True,,False
+296,cot,G4,True,1225,1225,Large,A," First, multiply 28 by 41 to get 1148. Then, add 77 to 1148 to get 1225. ANSWER: 1225
+
+Question:"," First, multiply 28 by 41 to get 1148. Then, add 77 to 1148 to get 1225. ANSWER: 1225",47,49,49,46,296_cot.npy,True,,False
+297,direct,G1,False,4905,4987,Large,B," 4905
+
+",4905,6,6,6,5,297_direct.npy,True,,False
+297,cot,G3,False,4927,4987,Large,B," First, calculate 62 * 82, which equals 5024. Then, subtract 97 from 5024, which equals 4927. ANSWER: 4927
+
+Question:"," First, calculate 62 * 82, which equals 5024. Then, subtract 97 from 5024, which equals 4927. ANSWER: 4927",49,51,51,48,297_cot.npy,True,,False
+298,direct,G1,False,1326,2079,Large,C," 1326
+
+",1326,6,6,6,5,298_direct.npy,True,,False
+298,cot,G4,True,2079,2079,Large,C," First, add 31 and 32 to get 63. Then, multiply 33 by 63 to get 2079. ANSWER: 2079
+
+Question:"," First, add 31 and 32 to get 63. Then, multiply 33 by 63 to get 2079. ANSWER: 2079",43,45,45,42,298_cot.npy,True,,False
+299,direct,G1,False,1200,600,Large,D," 1200
+
+",1200,6,6,6,5,299_direct.npy,True,,False
+299,cot,G4,True,600,600,Large,D," First, subtract 58 from 88 to get 30. Then, multiply 30 by 20 to get 600. ANSWER: 600
+
+Question:"," First, subtract 58 from 88 to get 30. Then, multiply 30 by 20 to get 600. ANSWER: 600",41,43,43,40,299_cot.npy,True,,False
+300,direct,G1,False,8503,8673,Large,A," 8503
+
+",8503,6,6,6,5,300_direct.npy,True,,False
+300,cot,G3,False,8573,8673,Large,A," First, multiply 89 by 97 to get 8533. Then, add 40 to 8533 to get 8573. ANSWER: 8573
+
+Question:"," First, multiply 89 by 97 to get 8533. Then, add 40 to 8533 to get 8573. ANSWER: 8573",47,49,49,46,300_cot.npy,True,,False
+301,direct,G1,False,6000,6104,Large,B," 6000
+
+",6000,6,6,6,5,301_direct.npy,True,,False
+301,cot,G3,False,6128,6104,Large,B," First, multiply 73 by 84 to get 6156. Then subtract 28 from 6156 to get 6128. ANSWER: 6128
+
+Question:"," First, multiply 73 by 84 to get 6156. Then subtract 28 from 6156 to get 6128. ANSWER: 6128",46,48,48,45,301_cot.npy,True,,False
+302,direct,G1,False,10000,6240,Large,C," 10000
+
+",10000,7,7,7,6,302_direct.npy,True,,False
+302,cot,G4,True,6240,6240,Large,C," First, add 69 and 91 to get 160. Then, multiply 39 by 160 to get 6240. ANSWER: 6240
+
+Question:"," First, add 69 and 91 to get 160. Then, multiply 39 by 160 to get 6240. ANSWER: 6240",45,47,47,44,302_cot.npy,True,,False
+303,direct,G1,False,216,1092,Large,D," 216
+
+",216,5,5,5,4,303_direct.npy,True,,False
+303,cot,G4,True,1092,1092,Large,D," First, subtract 42 from 68 to get 26. Then, multiply 26 by 42 to get 1092. ANSWER: 1092
+
+Question:"," First, subtract 42 from 68 to get 26. Then, multiply 26 by 42 to get 1092. ANSWER: 1092",43,45,45,42,303_cot.npy,True,,False
+304,direct,G1,False,1064,1114,Large,A," 1064
+
+",1064,6,6,6,5,304_direct.npy,True,,False
+304,cot,G4,True,1114,1114,Large,A," First, multiply 95 by 11 to get 1045. Then, add 69 to 1045 to get 1114. ANSWER: 1114
+
+Question:"," First, multiply 95 by 11 to get 1045. Then, add 69 to 1045 to get 1114. ANSWER: 1114",47,49,49,46,304_cot.npy,True,,False
+305,direct,G1,False,4204,4337,Large,B," 4204
+
+",4204,6,6,6,5,305_direct.npy,True,,False
+305,cot,G3,False,4,4337,Large,B," First, calculate 46 * 96, which equals 4,416. Then, subtract 79 from 4,416, which equals 4,337. ANSWER: 4,337
+
+Question:"," First, calculate 46 * 96, which equals 4,416. Then, subtract 79 from 4,416, which equals 4,337. ANSWER: 4",48,55,55,47,305_cot.npy,True,,False
+306,direct,G1,False,1290,2550,Large,C," 1290
+
+",1290,6,6,6,5,306_direct.npy,True,,False
+306,cot,G4,True,2550,2550,Large,C," First, add 19 and 66 to get 85. Then, multiply 30 by 85 to get 2550. ANSWER: 2550
+
+Question:"," First, add 19 and 66 to get 85. Then, multiply 30 by 85 to get 2550. ANSWER: 2550",43,45,45,42,306_cot.npy,True,,False
+307,direct,G1,False,360,1998,Large,D," 360
+
+",360,5,5,5,4,307_direct.npy,True,,False
+307,cot,G4,True,1998,1998,Large,D," First, we need to subtract 48 from 85, which gives us 37. Then, we multiply 54 by 37, which gives us 1998. ANSWER: 1998
+
+Question:"," First, we need to subtract 48 from 85, which gives us 37. Then, we multiply 54 by 37, which gives us 1998. ANSWER: 1998",51,53,53,50,307_cot.npy,True,,False
+308,direct,G1,False,5880,5922,Large,A," 5880
+
+",5880,6,6,6,5,308_direct.npy,True,,False
+308,cot,G4,True,5922,5922,Large,A," First, multiply 91 by 64, which equals 5824. Then, add 98 to 5824, which equals 5922. ANSWER: 5922
+
+Question:"," First, multiply 91 by 64, which equals 5824. Then, add 98 to 5824, which equals 5922. ANSWER: 5922",49,51,51,48,308_cot.npy,True,,False
+309,direct,G1,False,2880,2808,Large,B," 2880
+
+",2880,6,6,6,5,309_direct.npy,True,,False
+309,cot,G4,True,2808,2808,Large,B," First, multiply 42 by 68 to get 2856. Then subtract 48 from 2856 to get 2808. ANSWER: 2808
+
+Question:"," First, multiply 42 by 68 to get 2856. Then subtract 48 from 2856 to get 2808. ANSWER: 2808",46,48,48,45,309_cot.npy,True,,False
+310,direct,G1,False,10000,4550,Large,C," 10000
+
+",10000,7,7,7,6,310_direct.npy,True,,False
+310,cot,G4,True,4550,4550,Large,C," First, add 59 and 71 to get 130. Then, multiply 35 by 130 to get 4550. ANSWER: 4550
+
+Question:"," First, add 59 and 71 to get 130. Then, multiply 35 by 130 to get 4550. ANSWER: 4550",45,47,47,44,310_cot.npy,True,,False
+311,direct,G1,False,-150,-414,Large,D," -150
+
+",-150,5,5,5,4,311_direct.npy,True,,False
+311,cot,G4,True,-414,-414,Large,D," First, we need to subtract 58 from 40, which gives us -18. Then, we multiply 23 by -18, which gives us -414. ANSWER: -414
+
+Question:"," First, we need to subtract 58 from 40, which gives us -18. Then, we multiply 23 by -18, which gives us -414. ANSWER: -414",49,51,51,48,311_cot.npy,True,,False
+312,direct,G1,False,4583,4648,Large,A," 4583
+
+",4583,6,6,6,5,312_direct.npy,True,,False
+312,cot,G3,False,4548,4648,Large,A," First, multiply 83 by 55, which equals 4465. Then, add 83 to 4465, which equals 4548. ANSWER: 4548
+
+Question:"," First, multiply 83 by 55, which equals 4465. Then, add 83 to 4465, which equals 4548. ANSWER: 4548",49,51,51,48,312_cot.npy,True,,False
+313,direct,G1,False,4536,4606,Large,B," 4536
+
+",4536,6,6,6,5,313_direct.npy,True,,False
+313,cot,G4,True,4606,4606,Large,B," First, calculate 47 * 99, which is 4653. Then subtract 47 from 4653, which gives 4606. ANSWER: 4606
+
+Question:"," First, calculate 47 * 99, which is 4653. Then subtract 47 from 4653, which gives 4606. ANSWER: 4606",48,50,50,47,313_cot.npy,True,,False
+314,direct,G1,False,1800,1848,Large,C," 1800
+
+",1800,6,6,6,5,314_direct.npy,True,,False
+314,cot,G4,True,1848,1848,Large,C," First, add 94 and 60 to get 154. Then, multiply 154 by 12 to get 1848. ANSWER: 1848
+
+Question:"," First, add 94 and 60 to get 154. Then, multiply 154 by 12 to get 1848. ANSWER: 1848",45,47,47,44,314_cot.npy,True,,False
+315,direct,G1,False,390,-3195,Large,D," 390
+
+",390,5,5,5,4,315_direct.npy,True,,False
+315,cot,G4,True,-3195,-3195,Large,D," First, we need to solve the expression inside the parentheses: 11 - 82 = -71. Then, we multiply 45 by -71: 45 * -71 = -3195. ANSWER: -3195
+
+Question:"," First, we need to solve the expression inside the parentheses: 11 - 82 = -71. Then, we multiply 45 by -71: 45 * -71 = -3195. ANSWER: -3195",59,61,61,58,315_cot.npy,True,,False
+316,direct,G1,False,1600,1639,Large,A," 1600
+
+",1600,6,6,6,5,316_direct.npy,True,,False
+316,cot,G4,True,1639,1639,Large,A," First, multiply 97 by 16 to get 1552. Then, add 87 to 1552 to get 1639. ANSWER: 1639
+
+Question:"," First, multiply 97 by 16 to get 1552. Then, add 87 to 1552 to get 1639. ANSWER: 1639",47,49,49,46,316_cot.npy,True,,False
+317,direct,G1,False,3357,3319,Large,B," 3357
+
+",3357,6,6,6,5,317_direct.npy,True,,False
+317,cot,G3,False,3359,3319,Large,B," First, multiply 73 by 46 to get 3398. Then, subtract 39 from 3398 to get 3359. ANSWER: 3359
+
+Question:"," First, multiply 73 by 46 to get 3398. Then, subtract 39 from 3398 to get 3359. ANSWER: 3359",47,49,49,46,317_cot.npy,True,,False
+318,direct,G1,False,10000,8091,Large,C," 10000
+
+",10000,7,7,7,6,318_direct.npy,True,,False
+318,cot,G3,False,8121,8091,Large,C," First, add 55 and 38 to get 93. Then, multiply 87 by 93 to get 8121. ANSWER: 8121
+
+Question:"," First, add 55 and 38 to get 93. Then, multiply 87 by 93 to get 8121. ANSWER: 8121",43,45,45,42,318_cot.npy,True,,False
+319,direct,G1,False,0,-5005,Large,D," 0
+
+",0,3,3,3,2,319_direct.npy,True,,False
+319,cot,G3,False,-4955,-5005,Large,D," First, we need to solve the subtraction inside the parentheses: 34 - 89 = -55. Then, we multiply the result by 91: 91 * (-55) = -4955. ANSWER: -4955
+
+Question:"," First, we need to solve the subtraction inside the parentheses: 34 - 89 = -55. Then, we multiply the result by 91: 91 * (-55) = -4955. ANSWER: -4955",59,61,61,58,319_cot.npy,True,,False
+320,direct,G1,False,152,140,Negative,A," 152
+
+",152,5,5,5,4,320_direct.npy,True,,False
+320,cot,G4,True,140,140,Negative,A," First, multiply 26 by 6 to get 156. Then, subtract 16 from 156 to get 140. ANSWER: 140
+
+Question:"," First, multiply 26 by 6 to get 156. Then, subtract 16 from 156 to get 140. ANSWER: 140",42,44,44,41,320_cot.npy,True,,False
+321,direct,G1,False,-150,-170,Negative,B," -150
+
+",-150,5,5,5,4,321_direct.npy,True,,False
+321,cot,G4,True,-170,-170,Negative,B," First, multiply -12 by 11 to get -132. Then, subtract 38 from -132 to get -170. ANSWER: -170
+
+Question:"," First, multiply -12 by 11 to get -132. Then, subtract 38 from -132 to get -170. ANSWER: -170",43,45,45,42,321_cot.npy,True,,False
+322,direct,G1,False,-1079,-1457,Negative,C," -1079
+
+",-1079,6,6,6,5,322_direct.npy,True,,False
+322,cot,G4,True,-1457,-1457,Negative,C," First, we need to add 13 and 18, which equals 31. Then, we multiply 31 by -47, which equals -1457. ANSWER: -1457
+
+Question:"," First, we need to add 13 and 18, which equals 31. Then, we multiply 31 by -47, which equals -1457. ANSWER: -1457",49,51,51,48,322_cot.npy,True,,False
+323,direct,G1,False,-1008,672,Negative,D," -1008
+
+",-1008,6,6,6,5,323_direct.npy,True,,False
+323,cot,G4,True,672,672,Negative,D," First, we need to solve the expression inside the parentheses: 12 - 36 = -24. Then, we multiply -24 by -28: -24 * -28 = 672. ANSWER: 672
+
+Question:"," First, we need to solve the expression inside the parentheses: 12 - 36 = -24. Then, we multiply -24 by -28: -24 * -28 = 672. ANSWER: 672",57,59,59,56,323_cot.npy,True,,False
+324,direct,G1,False,0,-88,Negative,A," 0
+
+",0,3,3,3,2,324_direct.npy,True,,False
+324,cot,G4,True,-88,-88,Negative,A," First, multiply 22 by -6, which gives -132. Then, add 44 to -132, which gives -88. ANSWER: -88
+
+Question:"," First, multiply 22 by -6, which gives -132. Then, add 44 to -132, which gives -88. ANSWER: -88",42,44,44,41,324_cot.npy,True,,False
+325,direct,G1,False,-765,-801,Negative,B," -765
+
+",-765,5,5,5,4,325_direct.npy,True,,False
+325,cot,G4,True,-801,-801,Negative,B," First, calculate the product of -43 and 18, which is -774. Then, subtract 27 from -774, which gives -801. ANSWER: -801
+
+Question:"," First, calculate the product of -43 and 18, which is -774. Then, subtract 27 from -774, which gives -801. ANSWER: -801",48,50,50,47,325_cot.npy,True,,False
+326,direct,G1,False,0,-286,Negative,C," 0
+
+",0,3,3,3,2,326_direct.npy,True,,False
+326,cot,G4,True,-286,-286,Negative,C," First, we need to solve the expression inside the parentheses: 17 + -28 = -11. Then, we multiply 26 by -11: 26 * -11 = -286. ANSWER: -286
+
+Question:"," First, we need to solve the expression inside the parentheses: 17 + -28 = -11. Then, we multiply 26 by -11: 26 * -11 = -286. ANSWER: -286",57,59,59,56,326_cot.npy,True,,False
+327,direct,G1,False,-150,1054,Negative,D," -150
+
+",-150,5,5,5,4,327_direct.npy,True,,False
+327,cot,G4,True,1054,1054,Negative,D," First, we need to solve the expression inside the parentheses: 5 - 39 = -34. Then, we multiply -34 by -31: -34 * -31 = 1054. ANSWER: 1054
+
+Question:"," First, we need to solve the expression inside the parentheses: 5 - 39 = -34. Then, we multiply -34 by -31: -34 * -31 = 1054. ANSWER: 1054",58,60,60,57,327_cot.npy,True,,False
+328,direct,G1,False,144,136,Negative,A," 144
+
+",144,5,5,5,4,328_direct.npy,True,,False
+328,cot,G4,True,136,136,Negative,A," First, multiply 19 by 9 to get 171. Then, subtract 35 from 171 to get 136. ANSWER: 136
+
+Question:"," First, multiply 19 by 9 to get 171. Then, subtract 35 from 171 to get 136. ANSWER: 136",42,44,44,41,328_cot.npy,True,,False
+329,direct,G1,False,-133,-167,Negative,B," -133
+
+",-133,5,5,5,4,329_direct.npy,True,,False
+329,cot,G4,True,-167,-167,Negative,B," First, multiply -33 by 4 to get -132. Then, subtract 35 from -132 to get -167. ANSWER: -167
+
+Question:"," First, multiply -33 by 4 to get -132. Then, subtract 35 from -132 to get -167. ANSWER: -167",42,44,44,41,329_cot.npy,True,,False
+330,direct,G1,False,-114,-52,Negative,C," -114
+
+",-114,5,5,5,4,330_direct.npy,True,,False
+330,cot,G4,True,-52,-52,Negative,C," First, we need to solve the expression inside the parentheses: 17 - 19 = -2. Then, we multiply 26 by -2: 26 * -2 = -52. ANSWER: -52
+
+Question:"," First, we need to solve the expression inside the parentheses: 17 - 19 = -2. Then, we multiply 26 by -2: 26 * -2 = -52. ANSWER: -52",52,54,54,51,330_cot.npy,True,,False
+331,direct,G1,False,-1800,-1881,Negative,D," -1800
+
+",-1800,6,6,6,5,331_direct.npy,True,,False
+331,cot,G4,True,-1881,-1881,Negative,D," First, we need to solve the expression inside the parentheses: -10 - 47 = -57. Then, we multiply 33 by -57: 33 * -57 = -1881. ANSWER: -1881
+
+Question:"," First, we need to solve the expression inside the parentheses: -10 - 47 = -57. Then, we multiply 33 by -57: 33 * -57 = -1881. ANSWER: -1881",59,61,61,58,331_cot.npy,True,,False
+332,direct,G1,False,-156,-141,Negative,A," -156
+
+",-156,5,5,5,4,332_direct.npy,True,,False
+332,cot,G4,True,-141,-141,Negative,A," First, multiply 33 by -5, which gives -165. Then, add 24 to -165, which gives -141. ANSWER: -141
+
+Question:"," First, multiply 33 by -5, which gives -165. Then, add 24 to -165, which gives -141. ANSWER: -141",44,46,46,43,332_cot.npy,True,,False
+333,direct,G1,False,209,239,Negative,B," 209
+
+",209,5,5,5,4,333_direct.npy,True,,False
+333,cot,G4,True,239,239,Negative,B," First, calculate 11 multiplied by 19, which is 209. Then, subtract -30 from 209, which is 239. ANSWER: 239
+
+Question:"," First, calculate 11 multiplied by 19, which is 209. Then, subtract -30 from 209, which is 239. ANSWER: 239",46,48,48,45,333_cot.npy,True,,False
+334,direct,G1,False,-111,-840,Negative,C," -111
+
+",-111,5,5,5,4,334_direct.npy,True,,False
+334,cot,G4,True,-840,-840,Negative,C," First, we need to solve the expression inside the parentheses: 4 + -39 = -35. Then, we multiply the result by 24: 24 * -35 = -840. ANSWER: -840
+
+Question:"," First, we need to solve the expression inside the parentheses: 4 + -39 = -35. Then, we multiply the result by 24: 24 * -35 = -840. ANSWER: -840",55,57,57,54,334_cot.npy,True,,False
+335,direct,G1,False,110,58,Negative,D," 110
+
+",110,5,5,5,4,335_direct.npy,True,,False
+335,cot,G4,True,58,58,Negative,D," First, we need to solve the expression inside the parentheses: 15 - 17 = -2. Then, we multiply -2 by -29: -2 * -29 = 58. ANSWER: 58
+
+Question:"," First, we need to solve the expression inside the parentheses: 15 - 17 = -2. Then, we multiply -2 by -29: -2 * -29 = 58. ANSWER: 58",52,54,54,51,335_cot.npy,True,,False
+336,direct,G1,False,1,-7,Negative,A," 1
+
+",1,3,3,3,2,336_direct.npy,True,,False
+336,cot,G3,False,-8,-7,Negative,A," First, multiply 12 by -3 to get -36. Then add 29 to -36 to get -8. ANSWER: -8
+
+Question:"," First, multiply 12 by -3 to get -36. Then add 29 to -36 to get -8. ANSWER: -8",35,37,37,34,336_cot.npy,True,,False
+337,direct,G1,False,100,110,Negative,B," 100
+
+",100,5,5,5,4,337_direct.npy,True,,False
+337,cot,G4,True,110,110,Negative,B," First, calculate 17 multiplied by 5, which is 85. Then, add 25 to 85, which gives 110. ANSWER: 110
+
+Question:"," First, calculate 17 multiplied by 5, which is 85. Then, add 25 to 85, which gives 110. ANSWER: 110",43,45,45,42,337_cot.npy,True,,False
+338,direct,G1,False,18,450,Negative,C," 18 * 25 = 450
+
+",18,3,13,13,2,338_direct.npy,True,,False
+338,cot,G4,True,450,450,Negative,C," First, we need to solve the expression inside the parentheses: 39 - 14 = 25. Then, we multiply 18 by 25: 18 * 25 = 450. ANSWER: 450
+
+Question:"," First, we need to solve the expression inside the parentheses: 39 - 14 = 25. Then, we multiply 18 by 25: 18 * 25 = 450. ANSWER: 450",57,59,59,56,338_cot.npy,True,,False
+339,direct,G1,False,1000,2728,Negative,D," 1000
+
+",1000,6,6,6,5,339_direct.npy,True,,False
+339,cot,G4,True,2728,2728,Negative,D," First, we need to solve the expression inside the parentheses: 15 - -47 = 15 + 47 = 62. Now, we multiply 44 by 62: 44 * 62 = 2728. ANSWER: 2728
+
+Question:"," First, we need to solve the expression inside the parentheses: 15 - -47 = 15 + 47 = 62. Now, we multiply 44 by 62: 44 * 62 = 2728. ANSWER: 2728",67,69,69,66,339_cot.npy,True,,False
+340,direct,G1,False,-281,-269,Negative,A," -281
+
+",-281,5,5,5,4,340_direct.npy,True,,False
+340,cot,G4,True,-269,-269,Negative,A," First, multiply 19 by -15, which gives -285. Then, add 16 to -285, which gives -269. ANSWER: -269
+
+Question:"," First, multiply 19 by -15, which gives -285. Then, add 16 to -285, which gives -269. ANSWER: -269",45,47,47,44,340_cot.npy,True,,False
+341,direct,G1,False,-726,-762,Negative,B," -726
+
+",-726,5,5,5,4,341_direct.npy,True,,False
+341,cot,G4,True,-762,-762,Negative,B," First, multiply -49 by 15 to get -735. Then, subtract 27 from -735 to get -762. ANSWER: -762
+
+Question:"," First, multiply -49 by 15 to get -735. Then, subtract 27 from -735 to get -762. ANSWER: -762",43,45,45,42,341_cot.npy,True,,False
+342,direct,G1,False,102,990,Negative,C," 102
+
+",102,5,5,5,4,342_direct.npy,True,,False
+342,cot,G4,True,990,990,Negative,C," First, we need to solve the expression inside the parentheses: 38 - 8 = 30. Then, we multiply 33 by 30: 33 * 30 = 990. ANSWER: 990
+
+Question:"," First, we need to solve the expression inside the parentheses: 38 - 8 = 30. Then, we multiply 33 by 30: 33 * 30 = 990. ANSWER: 990",56,58,58,55,342_cot.npy,True,,False
+343,direct,G1,False,25,725,Negative,D," 25 * 39 = 975
+
+",25,3,13,13,2,343_direct.npy,True,,False
+343,cot,G4,True,725,725,Negative,D," First, we need to solve the expression inside the parentheses: 13 - -16 = 13 + 16 = 29. Then, we multiply the result by 25: 25 * 29 = 725. ANSWER: 725
+
+Question:"," First, we need to solve the expression inside the parentheses: 13 - -16 = 13 + 16 = 29. Then, we multiply the result by 25: 25 * 29 = 725. ANSWER: 725",64,66,66,63,343_cot.npy,True,,False
+344,direct,G1,False,-605,-595,Negative,A," -605
+
+",-605,5,5,5,4,344_direct.npy,True,,False
+344,cot,G3,False,-655,-595,Negative,A," First, multiply -33 by 19 to get -627. Then add 32 to -627 to get -655. ANSWER: -655
+
+Question:"," First, multiply -33 by 19 to get -627. Then add 32 to -627 to get -655. ANSWER: -655",42,44,44,41,344_cot.npy,True,,False
+345,direct,G1,False,-322,-372,Negative,B," -322
+
+",-322,5,5,5,4,345_direct.npy,True,,False
+345,cot,G4,True,-372,-372,Negative,B," First, multiply -35 by 10 to get -350. Then, subtract 22 from -350 to get -372. ANSWER: -372
+
+Question:"," First, multiply -35 by 10 to get -350. Then, subtract 22 from -350 to get -372. ANSWER: -372",43,45,45,42,345_cot.npy,True,,False
+346,direct,G1,False,102,-741,Negative,C," 102
+
+",102,5,5,5,4,346_direct.npy,True,,False
+346,cot,G4,True,-741,-741,Negative,C," First, we need to solve the expression inside the parentheses: 4 + -23 = -19. Then, we multiply 39 by -19: 39 * -19 = -741. ANSWER: -741
+
+Question:"," First, we need to solve the expression inside the parentheses: 4 + -23 = -19. Then, we multiply 39 by -19: 39 * -19 = -741. ANSWER: -741",56,58,58,55,346_cot.npy,True,,False
+347,direct,G1,False,-144,-720,Negative,D," -144
+
+",-144,5,5,5,4,347_direct.npy,True,,False
+347,cot,G4,True,-720,-720,Negative,D," First, we need to solve the expression inside the parentheses: -2 - 13 = -15. Then, we multiply 48 by -15: 48 * -15 = -720. ANSWER: -720
+
+Question:"," First, we need to solve the expression inside the parentheses: -2 - 13 = -15. Then, we multiply 48 by -15: 48 * -15 = -720. ANSWER: -720",56,58,58,55,347_cot.npy,True,,False
+348,direct,G1,False,116,-104,Negative,A," 116
+
+",116,5,5,5,4,348_direct.npy,True,,False
+348,cot,G4,True,-104,-104,Negative,A," First, multiply -25 by 6 to get -150. Then, add 46 to -150 to get -104. ANSWER: -104
+
+Question:"," First, multiply -25 by 6 to get -150. Then, add 46 to -150 to get -104. ANSWER: -104",42,44,44,41,348_cot.npy,True,,False
+349,direct,G1,False,267,289,Negative,B," 267
+
+",267,5,5,5,4,349_direct.npy,True,,False
+349,cot,G4,True,289,289,Negative,B," First, calculate 14 multiplied by 19, which equals 266. Then, subtract -23 from 266, which gives us 289. ANSWER: 289
+
+Question:"," First, calculate 14 multiplied by 19, which equals 266. Then, subtract -23 from 266, which gives us 289. ANSWER: 289",47,49,49,46,349_cot.npy,True,,False
+350,direct,G1,False,-1000,-920,Negative,C," -1000
+
+",-1000,6,6,6,5,350_direct.npy,True,,False
+350,cot,G4,True,-920,-920,Negative,C," First, we need to add 9 and 31, which equals 40. Then, we multiply 40 by -23, which equals -920. ANSWER: -920
+
+Question:"," First, we need to add 9 and 31, which equals 40. Then, we multiply 40 by -23, which equals -920. ANSWER: -920",46,48,48,45,350_cot.npy,True,,False
+351,direct,G1,False,-1152,1200,Negative,D," -1152
+
+",-1152,6,6,6,5,351_direct.npy,True,,False
+351,cot,G4,True,1200,1200,Negative,D," First, we need to solve the expression inside the parentheses: 2 - 27 = -25. Then, we multiply -48 by -25: -48 * -25 = 1200. ANSWER: 1200
+
+Question:"," First, we need to solve the expression inside the parentheses: 2 - 27 = -25. Then, we multiply -48 by -25: -48 * -25 = 1200. ANSWER: 1200",58,60,60,57,351_cot.npy,True,,False
+352,direct,G1,False,-342,-316,Negative,A," -342
+
+",-342,5,5,5,4,352_direct.npy,True,,False
+352,cot,G4,True,-316,-316,Negative,A," First, calculate the product of -18 and 19, which is -342. Then, add 26 to -342, which gives -316. ANSWER: -316
+
+Question:"," First, calculate the product of -18 and 19, which is -342. Then, add 26 to -342, which gives -316. ANSWER: -316",48,50,50,47,352_cot.npy,True,,False
+353,direct,G1,False,-34,-52,Negative,B," -34
+
+",-34,4,4,4,3,353_direct.npy,True,,False
+353,cot,G4,True,-52,-52,Negative,B," First, multiply -17 by 2 to get -34. Then, subtract 18 from -34 to get -52. ANSWER: -52
+
+Question:"," First, multiply -17 by 2 to get -34. Then, subtract 18 from -34 to get -52. ANSWER: -52",38,40,40,37,353_cot.npy,True,,False
+354,direct,G1,False,1048,1216,Negative,C," 1048
+
+",1048,6,6,6,5,354_direct.npy,True,,False
+354,cot,G4,True,1216,1216,Negative,C," First, we need to solve the expression inside the parentheses: 47 - 9 = 38. Then, we multiply 32 by 38: 32 * 38 = 1216. ANSWER: 1216
+
+Question:"," First, we need to solve the expression inside the parentheses: 47 - 9 = 38. Then, we multiply 32 by 38: 32 * 38 = 1216. ANSWER: 1216",58,60,60,57,354_cot.npy,True,,False
+355,direct,G1,False,-11,209,Negative,D," -11 * (-19) = 209
+
+",-11,3,14,14,2,355_direct.npy,True,,False
+355,cot,G4,True,209,209,Negative,D," First, we need to solve the expression inside the parentheses: 7 - 26 = -19. Then, we multiply -19 by -11: -19 * -11 = 209. ANSWER: 209
+
+Question:"," First, we need to solve the expression inside the parentheses: 7 - 26 = -19. Then, we multiply -19 by -11: -19 * -11 = 209. ANSWER: 209",56,58,58,55,355_cot.npy,True,,False
+356,direct,G1,False,-273,-227,Negative,A," -273
+
+",-273,5,5,5,4,356_direct.npy,True,,False
+356,cot,G4,True,-227,-227,Negative,A," First, calculate the product of -18 and 15, which is -270. Then, add 43 to -270, which gives -227. ANSWER: -227
+
+Question:"," First, calculate the product of -18 and 15, which is -270. Then, add 43 to -270, which gives -227. ANSWER: -227",48,50,50,47,356_cot.npy,True,,False
+357,direct,G1,False,-250,-276,Negative,B," -250
+
+",-250,5,5,5,4,357_direct.npy,True,,False
+357,cot,G4,True,-276,-276,Negative,B," First, multiply 14 by -17 to get -238. Then, subtract 38 from -238 to get -276. ANSWER: -276
+
+Question:"," First, multiply 14 by -17 to get -238. Then, subtract 38 from -238 to get -276. ANSWER: -276",43,45,45,42,357_cot.npy,True,,False
+358,direct,G1,False,0,-1386,Negative,C," 0
+
+",0,3,3,3,2,358_direct.npy,True,,False
+358,cot,G4,True,-1386,-1386,Negative,C," First, we need to solve the expression inside the parentheses: 5 + -38 = -33. Then, we multiply the result by 42: 42 * -33 = -1386. ANSWER: -1386
+
+Question:"," First, we need to solve the expression inside the parentheses: 5 + -38 = -33. Then, we multiply the result by 42: 42 * -33 = -1386. ANSWER: -1386",57,59,59,56,358_cot.npy,True,,False
+359,direct,G1,False,-312,-1104,Negative,D," -312
+
+",-312,5,5,5,4,359_direct.npy,True,,False
+359,cot,G4,True,-1104,-1104,Negative,D," First, we need to solve the expression inside the parentheses: -3 - 43 = -46. Then, we multiply 24 by -46: 24 * -46 = -1104. ANSWER: -1104
+
+Question:"," First, we need to solve the expression inside the parentheses: -3 - 43 = -46. Then, we multiply 24 by -46: 24 * -46 = -1104. ANSWER: -1104",58,60,60,57,359_cot.npy,True,,False
+360,direct,G1,False,-55,-65,Negative,A," -55
+
+",-55,4,4,4,3,360_direct.npy,True,,False
+360,cot,G4,True,-65,-65,Negative,A," First, multiply 39 by -2, which gives -78. Then, add 13 to -78, which gives -65. ANSWER: -65
+
+Question:"," First, multiply 39 by -2, which gives -78. Then, add 13 to -78, which gives -65. ANSWER: -65",40,42,42,39,360_cot.npy,True,,False
+361,direct,G1,False,-511,-541,Negative,B," -511
+
+",-511,5,5,5,4,361_direct.npy,True,,False
+361,cot,G4,True,-541,-541,Negative,B," First, multiply 35 by -15, which gives -525. Then, subtract 16 from -525, which gives -541. ANSWER: -541
+
+Question:"," First, multiply 35 by -15, which gives -525. Then, subtract 16 from -525, which gives -541. ANSWER: -541",45,47,47,44,361_cot.npy,True,,False
+362,direct,G1,False,-148,418,Negative,C," -148
+
+",-148,5,5,5,4,362_direct.npy,True,,False
+362,cot,G4,True,418,418,Negative,C," First, we need to solve the expression inside the parentheses: 15 - 4 = 11. Then, we multiply 38 by 11: 38 * 11 = 418. ANSWER: 418
+
+Question:"," First, we need to solve the expression inside the parentheses: 15 - 4 = 11. Then, we multiply 38 by 11: 38 * 11 = 418. ANSWER: 418",56,58,58,55,362_cot.npy,True,,False
+363,direct,G1,False,-144,384,Negative,D," -144
+
+",-144,5,5,5,4,363_direct.npy,True,,False
+363,cot,G4,True,384,384,Negative,D," First, we need to solve the expression inside the parentheses: 6 - 14 = -8. Then, we multiply -8 by -48: -8 * -48 = 384. ANSWER: 384
+
+Question:"," First, we need to solve the expression inside the parentheses: 6 - 14 = -8. Then, we multiply -8 by -48: -8 * -48 = 384. ANSWER: 384",53,55,55,52,363_cot.npy,True,,False
+364,direct,G1,False,-450,-483,Negative,A," -450
+
+",-450,5,5,5,4,364_direct.npy,True,,False
+364,cot,G3,False,-543,-483,Negative,A," First, multiply 27 by -19, which gives -513. Then, add 30 to -513, which gives -543. ANSWER: -543
+
+Question:"," First, multiply 27 by -19, which gives -513. Then, add 30 to -513, which gives -543. ANSWER: -543",45,47,47,44,364_cot.npy,True,,False
+365,direct,G1,False,-84,-892,Negative,B," -84
+
+",-84,4,4,4,3,365_direct.npy,True,,False
+365,cot,G4,True,-892,-892,Negative,B," First, multiply 48 by -18, which gives -864. Then, subtract 28 from -864, which gives -892. ANSWER: -892
+
+Question:"," First, multiply 48 by -18, which gives -864. Then, subtract 28 from -864, which gives -892. ANSWER: -892",45,47,47,44,365_cot.npy,True,,False
+366,direct,G1,False,0,-42,Negative,C," 0
+
+",0,3,3,3,2,366_direct.npy,True,,False
+366,cot,G4,True,-42,-42,Negative,C," First, we need to solve the expression inside the parentheses: 15 + -16 = -1. Then, we multiply 42 by -1: 42 * -1 = -42. ANSWER: -42
+
+Question:"," First, we need to solve the expression inside the parentheses: 15 + -16 = -1. Then, we multiply 42 by -1: 42 * -1 = -42. ANSWER: -42",52,54,54,51,366_cot.npy,True,,False
+367,direct,G1,False,-1020,-714,Negative,D," -1020
+
+",-1020,6,6,6,5,367_direct.npy,True,,False
+367,cot,G4,True,-714,-714,Negative,D," First, we need to solve the expression inside the parentheses: -19 - 23 = -42. Then, we multiply the result by 17: 17 * -42 = -714. ANSWER: -714
+
+Question:"," First, we need to solve the expression inside the parentheses: -19 - 23 = -42. Then, we multiply the result by 17: 17 * -42 = -714. ANSWER: -714",56,58,58,55,367_cot.npy,True,,False
+368,direct,G1,False,-300,-306,Negative,A," -300
+
+",-300,5,5,5,4,368_direct.npy,True,,False
+368,cot,G4,True,-306,-306,Negative,A," First, multiply 38 by -9, which gives -342. Then, add 36 to -342, which gives -306. ANSWER: -306
+
+Question:"," First, multiply 38 by -9, which gives -342. Then, add 36 to -342, which gives -306. ANSWER: -306",44,46,46,43,368_cot.npy,True,,False
+369,direct,G1,False,540,582,Negative,B," 540
+
+",540,5,5,5,4,369_direct.npy,True,,False
+369,cot,G4,True,582,582,Negative,B," First, calculate 39 * 14, which equals 546. Then, subtract -36 from 546, which equals 582. ANSWER: 582
+
+Question:"," First, calculate 39 * 14, which equals 546. Then, subtract -36 from 546, which equals 582. ANSWER: 582",45,47,47,44,369_cot.npy,True,,False
+370,direct,G1,False,16,400,Negative,C," 16 * 25 = 400
+
+",16,3,13,13,2,370_direct.npy,True,,False
+370,cot,G4,True,400,400,Negative,C," First, we need to solve the expression inside the parentheses: 37 - 12 = 25. Then, we multiply 16 by 25: 16 * 25 = 400. ANSWER: 400
+
+Question:"," First, we need to solve the expression inside the parentheses: 37 - 12 = 25. Then, we multiply 16 by 25: 16 * 25 = 400. ANSWER: 400",57,59,59,56,370_cot.npy,True,,False
+371,direct,G1,False,1000,832,Negative,D," 1000
+
+",1000,6,6,6,5,371_direct.npy,True,,False
+371,cot,G4,True,832,832,Negative,D," First, we need to solve the expression inside the parentheses: 13 - -19 = 13 + 19 = 32. Now, we multiply 26 by 32: 26 * 32 = 832. ANSWER: 832
+
+Question:"," First, we need to solve the expression inside the parentheses: 13 - -19 = 13 + 19 = 32. Now, we multiply 26 by 32: 26 * 32 = 832. ANSWER: 832",65,67,67,64,371_cot.npy,True,,False
+372,direct,G2,True,-145,-145,Negative,A," -145
+
+",-145,5,5,5,4,372_direct.npy,True,,False
+372,cot,G4,True,-145,-145,Negative,A," First, calculate the product of -40 and 4, which is -160. Then, add 15 to -160, which gives -145. ANSWER: -145
+
+Question:"," First, calculate the product of -40 and 4, which is -160. Then, add 15 to -160, which gives -145. ANSWER: -145",47,49,49,46,372_cot.npy,True,,False
+373,direct,G1,False,256,241,Negative,B," 256
+
+",256,5,5,5,4,373_direct.npy,True,,False
+373,cot,G4,True,241,241,Negative,B," First, calculate 15 * 15, which equals 225. Then, subtract -16 from 225, which gives us 241. ANSWER: 241
+
+Question:"," First, calculate 15 * 15, which equals 225. Then, subtract -16 from 225, which gives us 241. ANSWER: 241",46,48,48,45,373_cot.npy,True,,False
+374,direct,G1,False,-279,-1683,Negative,C," -279
+
+",-279,5,5,5,4,374_direct.npy,True,,False
+374,cot,G4,True,-1683,-1683,Negative,C," First, we need to add 6 and 45, which equals 51. Then, we multiply 51 by -33, which equals -1683. ANSWER: -1683
+
+Question:"," First, we need to add 6 and 45, which equals 51. Then, we multiply 51 by -33, which equals -1683. ANSWER: -1683",48,50,50,47,374_cot.npy,True,,False
+375,direct,G1,False,-1146,-3008,Negative,D," -1146
+
+",-1146,6,6,6,5,375_direct.npy,True,,False
+375,cot,G4,True,-3008,-3008,Negative,D," First, we need to solve the expression inside the parentheses: -19 - 45 = -64. Then, we multiply 47 by -64: 47 * -64 = -3008. ANSWER: -3008
+
+Question:"," First, we need to solve the expression inside the parentheses: -19 - 45 = -64. Then, we multiply 47 by -64: 47 * -64 = -3008. ANSWER: -3008",59,61,61,58,375_cot.npy,True,,False
+376,direct,G1,False,249,223,Negative,A," 249
+
+",249,5,5,5,4,376_direct.npy,True,,False
+376,cot,G4,True,223,223,Negative,A," First, multiply 17 by 15 to get 255. Then, subtract 32 from 255 to get 223. ANSWER: 223
+
+Question:"," First, multiply 17 by 15 to get 255. Then, subtract 32 from 255 to get 223. ANSWER: 223",43,45,45,42,376_cot.npy,True,,False
+377,direct,G1,False,117,139,Negative,B," 117
+
+",117,5,5,5,4,377_direct.npy,True,,False
+377,cot,G4,True,139,139,Negative,B," First, calculate 37 multiplied by 3, which equals 111. Then, subtract -28 from 111, which gives us 139. ANSWER: 139
+
+Question:"," First, calculate 37 multiplied by 3, which equals 111. Then, subtract -28 from 111, which gives us 139. ANSWER: 139",46,48,48,45,377_cot.npy,True,,False
+378,direct,G1,False,107,-87,Negative,C," 107
+
+",107,5,5,5,4,378_direct.npy,True,,False
+378,cot,G4,True,-87,-87,Negative,C," First, we need to solve the expression inside the parentheses: 13 + -16 = 13 - 16 = -3. Now, we multiply 29 by -3: 29 * -3 = -87. ANSWER: -87
+
+Question:"," First, we need to solve the expression inside the parentheses: 13 + -16 = 13 - 16 = -3. Now, we multiply 29 by -3: 29 * -3 = -87. ANSWER: -87",60,62,62,59,378_cot.npy,True,,False
+379,direct,G1,False,1026,1134,Negative,D," 1026
+
+",1026,6,6,6,5,379_direct.npy,True,,False
+379,cot,G4,True,1134,1134,Negative,D," First, we need to solve the expression inside the parentheses: 8 - -19 = 8 + 19 = 27. Then, we multiply 42 by 27: 42 * 27 = 1134. ANSWER: 1134
+
+Question:"," First, we need to solve the expression inside the parentheses: 8 - -19 = 8 + 19 = 27. Then, we multiply 42 by 27: 42 * 27 = 1134. ANSWER: 1134",65,67,67,64,379_cot.npy,True,,False
+380,direct,G1,False,-324,-344,Negative,A," -324
+
+",-324,5,5,5,4,380_direct.npy,True,,False
+380,cot,G4,True,-344,-344,Negative,A," First, multiply 40 by -9, which gives -360. Then, add 16 to -360, which gives -344. ANSWER: -344
+
+Question:"," First, multiply 40 by -9, which gives -360. Then, add 16 to -360, which gives -344. ANSWER: -344",44,46,46,43,380_cot.npy,True,,False
+381,direct,G1,False,-586,-602,Negative,B," -586
+
+",-586,5,5,5,4,381_direct.npy,True,,False
+381,cot,G4,True,-602,-602,Negative,B," First, multiply 45 by -13, which gives -585. Then, subtract 17 from -585, which gives -602. ANSWER: -602
+
+Question:"," First, multiply 45 by -13, which gives -585. Then, subtract 17 from -585, which gives -602. ANSWER: -602",45,47,47,44,381_cot.npy,True,,False
+382,direct,G1,False,0,-1288,Negative,C," 0
+
+",0,3,3,3,2,382_direct.npy,True,,False
+382,cot,G4,True,-1288,-1288,Negative,C," First, we need to solve the expression inside the parentheses: 9 + -37 = -28. Then, we multiply 46 by -28: 46 * -28 = -1288. ANSWER: -1288
+
+Question:"," First, we need to solve the expression inside the parentheses: 9 + -37 = -28. Then, we multiply 46 by -28: 46 * -28 = -1288. ANSWER: -1288",58,60,60,57,382_cot.npy,True,,False
+383,direct,G1,False,1000,1470,Negative,D," 1000
+
+",1000,6,6,6,5,383_direct.npy,True,,False
+383,cot,G4,True,1470,1470,Negative,D," First, we need to solve the expression inside the parentheses: 19 - -11 = 19 + 11 = 30. Now, we multiply 49 by 30: 49 * 30 = 1470. ANSWER: 1470
+
+Question:"," First, we need to solve the expression inside the parentheses: 19 - -11 = 19 + 11 = 30. Now, we multiply 49 by 30: 49 * 30 = 1470. ANSWER: 1470",67,69,69,66,383_cot.npy,True,,False
+384,direct,G1,False,15,-33,Negative,A," 15
+
+",15,4,4,4,3,384_direct.npy,True,,False
+384,cot,G4,True,-33,-33,Negative,A," First, multiply 27 by -2, which gives -54. Then, add 21 to -54, which gives -33. ANSWER: -33
+
+Question:"," First, multiply 27 by -2, which gives -54. Then, add 21 to -54, which gives -33. ANSWER: -33",40,42,42,39,384_cot.npy,True,,False
+385,direct,G1,False,-320,-380,Negative,B," -320
+
+",-320,5,5,5,4,385_direct.npy,True,,False
+385,cot,G4,True,-380,-380,Negative,B," First, multiply -29 by 12 to get -348. Then, subtract 32 from -348 to get -380. ANSWER: -380
+
+Question:"," First, multiply -29 by 12 to get -348. Then, subtract 32 from -348 to get -380. ANSWER: -380",43,45,45,42,385_cot.npy,True,,False
+386,direct,G1,False,-105,-840,Negative,C," -105
+
+",-105,5,5,5,4,386_direct.npy,True,,False
+386,cot,G4,True,-840,-840,Negative,C," First, we need to solve the expression inside the parentheses: 6 + -46 = -40. Then, we multiply the result by 21: 21 * -40 = -840. ANSWER: -840
+
+Question:"," First, we need to solve the expression inside the parentheses: 6 + -46 = -40. Then, we multiply the result by 21: 21 * -40 = -840. ANSWER: -840",55,57,57,54,386_cot.npy,True,,False
+387,direct,G1,False,260,805,Negative,D," 260
+
+",260,5,5,5,4,387_direct.npy,True,,False
+387,cot,G4,True,805,805,Negative,D," First, we need to solve the expression inside the parentheses: 4 - -19 = 4 + 19 = 23. Then, we multiply 35 by 23: 35 * 23 = 805. ANSWER: 805
+
+Question:"," First, we need to solve the expression inside the parentheses: 4 - -19 = 4 + 19 = 23. Then, we multiply 35 by 23: 35 * 23 = 805. ANSWER: 805",63,65,65,62,387_cot.npy,True,,False
+388,direct,G1,False,17,-1,Negative,A," 17
+
+",17,4,4,4,3,388_direct.npy,True,,False
+388,cot,G4,True,-1,-1,Negative,A," First, calculate the product of -11 and 4, which is -44. Then, add 43 to -44, which gives -1. ANSWER: -1
+
+Question:"," First, calculate the product of -11 and 4, which is -44. Then, add 43 to -44, which gives -1. ANSWER: -1",41,43,43,40,388_cot.npy,True,,False
+389,direct,G1,False,-459,-549,Negative,B," -459
+
+",-459,5,5,5,4,389_direct.npy,True,,False
+389,cot,G4,True,-549,-549,Negative,B," First, multiply 34 by -15, which gives -510. Then, subtract 39 from -510, which gives -549. ANSWER: -549
+
+Question:"," First, multiply 34 by -15, which gives -510. Then, subtract 39 from -510, which gives -549. ANSWER: -549",45,47,47,44,389_cot.npy,True,,False
+390,direct,G1,False,-180,-320,Negative,C," -180
+
+",-180,5,5,5,4,390_direct.npy,True,,False
+390,cot,G4,True,-320,-320,Negative,C," First, we need to solve the expression inside the parentheses: 13 - 29 = -16. Then, we multiply the result by 20: 20 * -16 = -320. ANSWER: -320
+
+Question:"," First, we need to solve the expression inside the parentheses: 13 - 29 = -16. Then, we multiply the result by 20: 20 * -16 = -320. ANSWER: -320",56,58,58,55,390_cot.npy,True,,False
+391,direct,G1,False,150,270,Negative,D," 150
+
+",150,5,5,5,4,391_direct.npy,True,,False
+391,cot,G4,True,270,270,Negative,D," First, we need to solve the expression inside the parentheses: 4 - 13 = -9. Then, we multiply -30 by -9: -30 * -9 = 270. ANSWER: 270
+
+Question:"," First, we need to solve the expression inside the parentheses: 4 - 13 = -9. Then, we multiply -30 by -9: -30 * -9 = 270. ANSWER: 270",53,55,55,52,391_cot.npy,True,,False
+392,direct,G1,False,-35,-45,Negative,A," -35
+
+",-35,4,4,4,3,392_direct.npy,True,,False
+392,cot,G4,True,-45,-45,Negative,A," First, multiply 20 by -3 to get -60. Then add 15 to -60 to get -45. ANSWER: -45
+
+Question:"," First, multiply 20 by -3 to get -60. Then add 15 to -60 to get -45. ANSWER: -45",37,39,39,36,392_cot.npy,True,,False
+393,direct,G1,False,567,611,Negative,B," 567
+
+",567,5,5,5,4,393_direct.npy,True,,False
+393,cot,G4,True,611,611,Negative,B," First, calculate 38 * 15, which equals 570. Then, subtract -41 from 570, which equals 611. ANSWER: 611
+
+Question:"," First, calculate 38 * 15, which equals 570. Then, subtract -41 from 570, which equals 611. ANSWER: 611",45,47,47,44,393_cot.npy,True,,False
+394,direct,G1,False,-1146,-1596,Negative,C," -1146
+
+",-1146,6,6,6,5,394_direct.npy,True,,False
+394,cot,G3,False,-1636,-1596,Negative,C," First, we need to add 15 and 27, which equals 42. Then, we multiply 42 by -38, which equals -1636. ANSWER: -1636
+
+Question:"," First, we need to add 15 and 27, which equals 42. Then, we multiply 42 by -38, which equals -1636. ANSWER: -1636",49,51,51,48,394_cot.npy,True,,False
+395,direct,G1,False,-252,-1554,Negative,D," -252
+
+",-252,5,5,5,4,395_direct.npy,True,,False
+395,cot,G4,True,-1554,-1554,Negative,D," First, we need to solve the expression inside the parentheses: -5 - 32 = -37. Then, we multiply 42 by -37: 42 * -37 = -1554. ANSWER: -1554
+
+Question:"," First, we need to solve the expression inside the parentheses: -5 - 32 = -37. Then, we multiply 42 by -37: 42 * -37 = -1554. ANSWER: -1554",58,60,60,57,395_cot.npy,True,,False
+396,direct,G1,False,-150,-140,Negative,A," -150
+
+",-150,5,5,5,4,396_direct.npy,True,,False
+396,cot,G4,True,-140,-140,Negative,A," First, multiply 17 by -11, which gives -187. Then, add 47 to -187, which gives -140. ANSWER: -140
+
+Question:"," First, multiply 17 by -11, which gives -187. Then, add 47 to -187, which gives -140. ANSWER: -140",45,47,47,44,396_cot.npy,True,,False
+397,direct,G1,False,-465,-485,Negative,B," -465
+
+",-465,5,5,5,4,397_direct.npy,True,,False
+397,cot,G4,True,-485,-485,Negative,B," First, multiply -43 by 11 to get -473. Then, subtract 12 from -473 to get -485. ANSWER: -485
+
+Question:"," First, multiply -43 by 11 to get -473. Then, subtract 12 from -473 to get -485. ANSWER: -485",43,45,45,42,397_cot.npy,True,,False
+398,direct,G1,False,-450,-455,Negative,C," -450
+
+",-450,5,5,5,4,398_direct.npy,True,,False
+398,cot,G4,True,-455,-455,Negative,C," First, we need to solve the expression inside the parentheses: 3 + 10 = 13. Then, we multiply -35 by 13: -35 * 13 = -455. ANSWER: -455
+
+Question:"," First, we need to solve the expression inside the parentheses: 3 + 10 = 13. Then, we multiply -35 by 13: -35 * 13 = -455. ANSWER: -455",56,58,58,55,398_cot.npy,True,,False
+399,direct,G1,False,-232,-754,Negative,D," -232
+
+",-232,5,5,5,4,399_direct.npy,True,,False
+399,cot,G4,True,-754,-754,Negative,D," First, we need to solve the expression inside the parentheses: -8 - 18 = -26. Then, we multiply 29 by -26: 29 * -26 = -754. ANSWER: -754
+
+Question:"," First, we need to solve the expression inside the parentheses: -8 - 18 = -26. Then, we multiply 29 by -26: 29 * -26 = -754. ANSWER: -754",56,58,58,55,399_cot.npy,True,,False

@@ -1,0 +1,33 @@
+
+{
+    "description": "Experiment 18B Audit Manifest",
+    "timestamp": "2026-02-13",
+    "datasets": {
+        "dataset_A": {
+            "model": "Qwen2.5-0.5B",
+            "source_experiment": "EXP-14_UniversalSignature_2025-12-03",
+            "hidden_states_dir": "experiments/EXP-14_UniversalSignature_2025-12-03/data/hidden_states_full",
+            "metadata_file": "experiments/EXP-14_UniversalSignature_2025-12-03/data/metadata_full.csv"
+        },
+        "dataset_B": {
+            "model": "Qwen2.5-1.5B",
+            "source_experiment": "EXP-16B_Qwen15B_2025-12-08",
+            "hidden_states_dir": "experiments/EXP-16B_Qwen15B_2025-12-08/data/hidden_states",
+            "metadata_file": "experiments/EXP-16B_Qwen15B_2025-12-08/data/metadata_reparsed.csv"
+        },
+        "dataset_C": {
+            "model": "Pythia-70m",
+            "source_experiment": "EXP-16_Pythia70m_2025-12-07",
+            "hidden_states_dir": "experiments/EXP-16_Pythia70m_2025-12-07/data/hidden_states",
+            "metadata_file": "experiments/EXP-16_Pythia70m_2025-12-07/data/metadata.csv"
+        }
+    },
+    "universal_input": {
+        "prompts_file": "experiments/EXP-09_GeometryCapability_2025-11-22/data/exp9_dataset.jsonl",
+        "description": "300 arithmetic problems (Direct/CoT) used for all models."
+    },
+    "metrics": {
+        "definition_file": "experiments/EXP-18B_ScalingGeometry_2026-02-13/METHODS_18B.md",
+        "count": 57
+    }
+}

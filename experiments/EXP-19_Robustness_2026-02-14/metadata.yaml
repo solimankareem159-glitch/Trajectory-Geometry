@@ -1,0 +1,15 @@
+experiment_id: 19
+title: "Multi-Architecture Replication with Full Metric Suite"
+date: "2026-02-14"
+objective: "Robustness validation of trajectory geometry metrics across architectures and difficulty levels."
+models:
+  - "Qwen/Qwen2.5-0.5B"
+  - "Qwen/Qwen2.5-1.5B"
+  - "EleutherAI/pythia-410m"
+dataset: "400 arithmetic problems (4 bins)"
+metrics_count: 57
+pipeline_features:
+  - "DirectML acceleration"
+  - "Anti-contamination (stop sequences + truncation)"
+  - "Incremental saving"
+  - "Process isolation"

@@ -24,6 +24,9 @@ This directory contains all experimental work from the DSG research project, org
 | 15 | [EXP-15_LengthConfound_2025-12-05](./EXP-15_LengthConfound_2025-12-05) | Length Confound | 2025-12-05 | Qwen-0.5B |
 | 16 | [EXP-16_Pythia70m_2025-12-07](./EXP-16_Pythia70m_2025-12-07) | Pythia-70m | 2025-12-07 | Pythia-70m |
 | 16B | [EXP-16B_Qwen15B_2025-12-08](./EXP-16B_Qwen15B_2025-12-08) | Qwen2.5-1.5B | 2025-12-08 | Qwen2.5-1.5B |
+| 17 | [EXP-17_BaselineReplication_2026-02-11](./EXP-17_BaselineReplication_2026-02-11) | Baseline Replication | 2026-02-11 | TBD |
+| 18 | [EXP-18_ConsolidatedMetricSuite_2026-02-13](./EXP-18_ConsolidatedMetricSuite_2026-02-13) | Consolidated Metric Suite | 2026-02-13 | Qwen2.5-0.5B |
+| 19 | [EXP-19_Robustness_2026-02-14](./EXP-19_Robustness_2026-02-14) | Robustness Replication | 2026-02-14 | Multi-Arch |
 
 ## Folder Structure
 
@@ -39,7 +42,7 @@ EXP-<NN>_<ShortTitle>_<YYYY-MM-DD>/
 
 ## Quick Navigation
 
-- **View all summaries:** See `/experiment_summaries/` 
+- **View all summaries:** See `/experiment_summaries/`
 - **Research timeline:** See `/research_history/`
 - **Main README:** See project root
 
