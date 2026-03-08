@@ -1,14 +1,17 @@
 # Experiment 13: Regime Mining and Failure Subtyping
 
-**Status:** Completed
-**Date:** Early Feb 2026
-**Model:** Qwen2.5-0.5B
-**Analysis Layer:** 13
+**Phase:** 3 — The Pivot to Dynamics & Intervention
+**Date:** Early February 2026
+**Model:** Qwen2.5-0.5B (Analysis Layer: 13)
+**Status:** Completed — **SUCCESS**
 
-## Motivation & Prior Assumptions
-*   **Context:** Previous experiments established that geometric signatures exist.
-*   **Problem:** We were treating all successes as one group and all failures as another. Does a model fail in only one way? Is "Direct Success" the same as "CoT Success"?
-*   **Goal:** Use unsupervised learning (clustering) to "mine" the data for distinct computational regimes and failure subtypes.
+## Connection to Prior Work
+
+EXP-09 through EXP-12 established that geometric signatures exist and predict success. But we were treating all successes as one group and all failures as another. EXP-12's convergence dynamics suggested that failures might have distinct *subtypes* with different geometric profiles.
+
+## Research Question
+
+**Does the model fail in multiple geometrically distinct ways?** Can unsupervised clustering reveal computational regime subtypes, and does trajectory geometry predict success better than metadata alone?
 
 ## Hypotheses
 1.  **H1 (Failure Subtypes):** CoT failures (G3) will cluster into at least two modes: "Collapsed" (low dimension) and "Wandering" (high dimension but incoherent).
@@ -43,7 +46,11 @@ The geometric metrics predicted success with an **AUC of 0.898** for direct answ
 *   **Sample Size (G2):** The number of Direct Successes (G2) was relatively small ($N=52$), potentially limiting the robustness of the "Retrieve-and-Commit" profile comparison.
 *   **Metric Ranking:** Some metrics (like `early_late_ratio`) were so dominant that they masked subtle effects from other topological features.
 
-## Interpretation (Meanings & Implications)
-*   **Verdict:** **SUCCESS**.
-*   **Geometry as Ground Truth:** We can now diagnose *mechanism* (Retrieval vs Reasoning) and *failure mode* (Collapse vs Confusion) purely from latent geometry, without reading the text.
-*   **The "Commitment" Signature:** Validated that reasoning is a two-phase process (Explore $\to$ Commit) and that we can "watch" this transition happen.
+## Conclusions & Implications
+
+**Verdict: SUCCESS.** We can now diagnose *mechanism* (Retrieval vs Reasoning) and *failure mode* (Collapse vs Confusion) purely from latent geometry, without reading the text. Reasoning is a two-phase process (Explore → Commit) and the "Commitment" signature is geometrically readable. Geometry predicts success (AUC 0.898) far better than metadata alone (AUC 0.63).
+
+## Influence on Next Experiment
+
+*   With ~10 metrics proving their worth, the question became: are we missing "high-order" signals?
+*   **EXP-14** expanded the metric suite to 33 variables computed across all 28 layers — and discovered the shocking result that "good geometry" is regime-dependent (CoT success ≠ Direct success).

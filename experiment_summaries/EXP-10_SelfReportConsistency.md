@@ -1,11 +1,17 @@
 # Experiment 10: Self-Report Consistency
 
-**Date / Context:** October 2026 / Phase 3: The Pivot to Dynamics & Intervention
+**Phase:** 3 — The Pivot to Dynamics & Intervention
+**Date:** November 2025
+**Model:** Qwen2.5-0.5B
+**Status:** Completed — **FAILURE (of hypothesis)**
 
-## Motivation & Prior Assumptions
-*   **Context:** Experiment 09 proved that *correctness* has a geometric signature (Speed, Curvature).
-*   **Hypothesis:** If these signatures represent "modes of thought" (e.g., exploratory vs. direct), the model might have introspective access to them.
-*   **Question:** Can the model *feel* its own geometry? Does high curvature "feel" like exploration? Does high speed "feel" like effort?
+## Connection to Prior Work
+
+EXP-09 proved that *correctness* has a geometric signature (Speed, Curvature, Stabilization). If these signatures represent "modes of thought," the model might have introspective access to them.
+
+## Research Question
+
+**Can the model "feel" its own geometry?** Does high curvature "feel" like exploration? Does high speed "feel" like effort? Is model self-report a reliable readout of internal geometric state?
 
 ## Experimental Setup
 *   **Model:** Qwen2.5-0.5B
@@ -37,11 +43,11 @@ The self-reports were:
 1.  **Inconsistent:** Perturbing the context with a simple "ACK" often changed the ratings significantly.
 2.  **Performance-Biased:** The model tended to rate itself high on "Certainty" regardless of the internal state, likely a training artifact (RLHF preference for confident-sounding answers).
 
-## Interpretation
-*   **Result:** FAILURE (of the hypothesis).
-*   **Key Insight:** **Introspection is a Hallucination.** The model's verbal "self-monitoring" is not a read-out of its internal geometric state; it is just another generation, likely driven by the text surface form rather than the latent dynamics.
-*   **Implication:** We cannot ask the model "Are you stuck?". We must *measure* if it is stuck (using Geometry).
+## Conclusions & Implications
 
-## Next Steps
-*   Since the model cannot *tell* us its state, and we cannot relying on it to self-correct based on "feeling" stuck, we must build **external** monitors.
-*   Proceed to **Experiment 11** (or 9C/10B variants): attempting to *force* a geometric change (Steering) rather than just observing it.
+**Verdict: FAILURE (of the hypothesis).** **Introspection is a Hallucination.** The model's verbal "self-monitoring" is not a readout of its internal geometric state; it is just another generation, driven by text surface form rather than latent dynamics. We cannot ask the model "Are you stuck?" — we must *measure* if it is stuck using geometry.
+
+## Influence on Next Experiment
+
+*   Since the model cannot report its own state, we must build **external** geometric monitors. This reinforced the value of the trajectory metrics as the only reliable window into reasoning quality.
+*   **EXP-11** expanded the metric suite with deeper topological metrics (Effective Dimension, Tortuosity) to build a richer external diagnostic.

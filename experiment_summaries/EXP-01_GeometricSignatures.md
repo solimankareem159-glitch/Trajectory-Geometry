@@ -1,11 +1,17 @@
 # Experiment 01: Geometric Signatures (Turn-Level)
 
-**Date / Context:** February 2026 / Phase 1: The Intuition of "Shapes"
+**Phase:** 1 — The Intuition of "Shapes"
+**Date:** November 2025
+**Model:** Gemini API (`text-embedding-004`)
+**Status:** Completed — **INVALID**
 
-## Motivation & Prior Assumptions
-*   **Context:** We suspected that different cognitive operations (e.g., *Summarize*, *Critique*) enact distinct transformations on information.
-*   **Assumption:** These transformations should leave a measurable "geometric signature" in the embedding space of the model's output.
-*   **Goal:** To detect and classify cognitive operators solely by analyzing the "warp" (distance vector) between consecutive conversational turns.
+## Connection to Prior Work
+
+This was the first experiment in the research program. The starting hypothesis was drawn from the intuition that different cognitive operations should leave measurable geometric traces — analogous to how different physical forces leave different trajectory signatures.
+
+## Research Question
+
+**Do different cognitive operations (e.g., Summarize, Critique) leave distinct, classifiable geometric signatures in the embedding space of a model's output?**
 
 ## Hypotheses
 1.  **H1 (Clustering):** Vectors representing the same operator (e.g., "Summarize") will cluster together, distinct from other operators.
@@ -41,6 +47,11 @@
 *   If the signatures aren't in the *output* embeddings, are they in the *internal* activations?
 *   Are operators monolithic shapes, or combinations of smaller primitive factors?
 
-## How This Informed the Next Experiment
+## Conclusions & Implications
+
+**Verdict: INVALID.** "Thought" does not manifest as a simple, static additive vector in the output embedding space. The signal is swamped by topic and lexical noise. We cannot rely on API embeddings or output text — we must look "inside" the model (hidden states).
+
+## Influence on Next Experiment
+
 *   **Pivot to Internals:** We moved from API embeddings to open-weights models to access hidden states.
 *   **Pivot to Decomposition:** This failure led to **Experiment 02: Latent Factors**, where we used NMF to decompose internal states into primitive components, suspecting the signal was compositional rather than monolithic.

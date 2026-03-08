@@ -1,11 +1,17 @@
 # Experiment 07: Static Operator Geometry (The Ceiling)
 
-**Date / Context:** July 2026 / Phase 2: The "Invariant" Trap (Final Attempt)
+**Phase:** 2 — The "Invariant" Trap (Final Attempt)
+**Date:** November 2025
+**Model:** Qwen2.5-0.5B
+**Status:** Completed — **VALID BUT INSUFFICIENT**
 
-## Motivation & Prior Assumptions
-*   **Context:** After the pilot failure in Exp 6 ("The Wilderness"), we needed one definitive, large-scale experiment to prove or disprove static operator theory.
-*   **Assumption:** Maybe the signal *is* there, but we just need more data (N=2,000) and better metrics (Centroid Stability vs. raw accuracy).
-*   **Goal:** To characterize the "Geometry of Thought" in a frozen LLM using the most rigorous static methods possible: Centroid Stability, Separability, and Subspace Alignment.
+## Connection to Prior Work
+
+EXP-06's pilot study showed only weak signals. We needed one definitive, large-scale experiment to prove or disprove static operator theory before committing to the paradigm shift toward dynamics.
+
+## Research Question
+
+**At maximum statistical power (N=2,000), can static methods reliably separate cognitive operators in hidden state space?**
 
 ## Hypotheses
 1.  **H1 (Mid-Layer Abstraction):** Operator coherence will peak in the middle layers (where "concepts" supposedly live), not in the input/output.
@@ -36,6 +42,11 @@
 *   **Shift:** This experiment was the "graduation" from Phase 2. We proved static structure exists (Stability > 0.9), but we also proved it's too weak to explain competence (F1 < 0.35).
 *   **The Paradigm Shift:** If the *location* distinguishes operators poorly, maybe the *path* distinguishes them better. This explicitly set the stage for **Trajectory Geometry**.
 
-## How This Informed the Next Experiment
-*   **From Statics to Dynamics:** Having characterized the static "nodes" (Exp 7), we moved to characterizing the "edges" (transitions).
-*   **Next Step:** **Experiment 08: Trajectory Geometry** abandoned the search for "Where is Summarize?" and asked "How does Summarize *move*?" using differential geometry metrics (Speed, Curvature).
+## Conclusions & Implications
+
+**Verdict: VALID BUT INSUFFICIENT.** "Concept Vectors" are partially true but incomplete. You can find a "Summarize" direction (Stability > 0.9), but it's too fuzzy for reliable control (F1 < 0.35). This was the "graduation" from Phase 2. If *location* distinguishes operators poorly, maybe the *path* distinguishes them better.
+
+## Influence on Next Experiment
+
+*   **The Paradigm Shift:** From statics to dynamics. Having characterized the static "nodes" (EXP-07), we moved to characterizing the "edges" (transitions).
+*   **EXP-08: Trajectory Geometry** abandoned the search for "Where is Summarize?" and asked "How does Summarize *move*?" using differential geometry metrics (Speed, Curvature).

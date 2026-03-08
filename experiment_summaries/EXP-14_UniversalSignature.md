@@ -1,14 +1,17 @@
-# Experiment 14: Comprehensive Metric Expansion
+# Experiment 14: Comprehensive Metric Expansion (Universal Signature)
 
-**Status:** Completed
-**Date:** Feb 2026
-**Model:** Qwen2.5-0.5B
-**N Layers:** 28 (Full depth)
+**Phase:** 3/4 — Scaling & Cross-Model Validation
+**Date:** February 2026
+**Model:** Qwen2.5-0.5B (28 layers, full depth)
+**Status:** Completed — **BREAKTHROUGH**
 
-## Motivation & Prior Assumptions
-*   **Context:** Experiments 11-13 proved that simple geometry tracks reasoning.
-*   **Problem:** We were using a limited set of ~10 metrics. Are we missing "high-order" signals?
-*   **Goal:** Expand the metric suite to 33 variables and compute them across every layer of the network to find the "Universal Signature" of success.
+## Connection to Prior Work
+
+EXP-11 through EXP-13 proved that ~10 geometric metrics reliably track reasoning success, failure subtypes, and the Explore → Commit phase transition. But the metric suite had grown organically. EXP-14 asked: with a comprehensive 33-metric suite across all layers, is there a "Universal Signature" of success?
+
+## Research Question
+
+**Is there a single geometric state that defines "Success" regardless of reasoning mode?** And: how do geometric signatures distribute across the depth of the network?
 
 ## Hypotheses
 1.  **H1 (Regime Convergence):** There is a single geometric state that defines "Success" regardless of whether the model used CoT or Direct answering. (FAILED - See below).
@@ -48,7 +51,11 @@ We introduced `time_to_commit` to measure when the Radius of Gyration drops most
 *   **Computational Expense:** Computing 33 metrics for 28 layers across 602 trajectories ($33 \times 28 \times 602 \approx 550,000$ data points) pushed the limits of the DirectML acceleration.
 *   **Normalization:** Comparing `msd_exponent` between very short trajectories (Direct) and long ones (CoT) remains statistically challenging.
 
-## Interpretation (Meanings & Implications)
-*   **Verdict:** **BREAKTHROUGH**.
-*   **Functional Specialization:** The model uses different "depth regions" for different parts of the reasoning task. 
-*   **Divergent Strategies:** We've proven that **Reasoning** and **Retrieval** are not just different weights; they are different **dynamical regimes**.
+## Conclusions & Implications
+
+**Verdict: BREAKTHROUGH.** The model uses different depth regions for different parts of the reasoning task. Reasoning and Retrieval are not just different weights — they are different **dynamical regimes**. You cannot build a universal success detector; success must be evaluated relative to the computational regime.
+
+## Influence on Next Experiment
+
+*   The regime-dependent nature of success raised the critical counter-argument: is this just the "length confound" in disguise?
+*   **EXP-15** was designed as a direct stress test — proving that geometry provides diagnostic signal *beyond* trajectory length by stratifying problems by difficulty.

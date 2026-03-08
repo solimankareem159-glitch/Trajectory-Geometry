@@ -1,5 +1,5 @@
 # =============================================================================
-# DSG Experiments - .gitignore
+# Trajectory Geometry - .gitignore
 # =============================================================================
 
 # --- Python ---
@@ -14,6 +14,7 @@ build/
 # --- Virtual Environments ---
 .venv*/
 venv/
+exp19_venv/
 
 # --- Jupyter ---
 .ipynb_checkpoints/
@@ -41,6 +42,7 @@ venv/
 # --- Node.js (Visualisation Tool) ---
 visualisation_tool/node_modules/
 visualisation_tool/dist/
+visualisation_tool/data/
 
 # --- IDE / Editor ---
 .vscode/
@@ -58,20 +60,12 @@ desktop.ini
 .agent/
 .claude/
 
-# --- Sensitive / Private Materials ---
-# Personal research journal (contains raw personal reflections and tool details)
-research_history/Journey/Research Journey
-
-# Attribution ledger (superseded by collaboration statement in PROJECT_NARRATIVE.md)
-research_history/Journey/User_Contributions_Ledger.md
-
-# Chat logs and conversation transcripts
-archive/research_journey/
+# --- Sensitive / Private ---
+.env
+*.log
 
 # --- Archive (Internal Working Materials) ---
-# Internal archives within experiment folders
 experiments/.Archive/
 .Archive/
-
-# Binary documents in archive
 archive/research_design/*.pdf
+archive/research_journey/

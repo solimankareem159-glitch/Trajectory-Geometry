@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Trajectory Geometry: Measuring the Shape of Reasoning in Transformers"
+authors:
+  - family-names: Soliman
+    given-names: Kareem
+type: software
+date-released: 2026-03-09
+url: "https://github.com/solimankareem159-glitch/Trajectory-Geometry"
+repository-code: "https://github.com/solimankareem159-glitch/Trajectory-Geometry"
+license: Apache-2.0
+keywords:
+  - mechanistic interpretability
+  - transformer reasoning
+  - trajectory geometry
+  - hidden state dynamics
+  - chain-of-thought
+  - geometric signatures
+  - dimensional collapse
+abstract: >-
+  When a transformer model reasons correctly, its hidden states trace
+  geometrically distinct trajectories compared to when it fails. This
+  repository documents 19 experiments discovering, validating, and
+  stress-testing geometric signatures of reasoning across multiple
+  model architectures (Qwen, Pythia) and scales (70M to 3B parameters).
+  Key findings include dimensional collapse in failure (Cohen's d > 4.5),
+  regime-relative success signatures, difficulty-driven geometric expansion
+  (d > 17.0), and architecture-invariant commitment dynamics.

@@ -1,13 +1,17 @@
 # Experiment 11: Extended Geometric Suite
 
-**Date / Context:** October 2026 / Phase 3: The Pivot to Dynamics & Intervention
-**Model:** Qwen2.5-0.5B (using Experiment 9 dataset)
-**Status:** Completed
+**Phase:** 3 — The Pivot to Dynamics & Intervention
+**Date:** November 2025
+**Model:** Qwen2.5-0.5B (using EXP-09 dataset)
+**Status:** Completed — **SUCCESS**
 
-## Motivation & Prior Assumptions
-*   **Context:** Experiment 09 established the "Speed" and "Curvature" signatures as valid predictors of success.
-*   **Assumption:** These early metrics, while effective, were proxies for more fundamental topological properties of the trajectory manifold. 
-*   **Goal:** Develop a richer, "physics-inspired" suite of metrics to characterize the "texture" of thought, specifically focusing on dimensionality and path efficiency.
+## Connection to Prior Work
+
+EXP-09 established Speed and Curvature as valid predictors of success, and EXP-10 proved that models cannot self-report their geometric state. We needed richer, more fundamental topological metrics to serve as external diagnostics.
+
+## Research Question
+
+**Are there deeper topological properties (dimensionality, path efficiency) that characterize the trajectory manifold beyond speed and curvature?**
 
 ## Hypotheses
 1.  **H1 (Dimensionality of Truth):** Successful reasoning (G4) will utilize a higher-dimensional subspace of the residual stream than failed/reflexive answers (G1).
@@ -41,7 +45,10 @@ Even *failed* CoT (G3) maintained a high dimensionality ($D_{eff} \approx 13.9$)
 *   **Metric Redundancy:** Some metrics (like Turning Angle and Directional Consistency) were highly correlated ($r > 0.9$), suggesting we only need one to capture "curvature."
 *   **Window Sensitivity:** $D_{eff}$ is sensitive to the number of tokens analyzed. Comparing a 32-token CoT to a 5-token Direct answer requires careful normalization.
 
-## Interpretation (Meanings & Implications)
-*   **Verdict:** **SUCCESS**.
-*   **Theoretical Shift:** We move from viewing CoT as "extra compute" to viewing it as **"Dimensional Expansion."** CoT allows the model to "unfold" the problem into more dimensions where it can be resolved.
-*   **Predictive Power:** $D_{eff}$ is a stronger predictor of the "Reasoning vs Retrieval" regime than Speed.
+## Conclusions & Implications
+
+**Verdict: SUCCESS.** CoT is not just "extra compute" — it is **"Dimensional Expansion."** CoT allows the model to "unfold" the problem into more dimensions where it can be resolved. $D_{eff}$ is a stronger predictor of the "Reasoning vs Retrieval" regime than Speed.
+
+## Influence on Next Experiment
+
+*   The discovery of Dimensional Collapse prompted **EXP-12** to investigate the *intrinsic* properties and *temporal evolution* of trajectory manifolds — moving from bulk averages to dynamic texture (fractal dimension, convergence profiles).

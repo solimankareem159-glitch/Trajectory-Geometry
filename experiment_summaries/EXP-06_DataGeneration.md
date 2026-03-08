@@ -1,11 +1,17 @@
 # Experiment 06: Pilot Metric Validation (The Wilderness)
 
-**Date / Context:** June 2026 / Phase 2: The "Invariant" Trap (The Wilderness Phase)
+**Phase:** 2 — The "Invariant" Trap (The Wilderness Phase)
+**Date:** November 2025
+**Model:** Qwen2.5-0.5B
+**Status:** Completed — **INCONCLUSIVE / WEAK**
 
-## Motivation & Prior Assumptions
-*   **Context:** Experiment 03 failed due to massive topic confounding. We probed for operators but found topics.
-*   **Assumption:** We can fix the confounding by using stricter cross-validation schemes. If a probe works when trained on Paraphrase A and tested on Paraphrase B (Leave-One-Paraphrase-Out, **LOPO**), or trained on Topic A and tested on Topic B (Leave-One-Content-Out, **LOCO**), *then* it must be learning the true operator.
-*   **Goal:** To run a rigorous pilot study to validate if *any* static operator signal exists when proper controls are applied.
+## Connection to Prior Work
+
+EXP-03 failed due to massive topic confounding — probes learned to distinguish topics, not operators. We hypothesized that stricter cross-validation (LOPO, LOCO) could eliminate the confound and reveal the true operator signal.
+
+## Research Question
+
+**Does *any* static operator signal exist when proper cross-validation controls are applied?**
 
 ## Hypotheses
 1.  **H1 (Paraphrase Invariance):** Probes will generalize across paraphrases (LOPO F1 > Chance).
@@ -39,6 +45,11 @@
 ## Open Questions
 *   Why is the signal so weak? Is it because the operator "moves" the state rather than "locating" it?
 
-## How This Informed the Next Experiment
-*   **Desperation $\to$ Innovation:** The failure to find strong results in Exp 5 (Safety) and Exp 6 (Probing) forced us to rethink the physics of the problem.
-*   **Transition to Exp 7:** We decided to try one last rigorous static analysis (Exp 7) with a much larger model and dataset to definitively kill the "static vector" hypothesis before moving on.
+## Conclusions & Implications
+
+**Verdict: INCONCLUSIVE / WEAK.** "The Wilderness." We kept refining the *measurement* of static states but the signal simply wasn't there. If the signal is this weak even with rigorous controls, it's likely not a static property at all.
+
+## Influence on Next Experiment
+
+*   **Desperation → Innovation:** The failure to find strong results in EXP-05 and EXP-06 forced us to rethink the physics of the problem.
+*   **One Last Try:** We decided to try one final rigorous static analysis (EXP-07) at large scale (N=2,000) to definitively kill or confirm the "static vector" hypothesis.

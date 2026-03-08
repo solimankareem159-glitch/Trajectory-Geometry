@@ -1,11 +1,17 @@
 # Experiment 08: Trajectory Geometry
 
-**Date / Context:** August 2026 / Phase 3: The Pivot to Dynamics & Intervention
+**Phase:** 3 — The Pivot to Dynamics & Intervention
+**Date:** November 2025
+**Model:** Qwen2.5-0.5B
+**Status:** Completed — **FOUNDATIONAL SUCCESS**
 
-## Motivation & Prior Assumptions
-*   **Context:** Experiment 07 (Statics) hit a ceiling. Experiment 04 (Gating) showed that *forcing* a dynamic process improves performance.
-*   **Assumption:** Competence isn't a *place* (static vector); it's a *path* (trajectory). The "shape" of the thought process (speed of evolution, curvature of turns) should distinguish "reasoning" from "rambling."
-*   **Goal:** To define and measure differential geometry metrics for transformer trajectories and validate if they form coherent "Dynamic Regimes."
+## Connection to Prior Work
+
+EXP-07 hit the ceiling of static analysis. EXP-04 showed that *forcing* a dynamic process improves performance. The convergence of these two threads produced the paradigm shift: competence isn't a *place* (static vector) — it's a *path* (trajectory).
+
+## Research Question
+
+**Can we define meaningful differential geometry metrics for transformer trajectories, and do they form coherent "Dynamic Regimes"?**
 
 ## Hypotheses
 1.  **H1 (Measurability):** We can define meaningful metrics for "Speed" ($||h_t - h_{t-1}||$), "Curvature" (angle between steps), and "Tortuosity" (path efficiency) in latent space.
@@ -40,6 +46,11 @@
 *   **Meaning:** We finally have the right *ruler*. Measuring coordinates (Exp 1-7) was wrong. Measuring **Speed** and **Curvature** gives us a reliable way to characterize the "texture" of thought.
 *   **Shift:** We stopped asking "Where is the geometric signature?" and started asking "Does the **geometry predict correctness**?"
 
-## How This Informed the Next Experiment
-*   **The Crucial Link:** Exp 8 gave us the measures. Exp 4 gave us the performance variation (Success vs Failure).
-*   **Next Step:** **Experiment 09** combined these. We applied the Exp 8 metrics to the Exp 4 groups (Success/Failure) to answer the billion-dollar question: **Does a "correct" thought look different from a "hallucination"?** (spoiler: yes).
+## Conclusions & Implications
+
+**Verdict: FOUNDATIONAL SUCCESS.** We finally have the right *ruler*. Measuring coordinates (EXP 1-7) was wrong. Measuring **Speed** and **Curvature** gives us a reliable way to characterize the "texture" of thought.
+
+## Influence on Next Experiment
+
+*   **The Crucial Link:** EXP-08 gave us the measures. EXP-04 gave us the performance variation (Success vs Failure).
+*   **EXP-09** combined these: we applied the EXP-08 metrics to the EXP-04 groups (Success/Failure) to answer the core question: **Does a "correct" thought look different from a "hallucination"?** (Answer: yes, dramatically.)

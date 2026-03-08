@@ -1,12 +1,17 @@
 # Experiment 04: Operator-Gated Multi-Pass Thinking (OG-MPT)
 
-**Date / Context:** April 2026 / Phase 3: The Pivot to Dynamics & Intervention
+**Phase:** 2/3 — The Pivot to Dynamics & Intervention
+**Date:** November 2025
+**Model:** Qwen2.5-0.5B
+**Status:** Completed — **SUCCESS**
 
-## Motivation & Prior Assumptions
-*   **Context:** Experiments 01-03 failed to find static "thought vectors" that could be passively monitored. We realized that "thought" is an active process, not a passive state.
-*   **Methodological Shift:** Following the failures of Exp 1-3, we overhauled our experimental design. We began using **ChatGPT metaprompting** to generate rigorous, adversarially-filtered datasets and to critique our evaluation logic, ensuring we weren't just measuring noise.
-*   **Assumption:** If we can't *find* the operator in the vector space, maybe we can *force* it. If we explicitly tell the model *how* to think (e.g., "Plan first, then Check, then Speak") based on the task type, we should see performance gains that passive scaling cannot achieve.
-*   **Goal:** To implement an "Orchestrator" that detects the task type (Reasoning, Constraint, Safety) and dynamically gates the model's internal monologue into specific steps.
+## Connection to Prior Work
+
+EXP 01-03 failed to find static "thought vectors" that could be passively monitored. We realized that "thought" is an active process, not a passive state. Following these failures, we overhauled the experimental design — using **ChatGPT metaprompting** to generate adversarially-filtered datasets and critique evaluation logic.
+
+## Research Question
+
+**If we can't *find* the operator in the vector space, can we *force* it?** If we explicitly tell the model *how* to think based on the task type, do we see performance gains that passive scaling cannot achieve?
 
 ## Hypotheses
 1.  **H1 (Gating Efficacy):** A small model (0.5B) using multi-pass gating will outperform its single-pass baseline.
@@ -44,6 +49,12 @@
 *   Can we automate this? Can the model learn to facilitate its *own* multi-pass thinking without a hard-coded Orchestrator?
 *   Does this "forced thought" produce the geometric signatures we were looking for in Exp 1-3? (i.e., does the "Check" pass have a distinct shape?)
 
-## How This Informed the Next Experiment
-*   **Closing the Loop:** Now that we proved *behavioral* intervention works (Exp 4), we wanted to return to *measurement*. If we force the model to "Think," does it generate the "Trajectory" we hypothesized in Exp 1?
-*   **Next Step:** This led to **Experiment 08: Trajectory Geometry**, where we finally successfully measured the *geometric properties* (Speed, Curvature) of these successful multi-pass trajectories.
+## Conclusions & Implications
+
+**Verdict: SUCCESS.** "Cognitive Capability" is not just about raw weights — it's about **control flow**. A small model can punch above its weight class if you structure its "thinking" process explicitly. This confirmed that **Dynamics > Statics**.
+
+## Influence on Next Experiment
+
+*   **Closing the Loop:** We proved *behavioral* intervention works (EXP-04), so we returned to *measurement*. If we force the model to "Think," does it generate the "Trajectory" we hypothesized in EXP-01?
+*   **EXP-05** tested whether gating also helps with safety (it didn't — capacity mismatch).
+*   **EXP-08** finally measured the *geometric properties* (Speed, Curvature) of these successful multi-pass trajectories.

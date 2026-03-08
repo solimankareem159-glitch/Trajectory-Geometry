@@ -1,14 +1,17 @@
-# Experiment 15: Stress-Testing the Phase Transition
+# Experiment 15: Stress-Testing the Length Confound
 
-**Status:** Completed
-**Date:** Feb 2026
-**Model:** Qwen2.5-0.5B
-**N Problems:** 300 (Stratified by difficulty)
+**Phase:** 3/4 — Scaling & Cross-Model Validation
+**Date:** February 2026
+**Model:** Qwen2.5-0.5B (300 problems, stratified by difficulty)
+**Status:** Completed — **SUCCESS**
 
-## Motivation & Prior Assumptions
-*   **Context:** Exp 14 confirmed that reasoning has a specific geometry (expansion/complexity).
-*   **The Length Confound:** Skeptics argue that CoT "works" simply because it adds more tokens, which adds more compute time.
-*   **Goal:** Prove that geometry provides a diagnostic signal *beyond* trajectory length and determine if the model selectively "expands" based on problem difficulty.
+## Connection to Prior Work
+
+EXP-14 confirmed that reasoning has a specific regime-dependent geometry. But the critical counter-argument remained: CoT "works" simply because it adds more tokens (more compute time). EXP-15 was designed to directly refute or confirm this "length confound."
+
+## Research Question
+
+**Does geometry provide a diagnostic signal *beyond* trajectory length?** And: does the model selectively "expand" its geometric envelope based on problem difficulty?
 
 ## Hypotheses
 1.  **H1 (Difficulty Scaling):** Harder problems will induce more dramatic geometric expansion (Higher $R_g$/Dim) than easy problems.
@@ -38,7 +41,11 @@ We isolated cases where CoT *hurt* performance (Direct-Only successes).
 *   **Hardness Definition:** Difficulty was defined by operand size, which is a proxy for computational steps but doesn't capture all types of "hardness" (like logic or trick questions).
 *   **Token-Level Derivatives:** Hypothesized "Commitment Spikes" in derivatives were too noisy to be universal, suggesting commitment is a smooth accumulation of probability mass.
 
-## Interpretation (Meanings & Implications)
-*   **Verdict:** **SUCCESS**.
-*   **Unified Theory:** Reasoning quality is a function of matching **Geometric Expansion** to **Problem Entropy**.
-*   **Causality:** This strongly refutes the "Length Confound." Geometry is the driver, not the byproduct.
+## Conclusions & Implications
+
+**Verdict: SUCCESS.** Reasoning quality is a function of matching **Geometric Expansion** to **Problem Entropy**. This strongly refutes the "Length Confound" — geometry is the driver, not the byproduct. The model selectively spends geometric volume proportional to problem difficulty, supporting a Resource-Rational view of reasoning.
+
+## Influence on Next Experiment
+
+*   With the length confound refuted and the theoretical framework solid, the priority shifted to **cross-model validation**: do these signatures hold on different architectures?
+*   **EXP-16/16B** tested replication on Qwen2.5-1.5B and Pythia-70m, discovering the "Runaway Hallucination" problem and developing the hallucination cleanup pipeline.

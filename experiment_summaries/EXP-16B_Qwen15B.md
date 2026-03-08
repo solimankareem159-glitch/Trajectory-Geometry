@@ -1,16 +1,17 @@
-# Experiment 16, 16-Salvage & 16B: Scale and Architecture Pivot
+# Experiment 16/16B: Scale and Architecture Pivot
 
-**Status:** Completed (Exp 16) / Salvaged (Exp 16-Salvage) / Completed (Exp 16B)
-**Date:** Feb 2026
-**Models:** Qwen2.5-0.5B (Original) $\to$ Qwen2.5-1.5B (Exp 16) $\to$ Pythia-70m (Exp 16-Salvage)
-<!-- Note: 16B is a scale replication of 9 using Qwen 1.5B -->
+**Phase:** 4 — Scaling & Cross-Model Validation
+**Date:** February 2026
+**Models:** Qwen2.5-1.5B (EXP-16B), Pythia-70m (EXP-16 Salvage)
+**Status:** Completed — **SUCCESS**
 
+## Connection to Prior Work
 
-## Motivation & Prior Assumptions
+EXP-09 through EXP-15 established robust geometric signatures on Qwen2.5-0.5B. EXP-09B's attempt to replicate on TinyLlama failed due to capability issues. EXP-16/16B was the next attempt at cross-model validation, targeting larger and more capable models.
 
-*   **Goal:** Replicate findings on different architectures (Qwen 1.5B, Pythia 70m) to ensure geometric signatures are universal.
-*   **Initial Discovery:** Experiment 16 (Qwen 1.5B) successfully matched Qwen 0.5B signatures after hallucination truncation.
-*   **The Pythia Mystery:** Pythia-70m was initially abandoned after preflight tests showed 0% CoT accuracy.
+## Research Question
+
+**Are geometric signatures of reasoning universal across architectures and scales?** Do they replicate on Qwen2.5-1.5B and Pythia-70m?
 
 ## The Experiment 16-Salvage (Pythia-70m)
 *   **Discovery:** A post-hoc audit of the Pythia preflight logs revealed that the 0% accuracy was a **parsing artifact**. 
@@ -38,7 +39,10 @@ Once cleaned, Experiment 16B successfully replicated the primary geometric signa
 *   **Hallucination Bias:** Even with truncation, the "runaway" behavior suggests the model was in an unstable state. We must remain cautious that some "wandering" signal might be caused by the model's desire to continue generating.
 *   **Architecture Homogeneity:** Since we reverted to Qwen, we still need a non-Qwen replication (e.g., Llama-3 or Gemma) to achieve true architecture independence.
 
-## Interpretation (Meanings & Implications)
-*   **Verdict:** **SUCCESS**.
-*   **Scalability:** Geometric diagnostics are robust across model sizes.
-*   **Capability Baseline:** There is a "capability floor" for geometric analysis—if a model can't reason (like Pythia-1B on math), we can't measure its reasoning geometry.
+## Conclusions & Implications
+
+**Verdict: SUCCESS.** Geometric diagnostics are robust across model sizes and architectures. Effect sizes remain remarkably stable from 0.5B to 1.5B. There is a "capability floor" for geometric analysis, but once cleared, signatures are universal. The Runaway Hallucination problem required developing a cleanup pipeline that became standard for all future experiments.
+
+## Influence on Next Experiment
+
+*   The scale ladder now covered 70m → 0.5B → 1.5B, and signatures were consistent. The next step was extending to 3B (**EXP-17**) and formalizing the metric suite (**EXP-18**) for rigorous cross-experiment comparison.

@@ -1,11 +1,17 @@
 # Experiment 03: Regime Invariants
 
-**Date / Context:** March 2026 / Phase 2: The "Invariant" Trap
+**Phase:** 2 — The "Invariant" Trap
+**Date:** November 2025
+**Model:** Qwen2.5-0.5B
+**Status:** Completed — **FAILED / INVALIDATED**
 
-## Motivation & Prior Assumptions
-*   **Context:** After Experiments 01 and 02 failed to find static signatures in output or hidden states, we hypothesized that the "mode" of the model matters.
-*   **Assumption:** There must be a universal abstract representation of an operator (e.g., "Summarization") that persists regardless of whether the model is "Listening" (processing instruction), "Thinking" (internal CoT), or "Speaking" (generating output).
-*   **Goal:** To find a linear mapping or shared subspace that links these three regimes.
+## Connection to Prior Work
+
+EXP-01 and EXP-02 failed to find static signatures in output or hidden states. We hypothesized that the "mode" of the model matters — perhaps there is a universal abstract representation of an operator that persists regardless of whether the model is "Listening," "Thinking," or "Speaking."
+
+## Research Question
+
+**Is there a linear mapping or shared subspace that links the Listen, Think, and Speak regimes?** Can a classifier trained on one regime generalize to another?
 
 ## Hypotheses
 1.  **H1 (Invariance):** A classifier trained on "Listening" states should generalize to "Thinking" states (Zero-shot transfer).
@@ -37,6 +43,11 @@
 ## Open Questions
 *   If the states aren't linearly related, how *are* they related? Do they share dynamic properties (speed, curvature) even if they don't share coordinates?
 
-## How This Informed the Next Experiment
-*   **Pivot to Dynamics:** Since static coordinates failed (Exp 1-3), we abandoned the search for "locations" and started looking for "motion." This led to **Experiment 08: Trajectory Geometry**, where we defined differential metrics like Speed and Curvature.
-    *   *(Experiments 04-07 were wandering "wilderness" experiments trying to fix the confounding, which mostly confirmed the dead end.)*
+## Conclusions & Implications
+
+**Verdict: FAILED / INVALIDATED.** "Thought" is **not** a rotated version of the input. The geometry undergoes a fundamental topological change when the model starts generating. This killed the "Static Vector" theory entirely — we couldn't look for *where* the state is; we had to look for *how it moves*.
+
+## Influence on Next Experiment
+
+*   **Pivot to Dynamics:** Static coordinates failed (EXP 1-3), so we abandoned the search for "locations" and started looking for "motion." This led ultimately to **EXP-08: Trajectory Geometry**, where we defined differential metrics like Speed and Curvature.
+    *   *(Experiments 04-07 were "wilderness" experiments trying to fix the confounding, which mostly confirmed the dead end.)*

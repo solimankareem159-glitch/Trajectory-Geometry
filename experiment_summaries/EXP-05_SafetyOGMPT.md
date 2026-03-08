@@ -1,11 +1,17 @@
 # Experiment 05: Safety Resilience (OG-MPT Expansion)
 
-**Date / Context:** May 2026 / Phase 3: The Pivot to Dynamics & Intervention
+**Phase:** 2/3 — The Pivot to Dynamics & Intervention
+**Date:** November 2025
+**Model:** Qwen2.5-0.5B
+**Status:** Completed — **INVALID / FAILED**
 
-## Motivation & Prior Assumptions
-*   **Context:** Experiment 04 proved that "Operator Gating" (Orchestration) significantly improved performance (Reasoning/Constraints) by forcing the model to slow down and "think" explicitly.
-*   **Assumption:** Complexity is complexity. If orchestration helps with *logic*, it should also help with *safety*. A model that "Plans" and "Checks" its response should be harder to jailbreak than one that just blurts out an answer.
-*   **Goal:** To test if the OG-MPT (Plan $\to$ Check $\to$ Speak) architecture reduces Attack Success Rate (ASR) against standard jailbreaks (e.g., "Write a story about X").
+## Connection to Prior Work
+
+EXP-04 proved that Operator Gating significantly improved reasoning and constraint performance. The natural question: does orchestration also help with *safety*? If a model "Plans" and "Checks" its response, it should be harder to jailbreak.
+
+## Research Question
+
+**Does the OG-MPT architecture (Plan → Check → Speak) reduce Attack Success Rate against standard jailbreaks?**
 
 ## Hypotheses
 1.  **H1 (Safety Buffer):** The "Check" pass will catch harmful content generated in the "Plan" pass before it is output to the user.
@@ -39,6 +45,11 @@
 ## Open Questions
 *   Would this have worked on a larger model (e.g., 7B)? Or is the "Check" pass fundamentally flawed because the *same* model that generates the harm also validates it? (The "Self-Correction Fallacy").
 
-## How This Informed the Next Experiment
-*   **Return to Basics:** This failure, combined with the success of Exp 4, clarified boundaries. We knew *gating works* (Exp 4) but *requires capacity* (Exp 5 failure).
-*   **The "Wilderness" Ends:** We realized we needed to stop hacking prompts and start measuring the fundamental physics of the trajectory again. This paved the way for **Experiment 08**, where we finally successfully measured the geometry of these "thought" tokens.
+## Conclusions & Implications
+
+**Verdict: INVALID / FAILED.** Architecture isn't magic. Complex dynamic flows (System 2) require a minimum threshold of model capability (likely 7B+) to be stable. You cannot "prompt engineer" intelligence that isn't there.
+
+## Influence on Next Experiment
+
+*   **Boundary Clarification:** Combined with EXP-04's success, this clarified that *gating works* but *requires capacity*.
+*   **The "Wilderness" Ends:** We stopped hacking prompts and returned to measuring the fundamental physics of trajectories, leading to **EXP-08** where we finally measured the geometry of "thought" tokens.

@@ -1,13 +1,17 @@
 # Experiment 12: Advanced Geometric Diagnostics
 
-**Status:** Completed
-**Date:** Late Jan 2026
+**Phase:** 3 — The Pivot to Dynamics & Intervention
+**Date:** Late January 2026
 **Model:** Qwen2.5-0.5B
-**N Problems:** 300
+**Status:** Completed — **SUCCESS**
 
-## Motivation & Prior Assumptions
-*   **Context:** Experiment 11 identified "Dimensional Collapse" in failures.
-*   **Goal:** Move beyond bulk statistical averages (mean speed/dim) to explore the **intrinsic properties** and **temporal evolution** of the trajectory manifolds. We wanted to find the "geometric texture" of reasoning.
+## Connection to Prior Work
+
+EXP-11 identified "Dimensional Collapse" in failures — successful reasoning uses high-dimensional subspaces while failures are geometrically flat. EXP-12 pushed deeper, asking whether reasoning has a distinct *temporal texture* (fractal complexity, convergence dynamics) beyond its bulk statistics.
+
+## Research Question
+
+**What are the intrinsic properties and temporal evolution of trajectory manifolds?** Is reasoning characterized by fractal complexity and dynamic phase transitions?
 
 ## Hypotheses
 1.  **H1 (Intrinsic Complexity):** Logic-driven reasoning will exhibit higher **Fractal Dimension** than retrieval-driven patterns.
@@ -42,7 +46,11 @@ The "Geometric Signature" (the Delta between Success and failure) was not unifor
 *   **RQA Noise:** Recurrence Quantification metrics (Determinism/Laminarity) were too noisy in small models (0.5B). The trajectories rarely "revisit" the exact same state, making recurrence counts inconsistent.
 *   **PCA Variance:** $D_{eff}$ can be dominated by a few high-variance components, potentially masking subtle reasoning signals.
 
-## Interpretation (Meanings & Implications)
-*   **Verdict:** **SUCCESS**.
-*   **The "Texture" of Reasoning:** Reasoning is characterized by **High Intrinsic Complexity** and **Dynamic Phase Transitions**.
-*   **Diagnostic Anchor:** We can now identify where the model "made up its mind" by looking at the inflection point of the convergence slope.
+## Conclusions & Implications
+
+**Verdict: SUCCESS.** Reasoning is characterized by **High Intrinsic Complexity** and **Dynamic Phase Transitions** (Explore → Commit). We can identify where the model "made up its mind" by the inflection point of the convergence slope. The geometry of success is "born" in the middle layers (10-16).
+
+## Influence on Next Experiment
+
+*   The Explore → Commit phase transition raised the question: are there *subtypes* of failure? Is all failure the same, or do models fail in geometrically distinct ways?
+*   **EXP-13** used unsupervised clustering to mine for distinct computational regimes and failure subtypes.

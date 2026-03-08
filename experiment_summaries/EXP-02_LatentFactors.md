@@ -1,11 +1,17 @@
 # Experiment 02: Latent Factors (Token-Level)
 
-**Date / Context:** February 2026 / Phase 1: The Intuition of "Shapes" (Part 2)
+**Phase:** 1 — The Intuition of "Shapes" (Part 2)
+**Date:** November 2025
+**Model:** Qwen2.5-0.5B
+**Status:** Completed — **INVALID / TRIVIAL**
 
-## Motivation & Prior Assumptions
-*   **Context:** Experiment 01 failed to find signatures in the *output* embeddings. We suspected the signal was lost in the "collapse" to text.
-*   **Assumption:** The "cognitive move" happens in the high-dimensional hidden states *before* the output.
-*   **Goal:** To decompose these internal states using Non-negative Matrix Factorization (NMF) to find the "atomic units" of thought (e.g., is "Critique" a mix of "Analyze" + "Negate"?).
+## Connection to Prior Work
+
+EXP-01 failed to find geometric signatures in *output* embeddings — the signal was swamped by topic and lexical noise. We suspected the cognitive move happens in the high-dimensional hidden states *before* the output, and pivoted to open-weights models to access them directly.
+
+## Research Question
+
+**Can we decompose internal hidden states using NMF to find the "atomic units" of thought?** (e.g., is "Critique" a mix of "Analyze" + "Negate"?)
 
 ## Hypotheses
 1.  **H1 (Internal Signatures):** Different operators (Summarize vs. Critique) will have distinct "warp traces" (magnitude of change) in hidden states.
@@ -41,5 +47,12 @@
 *   If we look at the *direction* rather than the *magnitude*, can we see the difference?
 *   Do these signatures change when the model is "Thinking" vs "Speaking"?
 
-## How This Informed the Next Experiment
-*   **Pivot to Regimes:** The realization that "Thinking" might act differently than "Speaking" led to **Experiment 03: Regime Invariants**, where we explicitly separated the "Listen", "Think", and "Speak" phases to test for geometric invariance across them.
+## Conclusions & Implications
+
+**Verdict: INVALID / TRIVIAL.** Measuring *magnitude* ($||v||$) is insufficient. A "thought" is a vector with a direction. By taking the norm, we threw away the actual information. We must look at **direction** and **regime**.
+
+However, the finding that middle layers (5-12) show coherent, stable geometry while the final layer is chaotic became an important heuristic for all future experiments.
+
+## Influence on Next Experiment
+
+*   **Pivot to Regimes:** The realization that "Thinking" might act differently than "Speaking" led to **EXP-03: Regime Invariants**, where we explicitly separated the "Listen", "Think", and "Speak" phases to test for geometric invariance across them.
