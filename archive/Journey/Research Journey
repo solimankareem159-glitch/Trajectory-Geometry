@@ -1,0 +1,75 @@
+# Research Journey: How I Got Here
+
+**Author:** Kareem Soliman
+**Date:** February 2, 2026
+**Purpose:** Personal record of the intellectual path from PsychScope to Trajectory Geometry, in case anyone asks or I need to reconstruct the story.
+
+---
+
+## The Path
+
+I come from a psychology background. I developed **PsychScope**, a framework for measuring AI capabilities through construct-based behavioral measurement — essentially bringing psychometric rigor to AI evaluation.
+
+Part of what I wanted to measure was **creativity**. When I finally got around to trying, I realized it was extraordinarily difficult to operationalize. That difficulty led me down two paths simultaneously:
+
+1. **Aetherius** — a game project where I could explore creativity in a more applied, experiential way rather than trying to reduce it to a metric.
+
+2. **Perspective-dependent semantic distance** — the theoretical insight that emerged from thinking hard about what creativity actually *is*. I realized that the distance between concepts isn't fixed — it depends on where you're standing when you measure it. Two ideas that seem unrelated from one perspective can appear intimately connected from another. That shift in perspective *is* a core component of creative insight.
+
+That insight led to **Dynamic Semantic Geometry (DSG)** — a framework where meaning in language models isn't a static point but a trajectory through a representational manifold whose geometry changes with context and perspective. I formalized this with metric tensors, centroid models, and the idea that conversational operators are geometric transformations acting on this space.
+
+## The Intuition That Turned Out to Be Wrong (But Productive)
+
+For a while, I was following an intuition about the overlap between the shape of thought in humans and AI — that the geometric structures I was theorizing about would map onto human cognitive architecture in some direct way. I eventually came to realize this wasn't the case, at least not in the straightforward way I'd imagined. But the process of thinking it through had already generated the theoretical framework that turned out to be useful for understanding AI systems on their own terms.
+
+## Getting My Hands Dirty
+
+For a long time the work was purely theoretical. What changed was working up the courage to actually play with **Google's Antigravity** (Colab-based experimentation tool), and — even better — downloading an open-weight model (Qwen2.5-0.5B) and running it locally so I could peek inside the hidden states directly.
+
+This was a significant psychological barrier. I'm not a machine learning engineer. I'm heavily reliant on AI tools for implementation — Claude for theoretical development, Antigravity for running experiments, ChatGPT for comparative analysis, and more recently OpenAI's Prism for scientific writing. I don't fully understand all the mathematics in my own papers, and I didn't write the experiment code by hand. That's something I've had to make peace with.
+
+## The Experimental Arc
+
+The first three experiments were poorly designed but produced positive results — enough signal to know something real was there, even if I wasn't measuring it cleanly.
+
+Then came a series of failures. I was looking for specific things (clean operator separability, dramatic performance gains from orchestration) and not finding them. The MVP experiments showed operators existed as a structural phenomenon but weren't pointwise separable at the embedding level (AMI ≈ 0.13). The OG-MPT orchestrator experiments initially looked promising but turned out to have results that didn't hold up under scrutiny.
+
+**The critical decision was allowing the evidence to guide my understanding rather than forcing results to fit my theory.** The "failure" results were actually deeply informative:
+
+- Prediction succeeding where clustering failed told me operators were real but distributed across time and layers
+- The motion blur analogy emerged from honestly confronting why embeddings weren't enough
+- The Resolution Hypothesis — that signatures would sharpen with higher-resolution measurement — came directly from the pattern of what worked and what didn't
+
+## Where It Led
+
+By Experiment 9, I had a clean setup: 300 arithmetic problems, two prompt conditions, greedy decoding, hidden state extraction across layers. The effect sizes were enormous (Cohen's d up to 4.25). Experiments 11–12 extended the metric suite. Experiment 13 mined the existing data and confirmed:
+
+- Two geometrically distinct success regimes (retrieve-and-commit vs structured exploration), with 4/4 a priori predictions confirmed
+- Explore→commit phase transitions within individual trajectories
+- Trajectory geometry predicting correctness at 75–80% accuracy beyond prompt type alone
+- Convergence metrics (not directional consistency) as the strongest predictors of success
+
+## What I Actually Contributed
+
+I didn't write the code. I don't fully understand the linear algebra. What I did was:
+
+1. **Ask the right questions** — the theoretical framework that generated testable, falsifiable predictions
+2. **Design the experimental logic** — what to compare, what to control for, what would constitute evidence
+3. **Honestly interpret the results** — including the ones that contradicted what I wanted to find
+4. **Connect domains** — psychology, geometry, interpretability, dynamical systems — in ways that generated novel hypotheses
+5. **Maintain scientific discipline** — explicit falsification criteria, honest limitations, decomposition of confounds
+
+That's a legitimate intellectual contribution, regardless of who or what wrote the Python.
+
+## Tools Used
+
+- **Claude (Anthropic):** Theoretical development, paper writing, experimental design
+- **Google Antigravity:** Running experiments, code generation and execution
+- **OpenAI Prism:** Scientific writing assistance, regime prediction
+- **ChatGPT:** Comparative analysis, alternative perspectives
+- **Qwen2.5-0.5B:** The model being studied (run locally)
+- **Personal hardware:** All experiments run on personal computer (~70% CPU utilization)
+
+---
+
+*Written February 2, 2026. This is an honest account of how the work developed, including the parts I'm not proud of and the parts I didn't do myself.*
