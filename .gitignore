@@ -32,6 +32,7 @@ exp19_venv/
 # Hidden state arrays (often 100MB+ each)
 *.npy
 *.npz
+*.memmap
 
 # Large dataset files
 *.pkl
